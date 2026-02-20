@@ -197,7 +197,7 @@ extension VariantOptionExtensions on VariantOption {
     if (isLeafOption) return [this];
     if (!hasSubOptions) return [];
 
-    return subOptions!.expand((option) => option.allLeafOptions).toList();
+    return subOptions.expand((option) => option.allLeafOptions).toList();
   }
 
   /// Get the display color (handles null and empty color codes)

@@ -1,6 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../evoucher_products_response/evoucher_products_response.dart';
 
 part 'evoucher_order_response.freezed.dart';
 part 'evoucher_order_response.g.dart';

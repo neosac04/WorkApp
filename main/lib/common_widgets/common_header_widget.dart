@@ -5,7 +5,6 @@ import 'package:core/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 
 import '../app/theme/app_size_constants.dart';
-import '../app/theme/app_theme.dart';
 
 class CommonHeader extends StatelessWidget {
   const CommonHeader({

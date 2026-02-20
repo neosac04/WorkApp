@@ -142,6 +142,7 @@ class TokenManager {
     } finally {
       _isRefreshing = false;
     }
+    return null;
   }
 
   /// Checks if the JWT token is expired

@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import '../app/theme/app_size_constants.dart';
 import '../app/theme/color_constants.dart';
 import '../app/theme/font_type.dart';
-import '../core/utils/scale_util.dart';
 
 class TabMenuWidget<T> extends StatelessWidget {
   final List<T> menu;

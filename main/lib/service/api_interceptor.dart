@@ -1,6 +1,5 @@
 // Dart core imports
 import 'dart:convert'; // For JSON encoding of request/response bodies
-import 'dart:developer' as developer;
 
 import 'package:core/core/di/app_providers.dart';
 // Package imports

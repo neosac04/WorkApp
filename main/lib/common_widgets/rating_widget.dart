@@ -5,7 +5,6 @@ import 'package:core/core/utils/extention.dart';
 import 'package:core/core/utils/scale_util.dart';
 import 'package:flutter/material.dart';
 
-import '../app/theme/app_theme.dart';
 
 class RatingWidget extends StatelessWidget {
   const RatingWidget({
