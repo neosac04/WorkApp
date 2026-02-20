@@ -1,0 +1,12 @@
+lokalise:
+  platform_mask: 16
+  format: flutter_sdk
+  original_filenames: false
+  bundle_structure: "%LANG_ISO%.%FORMAT%"
+  placeholder_format: flutter
+  escape_percent: false
+  export_options:
+    flutter_sdk:
+      use_escaping: true
+      dart_null_safety: true
+      class_name: "AppLocalizations"
