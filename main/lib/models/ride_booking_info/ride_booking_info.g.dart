@@ -6,9 +6,8 @@ part of 'ride_booking_info.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$RideBookingInfoImpl _$$RideBookingInfoImplFromJson(
-        Map<String, dynamic> json) =>
-    _$RideBookingInfoImpl(
+_RideBookingInfo _$RideBookingInfoFromJson(Map<String, dynamic> json) =>
+    _RideBookingInfo(
       actualFare: json['actual_fare'] as String? ?? '',
       adminAmount: json['admin_amount'] as String? ?? '',
       companyCommission: json['company_commission'] as String? ?? '',
@@ -53,8 +52,7 @@ _$RideBookingInfoImpl _$$RideBookingInfoImplFromJson(
       deletedAt: json['deleted_at'] as String?,
     );
 
-Map<String, dynamic> _$$RideBookingInfoImplToJson(
-        _$RideBookingInfoImpl instance) =>
+Map<String, dynamic> _$RideBookingInfoToJson(_RideBookingInfo instance) =>
     <String, dynamic>{
       'actual_fare': instance.actualFare,
       'admin_amount': instance.adminAmount,
@@ -96,15 +94,14 @@ Map<String, dynamic> _$$RideBookingInfoImplToJson(
       'deleted_at': instance.deletedAt,
     };
 
-_$DriverInfoImpl _$$DriverInfoImplFromJson(Map<String, dynamic> json) =>
-    _$DriverInfoImpl(
-      driverId: json['driverId'] as String? ?? '',
-      name: json['name'] as String? ?? '',
-      imageUrl: json['imageUrl'] as String? ?? '',
-      phone: json['phone'] as String? ?? '',
-    );
+_DriverInfo _$DriverInfoFromJson(Map<String, dynamic> json) => _DriverInfo(
+  driverId: json['driverId'] as String? ?? '',
+  name: json['name'] as String? ?? '',
+  imageUrl: json['imageUrl'] as String? ?? '',
+  phone: json['phone'] as String? ?? '',
+);
 
-Map<String, dynamic> _$$DriverInfoImplToJson(_$DriverInfoImpl instance) =>
+Map<String, dynamic> _$DriverInfoToJson(_DriverInfo instance) =>
     <String, dynamic>{
       'driverId': instance.driverId,
       'name': instance.name,
@@ -112,19 +109,14 @@ Map<String, dynamic> _$$DriverInfoImplToJson(_$DriverInfoImpl instance) =>
       'phone': instance.phone,
     };
 
-_$OrderResponseImpl _$$OrderResponseImplFromJson(Map<String, dynamic> json) =>
-    _$OrderResponseImpl(
-      orderId: json['orderId'] as String? ?? '',
-    );
+_OrderResponse _$OrderResponseFromJson(Map<String, dynamic> json) =>
+    _OrderResponse(orderId: json['orderId'] as String? ?? '');
 
-Map<String, dynamic> _$$OrderResponseImplToJson(_$OrderResponseImpl instance) =>
-    <String, dynamic>{
-      'orderId': instance.orderId,
-    };
+Map<String, dynamic> _$OrderResponseToJson(_OrderResponse instance) =>
+    <String, dynamic>{'orderId': instance.orderId};
 
-_$OrderOfferResponseImpl _$$OrderOfferResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$OrderOfferResponseImpl(
+_OrderOfferResponse _$OrderOfferResponseFromJson(Map<String, dynamic> json) =>
+    _OrderOfferResponse(
       driverInfo: json['driver_info'] == null
           ? null
           : DriverInfo.fromJson(json['driver_info'] as Map<String, dynamic>),
@@ -134,35 +126,31 @@ _$OrderOfferResponseImpl _$$OrderOfferResponseImplFromJson(
       orderId: json['orderId'] as String? ?? '',
     );
 
-Map<String, dynamic> _$$OrderOfferResponseImplToJson(
-        _$OrderOfferResponseImpl instance) =>
+Map<String, dynamic> _$OrderOfferResponseToJson(_OrderOfferResponse instance) =>
     <String, dynamic>{
       'driver_info': instance.driverInfo,
       'car_info': instance.carInfo,
       'orderId': instance.orderId,
     };
 
-_$CarInfoImpl _$$CarInfoImplFromJson(Map<String, dynamic> json) =>
-    _$CarInfoImpl(
-      model: json['model'] as String? ?? '',
-      color: json['color'] as String? ?? '',
-      year: json['year'],
-      plateNumber: json['plateNumber'] as String? ?? '',
-      numberOfSeats: json['numberOfSeats'],
-      options: (json['options'] as List<dynamic>?)
-              ?.map((e) => e as String)
-              .toList() ??
-          const [],
-      vehicleType: json['vehicleType'] as String? ?? '',
-    );
+_CarInfo _$CarInfoFromJson(Map<String, dynamic> json) => _CarInfo(
+  model: json['model'] as String? ?? '',
+  color: json['color'] as String? ?? '',
+  year: json['year'],
+  plateNumber: json['plateNumber'] as String? ?? '',
+  numberOfSeats: json['numberOfSeats'],
+  options:
+      (json['options'] as List<dynamic>?)?.map((e) => e as String).toList() ??
+      const [],
+  vehicleType: json['vehicleType'] as String? ?? '',
+);
 
-Map<String, dynamic> _$$CarInfoImplToJson(_$CarInfoImpl instance) =>
-    <String, dynamic>{
-      'model': instance.model,
-      'color': instance.color,
-      'year': instance.year,
-      'plateNumber': instance.plateNumber,
-      'numberOfSeats': instance.numberOfSeats,
-      'options': instance.options,
-      'vehicleType': instance.vehicleType,
-    };
+Map<String, dynamic> _$CarInfoToJson(_CarInfo instance) => <String, dynamic>{
+  'model': instance.model,
+  'color': instance.color,
+  'year': instance.year,
+  'plateNumber': instance.plateNumber,
+  'numberOfSeats': instance.numberOfSeats,
+  'options': instance.options,
+  'vehicleType': instance.vehicleType,
+};

@@ -15,8 +15,7 @@ class EvoucherProductDetailCard extends StatelessWidget {
   final bool showDivider;
   final bool showVat;
 
-  const EvoucherProductDetailCard({Key? key, required this.product, this.margin, this.showDivider = true, this.showVat = true})
-    : super(key: key);
+  const EvoucherProductDetailCard({super.key, required this.product, this.margin, this.showDivider = true, this.showVat = true});
 
   @override
   Widget build(BuildContext context) {

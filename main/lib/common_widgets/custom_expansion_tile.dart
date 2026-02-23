@@ -22,7 +22,7 @@ class CustomExpansionTile extends StatefulWidget {
   final double? elevation;
 
   const CustomExpansionTile({
-    Key? key,
+    super.key,
     required this.title,
     required this.child,
     this.trailing,
@@ -40,7 +40,7 @@ class CustomExpansionTile extends StatefulWidget {
     this.borderRadius,
     this.border,
     this.elevation,
-  }) : super(key: key);
+  });
 
   @override
   State<CustomExpansionTile> createState() => _CustomExpansionTileState();

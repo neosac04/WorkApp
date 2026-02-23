@@ -1,12 +1,11 @@
 import 'dart:developer' as developer;
 import 'dart:io';
-import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
 
 /// A simple logger utility for debugging and info logs.
 class MyLogger {
 
-  static late final Future<File> _logFile = _initLogFile();
+  static final Future<File> _logFile = _initLogFile();
 
   static Future<File> _initLogFile() async {
     final directory = await getApplicationDocumentsDirectory();

@@ -173,17 +173,17 @@ class FoodRepositoryImpl implements FoodRepository {
 
   @override
   Future<Either<String, CommonResponse<InitiateTamaraPayment>>> initiateTamaraPayment(Map<String, dynamic> params) async {
-    print("object====>>>> ${params}");
+    print("object====>>>> $params");
     try {
-      print("object====>>>> try ${params}");
+      print("object====>>>> try $params");
       final posts = await apiService.foodInitiateTamaraPayment(params);
       return Right(posts);
     } on DioException catch (dioError) {
-      print("object====>>>> DioException ${params}");
+      print("object====>>>> DioException $params");
       // Interceptor already parsed the error message
       return Left(dioError.message ?? 'An error occurred');
     } catch (e) {
-      print("object====>>>> catch ${params}");
+      print("object====>>>> catch $params");
       return Left(CommonResponse(message: e.toString()).message ?? "");
     }
   }

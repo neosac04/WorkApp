@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,305 +9,293 @@ part of 'visa_product_model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-VisaProductModel _$VisaProductModelFromJson(Map<String, dynamic> json) {
-  return _VisaProductModel.fromJson(json);
-}
 
 /// @nodoc
 mixin _$VisaProductModel {
-  int get id => throw _privateConstructorUsedError;
-  String get title => throw _privateConstructorUsedError;
-  String get description => throw _privateConstructorUsedError;
-  String get price => throw _privateConstructorUsedError;
-  @JsonKey(name: 'processing_time')
-  String? get processingTime => throw _privateConstructorUsedError;
-  @JsonKey(name: 'validity_period')
-  String? get validityPeriod => throw _privateConstructorUsedError;
-  List<String> get requirements => throw _privateConstructorUsedError;
+
+ int get id; String get title; String get description; String get price;@JsonKey(name: 'processing_time') String? get processingTime;@JsonKey(name: 'validity_period') String? get validityPeriod; List<String> get requirements;
+/// Create a copy of VisaProductModel
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$VisaProductModelCopyWith<VisaProductModel> get copyWith => _$VisaProductModelCopyWithImpl<VisaProductModel>(this as VisaProductModel, _$identity);
 
   /// Serializes this VisaProductModel to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of VisaProductModel
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $VisaProductModelCopyWith<VisaProductModel> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is VisaProductModel&&(identical(other.id, id) || other.id == id)&&(identical(other.title, title) || other.title == title)&&(identical(other.description, description) || other.description == description)&&(identical(other.price, price) || other.price == price)&&(identical(other.processingTime, processingTime) || other.processingTime == processingTime)&&(identical(other.validityPeriod, validityPeriod) || other.validityPeriod == validityPeriod)&&const DeepCollectionEquality().equals(other.requirements, requirements));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,title,description,price,processingTime,validityPeriod,const DeepCollectionEquality().hash(requirements));
+
+@override
+String toString() {
+  return 'VisaProductModel(id: $id, title: $title, description: $description, price: $price, processingTime: $processingTime, validityPeriod: $validityPeriod, requirements: $requirements)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $VisaProductModelCopyWith<$Res> {
-  factory $VisaProductModelCopyWith(
-          VisaProductModel value, $Res Function(VisaProductModel) then) =
-      _$VisaProductModelCopyWithImpl<$Res, VisaProductModel>;
-  @useResult
-  $Res call(
-      {int id,
-      String title,
-      String description,
-      String price,
-      @JsonKey(name: 'processing_time') String? processingTime,
-      @JsonKey(name: 'validity_period') String? validityPeriod,
-      List<String> requirements});
-}
+abstract mixin class $VisaProductModelCopyWith<$Res>  {
+  factory $VisaProductModelCopyWith(VisaProductModel value, $Res Function(VisaProductModel) _then) = _$VisaProductModelCopyWithImpl;
+@useResult
+$Res call({
+ int id, String title, String description, String price,@JsonKey(name: 'processing_time') String? processingTime,@JsonKey(name: 'validity_period') String? validityPeriod, List<String> requirements
+});
 
+
+
+
+}
 /// @nodoc
-class _$VisaProductModelCopyWithImpl<$Res, $Val extends VisaProductModel>
+class _$VisaProductModelCopyWithImpl<$Res>
     implements $VisaProductModelCopyWith<$Res> {
-  _$VisaProductModelCopyWithImpl(this._value, this._then);
+  _$VisaProductModelCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final VisaProductModel _self;
+  final $Res Function(VisaProductModel) _then;
 
-  /// Create a copy of VisaProductModel
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? title = null,
-    Object? description = null,
-    Object? price = null,
-    Object? processingTime = freezed,
-    Object? validityPeriod = freezed,
-    Object? requirements = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      price: null == price
-          ? _value.price
-          : price // ignore: cast_nullable_to_non_nullable
-              as String,
-      processingTime: freezed == processingTime
-          ? _value.processingTime
-          : processingTime // ignore: cast_nullable_to_non_nullable
-              as String?,
-      validityPeriod: freezed == validityPeriod
-          ? _value.validityPeriod
-          : validityPeriod // ignore: cast_nullable_to_non_nullable
-              as String?,
-      requirements: null == requirements
-          ? _value.requirements
-          : requirements // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-    ) as $Val);
-  }
+/// Create a copy of VisaProductModel
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? title = null,Object? description = null,Object? price = null,Object? processingTime = freezed,Object? validityPeriod = freezed,Object? requirements = null,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,title: null == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
+as String,description: null == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String,price: null == price ? _self.price : price // ignore: cast_nullable_to_non_nullable
+as String,processingTime: freezed == processingTime ? _self.processingTime : processingTime // ignore: cast_nullable_to_non_nullable
+as String?,validityPeriod: freezed == validityPeriod ? _self.validityPeriod : validityPeriod // ignore: cast_nullable_to_non_nullable
+as String?,requirements: null == requirements ? _self.requirements : requirements // ignore: cast_nullable_to_non_nullable
+as List<String>,
+  ));
 }
 
-/// @nodoc
-abstract class _$$VisaProductModelImplCopyWith<$Res>
-    implements $VisaProductModelCopyWith<$Res> {
-  factory _$$VisaProductModelImplCopyWith(_$VisaProductModelImpl value,
-          $Res Function(_$VisaProductModelImpl) then) =
-      __$$VisaProductModelImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      String title,
-      String description,
-      String price,
-      @JsonKey(name: 'processing_time') String? processingTime,
-      @JsonKey(name: 'validity_period') String? validityPeriod,
-      List<String> requirements});
 }
 
-/// @nodoc
-class __$$VisaProductModelImplCopyWithImpl<$Res>
-    extends _$VisaProductModelCopyWithImpl<$Res, _$VisaProductModelImpl>
-    implements _$$VisaProductModelImplCopyWith<$Res> {
-  __$$VisaProductModelImplCopyWithImpl(_$VisaProductModelImpl _value,
-      $Res Function(_$VisaProductModelImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of VisaProductModel
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? title = null,
-    Object? description = null,
-    Object? price = null,
-    Object? processingTime = freezed,
-    Object? validityPeriod = freezed,
-    Object? requirements = null,
-  }) {
-    return _then(_$VisaProductModelImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      price: null == price
-          ? _value.price
-          : price // ignore: cast_nullable_to_non_nullable
-              as String,
-      processingTime: freezed == processingTime
-          ? _value.processingTime
-          : processingTime // ignore: cast_nullable_to_non_nullable
-              as String?,
-      validityPeriod: freezed == validityPeriod
-          ? _value.validityPeriod
-          : validityPeriod // ignore: cast_nullable_to_non_nullable
-              as String?,
-      requirements: null == requirements
-          ? _value._requirements
-          : requirements // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-    ));
-  }
+/// Adds pattern-matching-related methods to [VisaProductModel].
+extension VisaProductModelPatterns on VisaProductModel {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _VisaProductModel value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _VisaProductModel() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _VisaProductModel value)  $default,){
+final _that = this;
+switch (_that) {
+case _VisaProductModel():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _VisaProductModel value)?  $default,){
+final _that = this;
+switch (_that) {
+case _VisaProductModel() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  String title,  String description,  String price, @JsonKey(name: 'processing_time')  String? processingTime, @JsonKey(name: 'validity_period')  String? validityPeriod,  List<String> requirements)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _VisaProductModel() when $default != null:
+return $default(_that.id,_that.title,_that.description,_that.price,_that.processingTime,_that.validityPeriod,_that.requirements);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String title,  String description,  String price, @JsonKey(name: 'processing_time')  String? processingTime, @JsonKey(name: 'validity_period')  String? validityPeriod,  List<String> requirements)  $default,) {final _that = this;
+switch (_that) {
+case _VisaProductModel():
+return $default(_that.id,_that.title,_that.description,_that.price,_that.processingTime,_that.validityPeriod,_that.requirements);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  String title,  String description,  String price, @JsonKey(name: 'processing_time')  String? processingTime, @JsonKey(name: 'validity_period')  String? validityPeriod,  List<String> requirements)?  $default,) {final _that = this;
+switch (_that) {
+case _VisaProductModel() when $default != null:
+return $default(_that.id,_that.title,_that.description,_that.price,_that.processingTime,_that.validityPeriod,_that.requirements);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$VisaProductModelImpl implements _VisaProductModel {
-  _$VisaProductModelImpl(
-      {required this.id,
-      required this.title,
-      required this.description,
-      required this.price,
-      @JsonKey(name: 'processing_time') this.processingTime,
-      @JsonKey(name: 'validity_period') this.validityPeriod,
-      required final List<String> requirements})
-      : _requirements = requirements;
 
-  factory _$VisaProductModelImpl.fromJson(Map<String, dynamic> json) =>
-      _$$VisaProductModelImplFromJson(json);
+class _VisaProductModel implements VisaProductModel {
+   _VisaProductModel({required this.id, required this.title, required this.description, required this.price, @JsonKey(name: 'processing_time') this.processingTime, @JsonKey(name: 'validity_period') this.validityPeriod, required final  List<String> requirements}): _requirements = requirements;
+  factory _VisaProductModel.fromJson(Map<String, dynamic> json) => _$VisaProductModelFromJson(json);
 
-  @override
-  final int id;
-  @override
-  final String title;
-  @override
-  final String description;
-  @override
-  final String price;
-  @override
-  @JsonKey(name: 'processing_time')
-  final String? processingTime;
-  @override
-  @JsonKey(name: 'validity_period')
-  final String? validityPeriod;
-  final List<String> _requirements;
-  @override
-  List<String> get requirements {
-    if (_requirements is EqualUnmodifiableListView) return _requirements;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_requirements);
-  }
-
-  @override
-  String toString() {
-    return 'VisaProductModel(id: $id, title: $title, description: $description, price: $price, processingTime: $processingTime, validityPeriod: $validityPeriod, requirements: $requirements)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$VisaProductModelImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.title, title) || other.title == title) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.price, price) || other.price == price) &&
-            (identical(other.processingTime, processingTime) ||
-                other.processingTime == processingTime) &&
-            (identical(other.validityPeriod, validityPeriod) ||
-                other.validityPeriod == validityPeriod) &&
-            const DeepCollectionEquality()
-                .equals(other._requirements, _requirements));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      title,
-      description,
-      price,
-      processingTime,
-      validityPeriod,
-      const DeepCollectionEquality().hash(_requirements));
-
-  /// Create a copy of VisaProductModel
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$VisaProductModelImplCopyWith<_$VisaProductModelImpl> get copyWith =>
-      __$$VisaProductModelImplCopyWithImpl<_$VisaProductModelImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$VisaProductModelImplToJson(
-      this,
-    );
-  }
+@override final  int id;
+@override final  String title;
+@override final  String description;
+@override final  String price;
+@override@JsonKey(name: 'processing_time') final  String? processingTime;
+@override@JsonKey(name: 'validity_period') final  String? validityPeriod;
+ final  List<String> _requirements;
+@override List<String> get requirements {
+  if (_requirements is EqualUnmodifiableListView) return _requirements;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_requirements);
 }
 
-abstract class _VisaProductModel implements VisaProductModel {
-  factory _VisaProductModel(
-      {required final int id,
-      required final String title,
-      required final String description,
-      required final String price,
-      @JsonKey(name: 'processing_time') final String? processingTime,
-      @JsonKey(name: 'validity_period') final String? validityPeriod,
-      required final List<String> requirements}) = _$VisaProductModelImpl;
 
-  factory _VisaProductModel.fromJson(Map<String, dynamic> json) =
-      _$VisaProductModelImpl.fromJson;
+/// Create a copy of VisaProductModel
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$VisaProductModelCopyWith<_VisaProductModel> get copyWith => __$VisaProductModelCopyWithImpl<_VisaProductModel>(this, _$identity);
 
-  @override
-  int get id;
-  @override
-  String get title;
-  @override
-  String get description;
-  @override
-  String get price;
-  @override
-  @JsonKey(name: 'processing_time')
-  String? get processingTime;
-  @override
-  @JsonKey(name: 'validity_period')
-  String? get validityPeriod;
-  @override
-  List<String> get requirements;
-
-  /// Create a copy of VisaProductModel
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$VisaProductModelImplCopyWith<_$VisaProductModelImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+Map<String, dynamic> toJson() {
+  return _$VisaProductModelToJson(this, );
 }
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _VisaProductModel&&(identical(other.id, id) || other.id == id)&&(identical(other.title, title) || other.title == title)&&(identical(other.description, description) || other.description == description)&&(identical(other.price, price) || other.price == price)&&(identical(other.processingTime, processingTime) || other.processingTime == processingTime)&&(identical(other.validityPeriod, validityPeriod) || other.validityPeriod == validityPeriod)&&const DeepCollectionEquality().equals(other._requirements, _requirements));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,title,description,price,processingTime,validityPeriod,const DeepCollectionEquality().hash(_requirements));
+
+@override
+String toString() {
+  return 'VisaProductModel(id: $id, title: $title, description: $description, price: $price, processingTime: $processingTime, validityPeriod: $validityPeriod, requirements: $requirements)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$VisaProductModelCopyWith<$Res> implements $VisaProductModelCopyWith<$Res> {
+  factory _$VisaProductModelCopyWith(_VisaProductModel value, $Res Function(_VisaProductModel) _then) = __$VisaProductModelCopyWithImpl;
+@override @useResult
+$Res call({
+ int id, String title, String description, String price,@JsonKey(name: 'processing_time') String? processingTime,@JsonKey(name: 'validity_period') String? validityPeriod, List<String> requirements
+});
+
+
+
+
+}
+/// @nodoc
+class __$VisaProductModelCopyWithImpl<$Res>
+    implements _$VisaProductModelCopyWith<$Res> {
+  __$VisaProductModelCopyWithImpl(this._self, this._then);
+
+  final _VisaProductModel _self;
+  final $Res Function(_VisaProductModel) _then;
+
+/// Create a copy of VisaProductModel
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? title = null,Object? description = null,Object? price = null,Object? processingTime = freezed,Object? validityPeriod = freezed,Object? requirements = null,}) {
+  return _then(_VisaProductModel(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,title: null == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
+as String,description: null == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String,price: null == price ? _self.price : price // ignore: cast_nullable_to_non_nullable
+as String,processingTime: freezed == processingTime ? _self.processingTime : processingTime // ignore: cast_nullable_to_non_nullable
+as String?,validityPeriod: freezed == validityPeriod ? _self.validityPeriod : validityPeriod // ignore: cast_nullable_to_non_nullable
+as String?,requirements: null == requirements ? _self._requirements : requirements // ignore: cast_nullable_to_non_nullable
+as List<String>,
+  ));
+}
+
+
+}
+
+// dart format on

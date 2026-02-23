@@ -6,8 +6,8 @@ part of 'food_order_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$FoodOrderModelImpl _$$FoodOrderModelImplFromJson(Map<String, dynamic> json) =>
-    _$FoodOrderModelImpl(
+_FoodOrderModel _$FoodOrderModelFromJson(Map<String, dynamic> json) =>
+    _FoodOrderModel(
       id: (json['id'] as num?)?.toInt() ?? 0,
       vendorId: (json['vendor_id'] as num?)?.toInt() ?? 0,
       branchId: json['branch_id'] as String? ?? '',
@@ -28,8 +28,7 @@ _$FoodOrderModelImpl _$$FoodOrderModelImplFromJson(Map<String, dynamic> json) =>
           : StoreData.fromJson(json['store_data'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$FoodOrderModelImplToJson(
-        _$FoodOrderModelImpl instance) =>
+Map<String, dynamic> _$FoodOrderModelToJson(_FoodOrderModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'vendor_id': instance.vendorId,
@@ -49,21 +48,20 @@ Map<String, dynamic> _$$FoodOrderModelImplToJson(
       'store_data': instance.storeData,
     };
 
-_$StoreDataImpl _$$StoreDataImplFromJson(Map<String, dynamic> json) =>
-    _$StoreDataImpl(
-      id: (json['id'] as num?)?.toInt() ?? 0,
-      storeId: (json['store_id'] as num?)?.toInt() ?? 0,
-      branchId: (json['branch_id'] as num?)?.toInt() ?? 0,
-      profileImage: json['profile_image'] as String? ?? '',
-      storeName: json['store_name'] as String? ?? '',
-      email: json['email'] as String? ?? '',
-      phone: json['phone'] as String? ?? '',
-      latitude: json['latitude'] as String? ?? '',
-      longitude: json['longitude'] as String? ?? '',
-      address: json['address'] as String? ?? '',
-    );
+_StoreData _$StoreDataFromJson(Map<String, dynamic> json) => _StoreData(
+  id: (json['id'] as num?)?.toInt() ?? 0,
+  storeId: (json['store_id'] as num?)?.toInt() ?? 0,
+  branchId: (json['branch_id'] as num?)?.toInt() ?? 0,
+  profileImage: json['profile_image'] as String? ?? '',
+  storeName: json['store_name'] as String? ?? '',
+  email: json['email'] as String? ?? '',
+  phone: json['phone'] as String? ?? '',
+  latitude: json['latitude'] as String? ?? '',
+  longitude: json['longitude'] as String? ?? '',
+  address: json['address'] as String? ?? '',
+);
 
-Map<String, dynamic> _$$StoreDataImplToJson(_$StoreDataImpl instance) =>
+Map<String, dynamic> _$StoreDataToJson(_StoreData instance) =>
     <String, dynamic>{
       'id': instance.id,
       'store_id': instance.storeId,

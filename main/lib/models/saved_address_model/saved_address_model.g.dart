@@ -6,9 +6,8 @@ part of 'saved_address_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$SavedAddressModelImpl _$$SavedAddressModelImplFromJson(
-        Map<String, dynamic> json) =>
-    _$SavedAddressModelImpl(
+_SavedAddressModel _$SavedAddressModelFromJson(Map<String, dynamic> json) =>
+    _SavedAddressModel(
       id: (json['id'] as num?)?.toInt() ?? 0,
       userId: (json['user_id'] as num?)?.toInt() ?? 0,
       type: (json['type'] as num?)?.toInt() ?? 0,
@@ -22,8 +21,7 @@ _$SavedAddressModelImpl _$$SavedAddressModelImplFromJson(
           : const BoolFromIntOrBoolConverter().fromJson(json['default']),
     );
 
-Map<String, dynamic> _$$SavedAddressModelImplToJson(
-        _$SavedAddressModelImpl instance) =>
+Map<String, dynamic> _$SavedAddressModelToJson(_SavedAddressModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'user_id': instance.userId,

@@ -13,7 +13,7 @@ GiftCardPlaceOrderCheckResponse giftCardPlaceOrderCheckResponseFromJson(String s
 String giftCardPlaceOrderCheckResponseToJson(GiftCardPlaceOrderCheckResponse data) => json.encode(data.toJson());
 
 @freezed
-class GiftCardPlaceOrderCheckResponse with _$GiftCardPlaceOrderCheckResponse {
+sealed class GiftCardPlaceOrderCheckResponse with _$GiftCardPlaceOrderCheckResponse {
   const factory GiftCardPlaceOrderCheckResponse({
     @JsonKey(name: "checkout_id")
     String? checkoutId,

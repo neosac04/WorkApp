@@ -6,7 +6,6 @@ import 'package:core/core/network/network_provider.dart';
 import 'package:core/core/utils/logger_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:skeletonizer/skeletonizer.dart';
 
 // Base Screen with clean generic signature
 abstract class BaseScreen<T extends Enum, S extends BaseState<T>> extends ConsumerStatefulWidget {

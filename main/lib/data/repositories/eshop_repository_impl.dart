@@ -13,8 +13,6 @@ import 'package:core/models/product_details_response/product_details_response.da
 import 'package:core/models/product_list_response/product_list_response.dart'
     show ProductListResponse;
 import 'package:core/models/review_response/review_response.dart' show ReviewResponse, ReviewModel;
-import 'package:core/models/services_response/services_response.dart'
-    show ServicesResponse;
 import 'package:core/models/wishlist_response/wishlist_response.dart'
     show WishlistResponse;
 import 'package:core/service/api_service.dart' show ApiService;

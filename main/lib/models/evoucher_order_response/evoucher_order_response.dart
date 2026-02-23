@@ -5,7 +5,7 @@ part 'evoucher_order_response.freezed.dart';
 part 'evoucher_order_response.g.dart';
 
 @freezed
-class EVoucherOrderResponse with _$EVoucherOrderResponse {
+sealed class EVoucherOrderResponse with _$EVoucherOrderResponse {
   const factory EVoucherOrderResponse({
     @Default(0) int id,
     @JsonKey(name: 'product_id') @Default('') String productId,

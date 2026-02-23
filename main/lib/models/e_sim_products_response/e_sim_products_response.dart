@@ -13,7 +13,7 @@ ESimProductsResponse eSimProductsResponseFromJson(String str) => ESimProductsRes
 String eSimProductsResponseToJson(ESimProductsResponse data) => json.encode(data.toJson());
 
 @freezed
-class ESimProductsResponse with _$ESimProductsResponse {
+sealed class ESimProductsResponse with _$ESimProductsResponse {
   const factory ESimProductsResponse({
     @JsonKey(name: "id")
     String? id,
@@ -43,7 +43,7 @@ class ESimProductsResponse with _$ESimProductsResponse {
 }
 
 @freezed
-class RoamingCountry with _$RoamingCountry {
+sealed class RoamingCountry with _$RoamingCountry {
   const factory RoamingCountry({
     @JsonKey(name: "country_iso")
     String? countryIso,

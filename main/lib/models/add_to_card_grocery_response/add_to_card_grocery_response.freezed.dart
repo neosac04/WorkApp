@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,344 +9,284 @@ part of 'add_to_card_grocery_response.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-AddToCardGroceryResponse _$AddToCardGroceryResponseFromJson(
-    Map<String, dynamic> json) {
-  return _AddToCardGroceryResponse.fromJson(json);
-}
 
 /// @nodoc
 mixin _$AddToCardGroceryResponse {
-  @JsonKey(name: "id")
-  int? get id => throw _privateConstructorUsedError;
-  @JsonKey(name: "user_id")
-  int? get userId => throw _privateConstructorUsedError;
-  @JsonKey(name: "product_id")
-  int? get productId => throw _privateConstructorUsedError;
-  @JsonKey(name: "branch_id")
-  int? get branchId => throw _privateConstructorUsedError;
-  @JsonKey(name: "qty")
-  String? get qty => throw _privateConstructorUsedError;
-  @JsonKey(name: "updated_at")
-  String? get updatedAt => throw _privateConstructorUsedError;
-  @JsonKey(name: "created_at")
-  String? get createdAt => throw _privateConstructorUsedError;
-  @JsonKey(name: "deleted_at")
-  dynamic get deletedAt => throw _privateConstructorUsedError;
+
+@JsonKey(name: "id") int? get id;@JsonKey(name: "user_id") int? get userId;@JsonKey(name: "product_id") int? get productId;@JsonKey(name: "branch_id") int? get branchId;@JsonKey(name: "qty") String? get qty;@JsonKey(name: "updated_at") String? get updatedAt;@JsonKey(name: "created_at") String? get createdAt;@JsonKey(name: "deleted_at") dynamic get deletedAt;
+/// Create a copy of AddToCardGroceryResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$AddToCardGroceryResponseCopyWith<AddToCardGroceryResponse> get copyWith => _$AddToCardGroceryResponseCopyWithImpl<AddToCardGroceryResponse>(this as AddToCardGroceryResponse, _$identity);
 
   /// Serializes this AddToCardGroceryResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of AddToCardGroceryResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $AddToCardGroceryResponseCopyWith<AddToCardGroceryResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is AddToCardGroceryResponse&&(identical(other.id, id) || other.id == id)&&(identical(other.userId, userId) || other.userId == userId)&&(identical(other.productId, productId) || other.productId == productId)&&(identical(other.branchId, branchId) || other.branchId == branchId)&&(identical(other.qty, qty) || other.qty == qty)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&const DeepCollectionEquality().equals(other.deletedAt, deletedAt));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,userId,productId,branchId,qty,updatedAt,createdAt,const DeepCollectionEquality().hash(deletedAt));
+
+@override
+String toString() {
+  return 'AddToCardGroceryResponse(id: $id, userId: $userId, productId: $productId, branchId: $branchId, qty: $qty, updatedAt: $updatedAt, createdAt: $createdAt, deletedAt: $deletedAt)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $AddToCardGroceryResponseCopyWith<$Res> {
-  factory $AddToCardGroceryResponseCopyWith(AddToCardGroceryResponse value,
-          $Res Function(AddToCardGroceryResponse) then) =
-      _$AddToCardGroceryResponseCopyWithImpl<$Res, AddToCardGroceryResponse>;
-  @useResult
-  $Res call(
-      {@JsonKey(name: "id") int? id,
-      @JsonKey(name: "user_id") int? userId,
-      @JsonKey(name: "product_id") int? productId,
-      @JsonKey(name: "branch_id") int? branchId,
-      @JsonKey(name: "qty") String? qty,
-      @JsonKey(name: "updated_at") String? updatedAt,
-      @JsonKey(name: "created_at") String? createdAt,
-      @JsonKey(name: "deleted_at") dynamic deletedAt});
-}
+abstract mixin class $AddToCardGroceryResponseCopyWith<$Res>  {
+  factory $AddToCardGroceryResponseCopyWith(AddToCardGroceryResponse value, $Res Function(AddToCardGroceryResponse) _then) = _$AddToCardGroceryResponseCopyWithImpl;
+@useResult
+$Res call({
+@JsonKey(name: "id") int? id,@JsonKey(name: "user_id") int? userId,@JsonKey(name: "product_id") int? productId,@JsonKey(name: "branch_id") int? branchId,@JsonKey(name: "qty") String? qty,@JsonKey(name: "updated_at") String? updatedAt,@JsonKey(name: "created_at") String? createdAt,@JsonKey(name: "deleted_at") dynamic deletedAt
+});
 
+
+
+
+}
 /// @nodoc
-class _$AddToCardGroceryResponseCopyWithImpl<$Res,
-        $Val extends AddToCardGroceryResponse>
+class _$AddToCardGroceryResponseCopyWithImpl<$Res>
     implements $AddToCardGroceryResponseCopyWith<$Res> {
-  _$AddToCardGroceryResponseCopyWithImpl(this._value, this._then);
+  _$AddToCardGroceryResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final AddToCardGroceryResponse _self;
+  final $Res Function(AddToCardGroceryResponse) _then;
 
-  /// Create a copy of AddToCardGroceryResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = freezed,
-    Object? userId = freezed,
-    Object? productId = freezed,
-    Object? branchId = freezed,
-    Object? qty = freezed,
-    Object? updatedAt = freezed,
-    Object? createdAt = freezed,
-    Object? deletedAt = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int?,
-      userId: freezed == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      productId: freezed == productId
-          ? _value.productId
-          : productId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      branchId: freezed == branchId
-          ? _value.branchId
-          : branchId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      qty: freezed == qty
-          ? _value.qty
-          : qty // ignore: cast_nullable_to_non_nullable
-              as String?,
-      updatedAt: freezed == updatedAt
-          ? _value.updatedAt
-          : updatedAt // ignore: cast_nullable_to_non_nullable
-              as String?,
-      createdAt: freezed == createdAt
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as String?,
-      deletedAt: freezed == deletedAt
-          ? _value.deletedAt
-          : deletedAt // ignore: cast_nullable_to_non_nullable
-              as dynamic,
-    ) as $Val);
-  }
+/// Create a copy of AddToCardGroceryResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = freezed,Object? userId = freezed,Object? productId = freezed,Object? branchId = freezed,Object? qty = freezed,Object? updatedAt = freezed,Object? createdAt = freezed,Object? deletedAt = freezed,}) {
+  return _then(_self.copyWith(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int?,userId: freezed == userId ? _self.userId : userId // ignore: cast_nullable_to_non_nullable
+as int?,productId: freezed == productId ? _self.productId : productId // ignore: cast_nullable_to_non_nullable
+as int?,branchId: freezed == branchId ? _self.branchId : branchId // ignore: cast_nullable_to_non_nullable
+as int?,qty: freezed == qty ? _self.qty : qty // ignore: cast_nullable_to_non_nullable
+as String?,updatedAt: freezed == updatedAt ? _self.updatedAt : updatedAt // ignore: cast_nullable_to_non_nullable
+as String?,createdAt: freezed == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
+as String?,deletedAt: freezed == deletedAt ? _self.deletedAt : deletedAt // ignore: cast_nullable_to_non_nullable
+as dynamic,
+  ));
 }
 
-/// @nodoc
-abstract class _$$AddToCardGroceryResponseImplCopyWith<$Res>
-    implements $AddToCardGroceryResponseCopyWith<$Res> {
-  factory _$$AddToCardGroceryResponseImplCopyWith(
-          _$AddToCardGroceryResponseImpl value,
-          $Res Function(_$AddToCardGroceryResponseImpl) then) =
-      __$$AddToCardGroceryResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {@JsonKey(name: "id") int? id,
-      @JsonKey(name: "user_id") int? userId,
-      @JsonKey(name: "product_id") int? productId,
-      @JsonKey(name: "branch_id") int? branchId,
-      @JsonKey(name: "qty") String? qty,
-      @JsonKey(name: "updated_at") String? updatedAt,
-      @JsonKey(name: "created_at") String? createdAt,
-      @JsonKey(name: "deleted_at") dynamic deletedAt});
 }
 
-/// @nodoc
-class __$$AddToCardGroceryResponseImplCopyWithImpl<$Res>
-    extends _$AddToCardGroceryResponseCopyWithImpl<$Res,
-        _$AddToCardGroceryResponseImpl>
-    implements _$$AddToCardGroceryResponseImplCopyWith<$Res> {
-  __$$AddToCardGroceryResponseImplCopyWithImpl(
-      _$AddToCardGroceryResponseImpl _value,
-      $Res Function(_$AddToCardGroceryResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of AddToCardGroceryResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = freezed,
-    Object? userId = freezed,
-    Object? productId = freezed,
-    Object? branchId = freezed,
-    Object? qty = freezed,
-    Object? updatedAt = freezed,
-    Object? createdAt = freezed,
-    Object? deletedAt = freezed,
-  }) {
-    return _then(_$AddToCardGroceryResponseImpl(
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int?,
-      userId: freezed == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      productId: freezed == productId
-          ? _value.productId
-          : productId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      branchId: freezed == branchId
-          ? _value.branchId
-          : branchId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      qty: freezed == qty
-          ? _value.qty
-          : qty // ignore: cast_nullable_to_non_nullable
-              as String?,
-      updatedAt: freezed == updatedAt
-          ? _value.updatedAt
-          : updatedAt // ignore: cast_nullable_to_non_nullable
-              as String?,
-      createdAt: freezed == createdAt
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as String?,
-      deletedAt: freezed == deletedAt
-          ? _value.deletedAt
-          : deletedAt // ignore: cast_nullable_to_non_nullable
-              as dynamic,
-    ));
-  }
+/// Adds pattern-matching-related methods to [AddToCardGroceryResponse].
+extension AddToCardGroceryResponsePatterns on AddToCardGroceryResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _AddToCardGroceryResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _AddToCardGroceryResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _AddToCardGroceryResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _AddToCardGroceryResponse():
+return $default(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _AddToCardGroceryResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _AddToCardGroceryResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function(@JsonKey(name: "id")  int? id, @JsonKey(name: "user_id")  int? userId, @JsonKey(name: "product_id")  int? productId, @JsonKey(name: "branch_id")  int? branchId, @JsonKey(name: "qty")  String? qty, @JsonKey(name: "updated_at")  String? updatedAt, @JsonKey(name: "created_at")  String? createdAt, @JsonKey(name: "deleted_at")  dynamic deletedAt)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _AddToCardGroceryResponse() when $default != null:
+return $default(_that.id,_that.userId,_that.productId,_that.branchId,_that.qty,_that.updatedAt,_that.createdAt,_that.deletedAt);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function(@JsonKey(name: "id")  int? id, @JsonKey(name: "user_id")  int? userId, @JsonKey(name: "product_id")  int? productId, @JsonKey(name: "branch_id")  int? branchId, @JsonKey(name: "qty")  String? qty, @JsonKey(name: "updated_at")  String? updatedAt, @JsonKey(name: "created_at")  String? createdAt, @JsonKey(name: "deleted_at")  dynamic deletedAt)  $default,) {final _that = this;
+switch (_that) {
+case _AddToCardGroceryResponse():
+return $default(_that.id,_that.userId,_that.productId,_that.branchId,_that.qty,_that.updatedAt,_that.createdAt,_that.deletedAt);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function(@JsonKey(name: "id")  int? id, @JsonKey(name: "user_id")  int? userId, @JsonKey(name: "product_id")  int? productId, @JsonKey(name: "branch_id")  int? branchId, @JsonKey(name: "qty")  String? qty, @JsonKey(name: "updated_at")  String? updatedAt, @JsonKey(name: "created_at")  String? createdAt, @JsonKey(name: "deleted_at")  dynamic deletedAt)?  $default,) {final _that = this;
+switch (_that) {
+case _AddToCardGroceryResponse() when $default != null:
+return $default(_that.id,_that.userId,_that.productId,_that.branchId,_that.qty,_that.updatedAt,_that.createdAt,_that.deletedAt);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$AddToCardGroceryResponseImpl implements _AddToCardGroceryResponse {
-  const _$AddToCardGroceryResponseImpl(
-      {@JsonKey(name: "id") this.id,
-      @JsonKey(name: "user_id") this.userId,
-      @JsonKey(name: "product_id") this.productId,
-      @JsonKey(name: "branch_id") this.branchId,
-      @JsonKey(name: "qty") this.qty,
-      @JsonKey(name: "updated_at") this.updatedAt,
-      @JsonKey(name: "created_at") this.createdAt,
-      @JsonKey(name: "deleted_at") this.deletedAt});
 
-  factory _$AddToCardGroceryResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$AddToCardGroceryResponseImplFromJson(json);
+class _AddToCardGroceryResponse implements AddToCardGroceryResponse {
+  const _AddToCardGroceryResponse({@JsonKey(name: "id") this.id, @JsonKey(name: "user_id") this.userId, @JsonKey(name: "product_id") this.productId, @JsonKey(name: "branch_id") this.branchId, @JsonKey(name: "qty") this.qty, @JsonKey(name: "updated_at") this.updatedAt, @JsonKey(name: "created_at") this.createdAt, @JsonKey(name: "deleted_at") this.deletedAt});
+  factory _AddToCardGroceryResponse.fromJson(Map<String, dynamic> json) => _$AddToCardGroceryResponseFromJson(json);
 
-  @override
-  @JsonKey(name: "id")
-  final int? id;
-  @override
-  @JsonKey(name: "user_id")
-  final int? userId;
-  @override
-  @JsonKey(name: "product_id")
-  final int? productId;
-  @override
-  @JsonKey(name: "branch_id")
-  final int? branchId;
-  @override
-  @JsonKey(name: "qty")
-  final String? qty;
-  @override
-  @JsonKey(name: "updated_at")
-  final String? updatedAt;
-  @override
-  @JsonKey(name: "created_at")
-  final String? createdAt;
-  @override
-  @JsonKey(name: "deleted_at")
-  final dynamic deletedAt;
+@override@JsonKey(name: "id") final  int? id;
+@override@JsonKey(name: "user_id") final  int? userId;
+@override@JsonKey(name: "product_id") final  int? productId;
+@override@JsonKey(name: "branch_id") final  int? branchId;
+@override@JsonKey(name: "qty") final  String? qty;
+@override@JsonKey(name: "updated_at") final  String? updatedAt;
+@override@JsonKey(name: "created_at") final  String? createdAt;
+@override@JsonKey(name: "deleted_at") final  dynamic deletedAt;
 
-  @override
-  String toString() {
-    return 'AddToCardGroceryResponse(id: $id, userId: $userId, productId: $productId, branchId: $branchId, qty: $qty, updatedAt: $updatedAt, createdAt: $createdAt, deletedAt: $deletedAt)';
-  }
+/// Create a copy of AddToCardGroceryResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$AddToCardGroceryResponseCopyWith<_AddToCardGroceryResponse> get copyWith => __$AddToCardGroceryResponseCopyWithImpl<_AddToCardGroceryResponse>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$AddToCardGroceryResponseImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.userId, userId) || other.userId == userId) &&
-            (identical(other.productId, productId) ||
-                other.productId == productId) &&
-            (identical(other.branchId, branchId) ||
-                other.branchId == branchId) &&
-            (identical(other.qty, qty) || other.qty == qty) &&
-            (identical(other.updatedAt, updatedAt) ||
-                other.updatedAt == updatedAt) &&
-            (identical(other.createdAt, createdAt) ||
-                other.createdAt == createdAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      userId,
-      productId,
-      branchId,
-      qty,
-      updatedAt,
-      createdAt,
-      const DeepCollectionEquality().hash(deletedAt));
-
-  /// Create a copy of AddToCardGroceryResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$AddToCardGroceryResponseImplCopyWith<_$AddToCardGroceryResponseImpl>
-      get copyWith => __$$AddToCardGroceryResponseImplCopyWithImpl<
-          _$AddToCardGroceryResponseImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$AddToCardGroceryResponseImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$AddToCardGroceryResponseToJson(this, );
 }
 
-abstract class _AddToCardGroceryResponse implements AddToCardGroceryResponse {
-  const factory _AddToCardGroceryResponse(
-          {@JsonKey(name: "id") final int? id,
-          @JsonKey(name: "user_id") final int? userId,
-          @JsonKey(name: "product_id") final int? productId,
-          @JsonKey(name: "branch_id") final int? branchId,
-          @JsonKey(name: "qty") final String? qty,
-          @JsonKey(name: "updated_at") final String? updatedAt,
-          @JsonKey(name: "created_at") final String? createdAt,
-          @JsonKey(name: "deleted_at") final dynamic deletedAt}) =
-      _$AddToCardGroceryResponseImpl;
-
-  factory _AddToCardGroceryResponse.fromJson(Map<String, dynamic> json) =
-      _$AddToCardGroceryResponseImpl.fromJson;
-
-  @override
-  @JsonKey(name: "id")
-  int? get id;
-  @override
-  @JsonKey(name: "user_id")
-  int? get userId;
-  @override
-  @JsonKey(name: "product_id")
-  int? get productId;
-  @override
-  @JsonKey(name: "branch_id")
-  int? get branchId;
-  @override
-  @JsonKey(name: "qty")
-  String? get qty;
-  @override
-  @JsonKey(name: "updated_at")
-  String? get updatedAt;
-  @override
-  @JsonKey(name: "created_at")
-  String? get createdAt;
-  @override
-  @JsonKey(name: "deleted_at")
-  dynamic get deletedAt;
-
-  /// Create a copy of AddToCardGroceryResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$AddToCardGroceryResponseImplCopyWith<_$AddToCardGroceryResponseImpl>
-      get copyWith => throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _AddToCardGroceryResponse&&(identical(other.id, id) || other.id == id)&&(identical(other.userId, userId) || other.userId == userId)&&(identical(other.productId, productId) || other.productId == productId)&&(identical(other.branchId, branchId) || other.branchId == branchId)&&(identical(other.qty, qty) || other.qty == qty)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&const DeepCollectionEquality().equals(other.deletedAt, deletedAt));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,userId,productId,branchId,qty,updatedAt,createdAt,const DeepCollectionEquality().hash(deletedAt));
+
+@override
+String toString() {
+  return 'AddToCardGroceryResponse(id: $id, userId: $userId, productId: $productId, branchId: $branchId, qty: $qty, updatedAt: $updatedAt, createdAt: $createdAt, deletedAt: $deletedAt)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$AddToCardGroceryResponseCopyWith<$Res> implements $AddToCardGroceryResponseCopyWith<$Res> {
+  factory _$AddToCardGroceryResponseCopyWith(_AddToCardGroceryResponse value, $Res Function(_AddToCardGroceryResponse) _then) = __$AddToCardGroceryResponseCopyWithImpl;
+@override @useResult
+$Res call({
+@JsonKey(name: "id") int? id,@JsonKey(name: "user_id") int? userId,@JsonKey(name: "product_id") int? productId,@JsonKey(name: "branch_id") int? branchId,@JsonKey(name: "qty") String? qty,@JsonKey(name: "updated_at") String? updatedAt,@JsonKey(name: "created_at") String? createdAt,@JsonKey(name: "deleted_at") dynamic deletedAt
+});
+
+
+
+
+}
+/// @nodoc
+class __$AddToCardGroceryResponseCopyWithImpl<$Res>
+    implements _$AddToCardGroceryResponseCopyWith<$Res> {
+  __$AddToCardGroceryResponseCopyWithImpl(this._self, this._then);
+
+  final _AddToCardGroceryResponse _self;
+  final $Res Function(_AddToCardGroceryResponse) _then;
+
+/// Create a copy of AddToCardGroceryResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? userId = freezed,Object? productId = freezed,Object? branchId = freezed,Object? qty = freezed,Object? updatedAt = freezed,Object? createdAt = freezed,Object? deletedAt = freezed,}) {
+  return _then(_AddToCardGroceryResponse(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int?,userId: freezed == userId ? _self.userId : userId // ignore: cast_nullable_to_non_nullable
+as int?,productId: freezed == productId ? _self.productId : productId // ignore: cast_nullable_to_non_nullable
+as int?,branchId: freezed == branchId ? _self.branchId : branchId // ignore: cast_nullable_to_non_nullable
+as int?,qty: freezed == qty ? _self.qty : qty // ignore: cast_nullable_to_non_nullable
+as String?,updatedAt: freezed == updatedAt ? _self.updatedAt : updatedAt // ignore: cast_nullable_to_non_nullable
+as String?,createdAt: freezed == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
+as String?,deletedAt: freezed == deletedAt ? _self.deletedAt : deletedAt // ignore: cast_nullable_to_non_nullable
+as dynamic,
+  ));
+}
+
+
+}
+
+// dart format on

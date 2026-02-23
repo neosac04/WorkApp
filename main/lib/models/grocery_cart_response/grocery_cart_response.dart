@@ -16,7 +16,7 @@ String groceryCartResponseToJson(GroceryCartResponse data) =>
     json.encode(data.toJson());
 
 @freezed
-class GroceryCartResponse with _$GroceryCartResponse {
+sealed class GroceryCartResponse with _$GroceryCartResponse {
   const factory GroceryCartResponse({
     @JsonKey(name: "cart_items") List<GroceryCartItem>? groceryCartItem,
     @JsonKey(name: "cart_summary") GroceryCartSummary? groceryCartSummary,
@@ -28,7 +28,7 @@ class GroceryCartResponse with _$GroceryCartResponse {
 }
 
 @freezed
-class GroceryCartItem with _$GroceryCartItem {
+sealed class GroceryCartItem with _$GroceryCartItem {
   const factory GroceryCartItem({
     @JsonKey(name: "id") int? id,
     @JsonKey(name: "product_id") int? productId,
@@ -51,7 +51,7 @@ class GroceryCartItem with _$GroceryCartItem {
 }
 
 @freezed
-class GroceryCartSummary with _$GroceryCartSummary {
+sealed class GroceryCartSummary with _$GroceryCartSummary {
   const factory GroceryCartSummary({
     @JsonKey(name: "total_items") int? totalItems,
     @JsonKey(name: "total_amount") double? totalAmount,

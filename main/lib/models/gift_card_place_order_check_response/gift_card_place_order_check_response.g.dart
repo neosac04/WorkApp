@@ -6,14 +6,12 @@ part of 'gift_card_place_order_check_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$GiftCardPlaceOrderCheckResponseImpl
-    _$$GiftCardPlaceOrderCheckResponseImplFromJson(Map<String, dynamic> json) =>
-        _$GiftCardPlaceOrderCheckResponseImpl(
-          checkoutId: json['checkout_id'] as String?,
-        );
+_GiftCardPlaceOrderCheckResponse _$GiftCardPlaceOrderCheckResponseFromJson(
+  Map<String, dynamic> json,
+) => _GiftCardPlaceOrderCheckResponse(
+  checkoutId: json['checkout_id'] as String?,
+);
 
-Map<String, dynamic> _$$GiftCardPlaceOrderCheckResponseImplToJson(
-        _$GiftCardPlaceOrderCheckResponseImpl instance) =>
-    <String, dynamic>{
-      'checkout_id': instance.checkoutId,
-    };
+Map<String, dynamic> _$GiftCardPlaceOrderCheckResponseToJson(
+  _GiftCardPlaceOrderCheckResponse instance,
+) => <String, dynamic>{'checkout_id': instance.checkoutId};

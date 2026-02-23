@@ -6,8 +6,8 @@ part of 'country_model_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$CountryModelImpl _$$CountryModelImplFromJson(Map<String, dynamic> json) =>
-    _$CountryModelImpl(
+_CountryModel _$CountryModelFromJson(Map<String, dynamic> json) =>
+    _CountryModel(
       id: (json['id'] as num).toInt(),
       name: json['name'] as String,
       image: json['image'] as String?,
@@ -17,7 +17,7 @@ _$CountryModelImpl _$$CountryModelImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$CountryModelImplToJson(_$CountryModelImpl instance) =>
+Map<String, dynamic> _$CountryModelToJson(_CountryModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
@@ -26,50 +26,46 @@ Map<String, dynamic> _$$CountryModelImplToJson(_$CountryModelImpl instance) =>
       'destination_countries': instance.destinationCountries,
     };
 
-_$GeneralCountriesResponseImpl _$$GeneralCountriesResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$GeneralCountriesResponseImpl(
-      countries: (json['countries'] as List<dynamic>?)
-          ?.map((e) => CountryModel.fromJson(e as Map<String, dynamic>))
-          .toList(),
-    );
+_GeneralCountriesResponse _$GeneralCountriesResponseFromJson(
+  Map<String, dynamic> json,
+) => _GeneralCountriesResponse(
+  countries: (json['countries'] as List<dynamic>?)
+      ?.map((e) => CountryModel.fromJson(e as Map<String, dynamic>))
+      .toList(),
+);
 
-Map<String, dynamic> _$$GeneralCountriesResponseImplToJson(
-        _$GeneralCountriesResponseImpl instance) =>
-    <String, dynamic>{
-      'countries': instance.countries,
-    };
+Map<String, dynamic> _$GeneralCountriesResponseToJson(
+  _GeneralCountriesResponse instance,
+) => <String, dynamic>{'countries': instance.countries};
 
-_$DestinationCountryImpl _$$DestinationCountryImplFromJson(
-        Map<String, dynamic> json) =>
-    _$DestinationCountryImpl(
+_DestinationCountry _$DestinationCountryFromJson(Map<String, dynamic> json) =>
+    _DestinationCountry(
       id: (json['id'] as num).toInt(),
       name: json['name'] as String,
       imagePath: json['img_path'] as String,
     );
 
-Map<String, dynamic> _$$DestinationCountryImplToJson(
-        _$DestinationCountryImpl instance) =>
+Map<String, dynamic> _$DestinationCountryToJson(_DestinationCountry instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
       'img_path': instance.imagePath,
     };
 
-_$CountriesMappingDataImpl _$$CountriesMappingDataImplFromJson(
-        Map<String, dynamic> json) =>
-    _$CountriesMappingDataImpl(
-      residencyCountry: (json['residency_country'] as List<dynamic>)
-          .map((e) => CountryModel.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      countries: (json['countries'] as List<dynamic>)
-          .map((e) => CountryModel.fromJson(e as Map<String, dynamic>))
-          .toList(),
-    );
+_CountriesMappingData _$CountriesMappingDataFromJson(
+  Map<String, dynamic> json,
+) => _CountriesMappingData(
+  residencyCountry: (json['residency_country'] as List<dynamic>)
+      .map((e) => CountryModel.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  countries: (json['countries'] as List<dynamic>)
+      .map((e) => CountryModel.fromJson(e as Map<String, dynamic>))
+      .toList(),
+);
 
-Map<String, dynamic> _$$CountriesMappingDataImplToJson(
-        _$CountriesMappingDataImpl instance) =>
-    <String, dynamic>{
-      'residency_country': instance.residencyCountry,
-      'countries': instance.countries,
-    };
+Map<String, dynamic> _$CountriesMappingDataToJson(
+  _CountriesMappingData instance,
+) => <String, dynamic>{
+  'residency_country': instance.residencyCountry,
+  'countries': instance.countries,
+};

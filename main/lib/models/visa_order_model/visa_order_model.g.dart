@@ -6,8 +6,8 @@ part of 'visa_order_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$VisaOrderModelImpl _$$VisaOrderModelImplFromJson(Map<String, dynamic> json) =>
-    _$VisaOrderModelImpl(
+_VisaOrderModel _$VisaOrderModelFromJson(Map<String, dynamic> json) =>
+    _VisaOrderModel(
       id: json['id'] as String?,
       userId: json['user_id'] as String?,
       orderId: json['order_id'] as String?,
@@ -61,8 +61,7 @@ _$VisaOrderModelImpl _$$VisaOrderModelImplFromJson(Map<String, dynamic> json) =>
       createdAt: json['created_at'] as String?,
     );
 
-Map<String, dynamic> _$$VisaOrderModelImplToJson(
-        _$VisaOrderModelImpl instance) =>
+Map<String, dynamic> _$VisaOrderModelToJson(_VisaOrderModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'user_id': instance.userId,
@@ -109,23 +108,22 @@ Map<String, dynamic> _$$VisaOrderModelImplToJson(
       'created_at': instance.createdAt,
     };
 
-_$ApplicantImpl _$$ApplicantImplFromJson(Map<String, dynamic> json) =>
-    _$ApplicantImpl(
-      id: json['id'] as String?,
-      visaOrderId: json['visa_order_id'] as String?,
-      applicationId: json['application_id'] as String?,
-      firstName: json['first_name'] as String?,
-      lastName: json['last_name'] as String?,
-      passportNo: json['passport_no'] as String?,
-      category: json['category'] as String?,
-      dob: json['dob'] as String?,
-      status: (json['status'] as num?)?.toInt(),
-      isRefund: (json['is_refund'] as num?)?.toInt(),
-      evisaCopy: json['evisa_copy'] as String?,
-      deletedAt: json['deleted_at'] as String?,
-    );
+_Applicant _$ApplicantFromJson(Map<String, dynamic> json) => _Applicant(
+  id: json['id'] as String?,
+  visaOrderId: json['visa_order_id'] as String?,
+  applicationId: json['application_id'] as String?,
+  firstName: json['first_name'] as String?,
+  lastName: json['last_name'] as String?,
+  passportNo: json['passport_no'] as String?,
+  category: json['category'] as String?,
+  dob: json['dob'] as String?,
+  status: (json['status'] as num?)?.toInt(),
+  isRefund: (json['is_refund'] as num?)?.toInt(),
+  evisaCopy: json['evisa_copy'] as String?,
+  deletedAt: json['deleted_at'] as String?,
+);
 
-Map<String, dynamic> _$$ApplicantImplToJson(_$ApplicantImpl instance) =>
+Map<String, dynamic> _$ApplicantToJson(_Applicant instance) =>
     <String, dynamic>{
       'id': instance.id,
       'visa_order_id': instance.visaOrderId,
@@ -141,17 +139,15 @@ Map<String, dynamic> _$$ApplicantImplToJson(_$ApplicantImpl instance) =>
       'deleted_at': instance.deletedAt,
     };
 
-_$VisaProcessStepImpl _$$VisaProcessStepImplFromJson(
-        Map<String, dynamic> json) =>
-    _$VisaProcessStepImpl(
+_VisaProcessStep _$VisaProcessStepFromJson(Map<String, dynamic> json) =>
+    _VisaProcessStep(
       step: (json['step'] as num?)?.toInt(),
       title: json['title'] as String?,
       description: json['description'] as String?,
       status: json['status'] as String?,
     );
 
-Map<String, dynamic> _$$VisaProcessStepImplToJson(
-        _$VisaProcessStepImpl instance) =>
+Map<String, dynamic> _$VisaProcessStepToJson(_VisaProcessStep instance) =>
     <String, dynamic>{
       'step': instance.step,
       'title': instance.title,
@@ -159,8 +155,8 @@ Map<String, dynamic> _$$VisaProcessStepImplToJson(
       'status': instance.status,
     };
 
-_$PriceBreakdownImpl _$$PriceBreakdownImplFromJson(Map<String, dynamic> json) =>
-    _$PriceBreakdownImpl(
+_PriceBreakdown _$PriceBreakdownFromJson(Map<String, dynamic> json) =>
+    _PriceBreakdown(
       name: json['name'] as String?,
       originalCost: _stringToDouble(json['original_cost']),
       taxable: (json['taxable'] as num?)?.toInt(),
@@ -168,8 +164,7 @@ _$PriceBreakdownImpl _$$PriceBreakdownImplFromJson(Map<String, dynamic> json) =>
       baseCurrency: json['base_currency'] as String?,
     );
 
-Map<String, dynamic> _$$PriceBreakdownImplToJson(
-        _$PriceBreakdownImpl instance) =>
+Map<String, dynamic> _$PriceBreakdownToJson(_PriceBreakdown instance) =>
     <String, dynamic>{
       'name': instance.name,
       'original_cost': _doubleToString(instance.originalCost),
@@ -178,14 +173,10 @@ Map<String, dynamic> _$$PriceBreakdownImplToJson(
       'base_currency': instance.baseCurrency,
     };
 
-_$DocumentImpl _$$DocumentImplFromJson(Map<String, dynamic> json) =>
-    _$DocumentImpl(
-      id: json['id'] as String?,
-      name: json['name'] as String?,
-    );
+_Document _$DocumentFromJson(Map<String, dynamic> json) =>
+    _Document(id: json['id'] as String?, name: json['name'] as String?);
 
-Map<String, dynamic> _$$DocumentImplToJson(_$DocumentImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-    };
+Map<String, dynamic> _$DocumentToJson(_Document instance) => <String, dynamic>{
+  'id': instance.id,
+  'name': instance.name,
+};

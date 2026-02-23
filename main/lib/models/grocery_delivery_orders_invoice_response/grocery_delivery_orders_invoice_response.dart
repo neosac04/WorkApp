@@ -13,7 +13,7 @@ GroceryDeliveryOrdersInvoiceResponse groceryDeliveryOrdersInvoiceResponseFromJso
 String groceryDeliveryOrdersInvoiceResponseToJson(GroceryDeliveryOrdersInvoiceResponse data) => json.encode(data.toJson());
 
 @freezed
-class GroceryDeliveryOrdersInvoiceResponse with _$GroceryDeliveryOrdersInvoiceResponse {
+sealed class GroceryDeliveryOrdersInvoiceResponse with _$GroceryDeliveryOrdersInvoiceResponse {
   const factory GroceryDeliveryOrdersInvoiceResponse({
     @JsonKey(name: "invoice_url")
     String? invoiceUrl,

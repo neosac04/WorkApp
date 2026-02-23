@@ -2,7 +2,6 @@ import 'package:core/domain/repositories/ride_hailing_repository.dart' show Ride
 import 'package:core/models/booking_data/booking_data.dart' show BookingData;
 import 'package:core/models/common_response/common_response.dart' show CommonResponse;
 import 'package:core/models/recent_places_response/recent_places_response.dart' show RecentPlacesResponse;
-import 'package:core/models/ride_booking_info/ride_booking_info.dart' show RideBookingInfo;
 import 'package:core/models/ride_booking_response/ride_booking_response.dart' show RideBookingResponse;
 import 'package:core/models/vehicle_list_response/vehicle_list_response.dart' show VehicleListResponse;
 import 'package:core/service/api_service.dart' show ApiService;

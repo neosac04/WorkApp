@@ -40,7 +40,7 @@ class SelectColorRow extends StatelessWidget {
             padding: EdgeInsets.zero,
             scrollDirection: Axis.horizontal,
             itemCount: colorOptions.length,
-            separatorBuilder: (_, __) => AppSizeConstants.size_8.hBox(context),
+            separatorBuilder: (_, _) => AppSizeConstants.size_8.hBox(context),
             itemBuilder: (context, index) {
               final option = colorOptions[index];
               final isSelected = index == selectedIndex;

@@ -1,14 +1,11 @@
-import 'package:core/app/theme/app_size_constants.dart';
 import 'package:core/app/theme/color_constants.dart';
 import 'package:core/common_widgets/common_network_image_view.dart';
 import 'package:core/common_widgets/currency_text.dart';
-import 'package:core/core/utils/common_const.dart' show ArgumentKeys;
 import 'package:core/core/utils/extention.dart';
 import 'package:core/core/utils/scale_util.dart';
 import 'package:core/gen/assets.gen.dart';
 import 'package:core/models/cart_response/cart_response.dart' show CartItem;
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class CartProductItem extends StatefulWidget {
   final CartItem product;

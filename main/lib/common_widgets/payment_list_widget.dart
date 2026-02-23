@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:core/app/theme/color_constants.dart';
 import 'package:core/core/utils/extention.dart';
 import 'package:core/app/theme/app_size_constants.dart';
-import 'package:core/common_widgets/currency_text.dart';
 import 'package:core/app/theme/font_type.dart';
 
 class PaymentTypeList extends StatelessWidget {
@@ -51,7 +50,7 @@ class PaymentTypeList extends StatelessWidget {
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 itemCount: options.length,
-                separatorBuilder: (_, __) => Divider(
+                separatorBuilder: (_, _) => Divider(
                   height: 30.scaledHeight(context),
                   thickness: 1,
                   color: ColorConstants.grayColor3,

@@ -15,7 +15,7 @@ String addToCardGroceryResponseToJson(AddToCardGroceryResponse data) =>
     json.encode(data.toJson());
 
 @freezed
-class AddToCardGroceryResponse with _$AddToCardGroceryResponse {
+sealed class AddToCardGroceryResponse with _$AddToCardGroceryResponse {
   const factory AddToCardGroceryResponse({
     @JsonKey(name: "id") int? id,
     @JsonKey(name: "user_id") int? userId,

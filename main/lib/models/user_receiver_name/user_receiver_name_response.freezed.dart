@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,167 +9,269 @@ part of 'user_receiver_name_response.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-UserReceiverNameResponse _$UserReceiverNameResponseFromJson(
-    Map<String, dynamic> json) {
-  return _UserReceiverNameResponse.fromJson(json);
-}
 
 /// @nodoc
 mixin _$UserReceiverNameResponse {
-  @JsonKey(name: "name")
-  String? get name => throw _privateConstructorUsedError;
+
+@JsonKey(name: "name") String? get name;
+/// Create a copy of UserReceiverNameResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$UserReceiverNameResponseCopyWith<UserReceiverNameResponse> get copyWith => _$UserReceiverNameResponseCopyWithImpl<UserReceiverNameResponse>(this as UserReceiverNameResponse, _$identity);
 
   /// Serializes this UserReceiverNameResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of UserReceiverNameResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $UserReceiverNameResponseCopyWith<UserReceiverNameResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is UserReceiverNameResponse&&(identical(other.name, name) || other.name == name));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,name);
+
+@override
+String toString() {
+  return 'UserReceiverNameResponse(name: $name)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $UserReceiverNameResponseCopyWith<$Res> {
-  factory $UserReceiverNameResponseCopyWith(UserReceiverNameResponse value,
-          $Res Function(UserReceiverNameResponse) then) =
-      _$UserReceiverNameResponseCopyWithImpl<$Res, UserReceiverNameResponse>;
-  @useResult
-  $Res call({@JsonKey(name: "name") String? name});
-}
+abstract mixin class $UserReceiverNameResponseCopyWith<$Res>  {
+  factory $UserReceiverNameResponseCopyWith(UserReceiverNameResponse value, $Res Function(UserReceiverNameResponse) _then) = _$UserReceiverNameResponseCopyWithImpl;
+@useResult
+$Res call({
+@JsonKey(name: "name") String? name
+});
 
+
+
+
+}
 /// @nodoc
-class _$UserReceiverNameResponseCopyWithImpl<$Res,
-        $Val extends UserReceiverNameResponse>
+class _$UserReceiverNameResponseCopyWithImpl<$Res>
     implements $UserReceiverNameResponseCopyWith<$Res> {
-  _$UserReceiverNameResponseCopyWithImpl(this._value, this._then);
+  _$UserReceiverNameResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final UserReceiverNameResponse _self;
+  final $Res Function(UserReceiverNameResponse) _then;
 
-  /// Create a copy of UserReceiverNameResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? name = freezed,
-  }) {
-    return _then(_value.copyWith(
-      name: freezed == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
-  }
+/// Create a copy of UserReceiverNameResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? name = freezed,}) {
+  return _then(_self.copyWith(
+name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$UserReceiverNameResponseImplCopyWith<$Res>
-    implements $UserReceiverNameResponseCopyWith<$Res> {
-  factory _$$UserReceiverNameResponseImplCopyWith(
-          _$UserReceiverNameResponseImpl value,
-          $Res Function(_$UserReceiverNameResponseImpl) then) =
-      __$$UserReceiverNameResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({@JsonKey(name: "name") String? name});
 }
 
-/// @nodoc
-class __$$UserReceiverNameResponseImplCopyWithImpl<$Res>
-    extends _$UserReceiverNameResponseCopyWithImpl<$Res,
-        _$UserReceiverNameResponseImpl>
-    implements _$$UserReceiverNameResponseImplCopyWith<$Res> {
-  __$$UserReceiverNameResponseImplCopyWithImpl(
-      _$UserReceiverNameResponseImpl _value,
-      $Res Function(_$UserReceiverNameResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of UserReceiverNameResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? name = freezed,
-  }) {
-    return _then(_$UserReceiverNameResponseImpl(
-      name: freezed == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [UserReceiverNameResponse].
+extension UserReceiverNameResponsePatterns on UserReceiverNameResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _UserReceiverNameResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _UserReceiverNameResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _UserReceiverNameResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _UserReceiverNameResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _UserReceiverNameResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _UserReceiverNameResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function(@JsonKey(name: "name")  String? name)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _UserReceiverNameResponse() when $default != null:
+return $default(_that.name);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function(@JsonKey(name: "name")  String? name)  $default,) {final _that = this;
+switch (_that) {
+case _UserReceiverNameResponse():
+return $default(_that.name);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function(@JsonKey(name: "name")  String? name)?  $default,) {final _that = this;
+switch (_that) {
+case _UserReceiverNameResponse() when $default != null:
+return $default(_that.name);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$UserReceiverNameResponseImpl implements _UserReceiverNameResponse {
-  const _$UserReceiverNameResponseImpl({@JsonKey(name: "name") this.name});
 
-  factory _$UserReceiverNameResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$UserReceiverNameResponseImplFromJson(json);
+class _UserReceiverNameResponse implements UserReceiverNameResponse {
+  const _UserReceiverNameResponse({@JsonKey(name: "name") this.name});
+  factory _UserReceiverNameResponse.fromJson(Map<String, dynamic> json) => _$UserReceiverNameResponseFromJson(json);
 
-  @override
-  @JsonKey(name: "name")
-  final String? name;
+@override@JsonKey(name: "name") final  String? name;
 
-  @override
-  String toString() {
-    return 'UserReceiverNameResponse(name: $name)';
-  }
+/// Create a copy of UserReceiverNameResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$UserReceiverNameResponseCopyWith<_UserReceiverNameResponse> get copyWith => __$UserReceiverNameResponseCopyWithImpl<_UserReceiverNameResponse>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$UserReceiverNameResponseImpl &&
-            (identical(other.name, name) || other.name == name));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, name);
-
-  /// Create a copy of UserReceiverNameResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$UserReceiverNameResponseImplCopyWith<_$UserReceiverNameResponseImpl>
-      get copyWith => __$$UserReceiverNameResponseImplCopyWithImpl<
-          _$UserReceiverNameResponseImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$UserReceiverNameResponseImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$UserReceiverNameResponseToJson(this, );
 }
 
-abstract class _UserReceiverNameResponse implements UserReceiverNameResponse {
-  const factory _UserReceiverNameResponse(
-          {@JsonKey(name: "name") final String? name}) =
-      _$UserReceiverNameResponseImpl;
-
-  factory _UserReceiverNameResponse.fromJson(Map<String, dynamic> json) =
-      _$UserReceiverNameResponseImpl.fromJson;
-
-  @override
-  @JsonKey(name: "name")
-  String? get name;
-
-  /// Create a copy of UserReceiverNameResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$UserReceiverNameResponseImplCopyWith<_$UserReceiverNameResponseImpl>
-      get copyWith => throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _UserReceiverNameResponse&&(identical(other.name, name) || other.name == name));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,name);
+
+@override
+String toString() {
+  return 'UserReceiverNameResponse(name: $name)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$UserReceiverNameResponseCopyWith<$Res> implements $UserReceiverNameResponseCopyWith<$Res> {
+  factory _$UserReceiverNameResponseCopyWith(_UserReceiverNameResponse value, $Res Function(_UserReceiverNameResponse) _then) = __$UserReceiverNameResponseCopyWithImpl;
+@override @useResult
+$Res call({
+@JsonKey(name: "name") String? name
+});
+
+
+
+
+}
+/// @nodoc
+class __$UserReceiverNameResponseCopyWithImpl<$Res>
+    implements _$UserReceiverNameResponseCopyWith<$Res> {
+  __$UserReceiverNameResponseCopyWithImpl(this._self, this._then);
+
+  final _UserReceiverNameResponse _self;
+  final $Res Function(_UserReceiverNameResponse) _then;
+
+/// Create a copy of UserReceiverNameResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? name = freezed,}) {
+  return _then(_UserReceiverNameResponse(
+name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+
+}
+
+// dart format on

@@ -1,10 +1,9 @@
-import 'package:core/core/enum/app_enum.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'api_state.freezed.dart';
 
 @freezed
-class ApiState with _$ApiState {
+sealed class ApiState with _$ApiState {
   const factory ApiState.initial() = _ApiStateInitial;
   const factory ApiState.loading() = _ApiStateLoading;
   const factory ApiState.success([dynamic data]) = _ApiStateSuccess;

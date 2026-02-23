@@ -5,7 +5,7 @@ part 'top_up_products_response.freezed.dart';
 part 'top_up_products_response.g.dart';
 
 @freezed
-class TopUpProductsResponse with _$TopUpProductsResponse {
+sealed class TopUpProductsResponse with _$TopUpProductsResponse {
   const factory TopUpProductsResponse({
     @JsonKey(name: 'products') List<TopUpProduct>? products,
     Pagination? pagination,
@@ -16,7 +16,7 @@ class TopUpProductsResponse with _$TopUpProductsResponse {
 }
 
 @freezed
-class TopUpProduct with _$TopUpProduct {
+sealed class TopUpProduct with _$TopUpProduct {
   const factory TopUpProduct({
     String? id,
     String? type,

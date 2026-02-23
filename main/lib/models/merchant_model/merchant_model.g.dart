@@ -6,8 +6,8 @@ part of 'merchant_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$MerchantModelImpl _$$MerchantModelImplFromJson(Map<String, dynamic> json) =>
-    _$MerchantModelImpl(
+_MerchantModel _$MerchantModelFromJson(Map<String, dynamic> json) =>
+    _MerchantModel(
       id: (json['id'] as num?)?.toInt() ?? 0,
       email: json['email'] as String? ?? "",
       storeNameEn: json['store_name_en'] as String? ?? "",
@@ -59,13 +59,14 @@ _$MerchantModelImpl _$$MerchantModelImplFromJson(Map<String, dynamic> json) =>
       mainMerchant: json['main_merchant'],
       createdAt: json['created_at'] as String? ?? "",
       updatedAt: json['updated_at'] as String? ?? "",
-      workingHours: (json['working_hours'] as List<dynamic>?)
+      workingHours:
+          (json['working_hours'] as List<dynamic>?)
               ?.map((e) => WorkingHourModel.fromJson(e as Map<String, dynamic>))
               .toList() ??
           const [],
     );
 
-Map<String, dynamic> _$$MerchantModelImplToJson(_$MerchantModelImpl instance) =>
+Map<String, dynamic> _$MerchantModelToJson(_MerchantModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'email': instance.email,
@@ -117,9 +118,8 @@ Map<String, dynamic> _$$MerchantModelImplToJson(_$MerchantModelImpl instance) =>
       'working_hours': instance.workingHours,
     };
 
-_$WorkingHourModelImpl _$$WorkingHourModelImplFromJson(
-        Map<String, dynamic> json) =>
-    _$WorkingHourModelImpl(
+_WorkingHourModel _$WorkingHourModelFromJson(Map<String, dynamic> json) =>
+    _WorkingHourModel(
       id: (json['id'] as num?)?.toInt(),
       merchantId: (json['merchant_id'] as num?)?.toInt() ?? 0,
       day: json['day'] as String? ?? "",
@@ -132,8 +132,7 @@ _$WorkingHourModelImpl _$$WorkingHourModelImplFromJson(
       updatedAt: json['updated_at'] as String?,
     );
 
-Map<String, dynamic> _$$WorkingHourModelImplToJson(
-        _$WorkingHourModelImpl instance) =>
+Map<String, dynamic> _$WorkingHourModelToJson(_WorkingHourModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'merchant_id': instance.merchantId,

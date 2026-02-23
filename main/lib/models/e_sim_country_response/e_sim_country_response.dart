@@ -13,7 +13,7 @@ ESimCountryResponse eSimCountryResponseFromJson(String str) => ESimCountryRespon
 String eSimCountryResponseToJson(ESimCountryResponse data) => json.encode(data.toJson());
 
 @freezed
-class ESimCountryResponse with _$ESimCountryResponse {
+sealed class ESimCountryResponse with _$ESimCountryResponse {
   const factory ESimCountryResponse({
     @JsonKey(name: "country_name")
     String? countryName,

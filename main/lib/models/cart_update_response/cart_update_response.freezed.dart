@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,235 +9,320 @@ part of 'cart_update_response.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-CartUpdateResponse _$CartUpdateResponseFromJson(
-  Map<String, dynamic> json,
-) {
-  return _CartUpdateResponse.fromJson(
-    json,
-  );
-}
 
 /// @nodoc
 mixin _$CartUpdateResponse {
-  @JsonKey(name: 'cart_item')
-  CartItem? get cartItem => throw _privateConstructorUsedError;
-  @JsonKey(name: 'cart_summary')
-  CartSummary? get cartSummary => throw _privateConstructorUsedError;
+
+@JsonKey(name: 'cart_item') CartItem? get cartItem;@JsonKey(name: 'cart_summary') CartSummary? get cartSummary;
+/// Create a copy of CartUpdateResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$CartUpdateResponseCopyWith<CartUpdateResponse> get copyWith => _$CartUpdateResponseCopyWithImpl<CartUpdateResponse>(this as CartUpdateResponse, _$identity);
 
   /// Serializes this CartUpdateResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of CartUpdateResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $CartUpdateResponseCopyWith<CartUpdateResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is CartUpdateResponse&&(identical(other.cartItem, cartItem) || other.cartItem == cartItem)&&(identical(other.cartSummary, cartSummary) || other.cartSummary == cartSummary));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,cartItem,cartSummary);
+
+@override
+String toString() {
+  return 'CartUpdateResponse(cartItem: $cartItem, cartSummary: $cartSummary)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $CartUpdateResponseCopyWith<$Res> {
-  factory $CartUpdateResponseCopyWith(
-          CartUpdateResponse value, $Res Function(CartUpdateResponse) then) =
-      _$CartUpdateResponseCopyWithImpl<$Res, CartUpdateResponse>;
-  @useResult
-  $Res call(
-      {@JsonKey(name: 'cart_item') CartItem? cartItem,
-      @JsonKey(name: 'cart_summary') CartSummary? cartSummary});
+abstract mixin class $CartUpdateResponseCopyWith<$Res>  {
+  factory $CartUpdateResponseCopyWith(CartUpdateResponse value, $Res Function(CartUpdateResponse) _then) = _$CartUpdateResponseCopyWithImpl;
+@useResult
+$Res call({
+@JsonKey(name: 'cart_item') CartItem? cartItem,@JsonKey(name: 'cart_summary') CartSummary? cartSummary
+});
 
-  $CartItemCopyWith<$Res>? get cartItem;
-  $CartSummaryCopyWith<$Res>? get cartSummary;
+
+$CartItemCopyWith<$Res>? get cartItem;$CartSummaryCopyWith<$Res>? get cartSummary;
+
 }
-
 /// @nodoc
-class _$CartUpdateResponseCopyWithImpl<$Res, $Val extends CartUpdateResponse>
+class _$CartUpdateResponseCopyWithImpl<$Res>
     implements $CartUpdateResponseCopyWith<$Res> {
-  _$CartUpdateResponseCopyWithImpl(this._value, this._then);
+  _$CartUpdateResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final CartUpdateResponse _self;
+  final $Res Function(CartUpdateResponse) _then;
 
-  /// Create a copy of CartUpdateResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? cartItem = freezed,
-    Object? cartSummary = freezed,
-  }) {
-    return _then(_value.copyWith(
-      cartItem: freezed == cartItem
-          ? _value.cartItem
-          : cartItem // ignore: cast_nullable_to_non_nullable
-              as CartItem?,
-      cartSummary: freezed == cartSummary
-          ? _value.cartSummary
-          : cartSummary // ignore: cast_nullable_to_non_nullable
-              as CartSummary?,
-    ) as $Val);
+/// Create a copy of CartUpdateResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? cartItem = freezed,Object? cartSummary = freezed,}) {
+  return _then(_self.copyWith(
+cartItem: freezed == cartItem ? _self.cartItem : cartItem // ignore: cast_nullable_to_non_nullable
+as CartItem?,cartSummary: freezed == cartSummary ? _self.cartSummary : cartSummary // ignore: cast_nullable_to_non_nullable
+as CartSummary?,
+  ));
+}
+/// Create a copy of CartUpdateResponse
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$CartItemCopyWith<$Res>? get cartItem {
+    if (_self.cartItem == null) {
+    return null;
   }
 
-  /// Create a copy of CartUpdateResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $CartItemCopyWith<$Res>? get cartItem {
-    if (_value.cartItem == null) {
-      return null;
-    }
-
-    return $CartItemCopyWith<$Res>(_value.cartItem!, (value) {
-      return _then(_value.copyWith(cartItem: value) as $Val);
-    });
+  return $CartItemCopyWith<$Res>(_self.cartItem!, (value) {
+    return _then(_self.copyWith(cartItem: value));
+  });
+}/// Create a copy of CartUpdateResponse
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$CartSummaryCopyWith<$Res>? get cartSummary {
+    if (_self.cartSummary == null) {
+    return null;
   }
 
-  /// Create a copy of CartUpdateResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $CartSummaryCopyWith<$Res>? get cartSummary {
-    if (_value.cartSummary == null) {
-      return null;
-    }
-
-    return $CartSummaryCopyWith<$Res>(_value.cartSummary!, (value) {
-      return _then(_value.copyWith(cartSummary: value) as $Val);
-    });
-  }
+  return $CartSummaryCopyWith<$Res>(_self.cartSummary!, (value) {
+    return _then(_self.copyWith(cartSummary: value));
+  });
+}
 }
 
-/// @nodoc
-abstract class _$$CartUpdateResponseImplCopyWith<$Res>
-    implements $CartUpdateResponseCopyWith<$Res> {
-  factory _$$CartUpdateResponseImplCopyWith(_$CartUpdateResponseImpl value,
-          $Res Function(_$CartUpdateResponseImpl) then) =
-      __$$CartUpdateResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {@JsonKey(name: 'cart_item') CartItem? cartItem,
-      @JsonKey(name: 'cart_summary') CartSummary? cartSummary});
 
-  @override
-  $CartItemCopyWith<$Res>? get cartItem;
-  @override
-  $CartSummaryCopyWith<$Res>? get cartSummary;
+/// Adds pattern-matching-related methods to [CartUpdateResponse].
+extension CartUpdateResponsePatterns on CartUpdateResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _CartUpdateResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _CartUpdateResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _CartUpdateResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _CartUpdateResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _CartUpdateResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _CartUpdateResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function(@JsonKey(name: 'cart_item')  CartItem? cartItem, @JsonKey(name: 'cart_summary')  CartSummary? cartSummary)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _CartUpdateResponse() when $default != null:
+return $default(_that.cartItem,_that.cartSummary);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function(@JsonKey(name: 'cart_item')  CartItem? cartItem, @JsonKey(name: 'cart_summary')  CartSummary? cartSummary)  $default,) {final _that = this;
+switch (_that) {
+case _CartUpdateResponse():
+return $default(_that.cartItem,_that.cartSummary);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function(@JsonKey(name: 'cart_item')  CartItem? cartItem, @JsonKey(name: 'cart_summary')  CartSummary? cartSummary)?  $default,) {final _that = this;
+switch (_that) {
+case _CartUpdateResponse() when $default != null:
+return $default(_that.cartItem,_that.cartSummary);case _:
+  return null;
+
+}
 }
 
-/// @nodoc
-class __$$CartUpdateResponseImplCopyWithImpl<$Res>
-    extends _$CartUpdateResponseCopyWithImpl<$Res, _$CartUpdateResponseImpl>
-    implements _$$CartUpdateResponseImplCopyWith<$Res> {
-  __$$CartUpdateResponseImplCopyWithImpl(_$CartUpdateResponseImpl _value,
-      $Res Function(_$CartUpdateResponseImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of CartUpdateResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? cartItem = freezed,
-    Object? cartSummary = freezed,
-  }) {
-    return _then(_$CartUpdateResponseImpl(
-      cartItem: freezed == cartItem
-          ? _value.cartItem
-          : cartItem // ignore: cast_nullable_to_non_nullable
-              as CartItem?,
-      cartSummary: freezed == cartSummary
-          ? _value.cartSummary
-          : cartSummary // ignore: cast_nullable_to_non_nullable
-              as CartSummary?,
-    ));
-  }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$CartUpdateResponseImpl implements _CartUpdateResponse {
-  const _$CartUpdateResponseImpl(
-      {@JsonKey(name: 'cart_item') this.cartItem,
-      @JsonKey(name: 'cart_summary') this.cartSummary});
 
-  factory _$CartUpdateResponseImpl.fromJson(
-    Map<String, dynamic> json,
-  ) =>
-      _$$CartUpdateResponseImplFromJson(
-        json,
-      );
+class _CartUpdateResponse implements CartUpdateResponse {
+  const _CartUpdateResponse({@JsonKey(name: 'cart_item') this.cartItem, @JsonKey(name: 'cart_summary') this.cartSummary});
+  factory _CartUpdateResponse.fromJson(Map<String, dynamic> json,) => _$CartUpdateResponseFromJson(json,);
 
-  @override
-  @JsonKey(name: 'cart_item')
-  final CartItem? cartItem;
-  @override
-  @JsonKey(name: 'cart_summary')
-  final CartSummary? cartSummary;
+@override@JsonKey(name: 'cart_item') final  CartItem? cartItem;
+@override@JsonKey(name: 'cart_summary') final  CartSummary? cartSummary;
 
-  @override
-  String toString() {
-    return 'CartUpdateResponse(cartItem: $cartItem, cartSummary: $cartSummary)';
-  }
+/// Create a copy of CartUpdateResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$CartUpdateResponseCopyWith<_CartUpdateResponse> get copyWith => __$CartUpdateResponseCopyWithImpl<_CartUpdateResponse>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$CartUpdateResponseImpl &&
-            (identical(other.cartItem, cartItem) ||
-                other.cartItem == cartItem) &&
-            (identical(other.cartSummary, cartSummary) ||
-                other.cartSummary == cartSummary));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, cartItem, cartSummary);
-
-  /// Create a copy of CartUpdateResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$CartUpdateResponseImplCopyWith<_$CartUpdateResponseImpl> get copyWith =>
-      __$$CartUpdateResponseImplCopyWithImpl<_$CartUpdateResponseImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$CartUpdateResponseImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$CartUpdateResponseToJson(this, );
 }
 
-abstract class _CartUpdateResponse implements CartUpdateResponse {
-  const factory _CartUpdateResponse(
-          {@JsonKey(name: 'cart_item') final CartItem? cartItem,
-          @JsonKey(name: 'cart_summary') final CartSummary? cartSummary}) =
-      _$CartUpdateResponseImpl;
-
-  factory _CartUpdateResponse.fromJson(
-    Map<String, dynamic> json,
-  ) = _$CartUpdateResponseImpl.fromJson;
-
-  @override
-  @JsonKey(name: 'cart_item')
-  CartItem? get cartItem;
-  @override
-  @JsonKey(name: 'cart_summary')
-  CartSummary? get cartSummary;
-
-  /// Create a copy of CartUpdateResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$CartUpdateResponseImplCopyWith<_$CartUpdateResponseImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _CartUpdateResponse&&(identical(other.cartItem, cartItem) || other.cartItem == cartItem)&&(identical(other.cartSummary, cartSummary) || other.cartSummary == cartSummary));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,cartItem,cartSummary);
+
+@override
+String toString() {
+  return 'CartUpdateResponse(cartItem: $cartItem, cartSummary: $cartSummary)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$CartUpdateResponseCopyWith<$Res> implements $CartUpdateResponseCopyWith<$Res> {
+  factory _$CartUpdateResponseCopyWith(_CartUpdateResponse value, $Res Function(_CartUpdateResponse) _then) = __$CartUpdateResponseCopyWithImpl;
+@override @useResult
+$Res call({
+@JsonKey(name: 'cart_item') CartItem? cartItem,@JsonKey(name: 'cart_summary') CartSummary? cartSummary
+});
+
+
+@override $CartItemCopyWith<$Res>? get cartItem;@override $CartSummaryCopyWith<$Res>? get cartSummary;
+
+}
+/// @nodoc
+class __$CartUpdateResponseCopyWithImpl<$Res>
+    implements _$CartUpdateResponseCopyWith<$Res> {
+  __$CartUpdateResponseCopyWithImpl(this._self, this._then);
+
+  final _CartUpdateResponse _self;
+  final $Res Function(_CartUpdateResponse) _then;
+
+/// Create a copy of CartUpdateResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? cartItem = freezed,Object? cartSummary = freezed,}) {
+  return _then(_CartUpdateResponse(
+cartItem: freezed == cartItem ? _self.cartItem : cartItem // ignore: cast_nullable_to_non_nullable
+as CartItem?,cartSummary: freezed == cartSummary ? _self.cartSummary : cartSummary // ignore: cast_nullable_to_non_nullable
+as CartSummary?,
+  ));
+}
+
+/// Create a copy of CartUpdateResponse
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$CartItemCopyWith<$Res>? get cartItem {
+    if (_self.cartItem == null) {
+    return null;
+  }
+
+  return $CartItemCopyWith<$Res>(_self.cartItem!, (value) {
+    return _then(_self.copyWith(cartItem: value));
+  });
+}/// Create a copy of CartUpdateResponse
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$CartSummaryCopyWith<$Res>? get cartSummary {
+    if (_self.cartSummary == null) {
+    return null;
+  }
+
+  return $CartSummaryCopyWith<$Res>(_self.cartSummary!, (value) {
+    return _then(_self.copyWith(cartSummary: value));
+  });
+}
+}
+
+// dart format on

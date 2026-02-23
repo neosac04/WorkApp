@@ -6,46 +6,37 @@ part of 'store_availability_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$StoreAvailabilityResponseImpl _$$StoreAvailabilityResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$StoreAvailabilityResponseImpl(
-      opensAt: json['opens_at'] as String?,
-      closesAt: json['closes_at'] as String?,
-      availability: (json['availability'] as List<dynamic>?)
-          ?.map((e) => StoreAvailability.fromJson(e as Map<String, dynamic>))
-          .toList(),
-    );
+_StoreAvailabilityResponse _$StoreAvailabilityResponseFromJson(
+  Map<String, dynamic> json,
+) => _StoreAvailabilityResponse(
+  opensAt: json['opens_at'] as String?,
+  closesAt: json['closes_at'] as String?,
+  availability: (json['availability'] as List<dynamic>?)
+      ?.map((e) => StoreAvailability.fromJson(e as Map<String, dynamic>))
+      .toList(),
+);
 
-Map<String, dynamic> _$$StoreAvailabilityResponseImplToJson(
-        _$StoreAvailabilityResponseImpl instance) =>
-    <String, dynamic>{
-      'opens_at': instance.opensAt,
-      'closes_at': instance.closesAt,
-      'availability': instance.availability,
-    };
+Map<String, dynamic> _$StoreAvailabilityResponseToJson(
+  _StoreAvailabilityResponse instance,
+) => <String, dynamic>{
+  'opens_at': instance.opensAt,
+  'closes_at': instance.closesAt,
+  'availability': instance.availability,
+};
 
-_$StoreAvailabilityImpl _$$StoreAvailabilityImplFromJson(
-        Map<String, dynamic> json) =>
-    _$StoreAvailabilityImpl(
+_StoreAvailability _$StoreAvailabilityFromJson(Map<String, dynamic> json) =>
+    _StoreAvailability(
       days: json['days'] as String?,
       timing: (json['timing'] as List<dynamic>?)
           ?.map((e) => StoreTiming.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
-Map<String, dynamic> _$$StoreAvailabilityImplToJson(
-        _$StoreAvailabilityImpl instance) =>
-    <String, dynamic>{
-      'days': instance.days,
-      'timing': instance.timing,
-    };
+Map<String, dynamic> _$StoreAvailabilityToJson(_StoreAvailability instance) =>
+    <String, dynamic>{'days': instance.days, 'timing': instance.timing};
 
-_$StoreTimingImpl _$$StoreTimingImplFromJson(Map<String, dynamic> json) =>
-    _$StoreTimingImpl(
-      time: json['time'] as String?,
-    );
+_StoreTiming _$StoreTimingFromJson(Map<String, dynamic> json) =>
+    _StoreTiming(time: json['time'] as String?);
 
-Map<String, dynamic> _$$StoreTimingImplToJson(_$StoreTimingImpl instance) =>
-    <String, dynamic>{
-      'time': instance.time,
-    };
+Map<String, dynamic> _$StoreTimingToJson(_StoreTiming instance) =>
+    <String, dynamic>{'time': instance.time};

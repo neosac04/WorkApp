@@ -6,18 +6,18 @@ part of 'order_tracking_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$OrderTrackingResponseImpl _$$OrderTrackingResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$OrderTrackingResponseImpl(
-      status: json['status'] as String? ?? '',
-      description: json['description'] as String? ?? '',
-      createdAt: json['created_at'] as String? ?? '',
-    );
+_OrderTrackingResponse _$OrderTrackingResponseFromJson(
+  Map<String, dynamic> json,
+) => _OrderTrackingResponse(
+  status: json['status'] as String? ?? '',
+  description: json['description'] as String? ?? '',
+  createdAt: json['created_at'] as String? ?? '',
+);
 
-Map<String, dynamic> _$$OrderTrackingResponseImplToJson(
-        _$OrderTrackingResponseImpl instance) =>
-    <String, dynamic>{
-      'status': instance.status,
-      'description': instance.description,
-      'created_at': instance.createdAt,
-    };
+Map<String, dynamic> _$OrderTrackingResponseToJson(
+  _OrderTrackingResponse instance,
+) => <String, dynamic>{
+  'status': instance.status,
+  'description': instance.description,
+  'created_at': instance.createdAt,
+};

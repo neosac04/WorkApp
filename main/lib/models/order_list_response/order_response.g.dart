@@ -6,10 +6,10 @@ part of 'order_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$OrderListResponseImpl _$$OrderListResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$OrderListResponseImpl(
-      orders: (json['orders'] as List<dynamic>?)
+_OrderListResponse _$OrderListResponseFromJson(Map<String, dynamic> json) =>
+    _OrderListResponse(
+      orders:
+          (json['orders'] as List<dynamic>?)
               ?.map((e) => OrderModel.fromJson(e as Map<String, dynamic>))
               .toList() ??
           const [],
@@ -18,8 +18,7 @@ _$OrderListResponseImpl _$$OrderListResponseImplFromJson(
           : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$OrderListResponseImplToJson(
-        _$OrderListResponseImpl instance) =>
+Map<String, dynamic> _$OrderListResponseToJson(_OrderListResponse instance) =>
     <String, dynamic>{
       'orders': instance.orders,
       'pagination': instance.pagination,

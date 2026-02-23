@@ -16,7 +16,7 @@ String groceryOrderDetailResponseToJson(GroceryOrderDetailResponse data) =>
     json.encode(data.toJson());
 
 @freezed
-class GroceryOrderDetailResponse with _$GroceryOrderDetailResponse {
+sealed class GroceryOrderDetailResponse with _$GroceryOrderDetailResponse {
   const factory GroceryOrderDetailResponse({
     @JsonKey(name: "order") OrderDetail? orderDetail,
   }) = _GroceryOrderDetailResponse;
@@ -26,7 +26,7 @@ class GroceryOrderDetailResponse with _$GroceryOrderDetailResponse {
 }
 
 @freezed
-class OrderDetail with _$OrderDetail {
+sealed class OrderDetail with _$OrderDetail {
   const factory OrderDetail({
     @JsonKey(name: "id") int? id,
     @JsonKey(name: "nana_order_id") String? nanaOrderId,
@@ -66,7 +66,7 @@ class OrderDetail with _$OrderDetail {
 }
 
 @freezed
-class OrderProduct with _$OrderProduct {
+sealed class OrderProduct with _$OrderProduct {
   const factory OrderProduct({
     @JsonKey(name: "item_id") int? itemId,
     @JsonKey(name: "product_id") String? productId,
@@ -83,7 +83,7 @@ class OrderProduct with _$OrderProduct {
 }
 
 @freezed
-class StoreDetails with _$StoreDetails {
+sealed class StoreDetails with _$StoreDetails {
   const factory StoreDetails({
     @JsonKey(name: "store_id") String? storeId,
     @JsonKey(name: "retailer_id") String? retailerId,

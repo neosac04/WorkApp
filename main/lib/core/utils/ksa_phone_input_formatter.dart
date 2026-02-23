@@ -20,7 +20,7 @@ class KsaPhoneInputFormatter extends TextInputFormatter {
     }
 
     // Always ensure starts with "05"
-    if (digits.length >= 1 && digits[0] != '0') {
+    if (digits.isNotEmpty && digits[0] != '0') {
       digits = '0$digits';
     }
     if (digits.length >= 2 && digits.substring(0, 2) != '05') {

@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,1015 +9,1306 @@ part of 'nearest_store_list_response.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-NearestStoreListResponse _$NearestStoreListResponseFromJson(
-    Map<String, dynamic> json) {
-  return _NearestStoreListResponse.fromJson(json);
-}
 
 /// @nodoc
 mixin _$NearestStoreListResponse {
-  List<NearestStoreResponse>? get stores => throw _privateConstructorUsedError;
+
+ List<NearestStoreResponse>? get stores;
+/// Create a copy of NearestStoreListResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NearestStoreListResponseCopyWith<NearestStoreListResponse> get copyWith => _$NearestStoreListResponseCopyWithImpl<NearestStoreListResponse>(this as NearestStoreListResponse, _$identity);
 
   /// Serializes this NearestStoreListResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of NearestStoreListResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $NearestStoreListResponseCopyWith<NearestStoreListResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NearestStoreListResponse&&const DeepCollectionEquality().equals(other.stores, stores));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(stores));
+
+@override
+String toString() {
+  return 'NearestStoreListResponse(stores: $stores)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $NearestStoreListResponseCopyWith<$Res> {
-  factory $NearestStoreListResponseCopyWith(NearestStoreListResponse value,
-          $Res Function(NearestStoreListResponse) then) =
-      _$NearestStoreListResponseCopyWithImpl<$Res, NearestStoreListResponse>;
-  @useResult
-  $Res call({List<NearestStoreResponse>? stores});
-}
+abstract mixin class $NearestStoreListResponseCopyWith<$Res>  {
+  factory $NearestStoreListResponseCopyWith(NearestStoreListResponse value, $Res Function(NearestStoreListResponse) _then) = _$NearestStoreListResponseCopyWithImpl;
+@useResult
+$Res call({
+ List<NearestStoreResponse>? stores
+});
 
+
+
+
+}
 /// @nodoc
-class _$NearestStoreListResponseCopyWithImpl<$Res,
-        $Val extends NearestStoreListResponse>
+class _$NearestStoreListResponseCopyWithImpl<$Res>
     implements $NearestStoreListResponseCopyWith<$Res> {
-  _$NearestStoreListResponseCopyWithImpl(this._value, this._then);
+  _$NearestStoreListResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final NearestStoreListResponse _self;
+  final $Res Function(NearestStoreListResponse) _then;
 
-  /// Create a copy of NearestStoreListResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? stores = freezed,
-  }) {
-    return _then(_value.copyWith(
-      stores: freezed == stores
-          ? _value.stores
-          : stores // ignore: cast_nullable_to_non_nullable
-              as List<NearestStoreResponse>?,
-    ) as $Val);
-  }
+/// Create a copy of NearestStoreListResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? stores = freezed,}) {
+  return _then(_self.copyWith(
+stores: freezed == stores ? _self.stores : stores // ignore: cast_nullable_to_non_nullable
+as List<NearestStoreResponse>?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$NearestStoreListResponseImplCopyWith<$Res>
-    implements $NearestStoreListResponseCopyWith<$Res> {
-  factory _$$NearestStoreListResponseImplCopyWith(
-          _$NearestStoreListResponseImpl value,
-          $Res Function(_$NearestStoreListResponseImpl) then) =
-      __$$NearestStoreListResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({List<NearestStoreResponse>? stores});
 }
 
-/// @nodoc
-class __$$NearestStoreListResponseImplCopyWithImpl<$Res>
-    extends _$NearestStoreListResponseCopyWithImpl<$Res,
-        _$NearestStoreListResponseImpl>
-    implements _$$NearestStoreListResponseImplCopyWith<$Res> {
-  __$$NearestStoreListResponseImplCopyWithImpl(
-      _$NearestStoreListResponseImpl _value,
-      $Res Function(_$NearestStoreListResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of NearestStoreListResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? stores = freezed,
-  }) {
-    return _then(_$NearestStoreListResponseImpl(
-      stores: freezed == stores
-          ? _value._stores
-          : stores // ignore: cast_nullable_to_non_nullable
-              as List<NearestStoreResponse>?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [NearestStoreListResponse].
+extension NearestStoreListResponsePatterns on NearestStoreListResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _NearestStoreListResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _NearestStoreListResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _NearestStoreListResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _NearestStoreListResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _NearestStoreListResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _NearestStoreListResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( List<NearestStoreResponse>? stores)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _NearestStoreListResponse() when $default != null:
+return $default(_that.stores);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( List<NearestStoreResponse>? stores)  $default,) {final _that = this;
+switch (_that) {
+case _NearestStoreListResponse():
+return $default(_that.stores);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( List<NearestStoreResponse>? stores)?  $default,) {final _that = this;
+switch (_that) {
+case _NearestStoreListResponse() when $default != null:
+return $default(_that.stores);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$NearestStoreListResponseImpl implements _NearestStoreListResponse {
-  _$NearestStoreListResponseImpl({final List<NearestStoreResponse>? stores})
-      : _stores = stores;
 
-  factory _$NearestStoreListResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$NearestStoreListResponseImplFromJson(json);
+class _NearestStoreListResponse implements NearestStoreListResponse {
+   _NearestStoreListResponse({final  List<NearestStoreResponse>? stores}): _stores = stores;
+  factory _NearestStoreListResponse.fromJson(Map<String, dynamic> json) => _$NearestStoreListResponseFromJson(json);
 
-  final List<NearestStoreResponse>? _stores;
-  @override
-  List<NearestStoreResponse>? get stores {
-    final value = _stores;
-    if (value == null) return null;
-    if (_stores is EqualUnmodifiableListView) return _stores;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
-
-  @override
-  String toString() {
-    return 'NearestStoreListResponse(stores: $stores)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$NearestStoreListResponseImpl &&
-            const DeepCollectionEquality().equals(other._stores, _stores));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_stores));
-
-  /// Create a copy of NearestStoreListResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$NearestStoreListResponseImplCopyWith<_$NearestStoreListResponseImpl>
-      get copyWith => __$$NearestStoreListResponseImplCopyWithImpl<
-          _$NearestStoreListResponseImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$NearestStoreListResponseImplToJson(
-      this,
-    );
-  }
+ final  List<NearestStoreResponse>? _stores;
+@override List<NearestStoreResponse>? get stores {
+  final value = _stores;
+  if (value == null) return null;
+  if (_stores is EqualUnmodifiableListView) return _stores;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(value);
 }
 
-abstract class _NearestStoreListResponse implements NearestStoreListResponse {
-  factory _NearestStoreListResponse(
-          {final List<NearestStoreResponse>? stores}) =
-      _$NearestStoreListResponseImpl;
 
-  factory _NearestStoreListResponse.fromJson(Map<String, dynamic> json) =
-      _$NearestStoreListResponseImpl.fromJson;
+/// Create a copy of NearestStoreListResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$NearestStoreListResponseCopyWith<_NearestStoreListResponse> get copyWith => __$NearestStoreListResponseCopyWithImpl<_NearestStoreListResponse>(this, _$identity);
 
-  @override
-  List<NearestStoreResponse>? get stores;
-
-  /// Create a copy of NearestStoreListResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$NearestStoreListResponseImplCopyWith<_$NearestStoreListResponseImpl>
-      get copyWith => throw _privateConstructorUsedError;
+@override
+Map<String, dynamic> toJson() {
+  return _$NearestStoreListResponseToJson(this, );
 }
 
-NearestStoreResponse _$NearestStoreResponseFromJson(Map<String, dynamic> json) {
-  return _NearestStoreResponse.fromJson(json);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NearestStoreListResponse&&const DeepCollectionEquality().equals(other._stores, _stores));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(_stores));
+
+@override
+String toString() {
+  return 'NearestStoreListResponse(stores: $stores)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$NearestStoreListResponseCopyWith<$Res> implements $NearestStoreListResponseCopyWith<$Res> {
+  factory _$NearestStoreListResponseCopyWith(_NearestStoreListResponse value, $Res Function(_NearestStoreListResponse) _then) = __$NearestStoreListResponseCopyWithImpl;
+@override @useResult
+$Res call({
+ List<NearestStoreResponse>? stores
+});
+
+
+
+
+}
+/// @nodoc
+class __$NearestStoreListResponseCopyWithImpl<$Res>
+    implements _$NearestStoreListResponseCopyWith<$Res> {
+  __$NearestStoreListResponseCopyWithImpl(this._self, this._then);
+
+  final _NearestStoreListResponse _self;
+  final $Res Function(_NearestStoreListResponse) _then;
+
+/// Create a copy of NearestStoreListResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? stores = freezed,}) {
+  return _then(_NearestStoreListResponse(
+stores: freezed == stores ? _self._stores : stores // ignore: cast_nullable_to_non_nullable
+as List<NearestStoreResponse>?,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$NearestStoreResponse {
-  int? get id => throw _privateConstructorUsedError;
-  @JsonKey(name: 'branch_id')
-  int? get branchId => throw _privateConstructorUsedError;
-  String? get name => throw _privateConstructorUsedError;
-  @JsonKey(name: 'profile_image')
-  String? get profileImage => throw _privateConstructorUsedError;
-  @JsonKey(name: 'cover_image')
-  String? get coverImage => throw _privateConstructorUsedError;
-  @JsonKey(name: 'reviews_count')
-  int? get reviewsCount => throw _privateConstructorUsedError;
-  String? get rating => throw _privateConstructorUsedError;
-  String? get distance => throw _privateConstructorUsedError;
-  String? get categories => throw _privateConstructorUsedError;
+
+ int? get id;@JsonKey(name: 'branch_id') int? get branchId; String? get name;@JsonKey(name: 'profile_image') String? get profileImage;@JsonKey(name: 'cover_image') String? get coverImage;@JsonKey(name: 'reviews_count') int? get reviewsCount; String? get rating; String? get distance; String? get categories;
+/// Create a copy of NearestStoreResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NearestStoreResponseCopyWith<NearestStoreResponse> get copyWith => _$NearestStoreResponseCopyWithImpl<NearestStoreResponse>(this as NearestStoreResponse, _$identity);
 
   /// Serializes this NearestStoreResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of NearestStoreResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $NearestStoreResponseCopyWith<NearestStoreResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NearestStoreResponse&&(identical(other.id, id) || other.id == id)&&(identical(other.branchId, branchId) || other.branchId == branchId)&&(identical(other.name, name) || other.name == name)&&(identical(other.profileImage, profileImage) || other.profileImage == profileImage)&&(identical(other.coverImage, coverImage) || other.coverImage == coverImage)&&(identical(other.reviewsCount, reviewsCount) || other.reviewsCount == reviewsCount)&&(identical(other.rating, rating) || other.rating == rating)&&(identical(other.distance, distance) || other.distance == distance)&&(identical(other.categories, categories) || other.categories == categories));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,branchId,name,profileImage,coverImage,reviewsCount,rating,distance,categories);
+
+@override
+String toString() {
+  return 'NearestStoreResponse(id: $id, branchId: $branchId, name: $name, profileImage: $profileImage, coverImage: $coverImage, reviewsCount: $reviewsCount, rating: $rating, distance: $distance, categories: $categories)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $NearestStoreResponseCopyWith<$Res> {
-  factory $NearestStoreResponseCopyWith(NearestStoreResponse value,
-          $Res Function(NearestStoreResponse) then) =
-      _$NearestStoreResponseCopyWithImpl<$Res, NearestStoreResponse>;
-  @useResult
-  $Res call(
-      {int? id,
-      @JsonKey(name: 'branch_id') int? branchId,
-      String? name,
-      @JsonKey(name: 'profile_image') String? profileImage,
-      @JsonKey(name: 'cover_image') String? coverImage,
-      @JsonKey(name: 'reviews_count') int? reviewsCount,
-      String? rating,
-      String? distance,
-      String? categories});
-}
+abstract mixin class $NearestStoreResponseCopyWith<$Res>  {
+  factory $NearestStoreResponseCopyWith(NearestStoreResponse value, $Res Function(NearestStoreResponse) _then) = _$NearestStoreResponseCopyWithImpl;
+@useResult
+$Res call({
+ int? id,@JsonKey(name: 'branch_id') int? branchId, String? name,@JsonKey(name: 'profile_image') String? profileImage,@JsonKey(name: 'cover_image') String? coverImage,@JsonKey(name: 'reviews_count') int? reviewsCount, String? rating, String? distance, String? categories
+});
 
+
+
+
+}
 /// @nodoc
-class _$NearestStoreResponseCopyWithImpl<$Res,
-        $Val extends NearestStoreResponse>
+class _$NearestStoreResponseCopyWithImpl<$Res>
     implements $NearestStoreResponseCopyWith<$Res> {
-  _$NearestStoreResponseCopyWithImpl(this._value, this._then);
+  _$NearestStoreResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final NearestStoreResponse _self;
+  final $Res Function(NearestStoreResponse) _then;
 
-  /// Create a copy of NearestStoreResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = freezed,
-    Object? branchId = freezed,
-    Object? name = freezed,
-    Object? profileImage = freezed,
-    Object? coverImage = freezed,
-    Object? reviewsCount = freezed,
-    Object? rating = freezed,
-    Object? distance = freezed,
-    Object? categories = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int?,
-      branchId: freezed == branchId
-          ? _value.branchId
-          : branchId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      name: freezed == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      profileImage: freezed == profileImage
-          ? _value.profileImage
-          : profileImage // ignore: cast_nullable_to_non_nullable
-              as String?,
-      coverImage: freezed == coverImage
-          ? _value.coverImage
-          : coverImage // ignore: cast_nullable_to_non_nullable
-              as String?,
-      reviewsCount: freezed == reviewsCount
-          ? _value.reviewsCount
-          : reviewsCount // ignore: cast_nullable_to_non_nullable
-              as int?,
-      rating: freezed == rating
-          ? _value.rating
-          : rating // ignore: cast_nullable_to_non_nullable
-              as String?,
-      distance: freezed == distance
-          ? _value.distance
-          : distance // ignore: cast_nullable_to_non_nullable
-              as String?,
-      categories: freezed == categories
-          ? _value.categories
-          : categories // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
-  }
+/// Create a copy of NearestStoreResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = freezed,Object? branchId = freezed,Object? name = freezed,Object? profileImage = freezed,Object? coverImage = freezed,Object? reviewsCount = freezed,Object? rating = freezed,Object? distance = freezed,Object? categories = freezed,}) {
+  return _then(_self.copyWith(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int?,branchId: freezed == branchId ? _self.branchId : branchId // ignore: cast_nullable_to_non_nullable
+as int?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,profileImage: freezed == profileImage ? _self.profileImage : profileImage // ignore: cast_nullable_to_non_nullable
+as String?,coverImage: freezed == coverImage ? _self.coverImage : coverImage // ignore: cast_nullable_to_non_nullable
+as String?,reviewsCount: freezed == reviewsCount ? _self.reviewsCount : reviewsCount // ignore: cast_nullable_to_non_nullable
+as int?,rating: freezed == rating ? _self.rating : rating // ignore: cast_nullable_to_non_nullable
+as String?,distance: freezed == distance ? _self.distance : distance // ignore: cast_nullable_to_non_nullable
+as String?,categories: freezed == categories ? _self.categories : categories // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$NearestStoreResponseImplCopyWith<$Res>
-    implements $NearestStoreResponseCopyWith<$Res> {
-  factory _$$NearestStoreResponseImplCopyWith(_$NearestStoreResponseImpl value,
-          $Res Function(_$NearestStoreResponseImpl) then) =
-      __$$NearestStoreResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int? id,
-      @JsonKey(name: 'branch_id') int? branchId,
-      String? name,
-      @JsonKey(name: 'profile_image') String? profileImage,
-      @JsonKey(name: 'cover_image') String? coverImage,
-      @JsonKey(name: 'reviews_count') int? reviewsCount,
-      String? rating,
-      String? distance,
-      String? categories});
 }
 
-/// @nodoc
-class __$$NearestStoreResponseImplCopyWithImpl<$Res>
-    extends _$NearestStoreResponseCopyWithImpl<$Res, _$NearestStoreResponseImpl>
-    implements _$$NearestStoreResponseImplCopyWith<$Res> {
-  __$$NearestStoreResponseImplCopyWithImpl(_$NearestStoreResponseImpl _value,
-      $Res Function(_$NearestStoreResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of NearestStoreResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = freezed,
-    Object? branchId = freezed,
-    Object? name = freezed,
-    Object? profileImage = freezed,
-    Object? coverImage = freezed,
-    Object? reviewsCount = freezed,
-    Object? rating = freezed,
-    Object? distance = freezed,
-    Object? categories = freezed,
-  }) {
-    return _then(_$NearestStoreResponseImpl(
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int?,
-      branchId: freezed == branchId
-          ? _value.branchId
-          : branchId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      name: freezed == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      profileImage: freezed == profileImage
-          ? _value.profileImage
-          : profileImage // ignore: cast_nullable_to_non_nullable
-              as String?,
-      coverImage: freezed == coverImage
-          ? _value.coverImage
-          : coverImage // ignore: cast_nullable_to_non_nullable
-              as String?,
-      reviewsCount: freezed == reviewsCount
-          ? _value.reviewsCount
-          : reviewsCount // ignore: cast_nullable_to_non_nullable
-              as int?,
-      rating: freezed == rating
-          ? _value.rating
-          : rating // ignore: cast_nullable_to_non_nullable
-              as String?,
-      distance: freezed == distance
-          ? _value.distance
-          : distance // ignore: cast_nullable_to_non_nullable
-              as String?,
-      categories: freezed == categories
-          ? _value.categories
-          : categories // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [NearestStoreResponse].
+extension NearestStoreResponsePatterns on NearestStoreResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _NearestStoreResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _NearestStoreResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _NearestStoreResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _NearestStoreResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _NearestStoreResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _NearestStoreResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int? id, @JsonKey(name: 'branch_id')  int? branchId,  String? name, @JsonKey(name: 'profile_image')  String? profileImage, @JsonKey(name: 'cover_image')  String? coverImage, @JsonKey(name: 'reviews_count')  int? reviewsCount,  String? rating,  String? distance,  String? categories)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _NearestStoreResponse() when $default != null:
+return $default(_that.id,_that.branchId,_that.name,_that.profileImage,_that.coverImage,_that.reviewsCount,_that.rating,_that.distance,_that.categories);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int? id, @JsonKey(name: 'branch_id')  int? branchId,  String? name, @JsonKey(name: 'profile_image')  String? profileImage, @JsonKey(name: 'cover_image')  String? coverImage, @JsonKey(name: 'reviews_count')  int? reviewsCount,  String? rating,  String? distance,  String? categories)  $default,) {final _that = this;
+switch (_that) {
+case _NearestStoreResponse():
+return $default(_that.id,_that.branchId,_that.name,_that.profileImage,_that.coverImage,_that.reviewsCount,_that.rating,_that.distance,_that.categories);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int? id, @JsonKey(name: 'branch_id')  int? branchId,  String? name, @JsonKey(name: 'profile_image')  String? profileImage, @JsonKey(name: 'cover_image')  String? coverImage, @JsonKey(name: 'reviews_count')  int? reviewsCount,  String? rating,  String? distance,  String? categories)?  $default,) {final _that = this;
+switch (_that) {
+case _NearestStoreResponse() when $default != null:
+return $default(_that.id,_that.branchId,_that.name,_that.profileImage,_that.coverImage,_that.reviewsCount,_that.rating,_that.distance,_that.categories);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$NearestStoreResponseImpl implements _NearestStoreResponse {
-  _$NearestStoreResponseImpl(
-      {this.id,
-      @JsonKey(name: 'branch_id') this.branchId,
-      this.name,
-      @JsonKey(name: 'profile_image') this.profileImage,
-      @JsonKey(name: 'cover_image') this.coverImage,
-      @JsonKey(name: 'reviews_count') this.reviewsCount,
-      this.rating,
-      this.distance,
-      this.categories});
 
-  factory _$NearestStoreResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$NearestStoreResponseImplFromJson(json);
+class _NearestStoreResponse implements NearestStoreResponse {
+   _NearestStoreResponse({this.id, @JsonKey(name: 'branch_id') this.branchId, this.name, @JsonKey(name: 'profile_image') this.profileImage, @JsonKey(name: 'cover_image') this.coverImage, @JsonKey(name: 'reviews_count') this.reviewsCount, this.rating, this.distance, this.categories});
+  factory _NearestStoreResponse.fromJson(Map<String, dynamic> json) => _$NearestStoreResponseFromJson(json);
 
-  @override
-  final int? id;
-  @override
-  @JsonKey(name: 'branch_id')
-  final int? branchId;
-  @override
-  final String? name;
-  @override
-  @JsonKey(name: 'profile_image')
-  final String? profileImage;
-  @override
-  @JsonKey(name: 'cover_image')
-  final String? coverImage;
-  @override
-  @JsonKey(name: 'reviews_count')
-  final int? reviewsCount;
-  @override
-  final String? rating;
-  @override
-  final String? distance;
-  @override
-  final String? categories;
+@override final  int? id;
+@override@JsonKey(name: 'branch_id') final  int? branchId;
+@override final  String? name;
+@override@JsonKey(name: 'profile_image') final  String? profileImage;
+@override@JsonKey(name: 'cover_image') final  String? coverImage;
+@override@JsonKey(name: 'reviews_count') final  int? reviewsCount;
+@override final  String? rating;
+@override final  String? distance;
+@override final  String? categories;
 
-  @override
-  String toString() {
-    return 'NearestStoreResponse(id: $id, branchId: $branchId, name: $name, profileImage: $profileImage, coverImage: $coverImage, reviewsCount: $reviewsCount, rating: $rating, distance: $distance, categories: $categories)';
-  }
+/// Create a copy of NearestStoreResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$NearestStoreResponseCopyWith<_NearestStoreResponse> get copyWith => __$NearestStoreResponseCopyWithImpl<_NearestStoreResponse>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$NearestStoreResponseImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.branchId, branchId) ||
-                other.branchId == branchId) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.profileImage, profileImage) ||
-                other.profileImage == profileImage) &&
-            (identical(other.coverImage, coverImage) ||
-                other.coverImage == coverImage) &&
-            (identical(other.reviewsCount, reviewsCount) ||
-                other.reviewsCount == reviewsCount) &&
-            (identical(other.rating, rating) || other.rating == rating) &&
-            (identical(other.distance, distance) ||
-                other.distance == distance) &&
-            (identical(other.categories, categories) ||
-                other.categories == categories));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, branchId, name, profileImage,
-      coverImage, reviewsCount, rating, distance, categories);
-
-  /// Create a copy of NearestStoreResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$NearestStoreResponseImplCopyWith<_$NearestStoreResponseImpl>
-      get copyWith =>
-          __$$NearestStoreResponseImplCopyWithImpl<_$NearestStoreResponseImpl>(
-              this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$NearestStoreResponseImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NearestStoreResponseToJson(this, );
 }
 
-abstract class _NearestStoreResponse implements NearestStoreResponse {
-  factory _NearestStoreResponse(
-      {final int? id,
-      @JsonKey(name: 'branch_id') final int? branchId,
-      final String? name,
-      @JsonKey(name: 'profile_image') final String? profileImage,
-      @JsonKey(name: 'cover_image') final String? coverImage,
-      @JsonKey(name: 'reviews_count') final int? reviewsCount,
-      final String? rating,
-      final String? distance,
-      final String? categories}) = _$NearestStoreResponseImpl;
-
-  factory _NearestStoreResponse.fromJson(Map<String, dynamic> json) =
-      _$NearestStoreResponseImpl.fromJson;
-
-  @override
-  int? get id;
-  @override
-  @JsonKey(name: 'branch_id')
-  int? get branchId;
-  @override
-  String? get name;
-  @override
-  @JsonKey(name: 'profile_image')
-  String? get profileImage;
-  @override
-  @JsonKey(name: 'cover_image')
-  String? get coverImage;
-  @override
-  @JsonKey(name: 'reviews_count')
-  int? get reviewsCount;
-  @override
-  String? get rating;
-  @override
-  String? get distance;
-  @override
-  String? get categories;
-
-  /// Create a copy of NearestStoreResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$NearestStoreResponseImplCopyWith<_$NearestStoreResponseImpl>
-      get copyWith => throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NearestStoreResponse&&(identical(other.id, id) || other.id == id)&&(identical(other.branchId, branchId) || other.branchId == branchId)&&(identical(other.name, name) || other.name == name)&&(identical(other.profileImage, profileImage) || other.profileImage == profileImage)&&(identical(other.coverImage, coverImage) || other.coverImage == coverImage)&&(identical(other.reviewsCount, reviewsCount) || other.reviewsCount == reviewsCount)&&(identical(other.rating, rating) || other.rating == rating)&&(identical(other.distance, distance) || other.distance == distance)&&(identical(other.categories, categories) || other.categories == categories));
 }
 
-Promotion _$PromotionFromJson(Map<String, dynamic> json) {
-  return _Promotion.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,branchId,name,profileImage,coverImage,reviewsCount,rating,distance,categories);
+
+@override
+String toString() {
+  return 'NearestStoreResponse(id: $id, branchId: $branchId, name: $name, profileImage: $profileImage, coverImage: $coverImage, reviewsCount: $reviewsCount, rating: $rating, distance: $distance, categories: $categories)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$NearestStoreResponseCopyWith<$Res> implements $NearestStoreResponseCopyWith<$Res> {
+  factory _$NearestStoreResponseCopyWith(_NearestStoreResponse value, $Res Function(_NearestStoreResponse) _then) = __$NearestStoreResponseCopyWithImpl;
+@override @useResult
+$Res call({
+ int? id,@JsonKey(name: 'branch_id') int? branchId, String? name,@JsonKey(name: 'profile_image') String? profileImage,@JsonKey(name: 'cover_image') String? coverImage,@JsonKey(name: 'reviews_count') int? reviewsCount, String? rating, String? distance, String? categories
+});
+
+
+
+
+}
+/// @nodoc
+class __$NearestStoreResponseCopyWithImpl<$Res>
+    implements _$NearestStoreResponseCopyWith<$Res> {
+  __$NearestStoreResponseCopyWithImpl(this._self, this._then);
+
+  final _NearestStoreResponse _self;
+  final $Res Function(_NearestStoreResponse) _then;
+
+/// Create a copy of NearestStoreResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? branchId = freezed,Object? name = freezed,Object? profileImage = freezed,Object? coverImage = freezed,Object? reviewsCount = freezed,Object? rating = freezed,Object? distance = freezed,Object? categories = freezed,}) {
+  return _then(_NearestStoreResponse(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int?,branchId: freezed == branchId ? _self.branchId : branchId // ignore: cast_nullable_to_non_nullable
+as int?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,profileImage: freezed == profileImage ? _self.profileImage : profileImage // ignore: cast_nullable_to_non_nullable
+as String?,coverImage: freezed == coverImage ? _self.coverImage : coverImage // ignore: cast_nullable_to_non_nullable
+as String?,reviewsCount: freezed == reviewsCount ? _self.reviewsCount : reviewsCount // ignore: cast_nullable_to_non_nullable
+as int?,rating: freezed == rating ? _self.rating : rating // ignore: cast_nullable_to_non_nullable
+as String?,distance: freezed == distance ? _self.distance : distance // ignore: cast_nullable_to_non_nullable
+as String?,categories: freezed == categories ? _self.categories : categories // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$Promotion {
-  int? get type => throw _privateConstructorUsedError;
-  String? get title => throw _privateConstructorUsedError;
-  String? get description => throw _privateConstructorUsedError;
-  @JsonKey(name: 'expiry_date')
-  String? get expiryDate => throw _privateConstructorUsedError;
+
+ int? get type; String? get title; String? get description;@JsonKey(name: 'expiry_date') String? get expiryDate;
+/// Create a copy of Promotion
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$PromotionCopyWith<Promotion> get copyWith => _$PromotionCopyWithImpl<Promotion>(this as Promotion, _$identity);
 
   /// Serializes this Promotion to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of Promotion
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $PromotionCopyWith<Promotion> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Promotion&&(identical(other.type, type) || other.type == type)&&(identical(other.title, title) || other.title == title)&&(identical(other.description, description) || other.description == description)&&(identical(other.expiryDate, expiryDate) || other.expiryDate == expiryDate));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,type,title,description,expiryDate);
+
+@override
+String toString() {
+  return 'Promotion(type: $type, title: $title, description: $description, expiryDate: $expiryDate)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $PromotionCopyWith<$Res> {
-  factory $PromotionCopyWith(Promotion value, $Res Function(Promotion) then) =
-      _$PromotionCopyWithImpl<$Res, Promotion>;
-  @useResult
-  $Res call(
-      {int? type,
-      String? title,
-      String? description,
-      @JsonKey(name: 'expiry_date') String? expiryDate});
-}
+abstract mixin class $PromotionCopyWith<$Res>  {
+  factory $PromotionCopyWith(Promotion value, $Res Function(Promotion) _then) = _$PromotionCopyWithImpl;
+@useResult
+$Res call({
+ int? type, String? title, String? description,@JsonKey(name: 'expiry_date') String? expiryDate
+});
 
+
+
+
+}
 /// @nodoc
-class _$PromotionCopyWithImpl<$Res, $Val extends Promotion>
+class _$PromotionCopyWithImpl<$Res>
     implements $PromotionCopyWith<$Res> {
-  _$PromotionCopyWithImpl(this._value, this._then);
+  _$PromotionCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final Promotion _self;
+  final $Res Function(Promotion) _then;
 
-  /// Create a copy of Promotion
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? type = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
-    Object? expiryDate = freezed,
-  }) {
-    return _then(_value.copyWith(
-      type: freezed == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as int?,
-      title: freezed == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      expiryDate: freezed == expiryDate
-          ? _value.expiryDate
-          : expiryDate // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
-  }
+/// Create a copy of Promotion
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? type = freezed,Object? title = freezed,Object? description = freezed,Object? expiryDate = freezed,}) {
+  return _then(_self.copyWith(
+type: freezed == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as int?,title: freezed == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,expiryDate: freezed == expiryDate ? _self.expiryDate : expiryDate // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$PromotionImplCopyWith<$Res>
-    implements $PromotionCopyWith<$Res> {
-  factory _$$PromotionImplCopyWith(
-          _$PromotionImpl value, $Res Function(_$PromotionImpl) then) =
-      __$$PromotionImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int? type,
-      String? title,
-      String? description,
-      @JsonKey(name: 'expiry_date') String? expiryDate});
 }
 
-/// @nodoc
-class __$$PromotionImplCopyWithImpl<$Res>
-    extends _$PromotionCopyWithImpl<$Res, _$PromotionImpl>
-    implements _$$PromotionImplCopyWith<$Res> {
-  __$$PromotionImplCopyWithImpl(
-      _$PromotionImpl _value, $Res Function(_$PromotionImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of Promotion
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? type = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
-    Object? expiryDate = freezed,
-  }) {
-    return _then(_$PromotionImpl(
-      type: freezed == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as int?,
-      title: freezed == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      expiryDate: freezed == expiryDate
-          ? _value.expiryDate
-          : expiryDate // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [Promotion].
+extension PromotionPatterns on Promotion {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _Promotion value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _Promotion() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _Promotion value)  $default,){
+final _that = this;
+switch (_that) {
+case _Promotion():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _Promotion value)?  $default,){
+final _that = this;
+switch (_that) {
+case _Promotion() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int? type,  String? title,  String? description, @JsonKey(name: 'expiry_date')  String? expiryDate)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _Promotion() when $default != null:
+return $default(_that.type,_that.title,_that.description,_that.expiryDate);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int? type,  String? title,  String? description, @JsonKey(name: 'expiry_date')  String? expiryDate)  $default,) {final _that = this;
+switch (_that) {
+case _Promotion():
+return $default(_that.type,_that.title,_that.description,_that.expiryDate);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int? type,  String? title,  String? description, @JsonKey(name: 'expiry_date')  String? expiryDate)?  $default,) {final _that = this;
+switch (_that) {
+case _Promotion() when $default != null:
+return $default(_that.type,_that.title,_that.description,_that.expiryDate);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$PromotionImpl implements _Promotion {
-  _$PromotionImpl(
-      {this.type,
-      this.title,
-      this.description,
-      @JsonKey(name: 'expiry_date') this.expiryDate});
 
-  factory _$PromotionImpl.fromJson(Map<String, dynamic> json) =>
-      _$$PromotionImplFromJson(json);
+class _Promotion implements Promotion {
+   _Promotion({this.type, this.title, this.description, @JsonKey(name: 'expiry_date') this.expiryDate});
+  factory _Promotion.fromJson(Map<String, dynamic> json) => _$PromotionFromJson(json);
 
-  @override
-  final int? type;
-  @override
-  final String? title;
-  @override
-  final String? description;
-  @override
-  @JsonKey(name: 'expiry_date')
-  final String? expiryDate;
+@override final  int? type;
+@override final  String? title;
+@override final  String? description;
+@override@JsonKey(name: 'expiry_date') final  String? expiryDate;
 
-  @override
-  String toString() {
-    return 'Promotion(type: $type, title: $title, description: $description, expiryDate: $expiryDate)';
-  }
+/// Create a copy of Promotion
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$PromotionCopyWith<_Promotion> get copyWith => __$PromotionCopyWithImpl<_Promotion>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$PromotionImpl &&
-            (identical(other.type, type) || other.type == type) &&
-            (identical(other.title, title) || other.title == title) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.expiryDate, expiryDate) ||
-                other.expiryDate == expiryDate));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, type, title, description, expiryDate);
-
-  /// Create a copy of Promotion
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$PromotionImplCopyWith<_$PromotionImpl> get copyWith =>
-      __$$PromotionImplCopyWithImpl<_$PromotionImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$PromotionImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$PromotionToJson(this, );
 }
 
-abstract class _Promotion implements Promotion {
-  factory _Promotion(
-          {final int? type,
-          final String? title,
-          final String? description,
-          @JsonKey(name: 'expiry_date') final String? expiryDate}) =
-      _$PromotionImpl;
-
-  factory _Promotion.fromJson(Map<String, dynamic> json) =
-      _$PromotionImpl.fromJson;
-
-  @override
-  int? get type;
-  @override
-  String? get title;
-  @override
-  String? get description;
-  @override
-  @JsonKey(name: 'expiry_date')
-  String? get expiryDate;
-
-  /// Create a copy of Promotion
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$PromotionImplCopyWith<_$PromotionImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Promotion&&(identical(other.type, type) || other.type == type)&&(identical(other.title, title) || other.title == title)&&(identical(other.description, description) || other.description == description)&&(identical(other.expiryDate, expiryDate) || other.expiryDate == expiryDate));
 }
 
-CuisineResponse _$CuisineResponseFromJson(Map<String, dynamic> json) {
-  return _CuisineResponse.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,type,title,description,expiryDate);
+
+@override
+String toString() {
+  return 'Promotion(type: $type, title: $title, description: $description, expiryDate: $expiryDate)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$PromotionCopyWith<$Res> implements $PromotionCopyWith<$Res> {
+  factory _$PromotionCopyWith(_Promotion value, $Res Function(_Promotion) _then) = __$PromotionCopyWithImpl;
+@override @useResult
+$Res call({
+ int? type, String? title, String? description,@JsonKey(name: 'expiry_date') String? expiryDate
+});
+
+
+
+
+}
+/// @nodoc
+class __$PromotionCopyWithImpl<$Res>
+    implements _$PromotionCopyWith<$Res> {
+  __$PromotionCopyWithImpl(this._self, this._then);
+
+  final _Promotion _self;
+  final $Res Function(_Promotion) _then;
+
+/// Create a copy of Promotion
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? type = freezed,Object? title = freezed,Object? description = freezed,Object? expiryDate = freezed,}) {
+  return _then(_Promotion(
+type: freezed == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as int?,title: freezed == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,expiryDate: freezed == expiryDate ? _self.expiryDate : expiryDate // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$CuisineResponse {
-  int? get id => throw _privateConstructorUsedError;
-  String? get name => throw _privateConstructorUsedError;
-  String? get image => throw _privateConstructorUsedError;
-  String? get icon => throw _privateConstructorUsedError;
+
+ int? get id; String? get name; String? get image; String? get icon;
+/// Create a copy of CuisineResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$CuisineResponseCopyWith<CuisineResponse> get copyWith => _$CuisineResponseCopyWithImpl<CuisineResponse>(this as CuisineResponse, _$identity);
 
   /// Serializes this CuisineResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of CuisineResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $CuisineResponseCopyWith<CuisineResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is CuisineResponse&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.image, image) || other.image == image)&&(identical(other.icon, icon) || other.icon == icon));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,image,icon);
+
+@override
+String toString() {
+  return 'CuisineResponse(id: $id, name: $name, image: $image, icon: $icon)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $CuisineResponseCopyWith<$Res> {
-  factory $CuisineResponseCopyWith(
-          CuisineResponse value, $Res Function(CuisineResponse) then) =
-      _$CuisineResponseCopyWithImpl<$Res, CuisineResponse>;
-  @useResult
-  $Res call({int? id, String? name, String? image, String? icon});
-}
+abstract mixin class $CuisineResponseCopyWith<$Res>  {
+  factory $CuisineResponseCopyWith(CuisineResponse value, $Res Function(CuisineResponse) _then) = _$CuisineResponseCopyWithImpl;
+@useResult
+$Res call({
+ int? id, String? name, String? image, String? icon
+});
 
+
+
+
+}
 /// @nodoc
-class _$CuisineResponseCopyWithImpl<$Res, $Val extends CuisineResponse>
+class _$CuisineResponseCopyWithImpl<$Res>
     implements $CuisineResponseCopyWith<$Res> {
-  _$CuisineResponseCopyWithImpl(this._value, this._then);
+  _$CuisineResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final CuisineResponse _self;
+  final $Res Function(CuisineResponse) _then;
 
-  /// Create a copy of CuisineResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? image = freezed,
-    Object? icon = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int?,
-      name: freezed == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      image: freezed == image
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as String?,
-      icon: freezed == icon
-          ? _value.icon
-          : icon // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
-  }
+/// Create a copy of CuisineResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = freezed,Object? name = freezed,Object? image = freezed,Object? icon = freezed,}) {
+  return _then(_self.copyWith(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,image: freezed == image ? _self.image : image // ignore: cast_nullable_to_non_nullable
+as String?,icon: freezed == icon ? _self.icon : icon // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$CuisineResponseImplCopyWith<$Res>
-    implements $CuisineResponseCopyWith<$Res> {
-  factory _$$CuisineResponseImplCopyWith(_$CuisineResponseImpl value,
-          $Res Function(_$CuisineResponseImpl) then) =
-      __$$CuisineResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({int? id, String? name, String? image, String? icon});
 }
 
-/// @nodoc
-class __$$CuisineResponseImplCopyWithImpl<$Res>
-    extends _$CuisineResponseCopyWithImpl<$Res, _$CuisineResponseImpl>
-    implements _$$CuisineResponseImplCopyWith<$Res> {
-  __$$CuisineResponseImplCopyWithImpl(
-      _$CuisineResponseImpl _value, $Res Function(_$CuisineResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of CuisineResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? image = freezed,
-    Object? icon = freezed,
-  }) {
-    return _then(_$CuisineResponseImpl(
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int?,
-      name: freezed == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      image: freezed == image
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as String?,
-      icon: freezed == icon
-          ? _value.icon
-          : icon // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [CuisineResponse].
+extension CuisineResponsePatterns on CuisineResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _CuisineResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _CuisineResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _CuisineResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _CuisineResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _CuisineResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _CuisineResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int? id,  String? name,  String? image,  String? icon)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _CuisineResponse() when $default != null:
+return $default(_that.id,_that.name,_that.image,_that.icon);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int? id,  String? name,  String? image,  String? icon)  $default,) {final _that = this;
+switch (_that) {
+case _CuisineResponse():
+return $default(_that.id,_that.name,_that.image,_that.icon);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int? id,  String? name,  String? image,  String? icon)?  $default,) {final _that = this;
+switch (_that) {
+case _CuisineResponse() when $default != null:
+return $default(_that.id,_that.name,_that.image,_that.icon);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$CuisineResponseImpl implements _CuisineResponse {
-  _$CuisineResponseImpl({this.id, this.name, this.image, this.icon});
 
-  factory _$CuisineResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$CuisineResponseImplFromJson(json);
+class _CuisineResponse implements CuisineResponse {
+   _CuisineResponse({this.id, this.name, this.image, this.icon});
+  factory _CuisineResponse.fromJson(Map<String, dynamic> json) => _$CuisineResponseFromJson(json);
 
-  @override
-  final int? id;
-  @override
-  final String? name;
-  @override
-  final String? image;
-  @override
-  final String? icon;
+@override final  int? id;
+@override final  String? name;
+@override final  String? image;
+@override final  String? icon;
 
-  @override
-  String toString() {
-    return 'CuisineResponse(id: $id, name: $name, image: $image, icon: $icon)';
-  }
+/// Create a copy of CuisineResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$CuisineResponseCopyWith<_CuisineResponse> get copyWith => __$CuisineResponseCopyWithImpl<_CuisineResponse>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$CuisineResponseImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.image, image) || other.image == image) &&
-            (identical(other.icon, icon) || other.icon == icon));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, image, icon);
-
-  /// Create a copy of CuisineResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$CuisineResponseImplCopyWith<_$CuisineResponseImpl> get copyWith =>
-      __$$CuisineResponseImplCopyWithImpl<_$CuisineResponseImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$CuisineResponseImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$CuisineResponseToJson(this, );
 }
 
-abstract class _CuisineResponse implements CuisineResponse {
-  factory _CuisineResponse(
-      {final int? id,
-      final String? name,
-      final String? image,
-      final String? icon}) = _$CuisineResponseImpl;
-
-  factory _CuisineResponse.fromJson(Map<String, dynamic> json) =
-      _$CuisineResponseImpl.fromJson;
-
-  @override
-  int? get id;
-  @override
-  String? get name;
-  @override
-  String? get image;
-  @override
-  String? get icon;
-
-  /// Create a copy of CuisineResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$CuisineResponseImplCopyWith<_$CuisineResponseImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _CuisineResponse&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.image, image) || other.image == image)&&(identical(other.icon, icon) || other.icon == icon));
 }
 
-Offer _$OfferFromJson(Map<String, dynamic> json) {
-  return _Offer.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,image,icon);
+
+@override
+String toString() {
+  return 'CuisineResponse(id: $id, name: $name, image: $image, icon: $icon)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$CuisineResponseCopyWith<$Res> implements $CuisineResponseCopyWith<$Res> {
+  factory _$CuisineResponseCopyWith(_CuisineResponse value, $Res Function(_CuisineResponse) _then) = __$CuisineResponseCopyWithImpl;
+@override @useResult
+$Res call({
+ int? id, String? name, String? image, String? icon
+});
+
+
+
+
+}
+/// @nodoc
+class __$CuisineResponseCopyWithImpl<$Res>
+    implements _$CuisineResponseCopyWith<$Res> {
+  __$CuisineResponseCopyWithImpl(this._self, this._then);
+
+  final _CuisineResponse _self;
+  final $Res Function(_CuisineResponse) _then;
+
+/// Create a copy of CuisineResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? image = freezed,Object? icon = freezed,}) {
+  return _then(_CuisineResponse(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,image: freezed == image ? _self.image : image // ignore: cast_nullable_to_non_nullable
+as String?,icon: freezed == icon ? _self.icon : icon // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$Offer {
+
+
+
   /// Serializes this Offer to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Offer);
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => runtimeType.hashCode;
+
+@override
+String toString() {
+  return 'Offer()';
+}
+
+
 }
 
 /// @nodoc
-abstract class $OfferCopyWith<$Res> {
-  factory $OfferCopyWith(Offer value, $Res Function(Offer) then) =
-      _$OfferCopyWithImpl<$Res, Offer>;
+class $OfferCopyWith<$Res>  {
+$OfferCopyWith(Offer _, $Res Function(Offer) __);
 }
 
-/// @nodoc
-class _$OfferCopyWithImpl<$Res, $Val extends Offer>
-    implements $OfferCopyWith<$Res> {
-  _$OfferCopyWithImpl(this._value, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+/// Adds pattern-matching-related methods to [Offer].
+extension OfferPatterns on Offer {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
 
-  /// Create a copy of Offer
-  /// with the given fields replaced by the non-null parameter values.
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _Offer value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _Offer() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _Offer value)  $default,){
+final _that = this;
+switch (_that) {
+case _Offer():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _Offer value)?  $default,){
+final _that = this;
+switch (_that) {
+case _Offer() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function()?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _Offer() when $default != null:
+return $default();case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function()  $default,) {final _that = this;
+switch (_that) {
+case _Offer():
+return $default();case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function()?  $default,) {final _that = this;
+switch (_that) {
+case _Offer() when $default != null:
+return $default();case _:
+  return null;
+
+}
 }
 
-/// @nodoc
-abstract class _$$OfferImplCopyWith<$Res> {
-  factory _$$OfferImplCopyWith(
-          _$OfferImpl value, $Res Function(_$OfferImpl) then) =
-      __$$OfferImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$OfferImplCopyWithImpl<$Res>
-    extends _$OfferCopyWithImpl<$Res, _$OfferImpl>
-    implements _$$OfferImplCopyWith<$Res> {
-  __$$OfferImplCopyWithImpl(
-      _$OfferImpl _value, $Res Function(_$OfferImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of Offer
-  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$OfferImpl implements _Offer {
-  _$OfferImpl();
 
-  factory _$OfferImpl.fromJson(Map<String, dynamic> json) =>
-      _$$OfferImplFromJson(json);
+class _Offer implements Offer {
+   _Offer();
+  factory _Offer.fromJson(Map<String, dynamic> json) => _$OfferFromJson(json);
 
-  @override
-  String toString() {
-    return 'Offer()';
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$OfferImpl);
-  }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => runtimeType.hashCode;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$OfferImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$OfferToJson(this, );
 }
 
-abstract class _Offer implements Offer {
-  factory _Offer() = _$OfferImpl;
-
-  factory _Offer.fromJson(Map<String, dynamic> json) = _$OfferImpl.fromJson;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Offer);
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => runtimeType.hashCode;
+
+@override
+String toString() {
+  return 'Offer()';
+}
+
+
+}
+
+
+
+
+// dart format on

@@ -6,37 +6,36 @@ part of 'wallet_history_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$WalletHistoryResponseImpl _$$WalletHistoryResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$WalletHistoryResponseImpl(
-      walletHistory: (json['wallet_history'] as List<dynamic>?)
-          ?.map((e) => WalletHistory.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      pagination: json['pagination'] == null
-          ? null
-          : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
-    );
+_WalletHistoryResponse _$WalletHistoryResponseFromJson(
+  Map<String, dynamic> json,
+) => _WalletHistoryResponse(
+  walletHistory: (json['wallet_history'] as List<dynamic>?)
+      ?.map((e) => WalletHistory.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  pagination: json['pagination'] == null
+      ? null
+      : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
+);
 
-Map<String, dynamic> _$$WalletHistoryResponseImplToJson(
-        _$WalletHistoryResponseImpl instance) =>
-    <String, dynamic>{
-      'wallet_history': instance.walletHistory,
-      'pagination': instance.pagination,
-    };
+Map<String, dynamic> _$WalletHistoryResponseToJson(
+  _WalletHistoryResponse instance,
+) => <String, dynamic>{
+  'wallet_history': instance.walletHistory,
+  'pagination': instance.pagination,
+};
 
-_$PaginationImpl _$$PaginationImplFromJson(Map<String, dynamic> json) =>
-    _$PaginationImpl(
-      total: (json['total'] as num?)?.toInt(),
-      perPage: (json['per_page'] as num?)?.toInt(),
-      currentPage: (json['current_page'] as num?)?.toInt(),
-      totalPages: (json['total_pages'] as num?)?.toInt(),
-      hasNextPage: json['has_next_page'] as bool?,
-      hasPrevPage: json['has_prev_page'] as bool?,
-      nextPage: (json['next_page'] as num?)?.toInt(),
-      prevPage: (json['prev_page'] as num?)?.toInt(),
-    );
+_Pagination _$PaginationFromJson(Map<String, dynamic> json) => _Pagination(
+  total: (json['total'] as num?)?.toInt(),
+  perPage: (json['per_page'] as num?)?.toInt(),
+  currentPage: (json['current_page'] as num?)?.toInt(),
+  totalPages: (json['total_pages'] as num?)?.toInt(),
+  hasNextPage: json['has_next_page'] as bool?,
+  hasPrevPage: json['has_prev_page'] as bool?,
+  nextPage: (json['next_page'] as num?)?.toInt(),
+  prevPage: (json['prev_page'] as num?)?.toInt(),
+);
 
-Map<String, dynamic> _$$PaginationImplToJson(_$PaginationImpl instance) =>
+Map<String, dynamic> _$PaginationToJson(_Pagination instance) =>
     <String, dynamic>{
       'total': instance.total,
       'per_page': instance.perPage,
@@ -48,8 +47,8 @@ Map<String, dynamic> _$$PaginationImplToJson(_$PaginationImpl instance) =>
       'prev_page': instance.prevPage,
     };
 
-_$WalletHistoryImpl _$$WalletHistoryImplFromJson(Map<String, dynamic> json) =>
-    _$WalletHistoryImpl(
+_WalletHistory _$WalletHistoryFromJson(Map<String, dynamic> json) =>
+    _WalletHistory(
       id: (json['id'] as num?)?.toInt(),
       amount: (json['amount'] as num?)?.toDouble(),
       closingBalance: (json['closing_balance'] as num?)?.toInt(),
@@ -64,7 +63,7 @@ _$WalletHistoryImpl _$$WalletHistoryImplFromJson(Map<String, dynamic> json) =>
       updatedAt: json['updated_at'] as String?,
     );
 
-Map<String, dynamic> _$$WalletHistoryImplToJson(_$WalletHistoryImpl instance) =>
+Map<String, dynamic> _$WalletHistoryToJson(_WalletHistory instance) =>
     <String, dynamic>{
       'id': instance.id,
       'amount': instance.amount,

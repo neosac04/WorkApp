@@ -138,7 +138,7 @@ class CommonButton extends StatelessWidget {
                   ),
 
                   if (arrowEnabled) ...[const SizedBox(width: 4), const Icon(Icons.arrow_forward, color: Colors.white, size: 18)],
-                  if (trailing != null) trailing!
+                  ?trailing
                 ],
               ),
       ),

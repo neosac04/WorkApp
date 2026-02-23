@@ -6,72 +6,70 @@ part of 'grocery_order_list_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$GroceryOrderListResponseImpl _$$GroceryOrderListResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$GroceryOrderListResponseImpl(
-      orders: (json['orders'] as List<dynamic>?)
-          ?.map((e) => Order.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      pagination: json['pagination'] == null
-          ? null
-          : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
-    );
+_GroceryOrderListResponse _$GroceryOrderListResponseFromJson(
+  Map<String, dynamic> json,
+) => _GroceryOrderListResponse(
+  orders: (json['orders'] as List<dynamic>?)
+      ?.map((e) => Order.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  pagination: json['pagination'] == null
+      ? null
+      : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
+);
 
-Map<String, dynamic> _$$GroceryOrderListResponseImplToJson(
-        _$GroceryOrderListResponseImpl instance) =>
-    <String, dynamic>{
-      'orders': instance.orders,
-      'pagination': instance.pagination,
-    };
+Map<String, dynamic> _$GroceryOrderListResponseToJson(
+  _GroceryOrderListResponse instance,
+) => <String, dynamic>{
+  'orders': instance.orders,
+  'pagination': instance.pagination,
+};
 
-_$OrderImpl _$$OrderImplFromJson(Map<String, dynamic> json) => _$OrderImpl(
-      id: (json['id'] as num?)?.toInt(),
-      vendorId: json['vendor_id'] as String?,
-      vendorName: json['vendor_name'] as String?,
-      paymentType: (json['payment_type'] as num?)?.toInt(),
-      paymentTypeLabel: json['payment_type_label'] as String?,
-      grandTotal: (json['grand_total'] as num?)?.toDouble(),
-      deliveryFee: (json['delivery_fee'] as num?)?.toDouble(),
-      status: (json['status'] as num?)?.toInt(),
-      statusLabel: json['status_label'] as String?,
-      deliveryAddress: json['delivery_address'] as String?,
-      deliveryAddressLat: json['delivery_address_lat'] as String?,
-      deliveryAddressLong: json['delivery_address_long'] as String?,
-      productImage: json['product_image'] as String?,
-      storeDetails: json['store_details'] == null
-          ? null
-          : StoreDetails.fromJson(
-              json['store_details'] as Map<String, dynamic>),
-      orderDate: json['order_date'] == null
-          ? null
-          : DateTime.parse(json['order_date'] as String),
-      createdAt: json['created_at'] as String?,
-      updatedAt: json['updated_at'] as String?,
-    );
+_Order _$OrderFromJson(Map<String, dynamic> json) => _Order(
+  id: (json['id'] as num?)?.toInt(),
+  vendorId: json['vendor_id'] as String?,
+  vendorName: json['vendor_name'] as String?,
+  paymentType: (json['payment_type'] as num?)?.toInt(),
+  paymentTypeLabel: json['payment_type_label'] as String?,
+  grandTotal: (json['grand_total'] as num?)?.toDouble(),
+  deliveryFee: (json['delivery_fee'] as num?)?.toDouble(),
+  status: (json['status'] as num?)?.toInt(),
+  statusLabel: json['status_label'] as String?,
+  deliveryAddress: json['delivery_address'] as String?,
+  deliveryAddressLat: json['delivery_address_lat'] as String?,
+  deliveryAddressLong: json['delivery_address_long'] as String?,
+  productImage: json['product_image'] as String?,
+  storeDetails: json['store_details'] == null
+      ? null
+      : StoreDetails.fromJson(json['store_details'] as Map<String, dynamic>),
+  orderDate: json['order_date'] == null
+      ? null
+      : DateTime.parse(json['order_date'] as String),
+  createdAt: json['created_at'] as String?,
+  updatedAt: json['updated_at'] as String?,
+);
 
-Map<String, dynamic> _$$OrderImplToJson(_$OrderImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'vendor_id': instance.vendorId,
-      'vendor_name': instance.vendorName,
-      'payment_type': instance.paymentType,
-      'payment_type_label': instance.paymentTypeLabel,
-      'grand_total': instance.grandTotal,
-      'delivery_fee': instance.deliveryFee,
-      'status': instance.status,
-      'status_label': instance.statusLabel,
-      'delivery_address': instance.deliveryAddress,
-      'delivery_address_lat': instance.deliveryAddressLat,
-      'delivery_address_long': instance.deliveryAddressLong,
-      'product_image': instance.productImage,
-      'store_details': instance.storeDetails,
-      'order_date': instance.orderDate?.toIso8601String(),
-      'created_at': instance.createdAt,
-      'updated_at': instance.updatedAt,
-    };
+Map<String, dynamic> _$OrderToJson(_Order instance) => <String, dynamic>{
+  'id': instance.id,
+  'vendor_id': instance.vendorId,
+  'vendor_name': instance.vendorName,
+  'payment_type': instance.paymentType,
+  'payment_type_label': instance.paymentTypeLabel,
+  'grand_total': instance.grandTotal,
+  'delivery_fee': instance.deliveryFee,
+  'status': instance.status,
+  'status_label': instance.statusLabel,
+  'delivery_address': instance.deliveryAddress,
+  'delivery_address_lat': instance.deliveryAddressLat,
+  'delivery_address_long': instance.deliveryAddressLong,
+  'product_image': instance.productImage,
+  'store_details': instance.storeDetails,
+  'order_date': instance.orderDate?.toIso8601String(),
+  'created_at': instance.createdAt,
+  'updated_at': instance.updatedAt,
+};
 
-_$StoreDetailsImpl _$$StoreDetailsImplFromJson(Map<String, dynamic> json) =>
-    _$StoreDetailsImpl(
+_StoreDetails _$StoreDetailsFromJson(Map<String, dynamic> json) =>
+    _StoreDetails(
       storeId: json['store_id'] as String?,
       retailerId: json['retailer_id'] as String?,
       name: json['name'] as String?,
@@ -86,7 +84,7 @@ _$StoreDetailsImpl _$$StoreDetailsImplFromJson(Map<String, dynamic> json) =>
       needDeliveryAddress: (json['need_delivery_address'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$StoreDetailsImplToJson(_$StoreDetailsImpl instance) =>
+Map<String, dynamic> _$StoreDetailsToJson(_StoreDetails instance) =>
     <String, dynamic>{
       'store_id': instance.storeId,
       'retailer_id': instance.retailerId,

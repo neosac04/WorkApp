@@ -6,9 +6,8 @@ part of 'visa_product_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$VisaProductModelImpl _$$VisaProductModelImplFromJson(
-        Map<String, dynamic> json) =>
-    _$VisaProductModelImpl(
+_VisaProductModel _$VisaProductModelFromJson(Map<String, dynamic> json) =>
+    _VisaProductModel(
       id: (json['id'] as num).toInt(),
       title: json['title'] as String,
       description: json['description'] as String,
@@ -20,8 +19,7 @@ _$VisaProductModelImpl _$$VisaProductModelImplFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$VisaProductModelImplToJson(
-        _$VisaProductModelImpl instance) =>
+Map<String, dynamic> _$VisaProductModelToJson(_VisaProductModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'title': instance.title,

@@ -6,9 +6,8 @@ part of 'driver_location_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$DriverLocationModelImpl _$$DriverLocationModelImplFromJson(
-        Map<String, dynamic> json) =>
-    _$DriverLocationModelImpl(
+_DriverLocationModel _$DriverLocationModelFromJson(Map<String, dynamic> json) =>
+    _DriverLocationModel(
       accuracy: (json['accuracy'] as num?)?.toDouble() ?? 0.0,
       bearing: (json['bearing'] as num?)?.toDouble() ?? 0.0,
       speed: (json['speed'] as num?)?.toDouble() ?? 0.0,
@@ -17,13 +16,13 @@ _$DriverLocationModelImpl _$$DriverLocationModelImplFromJson(
       lng: (json['lng'] as num?)?.toDouble() ?? 0.0,
     );
 
-Map<String, dynamic> _$$DriverLocationModelImplToJson(
-        _$DriverLocationModelImpl instance) =>
-    <String, dynamic>{
-      'accuracy': instance.accuracy,
-      'bearing': instance.bearing,
-      'speed': instance.speed,
-      'time': instance.time,
-      'lat': instance.lat,
-      'lng': instance.lng,
-    };
+Map<String, dynamic> _$DriverLocationModelToJson(
+  _DriverLocationModel instance,
+) => <String, dynamic>{
+  'accuracy': instance.accuracy,
+  'bearing': instance.bearing,
+  'speed': instance.speed,
+  'time': instance.time,
+  'lat': instance.lat,
+  'lng': instance.lng,
+};

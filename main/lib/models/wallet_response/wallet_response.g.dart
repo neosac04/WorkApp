@@ -6,8 +6,8 @@ part of 'wallet_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$WalletResponseImpl _$$WalletResponseImplFromJson(Map<String, dynamic> json) =>
-    _$WalletResponseImpl(
+_WalletResponse _$WalletResponseFromJson(Map<String, dynamic> json) =>
+    _WalletResponse(
       id: (json['id'] as num?)?.toInt(),
       userId: (json['user_id'] as num?)?.toInt(),
       cashbackBalance: (json['cashback_balance'] as num?)?.toDouble(),
@@ -21,8 +21,7 @@ _$WalletResponseImpl _$$WalletResponseImplFromJson(Map<String, dynamic> json) =>
           : DateTime.parse(json['updated_at'] as String),
     );
 
-Map<String, dynamic> _$$WalletResponseImplToJson(
-        _$WalletResponseImpl instance) =>
+Map<String, dynamic> _$WalletResponseToJson(_WalletResponse instance) =>
     <String, dynamic>{
       'id': instance.id,
       'user_id': instance.userId,

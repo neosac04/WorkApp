@@ -1,3 +1,5 @@
+// dart format width=80
+
 /// GENERATED CODE - DO NOT MODIFY BY HAND
 /// *****************************************************
 ///  FlutterGen
@@ -5,7 +7,7 @@
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
-// ignore_for_file: directives_ordering,unnecessary_import,implicit_dynamic_list_literal,deprecated_member_use
+// ignore_for_file: deprecated_member_use,directives_ordering,implicit_dynamic_list_literal,unnecessary_import
 
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -36,13 +38,13 @@ class $AssetsFontsGen {
 
   /// List of all assets
   List<String> get values => [
-        onestBold,
-        onestExtraBold,
-        onestLight,
-        onestMedium,
-        onestRegular,
-        onestSemiBold
-      ];
+    onestBold,
+    onestExtraBold,
+    onestLight,
+    onestMedium,
+    onestRegular,
+    onestSemiBold,
+  ];
 }
 
 class $AssetsIconsGen {
@@ -638,173 +640,173 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<dynamic> get values => [
-        icAdd,
-        icAddGrey,
-        icAddMoney,
-        icAi,
-        icAirplane,
-        icAlertDialog,
-        icAlertNew,
-        icAppLogo,
-        icApplePay,
-        icArab,
-        icArrow,
-        icArrowRight,
-        icBack,
-        icBookmark,
-        icBuilding,
-        icCalendar,
-        icCalender,
-        icCall,
-        icCamara,
-        icCamera,
-        icCancel,
-        icCard,
-        icCart,
-        icCheckedItem,
-        icConform,
-        icContact,
-        icCountry,
-        icCoupon,
-        icDelete,
-        icDeliveryBox,
-        icDestination,
-        icDestinationSelected,
-        icDiscount,
-        icDob,
-        icDownArrow,
-        icDownload,
-        icDropdown,
-        icEarth,
-        icEdit,
-        icEmail,
-        icFaq,
-        icFav,
-        icFemaleDriver,
-        icFile,
-        icFileCancel,
-        icFileNotUploaded,
-        icFileUplaod,
-        icFileUploaded,
-        icFiles,
-        icFilter,
-        icGallery,
-        icGame,
-        icGameSelect,
-        icGroup,
-        icHealtRecord,
-        icHome,
-        icHomeSelect,
-        icInfo,
-        icIssueType,
-        icLab,
-        icLaboratory,
-        icLandmark,
-        icLanguage,
-        icLocation,
-        icLocationDash,
-        icLocationMap,
-        icLocationPin,
-        icLock,
-        icLogOut,
-        icLogoShoppingGate,
-        icLogout,
-        icLogoutDialogIcon,
-        icMaleDriver,
-        icManageAddress,
-        icMapPin,
-        icMastercard,
-        icMenu,
-        icMenuSelect,
-        icMenuThem,
-        icMic,
-        icMicGray,
-        icMinus,
-        icMinusGrey,
-        icMobile,
-        icMoney,
-        icMoneyBundle,
-        icMySelf,
-        icNationalId,
-        icNationality,
-        icNationalitySelected,
-        icNetwork,
-        icNotSelected,
-        icNotification,
-        icOffers,
-        icOffersTheme,
-        icOrder,
-        icOrderCancelled,
-        icOrderDelivered,
-        icOrderReturn,
-        icPaid,
-        icPassport,
-        icPassportPrefix,
-        icPayment,
-        icPerson,
-        icPhone,
-        icPickup,
-        icPlus,
-        icPriority,
-        icProfile,
-        icProfileSelect,
-        icQr,
-        icQrCode,
-        icRefer,
-        icRemove,
-        icResidentOf,
-        icResidentOfSelected,
-        icReturnAccept,
-        icReturnOrder,
-        icRightArrow,
-        icRightEnter,
-        icSaudiCurrency,
-        icSearchSvg,
-        icSearchWebp,
-        icSearchGray,
-        icSecurePerson,
-        icSelected,
-        icSendMoney,
-        icShare,
-        icSignal,
-        icSim,
-        icSomeoneElse,
-        icSort,
-        icSplash,
-        icStar,
-        icStarRate,
-        icStarSelected,
-        icStarUnselected,
-        icStareYellow,
-        icStartNext,
-        icStretcher,
-        icTamara,
-        icTick,
-        icTime,
-        icTimeTrip,
-        icTimer,
-        icTransactions,
-        icTravelDate,
-        icTravelDateSelected,
-        icTravellerDetails,
-        icTrip,
-        icTruck,
-        icUk,
-        icUnStar,
-        icUploadFile,
-        icUsFlag,
-        icUser,
-        icVerified,
-        icVideo,
-        icVideocall,
-        icVisa,
-        icWallet,
-        icWatch,
-        icWelcome,
-        icWhiteLine,
-        icWishlist,
-        icZipCode
-      ];
+    icAdd,
+    icAddGrey,
+    icAddMoney,
+    icAi,
+    icAirplane,
+    icAlertDialog,
+    icAlertNew,
+    icAppLogo,
+    icApplePay,
+    icArab,
+    icArrow,
+    icArrowRight,
+    icBack,
+    icBookmark,
+    icBuilding,
+    icCalendar,
+    icCalender,
+    icCall,
+    icCamara,
+    icCamera,
+    icCancel,
+    icCard,
+    icCart,
+    icCheckedItem,
+    icConform,
+    icContact,
+    icCountry,
+    icCoupon,
+    icDelete,
+    icDeliveryBox,
+    icDestination,
+    icDestinationSelected,
+    icDiscount,
+    icDob,
+    icDownArrow,
+    icDownload,
+    icDropdown,
+    icEarth,
+    icEdit,
+    icEmail,
+    icFaq,
+    icFav,
+    icFemaleDriver,
+    icFile,
+    icFileCancel,
+    icFileNotUploaded,
+    icFileUplaod,
+    icFileUploaded,
+    icFiles,
+    icFilter,
+    icGallery,
+    icGame,
+    icGameSelect,
+    icGroup,
+    icHealtRecord,
+    icHome,
+    icHomeSelect,
+    icInfo,
+    icIssueType,
+    icLab,
+    icLaboratory,
+    icLandmark,
+    icLanguage,
+    icLocation,
+    icLocationDash,
+    icLocationMap,
+    icLocationPin,
+    icLock,
+    icLogOut,
+    icLogoShoppingGate,
+    icLogout,
+    icLogoutDialogIcon,
+    icMaleDriver,
+    icManageAddress,
+    icMapPin,
+    icMastercard,
+    icMenu,
+    icMenuSelect,
+    icMenuThem,
+    icMic,
+    icMicGray,
+    icMinus,
+    icMinusGrey,
+    icMobile,
+    icMoney,
+    icMoneyBundle,
+    icMySelf,
+    icNationalId,
+    icNationality,
+    icNationalitySelected,
+    icNetwork,
+    icNotSelected,
+    icNotification,
+    icOffers,
+    icOffersTheme,
+    icOrder,
+    icOrderCancelled,
+    icOrderDelivered,
+    icOrderReturn,
+    icPaid,
+    icPassport,
+    icPassportPrefix,
+    icPayment,
+    icPerson,
+    icPhone,
+    icPickup,
+    icPlus,
+    icPriority,
+    icProfile,
+    icProfileSelect,
+    icQr,
+    icQrCode,
+    icRefer,
+    icRemove,
+    icResidentOf,
+    icResidentOfSelected,
+    icReturnAccept,
+    icReturnOrder,
+    icRightArrow,
+    icRightEnter,
+    icSaudiCurrency,
+    icSearchSvg,
+    icSearchWebp,
+    icSearchGray,
+    icSecurePerson,
+    icSelected,
+    icSendMoney,
+    icShare,
+    icSignal,
+    icSim,
+    icSomeoneElse,
+    icSort,
+    icSplash,
+    icStar,
+    icStarRate,
+    icStarSelected,
+    icStarUnselected,
+    icStareYellow,
+    icStartNext,
+    icStretcher,
+    icTamara,
+    icTick,
+    icTime,
+    icTimeTrip,
+    icTimer,
+    icTransactions,
+    icTravelDate,
+    icTravelDateSelected,
+    icTravellerDetails,
+    icTrip,
+    icTruck,
+    icUk,
+    icUnStar,
+    icUploadFile,
+    icUsFlag,
+    icUser,
+    icVerified,
+    icVideo,
+    icVideocall,
+    icVisa,
+    icWallet,
+    icWatch,
+    icWelcome,
+    icWhiteLine,
+    icWishlist,
+    icZipCode,
+  ];
 }
 
 class $AssetsImagesGen {
@@ -1003,56 +1005,56 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<dynamic> get values => [
-        accessibleRides,
-        bikeImageLow,
-        eSimCard,
-        esimPlanCard,
-        flagList,
-        handVector,
-        houseImage,
-        icAppIcon,
-        icCar,
-        icCongratulations,
-        icCurrentLocation,
-        icDollar,
-        icDropOffLocation,
-        icIndicator,
-        icInvite,
-        icLabTest,
-        icLeftIndicator,
-        icMoneyBags,
-        icNoAddress,
-        icNoCard,
-        icNoData,
-        icNoInternet,
-        icOrderGame,
-        icPickupLocation,
-        icRightIndicator,
-        icSlotBackground,
-        icSlotMachine,
-        icSpin,
-        icSpinBackground,
-        icSpinRemaining,
-        icSpinToWin,
-        icStartNext,
-        icWinLogo,
-        introOverlay,
-        introSs01,
-        introSs02,
-        introSs03,
-        medicineImage,
-        mobileGift,
-        planeMobile,
-        referAndEarn,
-        slotMachine,
-        spinTheSlot,
-        taxiImage,
-        topUpSearch,
-        topUpService,
-        visaCard,
-        welcomeBgSvg,
-        welcomeBgWebp
-      ];
+    accessibleRides,
+    bikeImageLow,
+    eSimCard,
+    esimPlanCard,
+    flagList,
+    handVector,
+    houseImage,
+    icAppIcon,
+    icCar,
+    icCongratulations,
+    icCurrentLocation,
+    icDollar,
+    icDropOffLocation,
+    icIndicator,
+    icInvite,
+    icLabTest,
+    icLeftIndicator,
+    icMoneyBags,
+    icNoAddress,
+    icNoCard,
+    icNoData,
+    icNoInternet,
+    icOrderGame,
+    icPickupLocation,
+    icRightIndicator,
+    icSlotBackground,
+    icSlotMachine,
+    icSpin,
+    icSpinBackground,
+    icSpinRemaining,
+    icSpinToWin,
+    icStartNext,
+    icWinLogo,
+    introOverlay,
+    introSs01,
+    introSs02,
+    introSs03,
+    medicineImage,
+    mobileGift,
+    planeMobile,
+    referAndEarn,
+    slotMachine,
+    spinTheSlot,
+    taxiImage,
+    topUpSearch,
+    topUpService,
+    visaCard,
+    welcomeBgSvg,
+    welcomeBgWebp,
+  ];
 }
 
 class $AssetsLoaderGen {
@@ -1108,19 +1110,19 @@ class $AssetsLoaderGen {
 
   /// List of all assets
   List<LottieGenImage> get values => [
-        esimLoader,
-        foodLoader,
-        giftCardLoader,
-        giftLoader,
-        groceryLoader,
-        hotelBookingLoader,
-        insuranceLoader,
-        shopLoader,
-        taxiLoader,
-        ticketLoader,
-        topUpLoader,
-        visaLoader
-      ];
+    esimLoader,
+    foodLoader,
+    giftCardLoader,
+    giftLoader,
+    groceryLoader,
+    hotelBookingLoader,
+    insuranceLoader,
+    shopLoader,
+    taxiLoader,
+    ticketLoader,
+    topUpLoader,
+    visaLoader,
+  ];
 }
 
 class Assets {
@@ -1139,6 +1141,7 @@ class AssetGenImage {
     this._assetName, {
     this.size,
     this.flavors = const {},
+    this.animation,
   });
 
   final String _assetName;
@@ -1147,6 +1150,7 @@ class AssetGenImage {
 
   final Size? size;
   final Set<String> flavors;
+  final AssetGenImageAnimation? animation;
 
   Image image({
     Key? key,
@@ -1207,11 +1211,7 @@ class AssetGenImage {
     @Deprecated('Do not specify package for a generated library asset')
     String? package = package,
   }) {
-    return AssetImage(
-      _assetName,
-      bundle: bundle,
-      package: package,
-    );
+    return AssetImage(_assetName, bundle: bundle, package: package);
   }
 
   String get path => _assetName;
@@ -1219,18 +1219,24 @@ class AssetGenImage {
   String get keyName => 'packages/core/$_assetName';
 }
 
-class SvgGenImage {
-  const SvgGenImage(
-    this._assetName, {
-    this.size,
-    this.flavors = const {},
-  }) : _isVecFormat = false;
+class AssetGenImageAnimation {
+  const AssetGenImageAnimation({
+    required this.isAnimation,
+    required this.duration,
+    required this.frames,
+  });
 
-  const SvgGenImage.vec(
-    this._assetName, {
-    this.size,
-    this.flavors = const {},
-  }) : _isVecFormat = true;
+  final bool isAnimation;
+  final Duration duration;
+  final int frames;
+}
+
+class SvgGenImage {
+  const SvgGenImage(this._assetName, {this.size, this.flavors = const {}})
+    : _isVecFormat = false;
+
+  const SvgGenImage.vec(this._assetName, {this.size, this.flavors = const {}})
+    : _isVecFormat = true;
 
   final String _assetName;
   final Size? size;
@@ -1254,6 +1260,7 @@ class SvgGenImage {
     String? semanticsLabel,
     bool excludeFromSemantics = false,
     _svg.SvgTheme? theme,
+    _svg.ColorMapper? colorMapper,
     ColorFilter? colorFilter,
     Clip clipBehavior = Clip.hardEdge,
     @deprecated Color? color,
@@ -1273,6 +1280,7 @@ class SvgGenImage {
         assetBundle: bundle,
         packageName: package,
         theme: theme,
+        colorMapper: colorMapper,
       );
     }
     return _svg.SvgPicture(
@@ -1287,7 +1295,8 @@ class SvgGenImage {
       placeholderBuilder: placeholderBuilder,
       semanticsLabel: semanticsLabel,
       excludeFromSemantics: excludeFromSemantics,
-      colorFilter: colorFilter ??
+      colorFilter:
+          colorFilter ??
           (color == null ? null : ColorFilter.mode(color, colorBlendMode)),
       clipBehavior: clipBehavior,
       cacheColorFilter: cacheColorFilter,
@@ -1300,10 +1309,7 @@ class SvgGenImage {
 }
 
 class LottieGenImage {
-  const LottieGenImage(
-    this._assetName, {
-    this.flavors = const {},
-  });
+  const LottieGenImage(this._assetName, {this.flavors = const {}});
 
   final String _assetName;
   final Set<String> flavors;
@@ -1322,11 +1328,8 @@ class LottieGenImage {
     _lottie.LottieImageProviderFactory? imageProviderFactory,
     Key? key,
     AssetBundle? bundle,
-    Widget Function(
-      BuildContext,
-      Widget,
-      _lottie.LottieComposition?,
-    )? frameBuilder,
+    Widget Function(BuildContext, Widget, _lottie.LottieComposition?)?
+    frameBuilder,
     ImageErrorWidgetBuilder? errorBuilder,
     double? width,
     double? height,

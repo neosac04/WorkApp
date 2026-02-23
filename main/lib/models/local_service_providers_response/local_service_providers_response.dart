@@ -4,7 +4,7 @@ part 'local_service_providers_response.freezed.dart';
 part 'local_service_providers_response.g.dart';
 
 @freezed
-class LocalServiceProvidersResponse with _$LocalServiceProvidersResponse {
+sealed class LocalServiceProvidersResponse with _$LocalServiceProvidersResponse {
   const factory LocalServiceProvidersResponse({@JsonKey(name: 'providers') List<LocalServiceProvider>? providers}) =
       _LocalServiceProvidersResponse;
 
@@ -12,7 +12,7 @@ class LocalServiceProvidersResponse with _$LocalServiceProvidersResponse {
 }
 
 @freezed
-class LocalServiceProvider with _$LocalServiceProvider {
+sealed class LocalServiceProvider with _$LocalServiceProvider {
   const factory LocalServiceProvider({
     @JsonKey(name: 'provider') String? provider,
     @JsonKey(name: 'min_price') double? minPrice,

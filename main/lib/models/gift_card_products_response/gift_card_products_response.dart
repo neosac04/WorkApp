@@ -13,7 +13,7 @@ GiftCardProductsResponse giftCardProductsResponseFromJson(String str) => GiftCar
 String giftCardProductsResponseToJson(GiftCardProductsResponse data) => json.encode(data.toJson());
 
 @freezed
-class GiftCardProductsResponse with _$GiftCardProductsResponse {
+sealed class GiftCardProductsResponse with _$GiftCardProductsResponse {
   const factory GiftCardProductsResponse({
     @JsonKey(name: "id")
     String? id,

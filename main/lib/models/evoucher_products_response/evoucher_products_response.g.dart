@@ -6,27 +6,26 @@ part of 'evoucher_products_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$EvoucherProductsResponseImpl _$$EvoucherProductsResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$EvoucherProductsResponseImpl(
-      products: (json['products'] as List<dynamic>?)
-          ?.map((e) => EvoucherProduct.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      pagination: json['pagination'] == null
-          ? null
-          : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
-    );
+_EvoucherProductsResponse _$EvoucherProductsResponseFromJson(
+  Map<String, dynamic> json,
+) => _EvoucherProductsResponse(
+  products: (json['products'] as List<dynamic>?)
+      ?.map((e) => EvoucherProduct.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  pagination: json['pagination'] == null
+      ? null
+      : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
+);
 
-Map<String, dynamic> _$$EvoucherProductsResponseImplToJson(
-        _$EvoucherProductsResponseImpl instance) =>
-    <String, dynamic>{
-      'products': instance.products,
-      'pagination': instance.pagination,
-    };
+Map<String, dynamic> _$EvoucherProductsResponseToJson(
+  _EvoucherProductsResponse instance,
+) => <String, dynamic>{
+  'products': instance.products,
+  'pagination': instance.pagination,
+};
 
-_$EvoucherProductImpl _$$EvoucherProductImplFromJson(
-        Map<String, dynamic> json) =>
-    _$EvoucherProductImpl(
+_EvoucherProduct _$EvoucherProductFromJson(Map<String, dynamic> json) =>
+    _EvoucherProduct(
       id: (json['id'] as num?)?.toInt(),
       productId: json['product_id'] as String?,
       itemBarcode: json['item_barcode'] as String?,
@@ -39,8 +38,7 @@ _$EvoucherProductImpl _$$EvoucherProductImplFromJson(
       price: (json['price'] as num?)?.toDouble(),
     );
 
-Map<String, dynamic> _$$EvoucherProductImplToJson(
-        _$EvoucherProductImpl instance) =>
+Map<String, dynamic> _$EvoucherProductToJson(_EvoucherProduct instance) =>
     <String, dynamic>{
       'id': instance.id,
       'product_id': instance.productId,

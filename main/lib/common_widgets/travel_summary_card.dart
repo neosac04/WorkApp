@@ -37,7 +37,7 @@ class TravelSummaryCard extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text("$fromDate", style: context.textTheme.titleSmall?.copyWith(color: ColorConstants.blackTextColor)),
+              Text(fromDate, style: context.textTheme.titleSmall?.copyWith(color: ColorConstants.blackTextColor)),
               AppSizeConstants.size_8.hBox(context),
               Text("•", style: context.textTheme.titleSmall?.copyWith(color: ColorConstants.themeColor5)),
               AppSizeConstants.size_8.hBox(context),

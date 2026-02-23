@@ -6,16 +6,14 @@ part of 'send_credit_reasons.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$SendCreditReasonsImpl _$$SendCreditReasonsImplFromJson(
-        Map<String, dynamic> json) =>
-    _$SendCreditReasonsImpl(
+_SendCreditReasons _$SendCreditReasonsFromJson(Map<String, dynamic> json) =>
+    _SendCreditReasons(
       id: (json['id'] as num?)?.toInt(),
       reasonEn: json['reason_en'] as String?,
       reasonAr: json['reason_ar'] as String?,
     );
 
-Map<String, dynamic> _$$SendCreditReasonsImplToJson(
-        _$SendCreditReasonsImpl instance) =>
+Map<String, dynamic> _$SendCreditReasonsToJson(_SendCreditReasons instance) =>
     <String, dynamic>{
       'id': instance.id,
       'reason_en': instance.reasonEn,

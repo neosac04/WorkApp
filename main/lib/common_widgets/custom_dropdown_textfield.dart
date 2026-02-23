@@ -24,7 +24,7 @@ class CustomDropdownField extends StatefulWidget {
   final Color focusedBorderColor;
 
   const CustomDropdownField({
-    Key? key,
+    super.key,
     required this.options,
     required this.hintText,
     this.prefixIconPath,
@@ -40,7 +40,7 @@ class CustomDropdownField extends StatefulWidget {
     this.borderColor = ColorConstants.borderColorProDetail,
     this.enabledBorderColor = ColorConstants.borderColorProDetail,
     this.focusedBorderColor = ColorConstants.primaryColor,
-  }) : super(key: key);
+  });
 
   @override
   State<CustomDropdownField> createState() => _CustomDropdownFieldState();

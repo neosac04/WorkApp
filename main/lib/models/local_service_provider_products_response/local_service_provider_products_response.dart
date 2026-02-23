@@ -6,7 +6,7 @@ part 'local_service_provider_products_response.freezed.dart';
 part 'local_service_provider_products_response.g.dart';
 
 @freezed
-class LocalServiceProviderProductsResponse with _$LocalServiceProviderProductsResponse {
+sealed class LocalServiceProviderProductsResponse with _$LocalServiceProviderProductsResponse {
   const factory LocalServiceProviderProductsResponse({
     @JsonKey(name: 'data') List<ProductCategory>? categories,
     @JsonKey(name: 'is_change_operator') bool? isChangeOperator,
@@ -16,7 +16,7 @@ class LocalServiceProviderProductsResponse with _$LocalServiceProviderProductsRe
 }
 
 @freezed
-class ProductCategory with _$ProductCategory {
+sealed class ProductCategory with _$ProductCategory {
   const factory ProductCategory({String? name, List<TopUpProduct>? products}) = _ProductCategory;
 
   factory ProductCategory.fromJson(Map<String, dynamic> json) => _$ProductCategoryFromJson(json);

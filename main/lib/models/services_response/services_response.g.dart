@@ -6,9 +6,8 @@ part of 'services_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ServicesResponseImpl _$$ServicesResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$ServicesResponseImpl(
+_ServicesResponse _$ServicesResponseFromJson(Map<String, dynamic> json) =>
+    _ServicesResponse(
       type: json['type'] as String? ?? '',
       title: json['title'] as String? ?? '',
       subTitle: json['subtitle'] as String? ?? '',
@@ -19,14 +18,14 @@ _$ServicesResponseImpl _$$ServicesResponseImplFromJson(
       msApiUrl: json['ms_api_url'] as String? ?? '',
       isEnableInMenu: json['is_enable_in_menu'] as bool? ?? false,
       isViewAll: json['isViewAll'] as bool? ?? false,
-      services: (json['services'] as List<dynamic>?)
+      services:
+          (json['services'] as List<dynamic>?)
               ?.map((e) => ServicesResponse.fromJson(e as Map<String, dynamic>))
               .toList() ??
           const [],
     );
 
-Map<String, dynamic> _$$ServicesResponseImplToJson(
-        _$ServicesResponseImpl instance) =>
+Map<String, dynamic> _$ServicesResponseToJson(_ServicesResponse instance) =>
     <String, dynamic>{
       'type': instance.type,
       'title': instance.title,

@@ -20,20 +20,20 @@ class MessageLookup extends MessageLookupByLibrary {
   @override
   String get localeName => 'ar';
 
-  static m0(seconds) => "إعادة إرسال الرسائل القصيرة في ${seconds} ثانية";
+  static String m0(seconds) => "إعادة إرسال الرسائل القصيرة في ${seconds} ثانية";
 
-  static m1(max, name) => "يمكنك اختيار بحد أقصى ${max} من ${name}";
+  static String m1(max, name) => "يمكنك اختيار بحد أقصى ${max} من ${name}";
 
-  static m2(min, name) => "يرجى اختيار ما لا يقل عن ${min} من ${name}";
+  static String m2(min, name) => "يرجى اختيار ما لا يقل عن ${min} من ${name}";
 
-  static m3(count) =>
-      "${Intl.plural(count, zero: 'السعر الإجمالي (لا توجد عناصر)', one: 'السعر الإجمالي (عنصر واحد)', two: 'السعر الإجمالي (عنصران)', few: 'السعر الإجمالي (${count} عناصر)', many: 'السعر الإجمالي (${count} عنصراً)', other: 'السعر الإجمالي (${count} عنصر)')}";
+  static String m3(count) =>
+      Intl.plural(count, zero: 'السعر الإجمالي (لا توجد عناصر)', one: 'السعر الإجمالي (عنصر واحد)', two: 'السعر الإجمالي (عنصران)', few: 'السعر الإجمالي (${count} عناصر)', many: 'السعر الإجمالي (${count} عنصراً)', other: 'السعر الإجمالي (${count} عنصر)');
 
   @override
   final Map<String, dynamic> messages =
       _notInlinedMessages(_notInlinedMessages);
 
-  static Map<String, dynamic> _notInlinedMessages(_) => {
+  static Map<String, dynamic> _notInlinedMessages(Object? _) => {
         'Category': MessageLookupByLibrary.simpleMessage('فئة'),
         'Discount_col': MessageLookupByLibrary.simpleMessage('خصم'),
         'EVoucher_detail':
@@ -295,6 +295,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'bookATest': MessageLookupByLibrary.simpleMessage('احجز اختبار'),
         'bookNow': MessageLookupByLibrary.simpleMessage('احجز الآن'),
         'book_a_ride': MessageLookupByLibrary.simpleMessage('احجز رحلة'),
+        'book_a_slot': MessageLookupByLibrary.simpleMessage('احجز موعدًا'),
         'book_a_taxi': MessageLookupByLibrary.simpleMessage('احجز تاكسي'),
         'book_an_appointment':
             MessageLookupByLibrary.simpleMessage('احجز موعداً'),
@@ -365,6 +366,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('درجة المقصورة:'),
         'cabin_classes': MessageLookupByLibrary.simpleMessage('درجات المقصورة'),
         'cake': MessageLookupByLibrary.simpleMessage('كعك'),
+        'call_scheduled_successfully':
+            MessageLookupByLibrary.simpleMessage('تمت جدولة المكالمة بنجاح'),
         'camera': MessageLookupByLibrary.simpleMessage('كاميرا'),
         'cameraAccess':
             MessageLookupByLibrary.simpleMessage('تعذر الوصول إلى الكاميرا'),
@@ -505,6 +508,9 @@ class MessageLookup extends MessageLookupByLibrary {
         'chooseJpgJpeg': MessageLookupByLibrary.simpleMessage(
             'اختر من بين تنسيقات jpg أو jpeg'),
         'chooseSource': MessageLookupByLibrary.simpleMessage('اختر مصدراً'),
+        'choose_a_preferred_date_for_sample_collection':
+            MessageLookupByLibrary.simpleMessage(
+                'اختر تاريخًا مفضلًا لجمع العينة'),
         'choose_a_ride': MessageLookupByLibrary.simpleMessage('اختر مشوارا'),
         'choose_document': MessageLookupByLibrary.simpleMessage('تحميل مستند'),
         'choose_driver_preference':
@@ -521,7 +527,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'choose_option': MessageLookupByLibrary.simpleMessage('اختر خياراً'),
         'choose_pdf': MessageLookupByLibrary.simpleMessage('اختر PDF'),
         'choose_prefer_airline': MessageLookupByLibrary.simpleMessage(
-            'اختر شركة الطيران المفضلة <font color=\"#CC4924\">(اختياري)</font>'),
+            'اختر شركة الطيران المفضلة <font color="#CC4924">(اختياري)</font>'),
         'choose_ride': MessageLookupByLibrary.simpleMessage('اختر رحلة'),
         'choose_your_ride': MessageLookupByLibrary.simpleMessage('اختر رحلتك'),
         'city': MessageLookupByLibrary.simpleMessage('المدينة'),
@@ -533,6 +539,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'clear_filters': MessageLookupByLibrary.simpleMessage('مسح المرشحات'),
         'click_here': MessageLookupByLibrary.simpleMessage('اضغط هنا'),
         'close': MessageLookupByLibrary.simpleMessage('إغلاق'),
+        'closed': MessageLookupByLibrary.simpleMessage('مغلق'),
         'closing_balance': MessageLookupByLibrary.simpleMessage('الرصيد:'),
         'clubs': MessageLookupByLibrary.simpleMessage('نوادي'),
         'code': MessageLookupByLibrary.simpleMessage('الرمز:'),
@@ -589,6 +596,8 @@ class MessageLookup extends MessageLookupByLibrary {
         'contact_us': MessageLookupByLibrary.simpleMessage('اتصل بنا'),
         'continue_action': MessageLookupByLibrary.simpleMessage('متابعة'),
         'continue_lb': MessageLookupByLibrary.simpleMessage('استمرار'),
+        'continue_to_payment':
+            MessageLookupByLibrary.simpleMessage('متابعة إلى الدفع'),
         'copied': MessageLookupByLibrary.simpleMessage('تم النسخ:'),
         'copied_clipboard':
             MessageLookupByLibrary.simpleMessage('تم النسخ إلى الحافظة'),
@@ -604,6 +613,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('البلدان المشمولة'),
         'credit_debit_card':
             MessageLookupByLibrary.simpleMessage('بطاقة الائتمان/الخصم'),
+        'current_location_denied_permission_msg':
+            MessageLookupByLibrary.simpleMessage('تم رفض إذن الموقع الحالي'),
+        'current_location_permission_msg': MessageLookupByLibrary.simpleMessage(
+            'يرجى السماح بالوصول إلى موقعك الحالي'),
         'current_owner_id':
             MessageLookupByLibrary.simpleMessage('رقم هوية المالك الحالي'),
         'cvv': MessageLookupByLibrary.simpleMessage('رمز الأمان (CVV)'),
@@ -701,6 +714,7 @@ class MessageLookup extends MessageLookupByLibrary {
                 'هل تريد معاينة مشهد قبل/بعد؟'),
         'dob': MessageLookupByLibrary.simpleMessage('تاريخ الميلاد:'),
         'dob_col': MessageLookupByLibrary.simpleMessage('تاريخ الميلاد:'),
+        'doctor': MessageLookupByLibrary.simpleMessage('طبيب'),
         'doctor_description': MessageLookupByLibrary.simpleMessage(
             'احصل على طبيب مرخص إلى باب منزلك.'),
         'doctor_details': MessageLookupByLibrary.simpleMessage('تفاصيل الطبيب'),
@@ -736,6 +750,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('تنزيل فاتورة التوصيل'),
         'download_invoice':
             MessageLookupByLibrary.simpleMessage('تنزيل الفاتورة'),
+        'download_pdf': MessageLookupByLibrary.simpleMessage('تنزيل PDF'),
         'download_receipt':
             MessageLookupByLibrary.simpleMessage('تحميل الإيصال'),
         'download_report':
@@ -810,6 +825,8 @@ class MessageLookup extends MessageLookupByLibrary {
             'إعادة شحن القسيمة الإلكترونية'),
         'e_voucher_details':
             MessageLookupByLibrary.simpleMessage('تفاصيل القسيمة الإلكترونية'),
+        'earn_exciting_rewards':
+            MessageLookupByLibrary.simpleMessage('اكسب مكافآت مميزة'),
         'earn_spins_win_big': MessageLookupByLibrary.simpleMessage(
             'اربح الدورات وحقق فوزًا كبيرًا!'),
         'easy_qr_activation':
@@ -820,6 +837,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'edit_profile':
             MessageLookupByLibrary.simpleMessage('تعديل الملف الشخصي'),
         'edit_ride': MessageLookupByLibrary.simpleMessage('تعديل الرحلة'),
+        'effects': MessageLookupByLibrary.simpleMessage('تأثيرات'),
         'elevate_shopping_info': MessageLookupByLibrary.simpleMessage(
             'ارتق بتجربتك التسويقية مع شوبينقيت واطلب الآن لتوصيل سريع ورائع!'),
         'email': MessageLookupByLibrary.simpleMessage('البريد الإلكتروني'),
@@ -828,6 +846,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'enable_it': MessageLookupByLibrary.simpleMessage('قم بتمكينه'),
         'enable_notification_message': MessageLookupByLibrary.simpleMessage(
             'يرجى تفعيل الإشعارات لتلقي آخر التحديثات أو العروض من شوبينقيت.'),
+        'end': MessageLookupByLibrary.simpleMessage('إنهاء'),
         'end_session': MessageLookupByLibrary.simpleMessage('إنهاء الجلسة'),
         'end_session_message': MessageLookupByLibrary.simpleMessage(
             'هل أنت متأكد أنك تريد إنهاء هذه الجلسة؟'),
@@ -987,6 +1006,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'flight_search':
             MessageLookupByLibrary.simpleMessage('البحث عن رحلة طيران'),
         'flight_summary': MessageLookupByLibrary.simpleMessage('ملخص الرحلة'),
+        'flip': MessageLookupByLibrary.simpleMessage('قلب'),
         'fly': MessageLookupByLibrary.simpleMessage('سافر '),
         'food': MessageLookupByLibrary.simpleMessage('الطعام'),
         'food_delivery': MessageLookupByLibrary.simpleMessage('توصيل الطعام'),
@@ -1120,7 +1140,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('كيفية الاستخدام في iOS'),
         'how_to_use_it': MessageLookupByLibrary.simpleMessage('كيف تستخدمه؟'),
         'i_accept_the_cancelation_policy': MessageLookupByLibrary.simpleMessage(
-            ' أوافق على <u><font color=\"#CC4924\">سياسة الإلغاء</font></u>'),
+            ' أوافق على <u><font color="#CC4924">سياسة الإلغاء</font></u>'),
         'i_dont_have_a_prescription':
             MessageLookupByLibrary.simpleMessage('ليس لدي وصفة طبية'),
         'i_have_a_prescription':
@@ -1191,6 +1211,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('رحلات للنساء فقط'),
         'landmark': MessageLookupByLibrary.simpleMessage('معلم بارز'),
         'last_name': MessageLookupByLibrary.simpleMessage('اسم العائلة'),
+        'later': MessageLookupByLibrary.simpleMessage('لاحقًا'),
         'learn_more': MessageLookupByLibrary.simpleMessage('اعرف المزيد'),
         'left': MessageLookupByLibrary.simpleMessage('يسار'),
         'linked': MessageLookupByLibrary.simpleMessage('مرتبط'),
@@ -1293,6 +1314,7 @@ class MessageLookup extends MessageLookupByLibrary {
             'إثارة وحركة · ساعتان و10 دقائق · هندي'),
         'mr': MessageLookupByLibrary.simpleMessage('السيد'),
         'mrs': MessageLookupByLibrary.simpleMessage('السيدة'),
+        'mute': MessageLookupByLibrary.simpleMessage('كتم'),
         'my_account': MessageLookupByLibrary.simpleMessage('حساباتي'),
         'my_accounts': MessageLookupByLibrary.simpleMessage('حساباتي'),
         'my_appointments':
@@ -1352,6 +1374,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'needs': MessageLookupByLibrary.simpleMessage('الخاصة'),
         'networkError': MessageLookupByLibrary.simpleMessage(
             'الإنترنت غير متوفر، يرجى التحقق من الاتصال بالإنترنت'),
+        'new_': MessageLookupByLibrary.simpleMessage('جديد'),
         'next': MessageLookupByLibrary.simpleMessage('التالي'),
         'no': MessageLookupByLibrary.simpleMessage('لا'),
         'noIDontHaveOne':
@@ -1437,6 +1460,9 @@ class MessageLookup extends MessageLookupByLibrary {
             'لا توجد بيانات بحث حديثة متوفرة'),
         'no_recent_search_data': MessageLookupByLibrary.simpleMessage(
             'لا توجد بيانات بحث حديثة متوفرة'),
+        'no_restaurants_found_please_try_a_different_keyword':
+            MessageLookupByLibrary.simpleMessage(
+                'لم يتم العثور على مطاعم، يرجى تجربة كلمة بحث مختلفة'),
         'no_rewards_found':
             MessageLookupByLibrary.simpleMessage('لم يتم العثور على مكافآت.'),
         'no_slots_available': MessageLookupByLibrary.simpleMessage(
@@ -1466,6 +1492,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'notification_enable_msg': MessageLookupByLibrary.simpleMessage(
             'يرجى تفعيل الإشعارات لتلقي آخر التحديثات أو العروض من شوبينقيت.'),
         'notifications': MessageLookupByLibrary.simpleMessage('الإشعارات'),
+        'now': MessageLookupByLibrary.simpleMessage('الآن'),
         'now_showing_near_you':
             MessageLookupByLibrary.simpleMessage('يعرض الآن بالقرب منك'),
         'number': MessageLookupByLibrary.simpleMessage('4.5'),
@@ -1511,6 +1538,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('رسوم خدمة وان فاسكو'),
         'one_way': MessageLookupByLibrary.simpleMessage('ذهاب فقط'),
         'online': MessageLookupByLibrary.simpleMessage('عبر الإنترنت'),
+        'open': MessageLookupByLibrary.simpleMessage('مفتوح'),
         'openSettings': MessageLookupByLibrary.simpleMessage('فتح الإعدادات'),
         'open_settings': MessageLookupByLibrary.simpleMessage('فتح الإعدادات'),
         'operator_name_result_not_found': MessageLookupByLibrary.simpleMessage(
@@ -1529,6 +1557,7 @@ class MessageLookup extends MessageLookupByLibrary {
                 'تم إلغاء طلبك. سيتم استرداد المبلغ قريبًا.'),
         'order_confirmed':
             MessageLookupByLibrary.simpleMessage('تم تأكيد الطلب!'),
+        'order_date': MessageLookupByLibrary.simpleMessage('تاريخ الطلب'),
         'order_date_col': MessageLookupByLibrary.simpleMessage('تاريخ الطلب:'),
         'order_delivered_col':
             MessageLookupByLibrary.simpleMessage('تم تسليم الطلب:'),
@@ -1543,6 +1572,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('الطلب بتاريخ: %1\$s'),
         'order_or_delivery_issue':
             MessageLookupByLibrary.simpleMessage('مشكلة في الطلب أو التوصيل'),
+        'order_placed': MessageLookupByLibrary.simpleMessage('تم تقديم الطلب'),
         'order_placed_col':
             MessageLookupByLibrary.simpleMessage('تم تقديم الطلب:'),
         'order_placed_message': MessageLookupByLibrary.simpleMessage(
@@ -1612,6 +1642,8 @@ class MessageLookup extends MessageLookupByLibrary {
         'past': MessageLookupByLibrary.simpleMessage('الماضي'),
         'pastAppointments':
             MessageLookupByLibrary.simpleMessage('المواعيد السابقة'),
+        'patient_name': MessageLookupByLibrary.simpleMessage('اسم المريض'),
+        'patients': MessageLookupByLibrary.simpleMessage('المرضى'),
         'pay': MessageLookupByLibrary.simpleMessage('ادفع'),
         'payAbroadTitle':
             MessageLookupByLibrary.simpleMessage('ادفع الفواتير في الخارج'),
@@ -1663,7 +1695,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'permission_denied':
             MessageLookupByLibrary.simpleMessage('تم رفض الإذن'),
         'permission_denied_message': MessageLookupByLibrary.simpleMessage(
-            'لمواصلة مكالمة الفيديو، يرجى منح إذن %1\$s في إعدادات جهازك. انقر على \\\"الإعدادات\\\" لفتح الإعدادات.'),
+            'لمواصلة مكالمة الفيديو، يرجى منح إذن %1\$s في إعدادات جهازك. انقر على \\"الإعدادات\\" لفتح الإعدادات.'),
         'permission_needed':
             MessageLookupByLibrary.simpleMessage('يلزم الحصول على إذن'),
         'permission_needed_des': MessageLookupByLibrary.simpleMessage(
@@ -1728,6 +1760,8 @@ class MessageLookup extends MessageLookupByLibrary {
         'please_confirm_your_store':
             MessageLookupByLibrary.simpleMessage('يرجى تأكيد متجرك'),
         'please_enter': MessageLookupByLibrary.simpleMessage('الرجاء إدخال'),
+        'please_enter_address':
+            MessageLookupByLibrary.simpleMessage('يرجى إدخال العنوان'),
         'please_enter_amount':
             MessageLookupByLibrary.simpleMessage('الرجاء إدخال المبلغ'),
         'please_enter_card_cvv': MessageLookupByLibrary.simpleMessage(
@@ -1828,6 +1862,8 @@ class MessageLookup extends MessageLookupByLibrary {
         'please_enter_your_mobile_number_to_view_available_plans':
             MessageLookupByLibrary.simpleMessage(
                 'يرجى إدخال رقم الجوال لعرض الخطط المتاحة'),
+        'please_enter_zip_code':
+            MessageLookupByLibrary.simpleMessage('يرجى إدخال الرمز البريدي'),
         'please_fill_all_transaction_fields':
             MessageLookupByLibrary.simpleMessage(
                 'يرجى ملء جميع حقول المعاملات.'),
@@ -1849,6 +1885,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('يرجى اختيار تاريخ الوصول'),
         'please_select_checkout_date':
             MessageLookupByLibrary.simpleMessage('يرجى اختيار تاريخ الخروج'),
+        'please_select_country':
+            MessageLookupByLibrary.simpleMessage('يرجى اختيار الدولة'),
         'please_select_delivery_address':
             MessageLookupByLibrary.simpleMessage('يرجى تحديد عنوان التوصيل'),
         'please_select_departure_date':
@@ -1899,6 +1937,7 @@ class MessageLookup extends MessageLookupByLibrary {
             'الرجاء تحديد موقع المغادرة الصحيح'),
         'please_select_vehicle':
             MessageLookupByLibrary.simpleMessage('يرجى اختيار المركبة'),
+        'please_upload': MessageLookupByLibrary.simpleMessage('يرجى الرفع'),
         'please_write_a_message':
             MessageLookupByLibrary.simpleMessage('يرجى كتابة رسالة'),
         'please_write_description':
@@ -1914,6 +1953,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('مطاعم تناول الطعام الشهيرة'),
         'popularity': MessageLookupByLibrary.simpleMessage('الشعبية'),
         'postalCode': MessageLookupByLibrary.simpleMessage('الرمز البريدي'),
+        'prescription': MessageLookupByLibrary.simpleMessage('الوصفة الطبية'),
         'prescriptionInfo': MessageLookupByLibrary.simpleMessage(
             'للمتابعة في طلب الأدوية، نحتاج لمعرفة ما إذا كان لديك وصفة طبية صالحة.'),
         'prescriptionMessage': MessageLookupByLibrary.simpleMessage(
@@ -1970,6 +2010,11 @@ class MessageLookup extends MessageLookupByLibrary {
         'promocode': MessageLookupByLibrary.simpleMessage('الرمز الترويجي:'),
         'promocode_already_applied': MessageLookupByLibrary.simpleMessage(
             'تم تطبيق رمز الترويج المحدد بالفعل'),
+        'provider': MessageLookupByLibrary.simpleMessage('مقدم الخدمة'),
+        'provider_name':
+            MessageLookupByLibrary.simpleMessage('اسم مقدم الخدمة'),
+        'provider_type':
+            MessageLookupByLibrary.simpleMessage('نوع مقدم الخدمة'),
         'puk': MessageLookupByLibrary.simpleMessage('PUK: %1\$s'),
         'purchase': MessageLookupByLibrary.simpleMessage('شراء'),
         'qrActivation':
@@ -1992,6 +2037,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('قيم هذا المنتج'),
         'rate_this_product_des': MessageLookupByLibrary.simpleMessage(
             'يسعدنا تلقي ملاحظاتك حول طلبك الأخير. ساعدنا على تحسين خدمتك.'),
+        'rate_your_consultation':
+            MessageLookupByLibrary.simpleMessage('قيّم استشارتك'),
         'rating_and_reviews':
             MessageLookupByLibrary.simpleMessage('التقييمات والمراجعات'),
         'ratings_and_reviews':
@@ -2069,6 +2116,7 @@ class MessageLookup extends MessageLookupByLibrary {
             'هل تود تكرار التخصيص المستخدم سابقاً؟'),
         'repeat_recharge':
             MessageLookupByLibrary.simpleMessage('كرر إعادة الشحن'),
+        'report': MessageLookupByLibrary.simpleMessage('تقرير'),
         'report_issue':
             MessageLookupByLibrary.simpleMessage('الإبلاغ عن المشكلة'),
         'requestTimeout': MessageLookupByLibrary.simpleMessage(
@@ -2131,11 +2179,11 @@ class MessageLookup extends MessageLookupByLibrary {
         'return_item': MessageLookupByLibrary.simpleMessage('البند العودة'),
         'return_notes': MessageLookupByLibrary.simpleMessage('ملاحظات الإرجاع'),
         'return_notes_delivery': MessageLookupByLibrary.simpleMessage(
-            '1. يجب عليك تسليم العناصر بنفسك في المتجر لهذا الطلب إذا اخترت \"بنفسك\".'),
+            '1. يجب عليك تسليم العناصر بنفسك في المتجر لهذا الطلب إذا اخترت "بنفسك".'),
         'return_notes_msg': MessageLookupByLibrary.simpleMessage(
             '2. يمكنك تقديم الطلب مرة واحدة فقط لهذا الطلب. يرجى التأكد من اختيار جميع العناصر التي ترغب في إرجاعها دفعة واحدة.'),
         'return_notes_other_first': MessageLookupByLibrary.simpleMessage(
-            '1. يجب عليك تسليم العناصر بنفسك في المتجر لهذا الطلب إذا اخترت \"بنفسك\".'),
+            '1. يجب عليك تسليم العناصر بنفسك في المتجر لهذا الطلب إذا اخترت "بنفسك".'),
         'return_notes_pickup': MessageLookupByLibrary.simpleMessage(
             '1. عليك أن تسلم العناصر بنفسك في المتجر لهذا الطلب.'),
         'return_notes_pickup_first': MessageLookupByLibrary.simpleMessage(
@@ -2165,6 +2213,7 @@ class MessageLookup extends MessageLookupByLibrary {
             'يرجى مراجعة بيانات مقدم الطلب قبل التقديم'),
         'review_passenger_alert': MessageLookupByLibrary.simpleMessage(
             'يرجى مراجعة بيانات الراكب قبل الإرسال'),
+        'reviews': MessageLookupByLibrary.simpleMessage('المراجعات'),
         'ride': MessageLookupByLibrary.simpleMessage('رحلة'),
         'ride_completed': MessageLookupByLibrary.simpleMessage('اكتملت الرحلة'),
         'ride_confirmed_the_driver_will_arrive_in':
@@ -2302,6 +2351,9 @@ class MessageLookup extends MessageLookupByLibrary {
         'select_country_code':
             MessageLookupByLibrary.simpleMessage('اختر رمز الدولة'),
         'select_date': MessageLookupByLibrary.simpleMessage('اختر التاريخ'),
+        'select_date_and_time_for_your_next_trip_in_advance':
+            MessageLookupByLibrary.simpleMessage(
+                'حدد تاريخ ووقت رحلتك القادمة مسبقًا'),
         'select_departure_alert':
             MessageLookupByLibrary.simpleMessage('يُرجى تحديد موقع المغادرة'),
         'select_departure_date':
@@ -2344,6 +2396,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('اختر فرع المتجر'),
         'select_the_type_of_delivery':
             MessageLookupByLibrary.simpleMessage('حدد نوع التوصيل'),
+        'select_time_slot':
+            MessageLookupByLibrary.simpleMessage('اختر الفترة الزمنية'),
         'select_valid_destination_alert': MessageLookupByLibrary.simpleMessage(
             'يرجى تحديد موقع الوجهة الصحيح'),
         'select_year': MessageLookupByLibrary.simpleMessage('اختر السنة'),
@@ -2449,12 +2503,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('تعليمات خاصة'),
         'special_offers': MessageLookupByLibrary.simpleMessage('عروض خاصة'),
         'spin': MessageLookupByLibrary.simpleMessage('دوران'),
+        'spin_again': MessageLookupByLibrary.simpleMessage('أدر مرة أخرى'),
         'spin_and': MessageLookupByLibrary.simpleMessage('تدوير و'),
         'spin_left':
             MessageLookupByLibrary.simpleMessage('عدد الدورات المتبقية: %1\$s'),
         'spin_left_comma':
             MessageLookupByLibrary.simpleMessage('عدد الدورات المتبقية:'),
         'spin_left_str': MessageLookupByLibrary.simpleMessage('تدور لليسار'),
+        'spin_remaining': MessageLookupByLibrary.simpleMessage('لفات متبقية'),
         'spin_slot_win_it':
             MessageLookupByLibrary.simpleMessage('قم بتدوير العجلة لتربح'),
         'spin_the_Slot':
@@ -2475,6 +2531,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('عدد اللفات المتبقية'),
         'split_payments':
             MessageLookupByLibrary.simpleMessage('الدفع على 4 دفعات'),
+        'stand_chance_to_win':
+            MessageLookupByLibrary.simpleMessage('فرصة للفوز'),
         'stand_money_info': MessageLookupByLibrary.simpleMessage(
             'اغتنم الفرصة للفوز بالمكافآت'),
         'start_new_chat':
@@ -2533,6 +2591,11 @@ class MessageLookup extends MessageLookupByLibrary {
         'taxi': MessageLookupByLibrary.simpleMessage('تاكسي'),
         'tele_health_consultation':
             MessageLookupByLibrary.simpleMessage('الاستشارات الصحية عن بُعد'),
+        'tele_health_consultation_search_hint':
+            MessageLookupByLibrary.simpleMessage(
+                'ابحث عن الطبيب أو التخصص أو الخدمة'),
+        'tele_health_success_information': MessageLookupByLibrary.simpleMessage(
+            'معلومات نجاح الاستشارة الصحية عن بُعد'),
         'telehealth':
             MessageLookupByLibrary.simpleMessage('الرعاية الصحية عن بعد'),
         'telehealth_consultation':
@@ -2541,6 +2604,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('الشروط والأحكام'),
         'terms_conditions':
             MessageLookupByLibrary.simpleMessage('الشروط والأحكام'),
+        'test_packages': MessageLookupByLibrary.simpleMessage('باقات الفحوصات'),
         'tests': MessageLookupByLibrary.simpleMessage('المختبرية'),
         'thank_you': MessageLookupByLibrary.simpleMessage('شكرًا لك!'),
         'the_chase': MessageLookupByLibrary.simpleMessage('المطاردة'),
@@ -2669,7 +2733,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'uploadPrescription':
             MessageLookupByLibrary.simpleMessage('قم برفع وصفة طبيبك'),
         'upload_a_front_facing_photo': MessageLookupByLibrary.simpleMessage(
-            'قم بتحميل صورة أمامية تظهر الجزء العلوي من جسمك بالكامل لأفضل تجربة تجربة الملابس <b><font color=\"#CC4924\">شاهد الدليل.</font></b>'),
+            'قم بتحميل صورة أمامية تظهر الجزء العلوي من جسمك بالكامل لأفضل تجربة تجربة الملابس <b><font color="#CC4924">شاهد الدليل.</font></b>'),
         'upload_col': MessageLookupByLibrary.simpleMessage('التحميل: '),
         'upload_document':
             MessageLookupByLibrary.simpleMessage('تحميل المستند'),
@@ -2689,6 +2753,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('تحميل الوصفة الطبية'),
         'upload_required_document':
             MessageLookupByLibrary.simpleMessage('يرجى تحميل المستند المطلوب'),
+        'uploaded': MessageLookupByLibrary.simpleMessage('تم الرفع'),
         'uploadedDocuments':
             MessageLookupByLibrary.simpleMessage('المستندات المرفوعة'),
         'uploadedOn': MessageLookupByLibrary.simpleMessage('تم الرفع في'),
@@ -2714,6 +2779,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage(
                 'يرجى إدخال رقم المنزل/الشقة والمبنى/البلوك'),
         'validity': MessageLookupByLibrary.simpleMessage('الصلاحية'),
+        'validity_col': MessageLookupByLibrary.simpleMessage('الصلاحية:'),
         'validity_date_col':
             MessageLookupByLibrary.simpleMessage('تاريخ الصلاحية:'),
         'vat': MessageLookupByLibrary.simpleMessage('ضريبة القيمة المضافة'),
@@ -2735,6 +2801,8 @@ class MessageLookup extends MessageLookupByLibrary {
         'view_in_Cart': MessageLookupByLibrary.simpleMessage('عرض في السلة'),
         'view_more': MessageLookupByLibrary.simpleMessage('عرض المزيد'),
         'view_on_map': MessageLookupByLibrary.simpleMessage('عرض على الخريطة'),
+        'view_prescription':
+            MessageLookupByLibrary.simpleMessage('عرض الوصفة الطبية'),
         'viewing': MessageLookupByLibrary.simpleMessage('المشاهدة'),
         'visa': MessageLookupByLibrary.simpleMessage('تأشيرة'),
         'visa_application_center_fees': MessageLookupByLibrary.simpleMessage(
@@ -2788,6 +2856,8 @@ class MessageLookup extends MessageLookupByLibrary {
         'voice': MessageLookupByLibrary.simpleMessage('صوت'),
         'voucherDetails':
             MessageLookupByLibrary.simpleMessage('تفاصيل القسيمة'),
+        'voucher_detail':
+            MessageLookupByLibrary.simpleMessage('تفاصيل القسيمة'),
         'waiting_fee': MessageLookupByLibrary.simpleMessage('رسوم الانتظار'),
         'waiting_fee_col':
             MessageLookupByLibrary.simpleMessage('رسوم الانتظار:'),
@@ -2817,6 +2887,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('ماذا يحدث بعد ذلك؟'),
         'wheelchair_accessible_vehicles': MessageLookupByLibrary.simpleMessage(
             'مركبات قابلة للوصول بالكراسي المتحركة'),
+        'when_do_you_need_a_ride':
+            MessageLookupByLibrary.simpleMessage('متى تحتاج إلى رحلة؟'),
         'where_are_you_going':
             MessageLookupByLibrary.simpleMessage('إلى أين أنت ذاهب؟'),
         'where_to': MessageLookupByLibrary.simpleMessage('إلي أين؟'),
@@ -2867,11 +2939,16 @@ class MessageLookup extends MessageLookupByLibrary {
         'you_will_lose_you_current_chat_context_are_you_sure_you_want_to_exit':
             MessageLookupByLibrary.simpleMessage(
                 'ستفقد سياق الدردشة الحالي. هل أنت متأكد من رغبتك في الخروج؟'),
+        'you_will_receive_a_notification_once_the_driver_is_en_route':
+            MessageLookupByLibrary.simpleMessage(
+                'ستتلقى إشعارًا بمجرد أن يكون السائق في الطريق'),
         'you_will_receive_call_on':
             MessageLookupByLibrary.simpleMessage('سوف تتلقى اتصالاً على'),
         'you_win': MessageLookupByLibrary.simpleMessage('لقد ربحت'),
         'your_chatbot_assistant':
             MessageLookupByLibrary.simpleMessage('مساعد الدردشة الخاص بك'),
+        'your_consultation_is_complete':
+            MessageLookupByLibrary.simpleMessage('اكتملت استشارتك'),
         'your_current_location':
             MessageLookupByLibrary.simpleMessage('موقعك الحالي'),
         'your_driver': MessageLookupByLibrary.simpleMessage('السائق الخاص بك'),
@@ -2885,6 +2962,8 @@ class MessageLookup extends MessageLookupByLibrary {
         'your_return_request_has_been_submitted':
             MessageLookupByLibrary.simpleMessage(
                 'تم تقديم طلب الإرجاع الخاص بك.'),
+        'your_ride_is_scheduled':
+            MessageLookupByLibrary.simpleMessage('تمت جدولة رحلتك'),
         'your_updates_have_been_saved_and_applied':
             MessageLookupByLibrary.simpleMessage(
                 'لقد تم حفظ التحديثات الخاصة بك وتطبيقها.'),

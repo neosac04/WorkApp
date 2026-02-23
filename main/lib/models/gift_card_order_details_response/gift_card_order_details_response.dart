@@ -13,7 +13,7 @@ GiftCardOrderDetailsResponse giftCardOrderDetailsResponseFromJson(String str) =>
 String giftCardOrderDetailsResponseToJson(GiftCardOrderDetailsResponse data) => json.encode(data.toJson());
 
 @freezed
-class GiftCardOrderDetailsResponse with _$GiftCardOrderDetailsResponse {
+sealed class GiftCardOrderDetailsResponse with _$GiftCardOrderDetailsResponse {
   const factory GiftCardOrderDetailsResponse({
     @JsonKey(name: "id")
     int? id,

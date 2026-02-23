@@ -3,6 +3,7 @@ import 'package:core/core/utils/extention.dart';
 import 'package:core/core/utils/scale_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/legacy.dart' show StateProvider;
 
 import '../app/theme/color_constants.dart';
 

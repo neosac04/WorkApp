@@ -6,28 +6,28 @@ part of 'grocery_product_list_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$GroceryProductListResponseImpl _$$GroceryProductListResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$GroceryProductListResponseImpl(
-      groceryProduct: (json['products'] as List<dynamic>?)
-          ?.map((e) => GroceryProduct.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      isFoodCart: json['is_food_cart'] as bool?,
-      pagination: json['pagination'] == null
-          ? null
-          : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
-    );
+_GroceryProductListResponse _$GroceryProductListResponseFromJson(
+  Map<String, dynamic> json,
+) => _GroceryProductListResponse(
+  groceryProduct: (json['products'] as List<dynamic>?)
+      ?.map((e) => GroceryProduct.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  isFoodCart: json['is_food_cart'] as bool?,
+  pagination: json['pagination'] == null
+      ? null
+      : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
+);
 
-Map<String, dynamic> _$$GroceryProductListResponseImplToJson(
-        _$GroceryProductListResponseImpl instance) =>
-    <String, dynamic>{
-      'products': instance.groceryProduct,
-      'is_food_cart': instance.isFoodCart,
-      'pagination': instance.pagination,
-    };
+Map<String, dynamic> _$GroceryProductListResponseToJson(
+  _GroceryProductListResponse instance,
+) => <String, dynamic>{
+  'products': instance.groceryProduct,
+  'is_food_cart': instance.isFoodCart,
+  'pagination': instance.pagination,
+};
 
-_$GroceryProductImpl _$$GroceryProductImplFromJson(Map<String, dynamic> json) =>
-    _$GroceryProductImpl(
+_GroceryProduct _$GroceryProductFromJson(Map<String, dynamic> json) =>
+    _GroceryProduct(
       id: (json['id'] as num?)?.toInt(),
       name: json['name'] as String?,
       image: json['image'] as String?,
@@ -45,8 +45,7 @@ _$GroceryProductImpl _$$GroceryProductImplFromJson(Map<String, dynamic> json) =>
       isShowQuantity: json['isShowQuantity'] as bool? ?? false,
     );
 
-Map<String, dynamic> _$$GroceryProductImplToJson(
-        _$GroceryProductImpl instance) =>
+Map<String, dynamic> _$GroceryProductToJson(_GroceryProduct instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,

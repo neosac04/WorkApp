@@ -43,7 +43,7 @@ class PermissionHelper {
     // Default to when-in-use permission check. If 'always' was previously granted,
     // permissionWhenInUse.status will typically be granted as well on iOS.
     final status = await Permission.locationWhenInUse.status;
-    print("objectasd=====>>> ${status}");
+    print("objectasd=====>>> $status");
     if (status.isGranted) {
       return true;
     }

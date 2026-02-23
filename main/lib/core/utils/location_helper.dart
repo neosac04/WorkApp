@@ -316,7 +316,7 @@ class LocationHelper {
       } else {
         locationData = LocationData.fromPosition(position);
       }
-      print('locationData ${locationData}');
+      print('locationData $locationData');
       if (updateLastLocation) {
         _lastLocationData = locationData;
       }

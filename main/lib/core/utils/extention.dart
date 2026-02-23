@@ -2,7 +2,6 @@ import 'package:core/common_widgets/common_alert_dialog.dart' show showLoginDial
 import 'package:core/core/di/app_providers.dart';
 import 'package:core/core/local/secure_storage_keys.dart' show SecureStorageKeys;
 import 'package:core/core/utils/scale_util.dart';
-import 'package:core/gen/assets.gen.dart' show LottieGenImage, Assets;
 import 'package:core/l10n/generated/l10n.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

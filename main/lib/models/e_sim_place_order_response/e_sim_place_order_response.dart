@@ -13,7 +13,7 @@ ESimPlaceOrderResponse eSimPlaceOrderResponseFromJson(String str) => ESimPlaceOr
 String eSimPlaceOrderResponseToJson(ESimPlaceOrderResponse data) => json.encode(data.toJson());
 
 @freezed
-class ESimPlaceOrderResponse with _$ESimPlaceOrderResponse {
+sealed class ESimPlaceOrderResponse with _$ESimPlaceOrderResponse {
   const factory ESimPlaceOrderResponse({
     @JsonKey(name: "order_id")
     int? orderId,

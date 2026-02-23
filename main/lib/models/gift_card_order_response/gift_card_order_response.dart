@@ -14,7 +14,7 @@ GiftCardOrderResponse giftCardOrderResponseFromJson(String str) => GiftCardOrder
 String giftCardOrderResponseToJson(GiftCardOrderResponse data) => json.encode(data.toJson());
 
 @freezed
-class GiftCardOrderResponse with _$GiftCardOrderResponse {
+sealed class GiftCardOrderResponse with _$GiftCardOrderResponse {
   const factory GiftCardOrderResponse({
     @JsonKey(name: "orders")
     List<GiftCardOrder>? giftCardsOrderList,
@@ -26,7 +26,7 @@ class GiftCardOrderResponse with _$GiftCardOrderResponse {
 }
 
 @freezed
-class GiftCardOrder with _$GiftCardOrder {
+sealed class GiftCardOrder with _$GiftCardOrder {
   const factory GiftCardOrder({
     @JsonKey(name: "id")
     int? id,

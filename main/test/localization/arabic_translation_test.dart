@@ -1,31 +1,44 @@
 import 'package:core/l10n/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:lokalise_flutter_sdk/lokalise_flutter_sdk.dart';
+
 
 void main() {
-  TestWidgetsFlutterBinding.ensureInitialized();
+  setUpAll(() async {
+    TestWidgetsFlutterBinding.ensureInitialized();
+    await Lokalise.initMock();
+  });
 
   group('Arabic localization smoke test', () {
+
     test('loads expected Arabic translations for common keys', () async {
-      final english = await Lt.load(const Locale('en'));
-      final arabic = await Lt.load(const Locale('ar'));
+      final en = await Lt.load(const Locale('en'));
+      final enWelcome = en.welcome_header;
+      final enAdd = en.add;
+      final enCancel = en.cancel;
+      final enCheckout = en.checkout;
 
-      expect(english.welcome_header, 'Hello SG');
-      expect(arabic.welcome_header, 'مرحباً أيها العالم!');
-      expect(arabic.welcome_header, isNot(equals(english.welcome_header)));
+      final ar = await Lt.load(const Locale('ar'));
+      final arWelcome = ar.welcome_header;
+      final arAdd = ar.add;
+      final arCancel = ar.cancel;
+      final arCheckout = ar.checkout;
 
-      expect(english.add, 'Add');
-      expect(arabic.add, 'إضافة');
-      expect(arabic.add, isNot(equals(english.add)));
+      expect(enWelcome, 'Hello SG');
+      expect(arWelcome, 'مرحباً أيها العالم!');
+      expect(arWelcome, isNot(equals(enWelcome)));
 
-      expect(english.cancel, 'Cancel');
-      expect(arabic.cancel, 'إلغاء');
-      expect(arabic.cancel, isNot(equals(english.cancel)));
+      expect(enAdd, 'Add');
+      expect(arAdd, 'إضافة');
 
-      expect(english.checkout, 'Checkout');
-      expect(arabic.checkout, 'الدفع');
-      expect(arabic.checkout, isNot(equals(english.checkout)));
-    });
+      expect(enCancel, 'Cancel');
+      expect(arCancel, 'إلغاء');
+
+      expect(enCheckout, 'Checkout');
+      expect(arCheckout, 'إتمام الشراء');
+  });
+
 
     testWidgets('resolves Arabic strings through Localizations widget tree',
         (tester) async {

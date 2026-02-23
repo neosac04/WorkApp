@@ -6,26 +6,26 @@ part of 'gift_card_order_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$GiftCardOrderResponseImpl _$$GiftCardOrderResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$GiftCardOrderResponseImpl(
-      giftCardsOrderList: (json['orders'] as List<dynamic>?)
-          ?.map((e) => GiftCardOrder.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      pagination: json['pagination'] == null
-          ? null
-          : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
-    );
+_GiftCardOrderResponse _$GiftCardOrderResponseFromJson(
+  Map<String, dynamic> json,
+) => _GiftCardOrderResponse(
+  giftCardsOrderList: (json['orders'] as List<dynamic>?)
+      ?.map((e) => GiftCardOrder.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  pagination: json['pagination'] == null
+      ? null
+      : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
+);
 
-Map<String, dynamic> _$$GiftCardOrderResponseImplToJson(
-        _$GiftCardOrderResponseImpl instance) =>
-    <String, dynamic>{
-      'orders': instance.giftCardsOrderList,
-      'pagination': instance.pagination,
-    };
+Map<String, dynamic> _$GiftCardOrderResponseToJson(
+  _GiftCardOrderResponse instance,
+) => <String, dynamic>{
+  'orders': instance.giftCardsOrderList,
+  'pagination': instance.pagination,
+};
 
-_$GiftCardOrderImpl _$$GiftCardOrderImplFromJson(Map<String, dynamic> json) =>
-    _$GiftCardOrderImpl(
+_GiftCardOrder _$GiftCardOrderFromJson(Map<String, dynamic> json) =>
+    _GiftCardOrder(
       id: (json['id'] as num?)?.toInt(),
       productName: json['product_name'] as String?,
       productImage: json['product_image'],
@@ -38,7 +38,7 @@ _$GiftCardOrderImpl _$$GiftCardOrderImplFromJson(Map<String, dynamic> json) =>
       validTo: json['valid_to'] as String?,
     );
 
-Map<String, dynamic> _$$GiftCardOrderImplToJson(_$GiftCardOrderImpl instance) =>
+Map<String, dynamic> _$GiftCardOrderToJson(_GiftCardOrder instance) =>
     <String, dynamic>{
       'id': instance.id,
       'product_name': instance.productName,

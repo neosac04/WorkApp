@@ -7,7 +7,6 @@ import 'package:core/core/utils/extention.dart';
 import 'package:core/core/utils/scale_util.dart';
 import 'package:flutter/material.dart';
 
-  import 'package:flutter/material.dart';
   // keep your existing imports for Assets, ColorConstants, AppSizeConstants, SvgGenImage, etc.
   // import 'package:your_project/gen/assets.gen.dart';
   // import 'package:your_project/constants/color_constants.dart';

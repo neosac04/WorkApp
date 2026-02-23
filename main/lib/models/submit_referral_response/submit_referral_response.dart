@@ -4,7 +4,7 @@ part 'submit_referral_response.freezed.dart';
 part 'submit_referral_response.g.dart';
 
 @freezed
-class SubmitReferralData with _$SubmitReferralData {
+sealed class SubmitReferralData with _$SubmitReferralData {
   const factory SubmitReferralData({
     @JsonKey(name: 'referral_code') String? referralCode,
     @JsonKey(name: 'referred_user_id') int? referredUserId,
@@ -17,7 +17,7 @@ class SubmitReferralData with _$SubmitReferralData {
 }
 
 @freezed
-class GamificationResponse with _$GamificationResponse {
+sealed class GamificationResponse with _$GamificationResponse {
   const factory GamificationResponse({
     @JsonKey(name: 'spin_awarded') bool? spinAwarded,
     @JsonKey(name: 'game_type') String? gameType,
@@ -32,7 +32,7 @@ class GamificationResponse with _$GamificationResponse {
 }
 
 @freezed
-class ReferralDetails with _$ReferralDetails {
+sealed class ReferralDetails with _$ReferralDetails {
   const factory ReferralDetails({
     @JsonKey(name: 'referrer_user_id') int? referrerUserId,
     @JsonKey(name: 'new_user_id') int? newUserId,

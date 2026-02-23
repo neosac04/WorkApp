@@ -13,7 +13,7 @@ GroceryDeliveryChargesResponse groceryDeliveryChargesResponseFromJson(String str
 String groceryDeliveryChargesResponseToJson(GroceryDeliveryChargesResponse data) => json.encode(data.toJson());
 
 @freezed
-class GroceryDeliveryChargesResponse with _$GroceryDeliveryChargesResponse {
+sealed class GroceryDeliveryChargesResponse with _$GroceryDeliveryChargesResponse {
   const factory GroceryDeliveryChargesResponse({
     @JsonKey(name: "error_messages")
     List<ErrorMessage>? errorMessages,
@@ -31,7 +31,7 @@ class GroceryDeliveryChargesResponse with _$GroceryDeliveryChargesResponse {
 }
 
 @freezed
-class ErrorMessage with _$ErrorMessage {
+sealed class ErrorMessage with _$ErrorMessage {
   const factory ErrorMessage({
     @JsonKey(name: "product_id")
     int? productId,

@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,551 +9,802 @@ part of 'store_availability_response.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-StoreAvailabilityResponse _$StoreAvailabilityResponseFromJson(
-    Map<String, dynamic> json) {
-  return _StoreAvailabilityResponse.fromJson(json);
-}
 
 /// @nodoc
 mixin _$StoreAvailabilityResponse {
-  @JsonKey(name: 'opens_at')
-  String? get opensAt => throw _privateConstructorUsedError;
-  @JsonKey(name: 'closes_at')
-  String? get closesAt => throw _privateConstructorUsedError;
-  List<StoreAvailability>? get availability =>
-      throw _privateConstructorUsedError;
+
+@JsonKey(name: 'opens_at') String? get opensAt;@JsonKey(name: 'closes_at') String? get closesAt; List<StoreAvailability>? get availability;
+/// Create a copy of StoreAvailabilityResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$StoreAvailabilityResponseCopyWith<StoreAvailabilityResponse> get copyWith => _$StoreAvailabilityResponseCopyWithImpl<StoreAvailabilityResponse>(this as StoreAvailabilityResponse, _$identity);
 
   /// Serializes this StoreAvailabilityResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of StoreAvailabilityResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $StoreAvailabilityResponseCopyWith<StoreAvailabilityResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is StoreAvailabilityResponse&&(identical(other.opensAt, opensAt) || other.opensAt == opensAt)&&(identical(other.closesAt, closesAt) || other.closesAt == closesAt)&&const DeepCollectionEquality().equals(other.availability, availability));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,opensAt,closesAt,const DeepCollectionEquality().hash(availability));
+
+@override
+String toString() {
+  return 'StoreAvailabilityResponse(opensAt: $opensAt, closesAt: $closesAt, availability: $availability)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $StoreAvailabilityResponseCopyWith<$Res> {
-  factory $StoreAvailabilityResponseCopyWith(StoreAvailabilityResponse value,
-          $Res Function(StoreAvailabilityResponse) then) =
-      _$StoreAvailabilityResponseCopyWithImpl<$Res, StoreAvailabilityResponse>;
-  @useResult
-  $Res call(
-      {@JsonKey(name: 'opens_at') String? opensAt,
-      @JsonKey(name: 'closes_at') String? closesAt,
-      List<StoreAvailability>? availability});
-}
+abstract mixin class $StoreAvailabilityResponseCopyWith<$Res>  {
+  factory $StoreAvailabilityResponseCopyWith(StoreAvailabilityResponse value, $Res Function(StoreAvailabilityResponse) _then) = _$StoreAvailabilityResponseCopyWithImpl;
+@useResult
+$Res call({
+@JsonKey(name: 'opens_at') String? opensAt,@JsonKey(name: 'closes_at') String? closesAt, List<StoreAvailability>? availability
+});
 
+
+
+
+}
 /// @nodoc
-class _$StoreAvailabilityResponseCopyWithImpl<$Res,
-        $Val extends StoreAvailabilityResponse>
+class _$StoreAvailabilityResponseCopyWithImpl<$Res>
     implements $StoreAvailabilityResponseCopyWith<$Res> {
-  _$StoreAvailabilityResponseCopyWithImpl(this._value, this._then);
+  _$StoreAvailabilityResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final StoreAvailabilityResponse _self;
+  final $Res Function(StoreAvailabilityResponse) _then;
 
-  /// Create a copy of StoreAvailabilityResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? opensAt = freezed,
-    Object? closesAt = freezed,
-    Object? availability = freezed,
-  }) {
-    return _then(_value.copyWith(
-      opensAt: freezed == opensAt
-          ? _value.opensAt
-          : opensAt // ignore: cast_nullable_to_non_nullable
-              as String?,
-      closesAt: freezed == closesAt
-          ? _value.closesAt
-          : closesAt // ignore: cast_nullable_to_non_nullable
-              as String?,
-      availability: freezed == availability
-          ? _value.availability
-          : availability // ignore: cast_nullable_to_non_nullable
-              as List<StoreAvailability>?,
-    ) as $Val);
-  }
+/// Create a copy of StoreAvailabilityResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? opensAt = freezed,Object? closesAt = freezed,Object? availability = freezed,}) {
+  return _then(_self.copyWith(
+opensAt: freezed == opensAt ? _self.opensAt : opensAt // ignore: cast_nullable_to_non_nullable
+as String?,closesAt: freezed == closesAt ? _self.closesAt : closesAt // ignore: cast_nullable_to_non_nullable
+as String?,availability: freezed == availability ? _self.availability : availability // ignore: cast_nullable_to_non_nullable
+as List<StoreAvailability>?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$StoreAvailabilityResponseImplCopyWith<$Res>
-    implements $StoreAvailabilityResponseCopyWith<$Res> {
-  factory _$$StoreAvailabilityResponseImplCopyWith(
-          _$StoreAvailabilityResponseImpl value,
-          $Res Function(_$StoreAvailabilityResponseImpl) then) =
-      __$$StoreAvailabilityResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {@JsonKey(name: 'opens_at') String? opensAt,
-      @JsonKey(name: 'closes_at') String? closesAt,
-      List<StoreAvailability>? availability});
 }
 
-/// @nodoc
-class __$$StoreAvailabilityResponseImplCopyWithImpl<$Res>
-    extends _$StoreAvailabilityResponseCopyWithImpl<$Res,
-        _$StoreAvailabilityResponseImpl>
-    implements _$$StoreAvailabilityResponseImplCopyWith<$Res> {
-  __$$StoreAvailabilityResponseImplCopyWithImpl(
-      _$StoreAvailabilityResponseImpl _value,
-      $Res Function(_$StoreAvailabilityResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of StoreAvailabilityResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? opensAt = freezed,
-    Object? closesAt = freezed,
-    Object? availability = freezed,
-  }) {
-    return _then(_$StoreAvailabilityResponseImpl(
-      opensAt: freezed == opensAt
-          ? _value.opensAt
-          : opensAt // ignore: cast_nullable_to_non_nullable
-              as String?,
-      closesAt: freezed == closesAt
-          ? _value.closesAt
-          : closesAt // ignore: cast_nullable_to_non_nullable
-              as String?,
-      availability: freezed == availability
-          ? _value._availability
-          : availability // ignore: cast_nullable_to_non_nullable
-              as List<StoreAvailability>?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [StoreAvailabilityResponse].
+extension StoreAvailabilityResponsePatterns on StoreAvailabilityResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _StoreAvailabilityResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _StoreAvailabilityResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _StoreAvailabilityResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _StoreAvailabilityResponse():
+return $default(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _StoreAvailabilityResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _StoreAvailabilityResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function(@JsonKey(name: 'opens_at')  String? opensAt, @JsonKey(name: 'closes_at')  String? closesAt,  List<StoreAvailability>? availability)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _StoreAvailabilityResponse() when $default != null:
+return $default(_that.opensAt,_that.closesAt,_that.availability);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function(@JsonKey(name: 'opens_at')  String? opensAt, @JsonKey(name: 'closes_at')  String? closesAt,  List<StoreAvailability>? availability)  $default,) {final _that = this;
+switch (_that) {
+case _StoreAvailabilityResponse():
+return $default(_that.opensAt,_that.closesAt,_that.availability);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function(@JsonKey(name: 'opens_at')  String? opensAt, @JsonKey(name: 'closes_at')  String? closesAt,  List<StoreAvailability>? availability)?  $default,) {final _that = this;
+switch (_that) {
+case _StoreAvailabilityResponse() when $default != null:
+return $default(_that.opensAt,_that.closesAt,_that.availability);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$StoreAvailabilityResponseImpl implements _StoreAvailabilityResponse {
-  _$StoreAvailabilityResponseImpl(
-      {@JsonKey(name: 'opens_at') this.opensAt,
-      @JsonKey(name: 'closes_at') this.closesAt,
-      final List<StoreAvailability>? availability})
-      : _availability = availability;
 
-  factory _$StoreAvailabilityResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$StoreAvailabilityResponseImplFromJson(json);
+class _StoreAvailabilityResponse implements StoreAvailabilityResponse {
+   _StoreAvailabilityResponse({@JsonKey(name: 'opens_at') this.opensAt, @JsonKey(name: 'closes_at') this.closesAt, final  List<StoreAvailability>? availability}): _availability = availability;
+  factory _StoreAvailabilityResponse.fromJson(Map<String, dynamic> json) => _$StoreAvailabilityResponseFromJson(json);
 
-  @override
-  @JsonKey(name: 'opens_at')
-  final String? opensAt;
-  @override
-  @JsonKey(name: 'closes_at')
-  final String? closesAt;
-  final List<StoreAvailability>? _availability;
-  @override
-  List<StoreAvailability>? get availability {
-    final value = _availability;
-    if (value == null) return null;
-    if (_availability is EqualUnmodifiableListView) return _availability;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
-
-  @override
-  String toString() {
-    return 'StoreAvailabilityResponse(opensAt: $opensAt, closesAt: $closesAt, availability: $availability)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$StoreAvailabilityResponseImpl &&
-            (identical(other.opensAt, opensAt) || other.opensAt == opensAt) &&
-            (identical(other.closesAt, closesAt) ||
-                other.closesAt == closesAt) &&
-            const DeepCollectionEquality()
-                .equals(other._availability, _availability));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, opensAt, closesAt,
-      const DeepCollectionEquality().hash(_availability));
-
-  /// Create a copy of StoreAvailabilityResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$StoreAvailabilityResponseImplCopyWith<_$StoreAvailabilityResponseImpl>
-      get copyWith => __$$StoreAvailabilityResponseImplCopyWithImpl<
-          _$StoreAvailabilityResponseImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$StoreAvailabilityResponseImplToJson(
-      this,
-    );
-  }
+@override@JsonKey(name: 'opens_at') final  String? opensAt;
+@override@JsonKey(name: 'closes_at') final  String? closesAt;
+ final  List<StoreAvailability>? _availability;
+@override List<StoreAvailability>? get availability {
+  final value = _availability;
+  if (value == null) return null;
+  if (_availability is EqualUnmodifiableListView) return _availability;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(value);
 }
 
-abstract class _StoreAvailabilityResponse implements StoreAvailabilityResponse {
-  factory _StoreAvailabilityResponse(
-          {@JsonKey(name: 'opens_at') final String? opensAt,
-          @JsonKey(name: 'closes_at') final String? closesAt,
-          final List<StoreAvailability>? availability}) =
-      _$StoreAvailabilityResponseImpl;
 
-  factory _StoreAvailabilityResponse.fromJson(Map<String, dynamic> json) =
-      _$StoreAvailabilityResponseImpl.fromJson;
+/// Create a copy of StoreAvailabilityResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$StoreAvailabilityResponseCopyWith<_StoreAvailabilityResponse> get copyWith => __$StoreAvailabilityResponseCopyWithImpl<_StoreAvailabilityResponse>(this, _$identity);
 
-  @override
-  @JsonKey(name: 'opens_at')
-  String? get opensAt;
-  @override
-  @JsonKey(name: 'closes_at')
-  String? get closesAt;
-  @override
-  List<StoreAvailability>? get availability;
-
-  /// Create a copy of StoreAvailabilityResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$StoreAvailabilityResponseImplCopyWith<_$StoreAvailabilityResponseImpl>
-      get copyWith => throw _privateConstructorUsedError;
+@override
+Map<String, dynamic> toJson() {
+  return _$StoreAvailabilityResponseToJson(this, );
 }
 
-StoreAvailability _$StoreAvailabilityFromJson(Map<String, dynamic> json) {
-  return _StoreAvailability.fromJson(json);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _StoreAvailabilityResponse&&(identical(other.opensAt, opensAt) || other.opensAt == opensAt)&&(identical(other.closesAt, closesAt) || other.closesAt == closesAt)&&const DeepCollectionEquality().equals(other._availability, _availability));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,opensAt,closesAt,const DeepCollectionEquality().hash(_availability));
+
+@override
+String toString() {
+  return 'StoreAvailabilityResponse(opensAt: $opensAt, closesAt: $closesAt, availability: $availability)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$StoreAvailabilityResponseCopyWith<$Res> implements $StoreAvailabilityResponseCopyWith<$Res> {
+  factory _$StoreAvailabilityResponseCopyWith(_StoreAvailabilityResponse value, $Res Function(_StoreAvailabilityResponse) _then) = __$StoreAvailabilityResponseCopyWithImpl;
+@override @useResult
+$Res call({
+@JsonKey(name: 'opens_at') String? opensAt,@JsonKey(name: 'closes_at') String? closesAt, List<StoreAvailability>? availability
+});
+
+
+
+
+}
+/// @nodoc
+class __$StoreAvailabilityResponseCopyWithImpl<$Res>
+    implements _$StoreAvailabilityResponseCopyWith<$Res> {
+  __$StoreAvailabilityResponseCopyWithImpl(this._self, this._then);
+
+  final _StoreAvailabilityResponse _self;
+  final $Res Function(_StoreAvailabilityResponse) _then;
+
+/// Create a copy of StoreAvailabilityResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? opensAt = freezed,Object? closesAt = freezed,Object? availability = freezed,}) {
+  return _then(_StoreAvailabilityResponse(
+opensAt: freezed == opensAt ? _self.opensAt : opensAt // ignore: cast_nullable_to_non_nullable
+as String?,closesAt: freezed == closesAt ? _self.closesAt : closesAt // ignore: cast_nullable_to_non_nullable
+as String?,availability: freezed == availability ? _self._availability : availability // ignore: cast_nullable_to_non_nullable
+as List<StoreAvailability>?,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$StoreAvailability {
-  String? get days => throw _privateConstructorUsedError;
-  List<StoreTiming>? get timing => throw _privateConstructorUsedError;
+
+ String? get days; List<StoreTiming>? get timing;
+/// Create a copy of StoreAvailability
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$StoreAvailabilityCopyWith<StoreAvailability> get copyWith => _$StoreAvailabilityCopyWithImpl<StoreAvailability>(this as StoreAvailability, _$identity);
 
   /// Serializes this StoreAvailability to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of StoreAvailability
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $StoreAvailabilityCopyWith<StoreAvailability> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is StoreAvailability&&(identical(other.days, days) || other.days == days)&&const DeepCollectionEquality().equals(other.timing, timing));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,days,const DeepCollectionEquality().hash(timing));
+
+@override
+String toString() {
+  return 'StoreAvailability(days: $days, timing: $timing)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $StoreAvailabilityCopyWith<$Res> {
-  factory $StoreAvailabilityCopyWith(
-          StoreAvailability value, $Res Function(StoreAvailability) then) =
-      _$StoreAvailabilityCopyWithImpl<$Res, StoreAvailability>;
-  @useResult
-  $Res call({String? days, List<StoreTiming>? timing});
-}
+abstract mixin class $StoreAvailabilityCopyWith<$Res>  {
+  factory $StoreAvailabilityCopyWith(StoreAvailability value, $Res Function(StoreAvailability) _then) = _$StoreAvailabilityCopyWithImpl;
+@useResult
+$Res call({
+ String? days, List<StoreTiming>? timing
+});
 
+
+
+
+}
 /// @nodoc
-class _$StoreAvailabilityCopyWithImpl<$Res, $Val extends StoreAvailability>
+class _$StoreAvailabilityCopyWithImpl<$Res>
     implements $StoreAvailabilityCopyWith<$Res> {
-  _$StoreAvailabilityCopyWithImpl(this._value, this._then);
+  _$StoreAvailabilityCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final StoreAvailability _self;
+  final $Res Function(StoreAvailability) _then;
 
-  /// Create a copy of StoreAvailability
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? days = freezed,
-    Object? timing = freezed,
-  }) {
-    return _then(_value.copyWith(
-      days: freezed == days
-          ? _value.days
-          : days // ignore: cast_nullable_to_non_nullable
-              as String?,
-      timing: freezed == timing
-          ? _value.timing
-          : timing // ignore: cast_nullable_to_non_nullable
-              as List<StoreTiming>?,
-    ) as $Val);
-  }
+/// Create a copy of StoreAvailability
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? days = freezed,Object? timing = freezed,}) {
+  return _then(_self.copyWith(
+days: freezed == days ? _self.days : days // ignore: cast_nullable_to_non_nullable
+as String?,timing: freezed == timing ? _self.timing : timing // ignore: cast_nullable_to_non_nullable
+as List<StoreTiming>?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$StoreAvailabilityImplCopyWith<$Res>
-    implements $StoreAvailabilityCopyWith<$Res> {
-  factory _$$StoreAvailabilityImplCopyWith(_$StoreAvailabilityImpl value,
-          $Res Function(_$StoreAvailabilityImpl) then) =
-      __$$StoreAvailabilityImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String? days, List<StoreTiming>? timing});
 }
 
-/// @nodoc
-class __$$StoreAvailabilityImplCopyWithImpl<$Res>
-    extends _$StoreAvailabilityCopyWithImpl<$Res, _$StoreAvailabilityImpl>
-    implements _$$StoreAvailabilityImplCopyWith<$Res> {
-  __$$StoreAvailabilityImplCopyWithImpl(_$StoreAvailabilityImpl _value,
-      $Res Function(_$StoreAvailabilityImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of StoreAvailability
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? days = freezed,
-    Object? timing = freezed,
-  }) {
-    return _then(_$StoreAvailabilityImpl(
-      days: freezed == days
-          ? _value.days
-          : days // ignore: cast_nullable_to_non_nullable
-              as String?,
-      timing: freezed == timing
-          ? _value._timing
-          : timing // ignore: cast_nullable_to_non_nullable
-              as List<StoreTiming>?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [StoreAvailability].
+extension StoreAvailabilityPatterns on StoreAvailability {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _StoreAvailability value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _StoreAvailability() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _StoreAvailability value)  $default,){
+final _that = this;
+switch (_that) {
+case _StoreAvailability():
+return $default(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _StoreAvailability value)?  $default,){
+final _that = this;
+switch (_that) {
+case _StoreAvailability() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String? days,  List<StoreTiming>? timing)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _StoreAvailability() when $default != null:
+return $default(_that.days,_that.timing);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String? days,  List<StoreTiming>? timing)  $default,) {final _that = this;
+switch (_that) {
+case _StoreAvailability():
+return $default(_that.days,_that.timing);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String? days,  List<StoreTiming>? timing)?  $default,) {final _that = this;
+switch (_that) {
+case _StoreAvailability() when $default != null:
+return $default(_that.days,_that.timing);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$StoreAvailabilityImpl implements _StoreAvailability {
-  _$StoreAvailabilityImpl({this.days, final List<StoreTiming>? timing})
-      : _timing = timing;
 
-  factory _$StoreAvailabilityImpl.fromJson(Map<String, dynamic> json) =>
-      _$$StoreAvailabilityImplFromJson(json);
+class _StoreAvailability implements StoreAvailability {
+   _StoreAvailability({this.days, final  List<StoreTiming>? timing}): _timing = timing;
+  factory _StoreAvailability.fromJson(Map<String, dynamic> json) => _$StoreAvailabilityFromJson(json);
 
-  @override
-  final String? days;
-  final List<StoreTiming>? _timing;
-  @override
-  List<StoreTiming>? get timing {
-    final value = _timing;
-    if (value == null) return null;
-    if (_timing is EqualUnmodifiableListView) return _timing;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
-
-  @override
-  String toString() {
-    return 'StoreAvailability(days: $days, timing: $timing)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$StoreAvailabilityImpl &&
-            (identical(other.days, days) || other.days == days) &&
-            const DeepCollectionEquality().equals(other._timing, _timing));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, days, const DeepCollectionEquality().hash(_timing));
-
-  /// Create a copy of StoreAvailability
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$StoreAvailabilityImplCopyWith<_$StoreAvailabilityImpl> get copyWith =>
-      __$$StoreAvailabilityImplCopyWithImpl<_$StoreAvailabilityImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$StoreAvailabilityImplToJson(
-      this,
-    );
-  }
+@override final  String? days;
+ final  List<StoreTiming>? _timing;
+@override List<StoreTiming>? get timing {
+  final value = _timing;
+  if (value == null) return null;
+  if (_timing is EqualUnmodifiableListView) return _timing;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(value);
 }
 
-abstract class _StoreAvailability implements StoreAvailability {
-  factory _StoreAvailability(
-      {final String? days,
-      final List<StoreTiming>? timing}) = _$StoreAvailabilityImpl;
 
-  factory _StoreAvailability.fromJson(Map<String, dynamic> json) =
-      _$StoreAvailabilityImpl.fromJson;
+/// Create a copy of StoreAvailability
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$StoreAvailabilityCopyWith<_StoreAvailability> get copyWith => __$StoreAvailabilityCopyWithImpl<_StoreAvailability>(this, _$identity);
 
-  @override
-  String? get days;
-  @override
-  List<StoreTiming>? get timing;
-
-  /// Create a copy of StoreAvailability
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$StoreAvailabilityImplCopyWith<_$StoreAvailabilityImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+Map<String, dynamic> toJson() {
+  return _$StoreAvailabilityToJson(this, );
 }
 
-StoreTiming _$StoreTimingFromJson(Map<String, dynamic> json) {
-  return _StoreTiming.fromJson(json);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _StoreAvailability&&(identical(other.days, days) || other.days == days)&&const DeepCollectionEquality().equals(other._timing, _timing));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,days,const DeepCollectionEquality().hash(_timing));
+
+@override
+String toString() {
+  return 'StoreAvailability(days: $days, timing: $timing)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$StoreAvailabilityCopyWith<$Res> implements $StoreAvailabilityCopyWith<$Res> {
+  factory _$StoreAvailabilityCopyWith(_StoreAvailability value, $Res Function(_StoreAvailability) _then) = __$StoreAvailabilityCopyWithImpl;
+@override @useResult
+$Res call({
+ String? days, List<StoreTiming>? timing
+});
+
+
+
+
+}
+/// @nodoc
+class __$StoreAvailabilityCopyWithImpl<$Res>
+    implements _$StoreAvailabilityCopyWith<$Res> {
+  __$StoreAvailabilityCopyWithImpl(this._self, this._then);
+
+  final _StoreAvailability _self;
+  final $Res Function(_StoreAvailability) _then;
+
+/// Create a copy of StoreAvailability
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? days = freezed,Object? timing = freezed,}) {
+  return _then(_StoreAvailability(
+days: freezed == days ? _self.days : days // ignore: cast_nullable_to_non_nullable
+as String?,timing: freezed == timing ? _self._timing : timing // ignore: cast_nullable_to_non_nullable
+as List<StoreTiming>?,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$StoreTiming {
-  String? get time => throw _privateConstructorUsedError;
+
+ String? get time;
+/// Create a copy of StoreTiming
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$StoreTimingCopyWith<StoreTiming> get copyWith => _$StoreTimingCopyWithImpl<StoreTiming>(this as StoreTiming, _$identity);
 
   /// Serializes this StoreTiming to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of StoreTiming
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $StoreTimingCopyWith<StoreTiming> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is StoreTiming&&(identical(other.time, time) || other.time == time));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,time);
+
+@override
+String toString() {
+  return 'StoreTiming(time: $time)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $StoreTimingCopyWith<$Res> {
-  factory $StoreTimingCopyWith(
-          StoreTiming value, $Res Function(StoreTiming) then) =
-      _$StoreTimingCopyWithImpl<$Res, StoreTiming>;
-  @useResult
-  $Res call({String? time});
-}
+abstract mixin class $StoreTimingCopyWith<$Res>  {
+  factory $StoreTimingCopyWith(StoreTiming value, $Res Function(StoreTiming) _then) = _$StoreTimingCopyWithImpl;
+@useResult
+$Res call({
+ String? time
+});
 
+
+
+
+}
 /// @nodoc
-class _$StoreTimingCopyWithImpl<$Res, $Val extends StoreTiming>
+class _$StoreTimingCopyWithImpl<$Res>
     implements $StoreTimingCopyWith<$Res> {
-  _$StoreTimingCopyWithImpl(this._value, this._then);
+  _$StoreTimingCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final StoreTiming _self;
+  final $Res Function(StoreTiming) _then;
 
-  /// Create a copy of StoreTiming
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? time = freezed,
-  }) {
-    return _then(_value.copyWith(
-      time: freezed == time
-          ? _value.time
-          : time // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
-  }
+/// Create a copy of StoreTiming
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? time = freezed,}) {
+  return _then(_self.copyWith(
+time: freezed == time ? _self.time : time // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$StoreTimingImplCopyWith<$Res>
-    implements $StoreTimingCopyWith<$Res> {
-  factory _$$StoreTimingImplCopyWith(
-          _$StoreTimingImpl value, $Res Function(_$StoreTimingImpl) then) =
-      __$$StoreTimingImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String? time});
 }
 
-/// @nodoc
-class __$$StoreTimingImplCopyWithImpl<$Res>
-    extends _$StoreTimingCopyWithImpl<$Res, _$StoreTimingImpl>
-    implements _$$StoreTimingImplCopyWith<$Res> {
-  __$$StoreTimingImplCopyWithImpl(
-      _$StoreTimingImpl _value, $Res Function(_$StoreTimingImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of StoreTiming
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? time = freezed,
-  }) {
-    return _then(_$StoreTimingImpl(
-      time: freezed == time
-          ? _value.time
-          : time // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [StoreTiming].
+extension StoreTimingPatterns on StoreTiming {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _StoreTiming value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _StoreTiming() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _StoreTiming value)  $default,){
+final _that = this;
+switch (_that) {
+case _StoreTiming():
+return $default(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _StoreTiming value)?  $default,){
+final _that = this;
+switch (_that) {
+case _StoreTiming() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String? time)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _StoreTiming() when $default != null:
+return $default(_that.time);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String? time)  $default,) {final _that = this;
+switch (_that) {
+case _StoreTiming():
+return $default(_that.time);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String? time)?  $default,) {final _that = this;
+switch (_that) {
+case _StoreTiming() when $default != null:
+return $default(_that.time);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$StoreTimingImpl implements _StoreTiming {
-  _$StoreTimingImpl({this.time});
 
-  factory _$StoreTimingImpl.fromJson(Map<String, dynamic> json) =>
-      _$$StoreTimingImplFromJson(json);
+class _StoreTiming implements StoreTiming {
+   _StoreTiming({this.time});
+  factory _StoreTiming.fromJson(Map<String, dynamic> json) => _$StoreTimingFromJson(json);
 
-  @override
-  final String? time;
+@override final  String? time;
 
-  @override
-  String toString() {
-    return 'StoreTiming(time: $time)';
-  }
+/// Create a copy of StoreTiming
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$StoreTimingCopyWith<_StoreTiming> get copyWith => __$StoreTimingCopyWithImpl<_StoreTiming>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$StoreTimingImpl &&
-            (identical(other.time, time) || other.time == time));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, time);
-
-  /// Create a copy of StoreTiming
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$StoreTimingImplCopyWith<_$StoreTimingImpl> get copyWith =>
-      __$$StoreTimingImplCopyWithImpl<_$StoreTimingImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$StoreTimingImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$StoreTimingToJson(this, );
 }
 
-abstract class _StoreTiming implements StoreTiming {
-  factory _StoreTiming({final String? time}) = _$StoreTimingImpl;
-
-  factory _StoreTiming.fromJson(Map<String, dynamic> json) =
-      _$StoreTimingImpl.fromJson;
-
-  @override
-  String? get time;
-
-  /// Create a copy of StoreTiming
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$StoreTimingImplCopyWith<_$StoreTimingImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _StoreTiming&&(identical(other.time, time) || other.time == time));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,time);
+
+@override
+String toString() {
+  return 'StoreTiming(time: $time)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$StoreTimingCopyWith<$Res> implements $StoreTimingCopyWith<$Res> {
+  factory _$StoreTimingCopyWith(_StoreTiming value, $Res Function(_StoreTiming) _then) = __$StoreTimingCopyWithImpl;
+@override @useResult
+$Res call({
+ String? time
+});
+
+
+
+
+}
+/// @nodoc
+class __$StoreTimingCopyWithImpl<$Res>
+    implements _$StoreTimingCopyWith<$Res> {
+  __$StoreTimingCopyWithImpl(this._self, this._then);
+
+  final _StoreTiming _self;
+  final $Res Function(_StoreTiming) _then;
+
+/// Create a copy of StoreTiming
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? time = freezed,}) {
+  return _then(_StoreTiming(
+time: freezed == time ? _self.time : time // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+
+}
+
+// dart format on

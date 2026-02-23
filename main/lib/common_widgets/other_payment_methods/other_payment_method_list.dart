@@ -1,7 +1,6 @@
 import 'package:core/app/theme/app_size_constants.dart';
 import 'package:core/app/theme/color_constants.dart';
 import 'package:core/app/theme/font_type.dart';
-import 'package:core/common_widgets/currency_text.dart';
 import 'package:core/common_widgets/currency_text_with_sar.dart';
 import 'package:core/core/utils/extention.dart';
 import 'package:core/core/utils/scale_util.dart';
@@ -32,7 +31,7 @@ class OtherPaymentMethodList extends ConsumerWidget {
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
           itemCount: otherPaymentMethodList.length,
-          separatorBuilder: (_, __) => 16.vBox(context),
+          separatorBuilder: (_, _) => 16.vBox(context),
           itemBuilder: (_, index) {
             final item = otherPaymentMethodList[index];
             return _PaymentOptionItem(otherPaymentMethodModel: item);

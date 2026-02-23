@@ -6,28 +6,28 @@ part of 'top_up_order_list_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$TopUpOrderListResponseImpl _$$TopUpOrderListResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$TopUpOrderListResponseImpl(
-      orders: (json['orders'] as List<dynamic>?)
-              ?.map((e) => TopUpOrderModel.fromJson(e as Map<String, dynamic>))
-              .toList() ??
-          const [],
-      pagination: json['pagination'] == null
-          ? null
-          : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
-    );
+_TopUpOrderListResponse _$TopUpOrderListResponseFromJson(
+  Map<String, dynamic> json,
+) => _TopUpOrderListResponse(
+  orders:
+      (json['orders'] as List<dynamic>?)
+          ?.map((e) => TopUpOrderModel.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      const [],
+  pagination: json['pagination'] == null
+      ? null
+      : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
+);
 
-Map<String, dynamic> _$$TopUpOrderListResponseImplToJson(
-        _$TopUpOrderListResponseImpl instance) =>
-    <String, dynamic>{
-      'orders': instance.orders,
-      'pagination': instance.pagination,
-    };
+Map<String, dynamic> _$TopUpOrderListResponseToJson(
+  _TopUpOrderListResponse instance,
+) => <String, dynamic>{
+  'orders': instance.orders,
+  'pagination': instance.pagination,
+};
 
-_$TopUpOrderModelImpl _$$TopUpOrderModelImplFromJson(
-        Map<String, dynamic> json) =>
-    _$TopUpOrderModelImpl(
+_TopUpOrderModel _$TopUpOrderModelFromJson(Map<String, dynamic> json) =>
+    _TopUpOrderModel(
       id: (json['id'] as num?)?.toInt() ?? 0,
       productName: json['product_name'] as String? ?? '',
       providerName: json['provider_name'] as String? ?? '',
@@ -41,8 +41,7 @@ _$TopUpOrderModelImpl _$$TopUpOrderModelImplFromJson(
       orderDate: json['order_date'] as String? ?? '',
     );
 
-Map<String, dynamic> _$$TopUpOrderModelImplToJson(
-        _$TopUpOrderModelImpl instance) =>
+Map<String, dynamic> _$TopUpOrderModelToJson(_TopUpOrderModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'product_name': instance.productName,

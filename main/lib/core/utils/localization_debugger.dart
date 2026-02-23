@@ -20,9 +20,7 @@ class LocalizationDebugger {
       final locale = Localizations.localeOf(context);
       final lt = Lt.of(context);
       
-      debugPrint('' +
-          '$_tag ========= LOCALE STATE =========\n' +
-          '$_tag Language Code: ${locale.languageCode}\n' +
+      debugPrint('' '$_tag ========= LOCALE STATE =========\n' '$_tag Language Code: ${locale.languageCode}\n' +
           '$_tag Country Code: ${locale.countryCode}\n' +
           '$_tag Supported Locales: ${Lt.supportedLocales}\n' +
           '$_tag Current Locale: $locale\n' +
@@ -154,7 +152,7 @@ class LocalizationDebugger {
 
 /// Optional: Overlay widget to display localization state in-app during debug
 class LocalizationDebugOverlay extends StatelessWidget {
-  const LocalizationDebugOverlay({Key? key}) : super(key: key);
+  const LocalizationDebugOverlay({super.key});
 
   @override
   Widget build(BuildContext context) {

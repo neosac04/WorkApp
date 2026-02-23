@@ -6,28 +6,19 @@ part of 'add_to_cart_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$AddToCartResponseImpl _$$AddToCartResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$AddToCartResponseImpl(
+_AddToCartResponse _$AddToCartResponseFromJson(Map<String, dynamic> json) =>
+    _AddToCartResponse(
       status: json['status'] as String?,
       data: json['data'] == null
           ? null
           : CartItemData.fromJson(json['data'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$AddToCartResponseImplToJson(
-        _$AddToCartResponseImpl instance) =>
-    <String, dynamic>{
-      'status': instance.status,
-      'data': instance.data,
-    };
+Map<String, dynamic> _$AddToCartResponseToJson(_AddToCartResponse instance) =>
+    <String, dynamic>{'status': instance.status, 'data': instance.data};
 
-_$CartItemDataImpl _$$CartItemDataImplFromJson(Map<String, dynamic> json) =>
-    _$CartItemDataImpl(
-      itemId: (json['item_id'] as num?)?.toInt(),
-    );
+_CartItemData _$CartItemDataFromJson(Map<String, dynamic> json) =>
+    _CartItemData(itemId: (json['item_id'] as num?)?.toInt());
 
-Map<String, dynamic> _$$CartItemDataImplToJson(_$CartItemDataImpl instance) =>
-    <String, dynamic>{
-      'item_id': instance.itemId,
-    };
+Map<String, dynamic> _$CartItemDataToJson(_CartItemData instance) =>
+    <String, dynamic>{'item_id': instance.itemId};

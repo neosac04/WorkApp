@@ -6,47 +6,46 @@ part of 'top_up_products_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$TopUpProductsResponseImpl _$$TopUpProductsResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$TopUpProductsResponseImpl(
-      products: (json['products'] as List<dynamic>?)
-          ?.map((e) => TopUpProduct.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      pagination: json['pagination'] == null
-          ? null
-          : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
-      isChangeOperator: json['is_change_operator'] as bool?,
-    );
+_TopUpProductsResponse _$TopUpProductsResponseFromJson(
+  Map<String, dynamic> json,
+) => _TopUpProductsResponse(
+  products: (json['products'] as List<dynamic>?)
+      ?.map((e) => TopUpProduct.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  pagination: json['pagination'] == null
+      ? null
+      : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
+  isChangeOperator: json['is_change_operator'] as bool?,
+);
 
-Map<String, dynamic> _$$TopUpProductsResponseImplToJson(
-        _$TopUpProductsResponseImpl instance) =>
-    <String, dynamic>{
-      'products': instance.products,
-      'pagination': instance.pagination,
-      'is_change_operator': instance.isChangeOperator,
-    };
+Map<String, dynamic> _$TopUpProductsResponseToJson(
+  _TopUpProductsResponse instance,
+) => <String, dynamic>{
+  'products': instance.products,
+  'pagination': instance.pagination,
+  'is_change_operator': instance.isChangeOperator,
+};
 
-_$TopUpProductImpl _$$TopUpProductImplFromJson(Map<String, dynamic> json) =>
-    _$TopUpProductImpl(
-      id: json['id'] as String?,
-      type: json['type'] as String?,
-      name: json['name'] as String?,
-      description: json['description'] as String?,
-      termsCondition: json['terms_condition'] as String?,
-      usageInstructions: json['usage_instructions'] as String?,
-      currency: json['currency'] as String?,
-      minAmount: (json['min_amount'] as num?)?.toDouble(),
-      maxAmount: (json['max_amount'] as num?)?.toDouble(),
-      minDestinationAmount:
-          (json['min_destination_amount'] as num?)?.toDouble(),
-      maxDestinationAmount:
-          (json['max_destination_amount'] as num?)?.toDouble(),
-      validity: json['validity'] as String?,
-      data: json['data'] as String?,
-      image: json['image'] as String?,
-    );
+_TopUpProduct _$TopUpProductFromJson(
+  Map<String, dynamic> json,
+) => _TopUpProduct(
+  id: json['id'] as String?,
+  type: json['type'] as String?,
+  name: json['name'] as String?,
+  description: json['description'] as String?,
+  termsCondition: json['terms_condition'] as String?,
+  usageInstructions: json['usage_instructions'] as String?,
+  currency: json['currency'] as String?,
+  minAmount: (json['min_amount'] as num?)?.toDouble(),
+  maxAmount: (json['max_amount'] as num?)?.toDouble(),
+  minDestinationAmount: (json['min_destination_amount'] as num?)?.toDouble(),
+  maxDestinationAmount: (json['max_destination_amount'] as num?)?.toDouble(),
+  validity: json['validity'] as String?,
+  data: json['data'] as String?,
+  image: json['image'] as String?,
+);
 
-Map<String, dynamic> _$$TopUpProductImplToJson(_$TopUpProductImpl instance) =>
+Map<String, dynamic> _$TopUpProductToJson(_TopUpProduct instance) =>
     <String, dynamic>{
       'id': instance.id,
       'type': instance.type,

@@ -6,63 +6,59 @@ part of 'grocery_order_detail_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$GroceryOrderDetailResponseImpl _$$GroceryOrderDetailResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$GroceryOrderDetailResponseImpl(
-      orderDetail: json['order'] == null
-          ? null
-          : OrderDetail.fromJson(json['order'] as Map<String, dynamic>),
-    );
+_GroceryOrderDetailResponse _$GroceryOrderDetailResponseFromJson(
+  Map<String, dynamic> json,
+) => _GroceryOrderDetailResponse(
+  orderDetail: json['order'] == null
+      ? null
+      : OrderDetail.fromJson(json['order'] as Map<String, dynamic>),
+);
 
-Map<String, dynamic> _$$GroceryOrderDetailResponseImplToJson(
-        _$GroceryOrderDetailResponseImpl instance) =>
-    <String, dynamic>{
-      'order': instance.orderDetail,
-    };
+Map<String, dynamic> _$GroceryOrderDetailResponseToJson(
+  _GroceryOrderDetailResponse instance,
+) => <String, dynamic>{'order': instance.orderDetail};
 
-_$OrderDetailImpl _$$OrderDetailImplFromJson(Map<String, dynamic> json) =>
-    _$OrderDetailImpl(
-      id: (json['id'] as num?)?.toInt(),
-      nanaOrderId: json['nana_order_id'] as String?,
-      vendorId: json['vendor_id'] as String?,
-      vendorName: json['vendor_name'] as String?,
-      branchId: json['branch_id'] as String?,
-      orderDate: json['order_date'] as String?,
-      subtotal: (json['subtotal'] as num?)?.toDouble(),
-      taxAmount: (json['tax_amount'] as num?)?.toDouble(),
-      deliveryFee: (json['delivery_fee'] as num?)?.toDouble(),
-      totalAmount: (json['total_amount'] as num?)?.toDouble(),
-      grandTotal: (json['grand_total'] as num?)?.toDouble(),
-      vat: (json['vat'] as num?)?.toDouble(),
-      totalVat: (json['total_vat'] as num?)?.toDouble(),
-      paymentType: (json['payment_type'] as num?)?.toInt(),
-      paymentTypeName: json['payment_type_name'] as String?,
-      transactionId: json['transaction_id'] as String?,
-      paymentCardId: json['payment_card_id'],
-      deliveryAddress: json['delivery_address'] as String?,
-      deliveryAddressLat: json['delivery_address_lat'] as String?,
-      deliveryAddressLong: json['delivery_address_long'] as String?,
-      specialInstruction: json['special_instruction'],
-      storeDetails: json['store_details'] == null
-          ? null
-          : StoreDetails.fromJson(
-              json['store_details'] as Map<String, dynamic>),
-      status: (json['status'] as num?)?.toInt(),
-      statusName: json['status_name'] as String?,
-      rejectionReason: json['rejection_reason'],
-      groceryTrackingUrl: json['grocery_tracking_url'] as String?,
-      groceryTrackingApiToken: json['grocery_tracking_api_token'] as String?,
-      orderProducts: (json['order_products'] as List<dynamic>?)
-          ?.map((e) => OrderProduct.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      availableStatuses: (json['available_statuses'] as List<dynamic>?)
-          ?.map((e) => OrderStatusModel.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      createdAt: json['created_at'] as String?,
-      updatedAt: json['updated_at'] as String?,
-    );
+_OrderDetail _$OrderDetailFromJson(Map<String, dynamic> json) => _OrderDetail(
+  id: (json['id'] as num?)?.toInt(),
+  nanaOrderId: json['nana_order_id'] as String?,
+  vendorId: json['vendor_id'] as String?,
+  vendorName: json['vendor_name'] as String?,
+  branchId: json['branch_id'] as String?,
+  orderDate: json['order_date'] as String?,
+  subtotal: (json['subtotal'] as num?)?.toDouble(),
+  taxAmount: (json['tax_amount'] as num?)?.toDouble(),
+  deliveryFee: (json['delivery_fee'] as num?)?.toDouble(),
+  totalAmount: (json['total_amount'] as num?)?.toDouble(),
+  grandTotal: (json['grand_total'] as num?)?.toDouble(),
+  vat: (json['vat'] as num?)?.toDouble(),
+  totalVat: (json['total_vat'] as num?)?.toDouble(),
+  paymentType: (json['payment_type'] as num?)?.toInt(),
+  paymentTypeName: json['payment_type_name'] as String?,
+  transactionId: json['transaction_id'] as String?,
+  paymentCardId: json['payment_card_id'],
+  deliveryAddress: json['delivery_address'] as String?,
+  deliveryAddressLat: json['delivery_address_lat'] as String?,
+  deliveryAddressLong: json['delivery_address_long'] as String?,
+  specialInstruction: json['special_instruction'],
+  storeDetails: json['store_details'] == null
+      ? null
+      : StoreDetails.fromJson(json['store_details'] as Map<String, dynamic>),
+  status: (json['status'] as num?)?.toInt(),
+  statusName: json['status_name'] as String?,
+  rejectionReason: json['rejection_reason'],
+  groceryTrackingUrl: json['grocery_tracking_url'] as String?,
+  groceryTrackingApiToken: json['grocery_tracking_api_token'] as String?,
+  orderProducts: (json['order_products'] as List<dynamic>?)
+      ?.map((e) => OrderProduct.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  availableStatuses: (json['available_statuses'] as List<dynamic>?)
+      ?.map((e) => OrderStatusModel.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  createdAt: json['created_at'] as String?,
+  updatedAt: json['updated_at'] as String?,
+);
 
-Map<String, dynamic> _$$OrderDetailImplToJson(_$OrderDetailImpl instance) =>
+Map<String, dynamic> _$OrderDetailToJson(_OrderDetail instance) =>
     <String, dynamic>{
       'id': instance.id,
       'nana_order_id': instance.nanaOrderId,
@@ -97,8 +93,8 @@ Map<String, dynamic> _$$OrderDetailImplToJson(_$OrderDetailImpl instance) =>
       'updated_at': instance.updatedAt,
     };
 
-_$OrderProductImpl _$$OrderProductImplFromJson(Map<String, dynamic> json) =>
-    _$OrderProductImpl(
+_OrderProduct _$OrderProductFromJson(Map<String, dynamic> json) =>
+    _OrderProduct(
       itemId: (json['item_id'] as num?)?.toInt(),
       productId: json['product_id'] as String?,
       productName: json['product_name'] as String?,
@@ -109,7 +105,7 @@ _$OrderProductImpl _$$OrderProductImplFromJson(Map<String, dynamic> json) =>
       promotionId: json['promotion_id'],
     );
 
-Map<String, dynamic> _$$OrderProductImplToJson(_$OrderProductImpl instance) =>
+Map<String, dynamic> _$OrderProductToJson(_OrderProduct instance) =>
     <String, dynamic>{
       'item_id': instance.itemId,
       'product_id': instance.productId,
@@ -121,8 +117,8 @@ Map<String, dynamic> _$$OrderProductImplToJson(_$OrderProductImpl instance) =>
       'promotion_id': instance.promotionId,
     };
 
-_$StoreDetailsImpl _$$StoreDetailsImplFromJson(Map<String, dynamic> json) =>
-    _$StoreDetailsImpl(
+_StoreDetails _$StoreDetailsFromJson(Map<String, dynamic> json) =>
+    _StoreDetails(
       storeId: json['store_id'] as String?,
       retailerId: json['retailer_id'] as String?,
       name: json['name'] as String?,
@@ -137,7 +133,7 @@ _$StoreDetailsImpl _$$StoreDetailsImplFromJson(Map<String, dynamic> json) =>
       needDeliveryAddress: (json['need_delivery_address'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$StoreDetailsImplToJson(_$StoreDetailsImpl instance) =>
+Map<String, dynamic> _$StoreDetailsToJson(_StoreDetails instance) =>
     <String, dynamic>{
       'store_id': instance.storeId,
       'retailer_id': instance.retailerId,

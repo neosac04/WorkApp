@@ -1,5 +1,4 @@
 import 'package:core/models/food_order_model/food_order_model.dart';
-import 'package:core/models/order_model/order_model.dart';
 import 'package:core/models/pagination/pagination.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 

@@ -6,37 +6,36 @@ part of 'booking_data.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$BookingDataImpl _$$BookingDataImplFromJson(Map<String, dynamic> json) =>
-    _$BookingDataImpl(
-      id: (json['id'] as num?)?.toInt() ?? 0,
-      bookingType: json['booking_type'] as String? ?? '',
-      userId: (json['user_id'] as num?)?.toInt() ?? 0,
-      pickupLocation: json['pickup_location'] as String? ?? '',
-      dropoffLocation: json['dropoff_location'] as String? ?? '',
-      pickupLat: json['pickup_lat'] as String? ?? '',
-      pickupLong: json['pickup_long'] as String? ?? '',
-      dropoffLat: json['dropoff_lat'] as String? ?? '',
-      dropoffLong: json['dropoff_long'] as String? ?? '',
-      tripDistance: json['trip_distance'] as String? ?? '',
-      tripDuration: json['trip_duration'] as String? ?? '',
-      tripCost: json['trip_cost'] as String? ?? '',
-      pickupDateTime: json['pickup_date_time'] as String? ?? '',
-      dropoffTime: json['dropoff_time'] as String? ?? '',
-      acceptTime: json['accept_time'] as String? ?? '',
-      arrivedTime: json['arrived_time'] as String? ?? '',
-      pickupTime: json['pickup_time'] as String? ?? '',
-      vehicleType: json['vehicle_type'] as String? ?? '',
-      bookingStatus: json['booking_status'] as String? ?? '',
-      driverName: json['driver_name'] as String? ?? '',
-      driverPhone: json['driver_phone'] as String? ?? '',
-      driverImage: json['driver_image'] as String? ?? '',
-      carModel: json['car_model'] as String? ?? '',
-      carColor: json['car_color'] as String? ?? '',
-      carYear: json['car_year'] as String? ?? '',
-      carPlateNumber: json['car_plate_number'] as String? ?? '',
-    );
+_BookingData _$BookingDataFromJson(Map<String, dynamic> json) => _BookingData(
+  id: (json['id'] as num?)?.toInt() ?? 0,
+  bookingType: json['booking_type'] as String? ?? '',
+  userId: (json['user_id'] as num?)?.toInt() ?? 0,
+  pickupLocation: json['pickup_location'] as String? ?? '',
+  dropoffLocation: json['dropoff_location'] as String? ?? '',
+  pickupLat: json['pickup_lat'] as String? ?? '',
+  pickupLong: json['pickup_long'] as String? ?? '',
+  dropoffLat: json['dropoff_lat'] as String? ?? '',
+  dropoffLong: json['dropoff_long'] as String? ?? '',
+  tripDistance: json['trip_distance'] as String? ?? '',
+  tripDuration: json['trip_duration'] as String? ?? '',
+  tripCost: json['trip_cost'] as String? ?? '',
+  pickupDateTime: json['pickup_date_time'] as String? ?? '',
+  dropoffTime: json['dropoff_time'] as String? ?? '',
+  acceptTime: json['accept_time'] as String? ?? '',
+  arrivedTime: json['arrived_time'] as String? ?? '',
+  pickupTime: json['pickup_time'] as String? ?? '',
+  vehicleType: json['vehicle_type'] as String? ?? '',
+  bookingStatus: json['booking_status'] as String? ?? '',
+  driverName: json['driver_name'] as String? ?? '',
+  driverPhone: json['driver_phone'] as String? ?? '',
+  driverImage: json['driver_image'] as String? ?? '',
+  carModel: json['car_model'] as String? ?? '',
+  carColor: json['car_color'] as String? ?? '',
+  carYear: json['car_year'] as String? ?? '',
+  carPlateNumber: json['car_plate_number'] as String? ?? '',
+);
 
-Map<String, dynamic> _$$BookingDataImplToJson(_$BookingDataImpl instance) =>
+Map<String, dynamic> _$BookingDataToJson(_BookingData instance) =>
     <String, dynamic>{
       'id': instance.id,
       'booking_type': instance.bookingType,

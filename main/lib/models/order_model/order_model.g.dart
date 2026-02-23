@@ -6,39 +6,39 @@ part of 'order_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$OrderModelImpl _$$OrderModelImplFromJson(Map<String, dynamic> json) =>
-    _$OrderModelImpl(
-      id: (json['id'] as num?)?.toInt() ?? 0,
-      orderNumber: json['order_number'] as String? ?? '',
-      orderDateTime: json['order_date_time'] as String? ?? '',
-      merchantId: (json['merchant_id'] as num?)?.toInt() ?? 0,
-      orderStatus: json['order_status'] as String? ?? '',
-      deliveryAddress: json['delivery_address'] as String? ?? '',
-      deliveryLatitude: json['delivery_address_latitude'] as String? ?? '0.0',
-      deliveryLongitude: json['delivery_address_longitude'] as String? ?? '0.0',
-      paymentType: json['payment_type'] as String? ?? '',
-      subTotal: json['sub_total'] as String? ?? '0.0',
-      deliveryCharge: json['delivery_charge'] as String? ?? '0.0',
-      serviceCharge: json['service_charge'] as String? ?? '0.0',
-      serviceChargeAmount: json['service_charge_amount'] as String? ?? '0.0',
-      promoCode: json['promocode'] as String?,
-      promoCodeAmount: json['promocode_amount'] as String? ?? '0.0',
-      totalAmount: json['total_amount'] as String? ?? '0.0',
-      specialInstruction: json['special_instruction'] as String? ?? '',
-      deliveryOtp: json['delivery_otp'] as String? ?? '',
-      deliveryQrCode: json['delivery_qr_code'] as String? ?? '',
-      products: (json['order_products'] as List<dynamic>?)
-              ?.map(
-                  (e) => OrderProductModel.fromJson(e as Map<String, dynamic>))
-              .toList() ??
-          const [],
-      availableStatuses: (json['available_statuses'] as List<dynamic>?)
-              ?.map((e) => OrderStatusModel.fromJson(e as Map<String, dynamic>))
-              .toList() ??
-          const [],
-    );
+_OrderModel _$OrderModelFromJson(Map<String, dynamic> json) => _OrderModel(
+  id: (json['id'] as num?)?.toInt() ?? 0,
+  orderNumber: json['order_number'] as String? ?? '',
+  orderDateTime: json['order_date_time'] as String? ?? '',
+  merchantId: (json['merchant_id'] as num?)?.toInt() ?? 0,
+  orderStatus: json['order_status'] as String? ?? '',
+  deliveryAddress: json['delivery_address'] as String? ?? '',
+  deliveryLatitude: json['delivery_address_latitude'] as String? ?? '0.0',
+  deliveryLongitude: json['delivery_address_longitude'] as String? ?? '0.0',
+  paymentType: json['payment_type'] as String? ?? '',
+  subTotal: json['sub_total'] as String? ?? '0.0',
+  deliveryCharge: json['delivery_charge'] as String? ?? '0.0',
+  serviceCharge: json['service_charge'] as String? ?? '0.0',
+  serviceChargeAmount: json['service_charge_amount'] as String? ?? '0.0',
+  promoCode: json['promocode'] as String?,
+  promoCodeAmount: json['promocode_amount'] as String? ?? '0.0',
+  totalAmount: json['total_amount'] as String? ?? '0.0',
+  specialInstruction: json['special_instruction'] as String? ?? '',
+  deliveryOtp: json['delivery_otp'] as String? ?? '',
+  deliveryQrCode: json['delivery_qr_code'] as String? ?? '',
+  products:
+      (json['order_products'] as List<dynamic>?)
+          ?.map((e) => OrderProductModel.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      const [],
+  availableStatuses:
+      (json['available_statuses'] as List<dynamic>?)
+          ?.map((e) => OrderStatusModel.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      const [],
+);
 
-Map<String, dynamic> _$$OrderModelImplToJson(_$OrderModelImpl instance) =>
+Map<String, dynamic> _$OrderModelToJson(_OrderModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'order_number': instance.orderNumber,
@@ -63,9 +63,8 @@ Map<String, dynamic> _$$OrderModelImplToJson(_$OrderModelImpl instance) =>
       'available_statuses': instance.availableStatuses,
     };
 
-_$OrderProductModelImpl _$$OrderProductModelImplFromJson(
-        Map<String, dynamic> json) =>
-    _$OrderProductModelImpl(
+_OrderProductModel _$OrderProductModelFromJson(Map<String, dynamic> json) =>
+    _OrderProductModel(
       id: (json['id'] as num?)?.toInt() ?? 0,
       productId: (json['product_id'] as num?)?.toInt() ?? 0,
       variantId: (json['variant_id'] as num?)?.toInt(),
@@ -85,8 +84,7 @@ _$OrderProductModelImpl _$$OrderProductModelImplFromJson(
       status: json['status'] as String? ?? '',
     );
 
-Map<String, dynamic> _$$OrderProductModelImplToJson(
-        _$OrderProductModelImpl instance) =>
+Map<String, dynamic> _$OrderProductModelToJson(_OrderProductModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'product_id': instance.productId,

@@ -16,14 +16,14 @@ class AddressSelectionBottomSheet extends StatelessWidget {
   final Function()? onAddAddress;
 
   const AddressSelectionBottomSheet({
-    Key? key,
+    super.key,
     required this.title,
     required this.addressList,
     required this.selectedAddress,
     required this.onAddressSelected,
     required this.addressCardBuilder,
     this.onAddAddress,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

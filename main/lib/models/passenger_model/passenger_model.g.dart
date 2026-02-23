@@ -6,8 +6,8 @@ part of 'passenger_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$PassengerModelImpl _$$PassengerModelImplFromJson(Map<String, dynamic> json) =>
-    _$PassengerModelImpl(
+_PassengerModel _$PassengerModelFromJson(Map<String, dynamic> json) =>
+    _PassengerModel(
       id: json['id'] as String?,
       applicationId: json['applicationId'] as String?,
       firstName: json['firstName'] as String?,
@@ -28,8 +28,7 @@ _$PassengerModelImpl _$$PassengerModelImplFromJson(Map<String, dynamic> json) =>
       passportIssuingCountry: json['passportIssuingCountry'] as String?,
     );
 
-Map<String, dynamic> _$$PassengerModelImplToJson(
-        _$PassengerModelImpl instance) =>
+Map<String, dynamic> _$PassengerModelToJson(_PassengerModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'applicationId': instance.applicationId,

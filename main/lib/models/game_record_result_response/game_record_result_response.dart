@@ -6,7 +6,7 @@ part 'game_record_result_response.freezed.dart';
 part 'game_record_result_response.g.dart';
 
 @freezed
-class GameRecordResultResponse with _$GameRecordResultResponse {
+sealed class GameRecordResultResponse with _$GameRecordResultResponse {
   const factory GameRecordResultResponse({
     @JsonKey(name: 'game_type') String? gameType,
     @JsonKey(name: 'flow_type') String? flowType,
@@ -21,7 +21,7 @@ class GameRecordResultResponse with _$GameRecordResultResponse {
 }
 
 @freezed
-class Reward with _$Reward {
+sealed class Reward with _$Reward {
   const factory Reward({
     @JsonKey(name: 'reward_id') int? rewardId,
     @JsonKey(name: 'reward_type') String? rewardType,
@@ -58,7 +58,7 @@ class Reward with _$Reward {
 // }
 
 @freezed
-class Spins with _$Spins {
+sealed class Spins with _$Spins {
   const factory Spins({
     @JsonKey(name: 'total_spins') int? totalSpins,
     @JsonKey(name: 'used_spins') int? usedSpins,
@@ -69,7 +69,7 @@ class Spins with _$Spins {
 }
 
 @freezed
-class WalletBalance with _$WalletBalance {
+sealed class WalletBalance with _$WalletBalance {
   const factory WalletBalance({
     @JsonKey(name: 'cashback_balance') num? cashbackBalance,
     @JsonKey(name: 'transferable_balance') num? transferableBalance,

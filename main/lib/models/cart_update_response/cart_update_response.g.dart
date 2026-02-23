@@ -6,9 +6,8 @@ part of 'cart_update_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$CartUpdateResponseImpl _$$CartUpdateResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$CartUpdateResponseImpl(
+_CartUpdateResponse _$CartUpdateResponseFromJson(Map<String, dynamic> json) =>
+    _CartUpdateResponse(
       cartItem: json['cart_item'] == null
           ? null
           : CartItem.fromJson(json['cart_item'] as Map<String, dynamic>),
@@ -17,8 +16,7 @@ _$CartUpdateResponseImpl _$$CartUpdateResponseImplFromJson(
           : CartSummary.fromJson(json['cart_summary'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$CartUpdateResponseImplToJson(
-        _$CartUpdateResponseImpl instance) =>
+Map<String, dynamic> _$CartUpdateResponseToJson(_CartUpdateResponse instance) =>
     <String, dynamic>{
       'cart_item': instance.cartItem,
       'cart_summary': instance.cartSummary,

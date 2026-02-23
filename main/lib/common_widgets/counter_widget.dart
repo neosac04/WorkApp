@@ -13,13 +13,13 @@ class CounterWidget extends StatelessWidget {
   final Color accentColor;
 
   const CounterWidget({
-    Key? key,
+    super.key,
     required this.value,
     required this.onIncrement,
     required this.onDecrement,
     this.minValue = 0,
     this.accentColor = Colors.deepOrange,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

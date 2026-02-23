@@ -5,14 +5,14 @@ part 'topup_operators_list_response.freezed.dart';
 part 'topup_operators_list_response.g.dart';
 
 @freezed
-class TopupOperatorsListResponse with _$TopupOperatorsListResponse {
+sealed class TopupOperatorsListResponse with _$TopupOperatorsListResponse {
   const factory TopupOperatorsListResponse({List<OperatorsResponse>? operators, Pagination? pagination}) = _TopupOperatorsListResponse;
 
   factory TopupOperatorsListResponse.fromJson(Map<String, dynamic> json) => _$TopupOperatorsListResponseFromJson(json);
 }
 
 @freezed
-class OperatorsResponse with _$OperatorsResponse {
+sealed class OperatorsResponse with _$OperatorsResponse {
   const factory OperatorsResponse({
     @JsonKey(name: 'operator_id') String? operatorId,
     @JsonKey(name: 'operator_name') String? operatorName,

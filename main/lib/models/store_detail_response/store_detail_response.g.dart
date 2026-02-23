@@ -6,9 +6,8 @@ part of 'store_detail_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$StoreDetailResponseImpl _$$StoreDetailResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$StoreDetailResponseImpl(
+_StoreDetailResponse _$StoreDetailResponseFromJson(Map<String, dynamic> json) =>
+    _StoreDetailResponse(
       id: (json['id'] as num?)?.toInt(),
       branchId: (json['branch_id'] as num?)?.toInt(),
       name: json['name'] as String?,
@@ -34,30 +33,30 @@ _$StoreDetailResponseImpl _$$StoreDetailResponseImplFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$StoreDetailResponseImplToJson(
-        _$StoreDetailResponseImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'branch_id': instance.branchId,
-      'name': instance.name,
-      'profile_image': instance.profileImage,
-      'cover_image': instance.coverImage,
-      'location_info': instance.locationInfo,
-      'reviews_count': instance.reviewsCount,
-      'rating': instance.rating,
-      'distance': instance.distance,
-      'is_opened': instance.isOpened,
-      'is_opened_message': instance.isOpenedMessage,
-      'store_hours': instance.storeHours,
-      'popular_products': instance.popularProducts,
-      'delivery_discount_label': instance.deliveryDiscountLabel,
-      'discount_label': instance.discountLabel,
-      'categories': instance.categories,
-      'promotions': instance.promotions,
-    };
+Map<String, dynamic> _$StoreDetailResponseToJson(
+  _StoreDetailResponse instance,
+) => <String, dynamic>{
+  'id': instance.id,
+  'branch_id': instance.branchId,
+  'name': instance.name,
+  'profile_image': instance.profileImage,
+  'cover_image': instance.coverImage,
+  'location_info': instance.locationInfo,
+  'reviews_count': instance.reviewsCount,
+  'rating': instance.rating,
+  'distance': instance.distance,
+  'is_opened': instance.isOpened,
+  'is_opened_message': instance.isOpenedMessage,
+  'store_hours': instance.storeHours,
+  'popular_products': instance.popularProducts,
+  'delivery_discount_label': instance.deliveryDiscountLabel,
+  'discount_label': instance.discountLabel,
+  'categories': instance.categories,
+  'promotions': instance.promotions,
+};
 
-_$PopularProductImpl _$$PopularProductImplFromJson(Map<String, dynamic> json) =>
-    _$PopularProductImpl(
+_PopularProduct _$PopularProductFromJson(Map<String, dynamic> json) =>
+    _PopularProduct(
       id: (json['id'] as num?)?.toInt(),
       name: json['name'] as String?,
       image: json['image'] as String?,
@@ -68,8 +67,7 @@ _$PopularProductImpl _$$PopularProductImplFromJson(Map<String, dynamic> json) =>
       rating: json['rating'] as String?,
     );
 
-Map<String, dynamic> _$$PopularProductImplToJson(
-        _$PopularProductImpl instance) =>
+Map<String, dynamic> _$PopularProductToJson(_PopularProduct instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
@@ -81,14 +79,10 @@ Map<String, dynamic> _$$PopularProductImplToJson(
       'rating': instance.rating,
     };
 
-_$CategoryImpl _$$CategoryImplFromJson(Map<String, dynamic> json) =>
-    _$CategoryImpl(
-      id: (json['id'] as num?)?.toInt(),
-      name: json['name'] as String?,
-    );
+_Category _$CategoryFromJson(Map<String, dynamic> json) =>
+    _Category(id: (json['id'] as num?)?.toInt(), name: json['name'] as String?);
 
-Map<String, dynamic> _$$CategoryImplToJson(_$CategoryImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-    };
+Map<String, dynamic> _$CategoryToJson(_Category instance) => <String, dynamic>{
+  'id': instance.id,
+  'name': instance.name,
+};

@@ -13,7 +13,7 @@ ESimCategoryResponse eSimCategoryResponseFromJson(String str) => ESimCategoryRes
 String eSimCategoryResponseToJson(ESimCategoryResponse data) => json.encode(data.toJson());
 
 @freezed
-class ESimCategoryResponse with _$ESimCategoryResponse {
+sealed class ESimCategoryResponse with _$ESimCategoryResponse {
   const factory ESimCategoryResponse({
     @JsonKey(name: "categories")
     List<ESimCategory>? eSimCategories,
@@ -25,7 +25,7 @@ class ESimCategoryResponse with _$ESimCategoryResponse {
 }
 
 @freezed
-class ESimCategory with _$ESimCategory {
+sealed class ESimCategory with _$ESimCategory {
   const factory ESimCategory({
     @JsonKey(name: "id")
     int? id,

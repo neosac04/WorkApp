@@ -1,13 +1,10 @@
 import 'package:core/app/theme/app_size_constants.dart';
 import 'package:core/app/theme/color_constants.dart';
-import 'package:core/common_widgets/cart_button_widget.dart';
 import 'package:core/common_widgets/common_button.dart';
 import 'package:core/common_widgets/common_network_image_view.dart';
 import 'package:core/common_widgets/currency_text.dart';
 import 'package:core/common_widgets/favourite_un_favourite_widget.dart' show FavouriteUnFavouriteWidget;
 import 'package:core/common_widgets/rating_widget.dart';
-import 'package:core/core/di/app_providers.dart';
-import 'package:core/core/utils/api_params.dart' show ApiParams;
 import 'package:core/core/utils/extention.dart';
 import 'package:core/core/utils/scale_util.dart';
 import 'package:core/models/product_model/product_model.dart' show ProductData;

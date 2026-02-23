@@ -6,14 +6,8 @@ part of 'reserve_pin_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ReservePinResponseImpl _$$ReservePinResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$ReservePinResponseImpl(
-      orderId: (json['order_id'] as num?)?.toInt() ?? 0,
-    );
+_ReservePinResponse _$ReservePinResponseFromJson(Map<String, dynamic> json) =>
+    _ReservePinResponse(orderId: (json['order_id'] as num?)?.toInt() ?? 0);
 
-Map<String, dynamic> _$$ReservePinResponseImplToJson(
-        _$ReservePinResponseImpl instance) =>
-    <String, dynamic>{
-      'order_id': instance.orderId,
-    };
+Map<String, dynamic> _$ReservePinResponseToJson(_ReservePinResponse instance) =>
+    <String, dynamic>{'order_id': instance.orderId};

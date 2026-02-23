@@ -6,9 +6,8 @@ part of 'contact_us_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ContactUsResponseImpl _$$ContactUsResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$ContactUsResponseImpl(
+_ContactUsResponse _$ContactUsResponseFromJson(Map<String, dynamic> json) =>
+    _ContactUsResponse(
       id: (json['id'] as num?)?.toInt(),
       name: json['name'] as String?,
       email: json['email'] as String?,
@@ -20,8 +19,7 @@ _$ContactUsResponseImpl _$$ContactUsResponseImplFromJson(
           : DateTime.parse(json['created_at'] as String),
     );
 
-Map<String, dynamic> _$$ContactUsResponseImplToJson(
-        _$ContactUsResponseImpl instance) =>
+Map<String, dynamic> _$ContactUsResponseToJson(_ContactUsResponse instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,

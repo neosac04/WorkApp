@@ -6,29 +6,28 @@ part of 'gift_card_categories_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$GiftCardCategoriesResponseImpl _$$GiftCardCategoriesResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$GiftCardCategoriesResponseImpl(
-      giftCardCategory: (json['categories'] as List<dynamic>?)
-          ?.map((e) => GiftCardCategory.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      giftcardOrigin: json['giftcard_origin'] as String?,
-      pagination: json['pagination'] == null
-          ? null
-          : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
-    );
+_GiftCardCategoriesResponse _$GiftCardCategoriesResponseFromJson(
+  Map<String, dynamic> json,
+) => _GiftCardCategoriesResponse(
+  giftCardCategory: (json['categories'] as List<dynamic>?)
+      ?.map((e) => GiftCardCategory.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  giftcardOrigin: json['giftcard_origin'] as String?,
+  pagination: json['pagination'] == null
+      ? null
+      : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
+);
 
-Map<String, dynamic> _$$GiftCardCategoriesResponseImplToJson(
-        _$GiftCardCategoriesResponseImpl instance) =>
-    <String, dynamic>{
-      'categories': instance.giftCardCategory,
-      'giftcard_origin': instance.giftcardOrigin,
-      'pagination': instance.pagination,
-    };
+Map<String, dynamic> _$GiftCardCategoriesResponseToJson(
+  _GiftCardCategoriesResponse instance,
+) => <String, dynamic>{
+  'categories': instance.giftCardCategory,
+  'giftcard_origin': instance.giftcardOrigin,
+  'pagination': instance.pagination,
+};
 
-_$GiftCardCategoryImpl _$$GiftCardCategoryImplFromJson(
-        Map<String, dynamic> json) =>
-    _$GiftCardCategoryImpl(
+_GiftCardCategory _$GiftCardCategoryFromJson(Map<String, dynamic> json) =>
+    _GiftCardCategory(
       id: (json['id'] as num?)?.toInt(),
       name: json['name'] as String?,
       image: json['image'] as String?,
@@ -41,8 +40,7 @@ _$GiftCardCategoryImpl _$$GiftCardCategoryImplFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$GiftCardCategoryImplToJson(
-        _$GiftCardCategoryImpl instance) =>
+Map<String, dynamic> _$GiftCardCategoryToJson(_GiftCardCategory instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,

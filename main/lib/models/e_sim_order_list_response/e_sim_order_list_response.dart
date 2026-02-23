@@ -14,7 +14,7 @@ ESimOrderListResponse eSimOrderListResponseFromJson(String str) => ESimOrderList
 String eSimOrderListResponseToJson(ESimOrderListResponse data) => json.encode(data.toJson());
 
 @freezed
-class ESimOrderListResponse with _$ESimOrderListResponse {
+sealed class ESimOrderListResponse with _$ESimOrderListResponse {
   const factory ESimOrderListResponse({
     @JsonKey(name: "orders")
     List<ESimOrder>? eSimOrders,
@@ -26,7 +26,7 @@ class ESimOrderListResponse with _$ESimOrderListResponse {
 }
 
 @freezed
-class ESimOrder with _$ESimOrder {
+sealed class ESimOrder with _$ESimOrder {
   const factory ESimOrder({
     @JsonKey(name: "id")
     int? id,

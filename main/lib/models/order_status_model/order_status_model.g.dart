@@ -6,16 +6,11 @@ part of 'order_status_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$OrderStatusModelImpl _$$OrderStatusModelImplFromJson(
-        Map<String, dynamic> json) =>
-    _$OrderStatusModelImpl(
+_OrderStatusModel _$OrderStatusModelFromJson(Map<String, dynamic> json) =>
+    _OrderStatusModel(
       label: json['label'] as String? ?? '',
       value: json['value'] as String? ?? '',
     );
 
-Map<String, dynamic> _$$OrderStatusModelImplToJson(
-        _$OrderStatusModelImpl instance) =>
-    <String, dynamic>{
-      'label': instance.label,
-      'value': instance.value,
-    };
+Map<String, dynamic> _$OrderStatusModelToJson(_OrderStatusModel instance) =>
+    <String, dynamic>{'label': instance.label, 'value': instance.value};

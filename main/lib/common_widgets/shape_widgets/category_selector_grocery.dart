@@ -54,8 +54,9 @@ class _CategorySelectorGroceryState extends State<CategorySelectorGrocery> {
   }
 
   void _scrollToSelectedIndex(int index, {bool animate = true}) {
-    if (!mounted || !_scrollController.hasClients || widget.categories.isEmpty)
+    if (!mounted || !_scrollController.hasClients || widget.categories.isEmpty) {
       return;
+    }
 
     int safeIndex = index.clamp(0, widget.categories.length - 1);
 

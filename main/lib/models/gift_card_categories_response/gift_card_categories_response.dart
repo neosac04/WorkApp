@@ -17,7 +17,7 @@ String giftCardCategoriesResponseToJson(GiftCardCategoriesResponse data) =>
     json.encode(data.toJson());
 
 @freezed
-class GiftCardCategoriesResponse with _$GiftCardCategoriesResponse {
+sealed class GiftCardCategoriesResponse with _$GiftCardCategoriesResponse {
   const factory GiftCardCategoriesResponse({
     @JsonKey(name: "categories")
     List<GiftCardCategory>? giftCardCategory,
@@ -32,7 +32,7 @@ class GiftCardCategoriesResponse with _$GiftCardCategoriesResponse {
 }
 
 @freezed
-class GiftCardCategory with _$GiftCardCategory {
+sealed class GiftCardCategory with _$GiftCardCategory {
   const factory GiftCardCategory({
     @JsonKey(name: "id") int? id,
     @JsonKey(name: "name") String? name,

@@ -13,7 +13,7 @@ GiftCardPlaceOrderResponse giftCardPlaceOrderResponseFromJson(String str) => Gif
 String giftCardPlaceOrderResponseToJson(GiftCardPlaceOrderResponse data) => json.encode(data.toJson());
 
 @freezed
-class GiftCardPlaceOrderResponse with _$GiftCardPlaceOrderResponse {
+sealed class GiftCardPlaceOrderResponse with _$GiftCardPlaceOrderResponse {
   const factory GiftCardPlaceOrderResponse({
     @JsonKey(name: "order_id")
     int? orderId,

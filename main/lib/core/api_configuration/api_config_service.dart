@@ -1,5 +1,4 @@
 import 'package:core/models/init_response/init_response.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// Service to manage dynamic API configuration
 class ApiConfigService {

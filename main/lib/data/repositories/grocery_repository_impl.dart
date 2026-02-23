@@ -1,7 +1,6 @@
 import 'package:core/domain/repositories/grocery_repository.dart';
 import 'package:core/models/add_to_card_grocery_response/add_to_card_grocery_response.dart';
 import 'package:core/models/common_response/common_response.dart';
-import 'package:core/models/e_sim_category_response/e_sim_category_response.dart';
 import 'package:core/models/grocery_cart_response/grocery_cart_response.dart';
 import 'package:core/models/grocery_cat_subcat_response/grocery_cat_sub_cat_response.dart';
 import 'package:core/models/grocery_checkout_response/grocery_checkout_response.dart' show GroceryCheckoutResponse;
@@ -250,17 +249,17 @@ class GroceryRepositoryImpl implements GroceryRepository {
 
   @override
   Future<Either<String, CommonResponse<InitiateTamaraPayment>>> initiateTamaraPayment(Map<String, dynamic> params) async {
-    print("object====>>>> ${params}");
+    print("object====>>>> $params");
     try {
-      print("object====>>>> try ${params}");
+      print("object====>>>> try $params");
       final posts = await apiService.groceryInitiateTamaraPayment(params);
       return Right(posts);
     } on DioException catch (dioError) {
-      print("object====>>>> DioException ${params}");
+      print("object====>>>> DioException $params");
       // Interceptor already parsed the error message
       return Left(dioError.message ?? 'An error occurred');
     } catch (e) {
-      print("object====>>>> catch ${params}");
+      print("object====>>>> catch $params");
       return Left(CommonResponse(message: e.toString()).message ?? "");
     }
   }

@@ -1,6 +1,4 @@
-import 'package:core/domain/repositories/remote_repository.dart';
 import 'package:core/domain/repositories/search_repository.dart';
-import 'package:core/models/country_response/country_response.dart' show CountryResponse;
 import 'package:core/models/product_model/product_model.dart';
 import 'package:core/service/api_service.dart';
 import 'package:dartz/dartz.dart';

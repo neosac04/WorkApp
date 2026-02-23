@@ -6,31 +6,30 @@ part of 'fortune_wheel_result_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$FortuneWheelResultResponseImpl _$$FortuneWheelResultResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$FortuneWheelResultResponseImpl(
-      result: (json['result'] as num?)?.toInt(),
-      resultId: json['result_id'] as String?,
-      flowType: json['flow_type'] as String?,
-      probability: json['probability'] as String,
-      data: (json['data'] as List<dynamic>)
-          .map((e) => SpinResultSegment.fromJson(e as Map<String, dynamic>))
-          .toList(),
-    );
+_FortuneWheelResultResponse _$FortuneWheelResultResponseFromJson(
+  Map<String, dynamic> json,
+) => _FortuneWheelResultResponse(
+  result: (json['result'] as num?)?.toInt(),
+  resultId: json['result_id'] as String?,
+  flowType: json['flow_type'] as String?,
+  probability: json['probability'] as String,
+  data: (json['data'] as List<dynamic>)
+      .map((e) => SpinResultSegment.fromJson(e as Map<String, dynamic>))
+      .toList(),
+);
 
-Map<String, dynamic> _$$FortuneWheelResultResponseImplToJson(
-        _$FortuneWheelResultResponseImpl instance) =>
-    <String, dynamic>{
-      'result': instance.result,
-      'result_id': instance.resultId,
-      'flow_type': instance.flowType,
-      'probability': instance.probability,
-      'data': instance.data,
-    };
+Map<String, dynamic> _$FortuneWheelResultResponseToJson(
+  _FortuneWheelResultResponse instance,
+) => <String, dynamic>{
+  'result': instance.result,
+  'result_id': instance.resultId,
+  'flow_type': instance.flowType,
+  'probability': instance.probability,
+  'data': instance.data,
+};
 
-_$SpinResultSegmentImpl _$$SpinResultSegmentImplFromJson(
-        Map<String, dynamic> json) =>
-    _$SpinResultSegmentImpl(
+_SpinResultSegment _$SpinResultSegmentFromJson(Map<String, dynamic> json) =>
+    _SpinResultSegment(
       id: (json['id'] as num).toInt(),
       title: json['title'] as String,
       type: (json['type'] as num).toInt(),
@@ -39,8 +38,7 @@ _$SpinResultSegmentImpl _$$SpinResultSegmentImplFromJson(
       typeValueArray: json['type_value_array'] as List<dynamic>,
     );
 
-Map<String, dynamic> _$$SpinResultSegmentImplToJson(
-        _$SpinResultSegmentImpl instance) =>
+Map<String, dynamic> _$SpinResultSegmentToJson(_SpinResultSegment instance) =>
     <String, dynamic>{
       'id': instance.id,
       'title': instance.title,

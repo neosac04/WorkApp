@@ -4,7 +4,7 @@ part 'order_tracking_response.freezed.dart';
 part 'order_tracking_response.g.dart';
 
 @Freezed(genericArgumentFactories: true)
-class OrderTrackingResponse with _$OrderTrackingResponse {
+sealed class OrderTrackingResponse with _$OrderTrackingResponse {
   const factory OrderTrackingResponse({
     @Default('') String status,
     @Default('') String description,

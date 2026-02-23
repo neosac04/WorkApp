@@ -1,5 +1,6 @@
 import 'package:core/app/theme/font_constants.dart';
 import 'package:core/core/utils/extention.dart';
+import 'package:core/core/utils/scale_util.dart';
 import 'package:flutter/material.dart';
 
 import '../app/theme/app_size_constants.dart';

@@ -6,17 +6,16 @@ part of 'recent_purchase_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$RecentPurchaseResponseImpl _$$RecentPurchaseResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$RecentPurchaseResponseImpl(
-      orders: (json['orders'] as List<dynamic>?)
-              ?.map((e) => TopUpOrderModel.fromJson(e as Map<String, dynamic>))
-              .toList() ??
-          const [],
-    );
+_RecentPurchaseResponse _$RecentPurchaseResponseFromJson(
+  Map<String, dynamic> json,
+) => _RecentPurchaseResponse(
+  orders:
+      (json['orders'] as List<dynamic>?)
+          ?.map((e) => TopUpOrderModel.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      const [],
+);
 
-Map<String, dynamic> _$$RecentPurchaseResponseImplToJson(
-        _$RecentPurchaseResponseImpl instance) =>
-    <String, dynamic>{
-      'orders': instance.orders,
-    };
+Map<String, dynamic> _$RecentPurchaseResponseToJson(
+  _RecentPurchaseResponse instance,
+) => <String, dynamic>{'orders': instance.orders};

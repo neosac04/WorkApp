@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,936 +9,879 @@ part of 'banners_response.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-BannersResponse _$BannersResponseFromJson(
-  Map<String, dynamic> json,
-) {
-  return _BannersResponse.fromJson(
-    json,
-  );
-}
 
 /// @nodoc
 mixin _$BannersResponse {
-  @JsonKey(name: 'service_category')
-  ServiceCategory? get serviceCategory => throw _privateConstructorUsedError;
-  List<BannerItem> get banners => throw _privateConstructorUsedError;
+
+@JsonKey(name: 'service_category') ServiceCategory? get serviceCategory; List<BannerItem> get banners;
+/// Create a copy of BannersResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$BannersResponseCopyWith<BannersResponse> get copyWith => _$BannersResponseCopyWithImpl<BannersResponse>(this as BannersResponse, _$identity);
 
   /// Serializes this BannersResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of BannersResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $BannersResponseCopyWith<BannersResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is BannersResponse&&(identical(other.serviceCategory, serviceCategory) || other.serviceCategory == serviceCategory)&&const DeepCollectionEquality().equals(other.banners, banners));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,serviceCategory,const DeepCollectionEquality().hash(banners));
+
+@override
+String toString() {
+  return 'BannersResponse(serviceCategory: $serviceCategory, banners: $banners)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $BannersResponseCopyWith<$Res> {
-  factory $BannersResponseCopyWith(
-          BannersResponse value, $Res Function(BannersResponse) then) =
-      _$BannersResponseCopyWithImpl<$Res, BannersResponse>;
-  @useResult
-  $Res call(
-      {@JsonKey(name: 'service_category') ServiceCategory? serviceCategory,
-      List<BannerItem> banners});
+abstract mixin class $BannersResponseCopyWith<$Res>  {
+  factory $BannersResponseCopyWith(BannersResponse value, $Res Function(BannersResponse) _then) = _$BannersResponseCopyWithImpl;
+@useResult
+$Res call({
+@JsonKey(name: 'service_category') ServiceCategory? serviceCategory, List<BannerItem> banners
+});
 
-  $ServiceCategoryCopyWith<$Res>? get serviceCategory;
+
+$ServiceCategoryCopyWith<$Res>? get serviceCategory;
+
 }
-
 /// @nodoc
-class _$BannersResponseCopyWithImpl<$Res, $Val extends BannersResponse>
+class _$BannersResponseCopyWithImpl<$Res>
     implements $BannersResponseCopyWith<$Res> {
-  _$BannersResponseCopyWithImpl(this._value, this._then);
+  _$BannersResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final BannersResponse _self;
+  final $Res Function(BannersResponse) _then;
 
-  /// Create a copy of BannersResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? serviceCategory = freezed,
-    Object? banners = null,
-  }) {
-    return _then(_value.copyWith(
-      serviceCategory: freezed == serviceCategory
-          ? _value.serviceCategory
-          : serviceCategory // ignore: cast_nullable_to_non_nullable
-              as ServiceCategory?,
-      banners: null == banners
-          ? _value.banners
-          : banners // ignore: cast_nullable_to_non_nullable
-              as List<BannerItem>,
-    ) as $Val);
+/// Create a copy of BannersResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? serviceCategory = freezed,Object? banners = null,}) {
+  return _then(_self.copyWith(
+serviceCategory: freezed == serviceCategory ? _self.serviceCategory : serviceCategory // ignore: cast_nullable_to_non_nullable
+as ServiceCategory?,banners: null == banners ? _self.banners : banners // ignore: cast_nullable_to_non_nullable
+as List<BannerItem>,
+  ));
+}
+/// Create a copy of BannersResponse
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$ServiceCategoryCopyWith<$Res>? get serviceCategory {
+    if (_self.serviceCategory == null) {
+    return null;
   }
 
-  /// Create a copy of BannersResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $ServiceCategoryCopyWith<$Res>? get serviceCategory {
-    if (_value.serviceCategory == null) {
-      return null;
-    }
-
-    return $ServiceCategoryCopyWith<$Res>(_value.serviceCategory!, (value) {
-      return _then(_value.copyWith(serviceCategory: value) as $Val);
-    });
-  }
+  return $ServiceCategoryCopyWith<$Res>(_self.serviceCategory!, (value) {
+    return _then(_self.copyWith(serviceCategory: value));
+  });
+}
 }
 
-/// @nodoc
-abstract class _$$BannersResponseImplCopyWith<$Res>
-    implements $BannersResponseCopyWith<$Res> {
-  factory _$$BannersResponseImplCopyWith(_$BannersResponseImpl value,
-          $Res Function(_$BannersResponseImpl) then) =
-      __$$BannersResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {@JsonKey(name: 'service_category') ServiceCategory? serviceCategory,
-      List<BannerItem> banners});
 
-  @override
-  $ServiceCategoryCopyWith<$Res>? get serviceCategory;
+/// Adds pattern-matching-related methods to [BannersResponse].
+extension BannersResponsePatterns on BannersResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _BannersResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _BannersResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _BannersResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _BannersResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _BannersResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _BannersResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function(@JsonKey(name: 'service_category')  ServiceCategory? serviceCategory,  List<BannerItem> banners)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _BannersResponse() when $default != null:
+return $default(_that.serviceCategory,_that.banners);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function(@JsonKey(name: 'service_category')  ServiceCategory? serviceCategory,  List<BannerItem> banners)  $default,) {final _that = this;
+switch (_that) {
+case _BannersResponse():
+return $default(_that.serviceCategory,_that.banners);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function(@JsonKey(name: 'service_category')  ServiceCategory? serviceCategory,  List<BannerItem> banners)?  $default,) {final _that = this;
+switch (_that) {
+case _BannersResponse() when $default != null:
+return $default(_that.serviceCategory,_that.banners);case _:
+  return null;
+
+}
 }
 
-/// @nodoc
-class __$$BannersResponseImplCopyWithImpl<$Res>
-    extends _$BannersResponseCopyWithImpl<$Res, _$BannersResponseImpl>
-    implements _$$BannersResponseImplCopyWith<$Res> {
-  __$$BannersResponseImplCopyWithImpl(
-      _$BannersResponseImpl _value, $Res Function(_$BannersResponseImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of BannersResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? serviceCategory = freezed,
-    Object? banners = null,
-  }) {
-    return _then(_$BannersResponseImpl(
-      serviceCategory: freezed == serviceCategory
-          ? _value.serviceCategory
-          : serviceCategory // ignore: cast_nullable_to_non_nullable
-              as ServiceCategory?,
-      banners: null == banners
-          ? _value._banners
-          : banners // ignore: cast_nullable_to_non_nullable
-              as List<BannerItem>,
-    ));
-  }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$BannersResponseImpl implements _BannersResponse {
-  const _$BannersResponseImpl(
-      {@JsonKey(name: 'service_category') this.serviceCategory,
-      final List<BannerItem> banners = const []})
-      : _banners = banners;
 
-  factory _$BannersResponseImpl.fromJson(
-    Map<String, dynamic> json,
-  ) =>
-      _$$BannersResponseImplFromJson(
-        json,
-      );
+class _BannersResponse implements BannersResponse {
+  const _BannersResponse({@JsonKey(name: 'service_category') this.serviceCategory, final  List<BannerItem> banners = const []}): _banners = banners;
+  factory _BannersResponse.fromJson(Map<String, dynamic> json,) => _$BannersResponseFromJson(json,);
 
-  @override
-  @JsonKey(name: 'service_category')
-  final ServiceCategory? serviceCategory;
-  final List<BannerItem> _banners;
-  @override
-  @JsonKey()
-  List<BannerItem> get banners {
-    if (_banners is EqualUnmodifiableListView) return _banners;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_banners);
-  }
-
-  @override
-  String toString() {
-    return 'BannersResponse(serviceCategory: $serviceCategory, banners: $banners)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$BannersResponseImpl &&
-            (identical(other.serviceCategory, serviceCategory) ||
-                other.serviceCategory == serviceCategory) &&
-            const DeepCollectionEquality().equals(other._banners, _banners));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, serviceCategory,
-      const DeepCollectionEquality().hash(_banners));
-
-  /// Create a copy of BannersResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$BannersResponseImplCopyWith<_$BannersResponseImpl> get copyWith =>
-      __$$BannersResponseImplCopyWithImpl<_$BannersResponseImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$BannersResponseImplToJson(
-      this,
-    );
-  }
+@override@JsonKey(name: 'service_category') final  ServiceCategory? serviceCategory;
+ final  List<BannerItem> _banners;
+@override@JsonKey() List<BannerItem> get banners {
+  if (_banners is EqualUnmodifiableListView) return _banners;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_banners);
 }
 
-abstract class _BannersResponse implements BannersResponse {
-  const factory _BannersResponse(
-      {@JsonKey(name: 'service_category')
-      final ServiceCategory? serviceCategory,
-      final List<BannerItem> banners}) = _$BannersResponseImpl;
 
-  factory _BannersResponse.fromJson(
-    Map<String, dynamic> json,
-  ) = _$BannersResponseImpl.fromJson;
+/// Create a copy of BannersResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$BannersResponseCopyWith<_BannersResponse> get copyWith => __$BannersResponseCopyWithImpl<_BannersResponse>(this, _$identity);
 
-  @override
-  @JsonKey(name: 'service_category')
-  ServiceCategory? get serviceCategory;
-  @override
-  List<BannerItem> get banners;
-
-  /// Create a copy of BannersResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$BannersResponseImplCopyWith<_$BannersResponseImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+Map<String, dynamic> toJson() {
+  return _$BannersResponseToJson(this, );
 }
 
-ServiceCategory _$ServiceCategoryFromJson(Map<String, dynamic> json) {
-  return _ServiceCategory.fromJson(json);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _BannersResponse&&(identical(other.serviceCategory, serviceCategory) || other.serviceCategory == serviceCategory)&&const DeepCollectionEquality().equals(other._banners, _banners));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,serviceCategory,const DeepCollectionEquality().hash(_banners));
+
+@override
+String toString() {
+  return 'BannersResponse(serviceCategory: $serviceCategory, banners: $banners)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$BannersResponseCopyWith<$Res> implements $BannersResponseCopyWith<$Res> {
+  factory _$BannersResponseCopyWith(_BannersResponse value, $Res Function(_BannersResponse) _then) = __$BannersResponseCopyWithImpl;
+@override @useResult
+$Res call({
+@JsonKey(name: 'service_category') ServiceCategory? serviceCategory, List<BannerItem> banners
+});
+
+
+@override $ServiceCategoryCopyWith<$Res>? get serviceCategory;
+
+}
+/// @nodoc
+class __$BannersResponseCopyWithImpl<$Res>
+    implements _$BannersResponseCopyWith<$Res> {
+  __$BannersResponseCopyWithImpl(this._self, this._then);
+
+  final _BannersResponse _self;
+  final $Res Function(_BannersResponse) _then;
+
+/// Create a copy of BannersResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? serviceCategory = freezed,Object? banners = null,}) {
+  return _then(_BannersResponse(
+serviceCategory: freezed == serviceCategory ? _self.serviceCategory : serviceCategory // ignore: cast_nullable_to_non_nullable
+as ServiceCategory?,banners: null == banners ? _self._banners : banners // ignore: cast_nullable_to_non_nullable
+as List<BannerItem>,
+  ));
+}
+
+/// Create a copy of BannersResponse
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$ServiceCategoryCopyWith<$Res>? get serviceCategory {
+    if (_self.serviceCategory == null) {
+    return null;
+  }
+
+  return $ServiceCategoryCopyWith<$Res>(_self.serviceCategory!, (value) {
+    return _then(_self.copyWith(serviceCategory: value));
+  });
+}
+}
+
 
 /// @nodoc
 mixin _$ServiceCategory {
-  int get id => throw _privateConstructorUsedError;
-  String get type => throw _privateConstructorUsedError;
-  @JsonKey(name: 'title_en')
-  String get titleEn => throw _privateConstructorUsedError;
-  @JsonKey(name: 'title_ar')
-  String get titleAr => throw _privateConstructorUsedError;
+
+ int get id; String get type;@JsonKey(name: 'title_en') String get titleEn;@JsonKey(name: 'title_ar') String get titleAr;
+/// Create a copy of ServiceCategory
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$ServiceCategoryCopyWith<ServiceCategory> get copyWith => _$ServiceCategoryCopyWithImpl<ServiceCategory>(this as ServiceCategory, _$identity);
 
   /// Serializes this ServiceCategory to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of ServiceCategory
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $ServiceCategoryCopyWith<ServiceCategory> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is ServiceCategory&&(identical(other.id, id) || other.id == id)&&(identical(other.type, type) || other.type == type)&&(identical(other.titleEn, titleEn) || other.titleEn == titleEn)&&(identical(other.titleAr, titleAr) || other.titleAr == titleAr));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,type,titleEn,titleAr);
+
+@override
+String toString() {
+  return 'ServiceCategory(id: $id, type: $type, titleEn: $titleEn, titleAr: $titleAr)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $ServiceCategoryCopyWith<$Res> {
-  factory $ServiceCategoryCopyWith(
-          ServiceCategory value, $Res Function(ServiceCategory) then) =
-      _$ServiceCategoryCopyWithImpl<$Res, ServiceCategory>;
-  @useResult
-  $Res call(
-      {int id,
-      String type,
-      @JsonKey(name: 'title_en') String titleEn,
-      @JsonKey(name: 'title_ar') String titleAr});
-}
+abstract mixin class $ServiceCategoryCopyWith<$Res>  {
+  factory $ServiceCategoryCopyWith(ServiceCategory value, $Res Function(ServiceCategory) _then) = _$ServiceCategoryCopyWithImpl;
+@useResult
+$Res call({
+ int id, String type,@JsonKey(name: 'title_en') String titleEn,@JsonKey(name: 'title_ar') String titleAr
+});
 
+
+
+
+}
 /// @nodoc
-class _$ServiceCategoryCopyWithImpl<$Res, $Val extends ServiceCategory>
+class _$ServiceCategoryCopyWithImpl<$Res>
     implements $ServiceCategoryCopyWith<$Res> {
-  _$ServiceCategoryCopyWithImpl(this._value, this._then);
+  _$ServiceCategoryCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final ServiceCategory _self;
+  final $Res Function(ServiceCategory) _then;
 
-  /// Create a copy of ServiceCategory
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? type = null,
-    Object? titleEn = null,
-    Object? titleAr = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String,
-      titleEn: null == titleEn
-          ? _value.titleEn
-          : titleEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      titleAr: null == titleAr
-          ? _value.titleAr
-          : titleAr // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
+/// Create a copy of ServiceCategory
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? type = null,Object? titleEn = null,Object? titleAr = null,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as String,titleEn: null == titleEn ? _self.titleEn : titleEn // ignore: cast_nullable_to_non_nullable
+as String,titleAr: null == titleAr ? _self.titleAr : titleAr // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
 }
 
-/// @nodoc
-abstract class _$$ServiceCategoryImplCopyWith<$Res>
-    implements $ServiceCategoryCopyWith<$Res> {
-  factory _$$ServiceCategoryImplCopyWith(_$ServiceCategoryImpl value,
-          $Res Function(_$ServiceCategoryImpl) then) =
-      __$$ServiceCategoryImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      String type,
-      @JsonKey(name: 'title_en') String titleEn,
-      @JsonKey(name: 'title_ar') String titleAr});
 }
 
-/// @nodoc
-class __$$ServiceCategoryImplCopyWithImpl<$Res>
-    extends _$ServiceCategoryCopyWithImpl<$Res, _$ServiceCategoryImpl>
-    implements _$$ServiceCategoryImplCopyWith<$Res> {
-  __$$ServiceCategoryImplCopyWithImpl(
-      _$ServiceCategoryImpl _value, $Res Function(_$ServiceCategoryImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of ServiceCategory
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? type = null,
-    Object? titleEn = null,
-    Object? titleAr = null,
-  }) {
-    return _then(_$ServiceCategoryImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String,
-      titleEn: null == titleEn
-          ? _value.titleEn
-          : titleEn // ignore: cast_nullable_to_non_nullable
-              as String,
-      titleAr: null == titleAr
-          ? _value.titleAr
-          : titleAr // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
+/// Adds pattern-matching-related methods to [ServiceCategory].
+extension ServiceCategoryPatterns on ServiceCategory {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _ServiceCategory value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _ServiceCategory() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _ServiceCategory value)  $default,){
+final _that = this;
+switch (_that) {
+case _ServiceCategory():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _ServiceCategory value)?  $default,){
+final _that = this;
+switch (_that) {
+case _ServiceCategory() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  String type, @JsonKey(name: 'title_en')  String titleEn, @JsonKey(name: 'title_ar')  String titleAr)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _ServiceCategory() when $default != null:
+return $default(_that.id,_that.type,_that.titleEn,_that.titleAr);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String type, @JsonKey(name: 'title_en')  String titleEn, @JsonKey(name: 'title_ar')  String titleAr)  $default,) {final _that = this;
+switch (_that) {
+case _ServiceCategory():
+return $default(_that.id,_that.type,_that.titleEn,_that.titleAr);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  String type, @JsonKey(name: 'title_en')  String titleEn, @JsonKey(name: 'title_ar')  String titleAr)?  $default,) {final _that = this;
+switch (_that) {
+case _ServiceCategory() when $default != null:
+return $default(_that.id,_that.type,_that.titleEn,_that.titleAr);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$ServiceCategoryImpl implements _ServiceCategory {
-  const _$ServiceCategoryImpl(
-      {this.id = 0,
-      this.type = '',
-      @JsonKey(name: 'title_en') this.titleEn = '',
-      @JsonKey(name: 'title_ar') this.titleAr = ''});
 
-  factory _$ServiceCategoryImpl.fromJson(Map<String, dynamic> json) =>
-      _$$ServiceCategoryImplFromJson(json);
+class _ServiceCategory implements ServiceCategory {
+  const _ServiceCategory({this.id = 0, this.type = '', @JsonKey(name: 'title_en') this.titleEn = '', @JsonKey(name: 'title_ar') this.titleAr = ''});
+  factory _ServiceCategory.fromJson(Map<String, dynamic> json) => _$ServiceCategoryFromJson(json);
 
-  @override
-  @JsonKey()
-  final int id;
-  @override
-  @JsonKey()
-  final String type;
-  @override
-  @JsonKey(name: 'title_en')
-  final String titleEn;
-  @override
-  @JsonKey(name: 'title_ar')
-  final String titleAr;
+@override@JsonKey() final  int id;
+@override@JsonKey() final  String type;
+@override@JsonKey(name: 'title_en') final  String titleEn;
+@override@JsonKey(name: 'title_ar') final  String titleAr;
 
-  @override
-  String toString() {
-    return 'ServiceCategory(id: $id, type: $type, titleEn: $titleEn, titleAr: $titleAr)';
-  }
+/// Create a copy of ServiceCategory
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$ServiceCategoryCopyWith<_ServiceCategory> get copyWith => __$ServiceCategoryCopyWithImpl<_ServiceCategory>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ServiceCategoryImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.type, type) || other.type == type) &&
-            (identical(other.titleEn, titleEn) || other.titleEn == titleEn) &&
-            (identical(other.titleAr, titleAr) || other.titleAr == titleAr));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, type, titleEn, titleAr);
-
-  /// Create a copy of ServiceCategory
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ServiceCategoryImplCopyWith<_$ServiceCategoryImpl> get copyWith =>
-      __$$ServiceCategoryImplCopyWithImpl<_$ServiceCategoryImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$ServiceCategoryImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$ServiceCategoryToJson(this, );
 }
 
-abstract class _ServiceCategory implements ServiceCategory {
-  const factory _ServiceCategory(
-      {final int id,
-      final String type,
-      @JsonKey(name: 'title_en') final String titleEn,
-      @JsonKey(name: 'title_ar') final String titleAr}) = _$ServiceCategoryImpl;
-
-  factory _ServiceCategory.fromJson(Map<String, dynamic> json) =
-      _$ServiceCategoryImpl.fromJson;
-
-  @override
-  int get id;
-  @override
-  String get type;
-  @override
-  @JsonKey(name: 'title_en')
-  String get titleEn;
-  @override
-  @JsonKey(name: 'title_ar')
-  String get titleAr;
-
-  /// Create a copy of ServiceCategory
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$ServiceCategoryImplCopyWith<_$ServiceCategoryImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _ServiceCategory&&(identical(other.id, id) || other.id == id)&&(identical(other.type, type) || other.type == type)&&(identical(other.titleEn, titleEn) || other.titleEn == titleEn)&&(identical(other.titleAr, titleAr) || other.titleAr == titleAr));
 }
 
-BannerItem _$BannerItemFromJson(Map<String, dynamic> json) {
-  return _BannerItem.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,type,titleEn,titleAr);
+
+@override
+String toString() {
+  return 'ServiceCategory(id: $id, type: $type, titleEn: $titleEn, titleAr: $titleAr)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$ServiceCategoryCopyWith<$Res> implements $ServiceCategoryCopyWith<$Res> {
+  factory _$ServiceCategoryCopyWith(_ServiceCategory value, $Res Function(_ServiceCategory) _then) = __$ServiceCategoryCopyWithImpl;
+@override @useResult
+$Res call({
+ int id, String type,@JsonKey(name: 'title_en') String titleEn,@JsonKey(name: 'title_ar') String titleAr
+});
+
+
+
+
+}
+/// @nodoc
+class __$ServiceCategoryCopyWithImpl<$Res>
+    implements _$ServiceCategoryCopyWith<$Res> {
+  __$ServiceCategoryCopyWithImpl(this._self, this._then);
+
+  final _ServiceCategory _self;
+  final $Res Function(_ServiceCategory) _then;
+
+/// Create a copy of ServiceCategory
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? type = null,Object? titleEn = null,Object? titleAr = null,}) {
+  return _then(_ServiceCategory(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as String,titleEn: null == titleEn ? _self.titleEn : titleEn // ignore: cast_nullable_to_non_nullable
+as String,titleAr: null == titleAr ? _self.titleAr : titleAr // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$BannerItem {
-  int get id => throw _privateConstructorUsedError;
-  String get type => throw _privateConstructorUsedError;
-  @JsonKey(name: 'banner_type')
-  String get bannerType => throw _privateConstructorUsedError;
-  String? get url => throw _privateConstructorUsedError;
-  String? get category => throw _privateConstructorUsedError;
-  @JsonKey(name: 'sub_category')
-  String? get subCategory => throw _privateConstructorUsedError;
-  @JsonKey(name: 'product_id')
-  int? get productId => throw _privateConstructorUsedError;
-  @JsonKey(name: 'store_id')
-  int? get storeId => throw _privateConstructorUsedError;
-  @JsonKey(name: 'store_name')
-  String? get storeName => throw _privateConstructorUsedError;
-  @JsonKey(name: 'media_path')
-  String get mediaPath => throw _privateConstructorUsedError;
-  @JsonKey(name: 'media_type')
-  String get mediaType => throw _privateConstructorUsedError;
-  String get resolution => throw _privateConstructorUsedError;
-  @JsonKey(name: 'start_date')
-  String? get startDate => throw _privateConstructorUsedError;
-  @JsonKey(name: 'end_date')
-  String? get endDate => throw _privateConstructorUsedError;
-  @JsonKey(name: 'sort_order')
-  int get sortOrder => throw _privateConstructorUsedError;
+
+ int get id; String get type;@JsonKey(name: 'banner_type') String get bannerType; String? get url; String? get category;@JsonKey(name: 'sub_category') String? get subCategory;@JsonKey(name: 'product_id') int? get productId;@JsonKey(name: 'store_id') int? get storeId;@JsonKey(name: 'store_name') String? get storeName;@JsonKey(name: 'media_path') String get mediaPath;@JsonKey(name: 'media_type') String get mediaType; String get resolution;@JsonKey(name: 'start_date') String? get startDate;@JsonKey(name: 'end_date') String? get endDate;@JsonKey(name: 'sort_order') int get sortOrder;
+/// Create a copy of BannerItem
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$BannerItemCopyWith<BannerItem> get copyWith => _$BannerItemCopyWithImpl<BannerItem>(this as BannerItem, _$identity);
 
   /// Serializes this BannerItem to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of BannerItem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $BannerItemCopyWith<BannerItem> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is BannerItem&&(identical(other.id, id) || other.id == id)&&(identical(other.type, type) || other.type == type)&&(identical(other.bannerType, bannerType) || other.bannerType == bannerType)&&(identical(other.url, url) || other.url == url)&&(identical(other.category, category) || other.category == category)&&(identical(other.subCategory, subCategory) || other.subCategory == subCategory)&&(identical(other.productId, productId) || other.productId == productId)&&(identical(other.storeId, storeId) || other.storeId == storeId)&&(identical(other.storeName, storeName) || other.storeName == storeName)&&(identical(other.mediaPath, mediaPath) || other.mediaPath == mediaPath)&&(identical(other.mediaType, mediaType) || other.mediaType == mediaType)&&(identical(other.resolution, resolution) || other.resolution == resolution)&&(identical(other.startDate, startDate) || other.startDate == startDate)&&(identical(other.endDate, endDate) || other.endDate == endDate)&&(identical(other.sortOrder, sortOrder) || other.sortOrder == sortOrder));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,type,bannerType,url,category,subCategory,productId,storeId,storeName,mediaPath,mediaType,resolution,startDate,endDate,sortOrder);
+
+@override
+String toString() {
+  return 'BannerItem(id: $id, type: $type, bannerType: $bannerType, url: $url, category: $category, subCategory: $subCategory, productId: $productId, storeId: $storeId, storeName: $storeName, mediaPath: $mediaPath, mediaType: $mediaType, resolution: $resolution, startDate: $startDate, endDate: $endDate, sortOrder: $sortOrder)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $BannerItemCopyWith<$Res> {
-  factory $BannerItemCopyWith(
-          BannerItem value, $Res Function(BannerItem) then) =
-      _$BannerItemCopyWithImpl<$Res, BannerItem>;
-  @useResult
-  $Res call(
-      {int id,
-      String type,
-      @JsonKey(name: 'banner_type') String bannerType,
-      String? url,
-      String? category,
-      @JsonKey(name: 'sub_category') String? subCategory,
-      @JsonKey(name: 'product_id') int? productId,
-      @JsonKey(name: 'store_id') int? storeId,
-      @JsonKey(name: 'store_name') String? storeName,
-      @JsonKey(name: 'media_path') String mediaPath,
-      @JsonKey(name: 'media_type') String mediaType,
-      String resolution,
-      @JsonKey(name: 'start_date') String? startDate,
-      @JsonKey(name: 'end_date') String? endDate,
-      @JsonKey(name: 'sort_order') int sortOrder});
-}
+abstract mixin class $BannerItemCopyWith<$Res>  {
+  factory $BannerItemCopyWith(BannerItem value, $Res Function(BannerItem) _then) = _$BannerItemCopyWithImpl;
+@useResult
+$Res call({
+ int id, String type,@JsonKey(name: 'banner_type') String bannerType, String? url, String? category,@JsonKey(name: 'sub_category') String? subCategory,@JsonKey(name: 'product_id') int? productId,@JsonKey(name: 'store_id') int? storeId,@JsonKey(name: 'store_name') String? storeName,@JsonKey(name: 'media_path') String mediaPath,@JsonKey(name: 'media_type') String mediaType, String resolution,@JsonKey(name: 'start_date') String? startDate,@JsonKey(name: 'end_date') String? endDate,@JsonKey(name: 'sort_order') int sortOrder
+});
 
+
+
+
+}
 /// @nodoc
-class _$BannerItemCopyWithImpl<$Res, $Val extends BannerItem>
+class _$BannerItemCopyWithImpl<$Res>
     implements $BannerItemCopyWith<$Res> {
-  _$BannerItemCopyWithImpl(this._value, this._then);
+  _$BannerItemCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final BannerItem _self;
+  final $Res Function(BannerItem) _then;
 
-  /// Create a copy of BannerItem
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? type = null,
-    Object? bannerType = null,
-    Object? url = freezed,
-    Object? category = freezed,
-    Object? subCategory = freezed,
-    Object? productId = freezed,
-    Object? storeId = freezed,
-    Object? storeName = freezed,
-    Object? mediaPath = null,
-    Object? mediaType = null,
-    Object? resolution = null,
-    Object? startDate = freezed,
-    Object? endDate = freezed,
-    Object? sortOrder = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String,
-      bannerType: null == bannerType
-          ? _value.bannerType
-          : bannerType // ignore: cast_nullable_to_non_nullable
-              as String,
-      url: freezed == url
-          ? _value.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String?,
-      category: freezed == category
-          ? _value.category
-          : category // ignore: cast_nullable_to_non_nullable
-              as String?,
-      subCategory: freezed == subCategory
-          ? _value.subCategory
-          : subCategory // ignore: cast_nullable_to_non_nullable
-              as String?,
-      productId: freezed == productId
-          ? _value.productId
-          : productId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      storeId: freezed == storeId
-          ? _value.storeId
-          : storeId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      storeName: freezed == storeName
-          ? _value.storeName
-          : storeName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      mediaPath: null == mediaPath
-          ? _value.mediaPath
-          : mediaPath // ignore: cast_nullable_to_non_nullable
-              as String,
-      mediaType: null == mediaType
-          ? _value.mediaType
-          : mediaType // ignore: cast_nullable_to_non_nullable
-              as String,
-      resolution: null == resolution
-          ? _value.resolution
-          : resolution // ignore: cast_nullable_to_non_nullable
-              as String,
-      startDate: freezed == startDate
-          ? _value.startDate
-          : startDate // ignore: cast_nullable_to_non_nullable
-              as String?,
-      endDate: freezed == endDate
-          ? _value.endDate
-          : endDate // ignore: cast_nullable_to_non_nullable
-              as String?,
-      sortOrder: null == sortOrder
-          ? _value.sortOrder
-          : sortOrder // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
+/// Create a copy of BannerItem
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? type = null,Object? bannerType = null,Object? url = freezed,Object? category = freezed,Object? subCategory = freezed,Object? productId = freezed,Object? storeId = freezed,Object? storeName = freezed,Object? mediaPath = null,Object? mediaType = null,Object? resolution = null,Object? startDate = freezed,Object? endDate = freezed,Object? sortOrder = null,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as String,bannerType: null == bannerType ? _self.bannerType : bannerType // ignore: cast_nullable_to_non_nullable
+as String,url: freezed == url ? _self.url : url // ignore: cast_nullable_to_non_nullable
+as String?,category: freezed == category ? _self.category : category // ignore: cast_nullable_to_non_nullable
+as String?,subCategory: freezed == subCategory ? _self.subCategory : subCategory // ignore: cast_nullable_to_non_nullable
+as String?,productId: freezed == productId ? _self.productId : productId // ignore: cast_nullable_to_non_nullable
+as int?,storeId: freezed == storeId ? _self.storeId : storeId // ignore: cast_nullable_to_non_nullable
+as int?,storeName: freezed == storeName ? _self.storeName : storeName // ignore: cast_nullable_to_non_nullable
+as String?,mediaPath: null == mediaPath ? _self.mediaPath : mediaPath // ignore: cast_nullable_to_non_nullable
+as String,mediaType: null == mediaType ? _self.mediaType : mediaType // ignore: cast_nullable_to_non_nullable
+as String,resolution: null == resolution ? _self.resolution : resolution // ignore: cast_nullable_to_non_nullable
+as String,startDate: freezed == startDate ? _self.startDate : startDate // ignore: cast_nullable_to_non_nullable
+as String?,endDate: freezed == endDate ? _self.endDate : endDate // ignore: cast_nullable_to_non_nullable
+as String?,sortOrder: null == sortOrder ? _self.sortOrder : sortOrder // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
 }
 
-/// @nodoc
-abstract class _$$BannerItemImplCopyWith<$Res>
-    implements $BannerItemCopyWith<$Res> {
-  factory _$$BannerItemImplCopyWith(
-          _$BannerItemImpl value, $Res Function(_$BannerItemImpl) then) =
-      __$$BannerItemImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      String type,
-      @JsonKey(name: 'banner_type') String bannerType,
-      String? url,
-      String? category,
-      @JsonKey(name: 'sub_category') String? subCategory,
-      @JsonKey(name: 'product_id') int? productId,
-      @JsonKey(name: 'store_id') int? storeId,
-      @JsonKey(name: 'store_name') String? storeName,
-      @JsonKey(name: 'media_path') String mediaPath,
-      @JsonKey(name: 'media_type') String mediaType,
-      String resolution,
-      @JsonKey(name: 'start_date') String? startDate,
-      @JsonKey(name: 'end_date') String? endDate,
-      @JsonKey(name: 'sort_order') int sortOrder});
 }
 
-/// @nodoc
-class __$$BannerItemImplCopyWithImpl<$Res>
-    extends _$BannerItemCopyWithImpl<$Res, _$BannerItemImpl>
-    implements _$$BannerItemImplCopyWith<$Res> {
-  __$$BannerItemImplCopyWithImpl(
-      _$BannerItemImpl _value, $Res Function(_$BannerItemImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of BannerItem
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? type = null,
-    Object? bannerType = null,
-    Object? url = freezed,
-    Object? category = freezed,
-    Object? subCategory = freezed,
-    Object? productId = freezed,
-    Object? storeId = freezed,
-    Object? storeName = freezed,
-    Object? mediaPath = null,
-    Object? mediaType = null,
-    Object? resolution = null,
-    Object? startDate = freezed,
-    Object? endDate = freezed,
-    Object? sortOrder = null,
-  }) {
-    return _then(_$BannerItemImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String,
-      bannerType: null == bannerType
-          ? _value.bannerType
-          : bannerType // ignore: cast_nullable_to_non_nullable
-              as String,
-      url: freezed == url
-          ? _value.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String?,
-      category: freezed == category
-          ? _value.category
-          : category // ignore: cast_nullable_to_non_nullable
-              as String?,
-      subCategory: freezed == subCategory
-          ? _value.subCategory
-          : subCategory // ignore: cast_nullable_to_non_nullable
-              as String?,
-      productId: freezed == productId
-          ? _value.productId
-          : productId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      storeId: freezed == storeId
-          ? _value.storeId
-          : storeId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      storeName: freezed == storeName
-          ? _value.storeName
-          : storeName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      mediaPath: null == mediaPath
-          ? _value.mediaPath
-          : mediaPath // ignore: cast_nullable_to_non_nullable
-              as String,
-      mediaType: null == mediaType
-          ? _value.mediaType
-          : mediaType // ignore: cast_nullable_to_non_nullable
-              as String,
-      resolution: null == resolution
-          ? _value.resolution
-          : resolution // ignore: cast_nullable_to_non_nullable
-              as String,
-      startDate: freezed == startDate
-          ? _value.startDate
-          : startDate // ignore: cast_nullable_to_non_nullable
-              as String?,
-      endDate: freezed == endDate
-          ? _value.endDate
-          : endDate // ignore: cast_nullable_to_non_nullable
-              as String?,
-      sortOrder: null == sortOrder
-          ? _value.sortOrder
-          : sortOrder // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
+/// Adds pattern-matching-related methods to [BannerItem].
+extension BannerItemPatterns on BannerItem {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _BannerItem value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _BannerItem() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _BannerItem value)  $default,){
+final _that = this;
+switch (_that) {
+case _BannerItem():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _BannerItem value)?  $default,){
+final _that = this;
+switch (_that) {
+case _BannerItem() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  String type, @JsonKey(name: 'banner_type')  String bannerType,  String? url,  String? category, @JsonKey(name: 'sub_category')  String? subCategory, @JsonKey(name: 'product_id')  int? productId, @JsonKey(name: 'store_id')  int? storeId, @JsonKey(name: 'store_name')  String? storeName, @JsonKey(name: 'media_path')  String mediaPath, @JsonKey(name: 'media_type')  String mediaType,  String resolution, @JsonKey(name: 'start_date')  String? startDate, @JsonKey(name: 'end_date')  String? endDate, @JsonKey(name: 'sort_order')  int sortOrder)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _BannerItem() when $default != null:
+return $default(_that.id,_that.type,_that.bannerType,_that.url,_that.category,_that.subCategory,_that.productId,_that.storeId,_that.storeName,_that.mediaPath,_that.mediaType,_that.resolution,_that.startDate,_that.endDate,_that.sortOrder);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String type, @JsonKey(name: 'banner_type')  String bannerType,  String? url,  String? category, @JsonKey(name: 'sub_category')  String? subCategory, @JsonKey(name: 'product_id')  int? productId, @JsonKey(name: 'store_id')  int? storeId, @JsonKey(name: 'store_name')  String? storeName, @JsonKey(name: 'media_path')  String mediaPath, @JsonKey(name: 'media_type')  String mediaType,  String resolution, @JsonKey(name: 'start_date')  String? startDate, @JsonKey(name: 'end_date')  String? endDate, @JsonKey(name: 'sort_order')  int sortOrder)  $default,) {final _that = this;
+switch (_that) {
+case _BannerItem():
+return $default(_that.id,_that.type,_that.bannerType,_that.url,_that.category,_that.subCategory,_that.productId,_that.storeId,_that.storeName,_that.mediaPath,_that.mediaType,_that.resolution,_that.startDate,_that.endDate,_that.sortOrder);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  String type, @JsonKey(name: 'banner_type')  String bannerType,  String? url,  String? category, @JsonKey(name: 'sub_category')  String? subCategory, @JsonKey(name: 'product_id')  int? productId, @JsonKey(name: 'store_id')  int? storeId, @JsonKey(name: 'store_name')  String? storeName, @JsonKey(name: 'media_path')  String mediaPath, @JsonKey(name: 'media_type')  String mediaType,  String resolution, @JsonKey(name: 'start_date')  String? startDate, @JsonKey(name: 'end_date')  String? endDate, @JsonKey(name: 'sort_order')  int sortOrder)?  $default,) {final _that = this;
+switch (_that) {
+case _BannerItem() when $default != null:
+return $default(_that.id,_that.type,_that.bannerType,_that.url,_that.category,_that.subCategory,_that.productId,_that.storeId,_that.storeName,_that.mediaPath,_that.mediaType,_that.resolution,_that.startDate,_that.endDate,_that.sortOrder);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$BannerItemImpl implements _BannerItem {
-  const _$BannerItemImpl(
-      {this.id = 0,
-      this.type = '',
-      @JsonKey(name: 'banner_type') this.bannerType = '',
-      this.url,
-      this.category,
-      @JsonKey(name: 'sub_category') this.subCategory,
-      @JsonKey(name: 'product_id') this.productId,
-      @JsonKey(name: 'store_id') this.storeId,
-      @JsonKey(name: 'store_name') this.storeName,
-      @JsonKey(name: 'media_path') this.mediaPath = '',
-      @JsonKey(name: 'media_type') this.mediaType = '',
-      this.resolution = '',
-      @JsonKey(name: 'start_date') this.startDate,
-      @JsonKey(name: 'end_date') this.endDate,
-      @JsonKey(name: 'sort_order') this.sortOrder = 0});
 
-  factory _$BannerItemImpl.fromJson(Map<String, dynamic> json) =>
-      _$$BannerItemImplFromJson(json);
+class _BannerItem implements BannerItem {
+  const _BannerItem({this.id = 0, this.type = '', @JsonKey(name: 'banner_type') this.bannerType = '', this.url, this.category, @JsonKey(name: 'sub_category') this.subCategory, @JsonKey(name: 'product_id') this.productId, @JsonKey(name: 'store_id') this.storeId, @JsonKey(name: 'store_name') this.storeName, @JsonKey(name: 'media_path') this.mediaPath = '', @JsonKey(name: 'media_type') this.mediaType = '', this.resolution = '', @JsonKey(name: 'start_date') this.startDate, @JsonKey(name: 'end_date') this.endDate, @JsonKey(name: 'sort_order') this.sortOrder = 0});
+  factory _BannerItem.fromJson(Map<String, dynamic> json) => _$BannerItemFromJson(json);
 
-  @override
-  @JsonKey()
-  final int id;
-  @override
-  @JsonKey()
-  final String type;
-  @override
-  @JsonKey(name: 'banner_type')
-  final String bannerType;
-  @override
-  final String? url;
-  @override
-  final String? category;
-  @override
-  @JsonKey(name: 'sub_category')
-  final String? subCategory;
-  @override
-  @JsonKey(name: 'product_id')
-  final int? productId;
-  @override
-  @JsonKey(name: 'store_id')
-  final int? storeId;
-  @override
-  @JsonKey(name: 'store_name')
-  final String? storeName;
-  @override
-  @JsonKey(name: 'media_path')
-  final String mediaPath;
-  @override
-  @JsonKey(name: 'media_type')
-  final String mediaType;
-  @override
-  @JsonKey()
-  final String resolution;
-  @override
-  @JsonKey(name: 'start_date')
-  final String? startDate;
-  @override
-  @JsonKey(name: 'end_date')
-  final String? endDate;
-  @override
-  @JsonKey(name: 'sort_order')
-  final int sortOrder;
+@override@JsonKey() final  int id;
+@override@JsonKey() final  String type;
+@override@JsonKey(name: 'banner_type') final  String bannerType;
+@override final  String? url;
+@override final  String? category;
+@override@JsonKey(name: 'sub_category') final  String? subCategory;
+@override@JsonKey(name: 'product_id') final  int? productId;
+@override@JsonKey(name: 'store_id') final  int? storeId;
+@override@JsonKey(name: 'store_name') final  String? storeName;
+@override@JsonKey(name: 'media_path') final  String mediaPath;
+@override@JsonKey(name: 'media_type') final  String mediaType;
+@override@JsonKey() final  String resolution;
+@override@JsonKey(name: 'start_date') final  String? startDate;
+@override@JsonKey(name: 'end_date') final  String? endDate;
+@override@JsonKey(name: 'sort_order') final  int sortOrder;
 
-  @override
-  String toString() {
-    return 'BannerItem(id: $id, type: $type, bannerType: $bannerType, url: $url, category: $category, subCategory: $subCategory, productId: $productId, storeId: $storeId, storeName: $storeName, mediaPath: $mediaPath, mediaType: $mediaType, resolution: $resolution, startDate: $startDate, endDate: $endDate, sortOrder: $sortOrder)';
-  }
+/// Create a copy of BannerItem
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$BannerItemCopyWith<_BannerItem> get copyWith => __$BannerItemCopyWithImpl<_BannerItem>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$BannerItemImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.type, type) || other.type == type) &&
-            (identical(other.bannerType, bannerType) ||
-                other.bannerType == bannerType) &&
-            (identical(other.url, url) || other.url == url) &&
-            (identical(other.category, category) ||
-                other.category == category) &&
-            (identical(other.subCategory, subCategory) ||
-                other.subCategory == subCategory) &&
-            (identical(other.productId, productId) ||
-                other.productId == productId) &&
-            (identical(other.storeId, storeId) || other.storeId == storeId) &&
-            (identical(other.storeName, storeName) ||
-                other.storeName == storeName) &&
-            (identical(other.mediaPath, mediaPath) ||
-                other.mediaPath == mediaPath) &&
-            (identical(other.mediaType, mediaType) ||
-                other.mediaType == mediaType) &&
-            (identical(other.resolution, resolution) ||
-                other.resolution == resolution) &&
-            (identical(other.startDate, startDate) ||
-                other.startDate == startDate) &&
-            (identical(other.endDate, endDate) || other.endDate == endDate) &&
-            (identical(other.sortOrder, sortOrder) ||
-                other.sortOrder == sortOrder));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      type,
-      bannerType,
-      url,
-      category,
-      subCategory,
-      productId,
-      storeId,
-      storeName,
-      mediaPath,
-      mediaType,
-      resolution,
-      startDate,
-      endDate,
-      sortOrder);
-
-  /// Create a copy of BannerItem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$BannerItemImplCopyWith<_$BannerItemImpl> get copyWith =>
-      __$$BannerItemImplCopyWithImpl<_$BannerItemImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$BannerItemImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$BannerItemToJson(this, );
 }
 
-abstract class _BannerItem implements BannerItem {
-  const factory _BannerItem(
-      {final int id,
-      final String type,
-      @JsonKey(name: 'banner_type') final String bannerType,
-      final String? url,
-      final String? category,
-      @JsonKey(name: 'sub_category') final String? subCategory,
-      @JsonKey(name: 'product_id') final int? productId,
-      @JsonKey(name: 'store_id') final int? storeId,
-      @JsonKey(name: 'store_name') final String? storeName,
-      @JsonKey(name: 'media_path') final String mediaPath,
-      @JsonKey(name: 'media_type') final String mediaType,
-      final String resolution,
-      @JsonKey(name: 'start_date') final String? startDate,
-      @JsonKey(name: 'end_date') final String? endDate,
-      @JsonKey(name: 'sort_order') final int sortOrder}) = _$BannerItemImpl;
-
-  factory _BannerItem.fromJson(Map<String, dynamic> json) =
-      _$BannerItemImpl.fromJson;
-
-  @override
-  int get id;
-  @override
-  String get type;
-  @override
-  @JsonKey(name: 'banner_type')
-  String get bannerType;
-  @override
-  String? get url;
-  @override
-  String? get category;
-  @override
-  @JsonKey(name: 'sub_category')
-  String? get subCategory;
-  @override
-  @JsonKey(name: 'product_id')
-  int? get productId;
-  @override
-  @JsonKey(name: 'store_id')
-  int? get storeId;
-  @override
-  @JsonKey(name: 'store_name')
-  String? get storeName;
-  @override
-  @JsonKey(name: 'media_path')
-  String get mediaPath;
-  @override
-  @JsonKey(name: 'media_type')
-  String get mediaType;
-  @override
-  String get resolution;
-  @override
-  @JsonKey(name: 'start_date')
-  String? get startDate;
-  @override
-  @JsonKey(name: 'end_date')
-  String? get endDate;
-  @override
-  @JsonKey(name: 'sort_order')
-  int get sortOrder;
-
-  /// Create a copy of BannerItem
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$BannerItemImplCopyWith<_$BannerItemImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _BannerItem&&(identical(other.id, id) || other.id == id)&&(identical(other.type, type) || other.type == type)&&(identical(other.bannerType, bannerType) || other.bannerType == bannerType)&&(identical(other.url, url) || other.url == url)&&(identical(other.category, category) || other.category == category)&&(identical(other.subCategory, subCategory) || other.subCategory == subCategory)&&(identical(other.productId, productId) || other.productId == productId)&&(identical(other.storeId, storeId) || other.storeId == storeId)&&(identical(other.storeName, storeName) || other.storeName == storeName)&&(identical(other.mediaPath, mediaPath) || other.mediaPath == mediaPath)&&(identical(other.mediaType, mediaType) || other.mediaType == mediaType)&&(identical(other.resolution, resolution) || other.resolution == resolution)&&(identical(other.startDate, startDate) || other.startDate == startDate)&&(identical(other.endDate, endDate) || other.endDate == endDate)&&(identical(other.sortOrder, sortOrder) || other.sortOrder == sortOrder));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,type,bannerType,url,category,subCategory,productId,storeId,storeName,mediaPath,mediaType,resolution,startDate,endDate,sortOrder);
+
+@override
+String toString() {
+  return 'BannerItem(id: $id, type: $type, bannerType: $bannerType, url: $url, category: $category, subCategory: $subCategory, productId: $productId, storeId: $storeId, storeName: $storeName, mediaPath: $mediaPath, mediaType: $mediaType, resolution: $resolution, startDate: $startDate, endDate: $endDate, sortOrder: $sortOrder)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$BannerItemCopyWith<$Res> implements $BannerItemCopyWith<$Res> {
+  factory _$BannerItemCopyWith(_BannerItem value, $Res Function(_BannerItem) _then) = __$BannerItemCopyWithImpl;
+@override @useResult
+$Res call({
+ int id, String type,@JsonKey(name: 'banner_type') String bannerType, String? url, String? category,@JsonKey(name: 'sub_category') String? subCategory,@JsonKey(name: 'product_id') int? productId,@JsonKey(name: 'store_id') int? storeId,@JsonKey(name: 'store_name') String? storeName,@JsonKey(name: 'media_path') String mediaPath,@JsonKey(name: 'media_type') String mediaType, String resolution,@JsonKey(name: 'start_date') String? startDate,@JsonKey(name: 'end_date') String? endDate,@JsonKey(name: 'sort_order') int sortOrder
+});
+
+
+
+
+}
+/// @nodoc
+class __$BannerItemCopyWithImpl<$Res>
+    implements _$BannerItemCopyWith<$Res> {
+  __$BannerItemCopyWithImpl(this._self, this._then);
+
+  final _BannerItem _self;
+  final $Res Function(_BannerItem) _then;
+
+/// Create a copy of BannerItem
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? type = null,Object? bannerType = null,Object? url = freezed,Object? category = freezed,Object? subCategory = freezed,Object? productId = freezed,Object? storeId = freezed,Object? storeName = freezed,Object? mediaPath = null,Object? mediaType = null,Object? resolution = null,Object? startDate = freezed,Object? endDate = freezed,Object? sortOrder = null,}) {
+  return _then(_BannerItem(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as String,bannerType: null == bannerType ? _self.bannerType : bannerType // ignore: cast_nullable_to_non_nullable
+as String,url: freezed == url ? _self.url : url // ignore: cast_nullable_to_non_nullable
+as String?,category: freezed == category ? _self.category : category // ignore: cast_nullable_to_non_nullable
+as String?,subCategory: freezed == subCategory ? _self.subCategory : subCategory // ignore: cast_nullable_to_non_nullable
+as String?,productId: freezed == productId ? _self.productId : productId // ignore: cast_nullable_to_non_nullable
+as int?,storeId: freezed == storeId ? _self.storeId : storeId // ignore: cast_nullable_to_non_nullable
+as int?,storeName: freezed == storeName ? _self.storeName : storeName // ignore: cast_nullable_to_non_nullable
+as String?,mediaPath: null == mediaPath ? _self.mediaPath : mediaPath // ignore: cast_nullable_to_non_nullable
+as String,mediaType: null == mediaType ? _self.mediaType : mediaType // ignore: cast_nullable_to_non_nullable
+as String,resolution: null == resolution ? _self.resolution : resolution // ignore: cast_nullable_to_non_nullable
+as String,startDate: freezed == startDate ? _self.startDate : startDate // ignore: cast_nullable_to_non_nullable
+as String?,endDate: freezed == endDate ? _self.endDate : endDate // ignore: cast_nullable_to_non_nullable
+as String?,sortOrder: null == sortOrder ? _self.sortOrder : sortOrder // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
+}
+
+
+}
+
+// dart format on

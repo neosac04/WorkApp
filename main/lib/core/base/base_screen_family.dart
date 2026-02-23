@@ -94,7 +94,7 @@ abstract class BaseScreenStateFamily<
 
   Widget buildScreenWithErrorHandling(BuildContext context) {
     final connectivityAsync = ref.watch(connectivityStreamProvider);
-    final isConnected = connectivityAsync.valueOrNull ?? true;
+    final isConnected = connectivityAsync.asData?.value ?? true;
     if (!isConnected) {
       final networkView = buildNoNetworkView();
       if (networkView != null) {

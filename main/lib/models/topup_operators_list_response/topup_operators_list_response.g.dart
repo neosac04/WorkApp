@@ -6,33 +6,31 @@ part of 'topup_operators_list_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$TopupOperatorsListResponseImpl _$$TopupOperatorsListResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$TopupOperatorsListResponseImpl(
-      operators: (json['operators'] as List<dynamic>?)
-          ?.map((e) => OperatorsResponse.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      pagination: json['pagination'] == null
-          ? null
-          : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
-    );
+_TopupOperatorsListResponse _$TopupOperatorsListResponseFromJson(
+  Map<String, dynamic> json,
+) => _TopupOperatorsListResponse(
+  operators: (json['operators'] as List<dynamic>?)
+      ?.map((e) => OperatorsResponse.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  pagination: json['pagination'] == null
+      ? null
+      : Pagination.fromJson(json['pagination'] as Map<String, dynamic>),
+);
 
-Map<String, dynamic> _$$TopupOperatorsListResponseImplToJson(
-        _$TopupOperatorsListResponseImpl instance) =>
-    <String, dynamic>{
-      'operators': instance.operators,
-      'pagination': instance.pagination,
-    };
+Map<String, dynamic> _$TopupOperatorsListResponseToJson(
+  _TopupOperatorsListResponse instance,
+) => <String, dynamic>{
+  'operators': instance.operators,
+  'pagination': instance.pagination,
+};
 
-_$OperatorsResponseImpl _$$OperatorsResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$OperatorsResponseImpl(
+_OperatorsResponse _$OperatorsResponseFromJson(Map<String, dynamic> json) =>
+    _OperatorsResponse(
       operatorId: json['operator_id'] as String?,
       operatorName: json['operator_name'] as String?,
     );
 
-Map<String, dynamic> _$$OperatorsResponseImplToJson(
-        _$OperatorsResponseImpl instance) =>
+Map<String, dynamic> _$OperatorsResponseToJson(_OperatorsResponse instance) =>
     <String, dynamic>{
       'operator_id': instance.operatorId,
       'operator_name': instance.operatorName,

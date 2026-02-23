@@ -1,16 +1,6 @@
-// Individual environment configs
-import 'package:envied/envied.dart' show Envied, EnviedField;
-
-part 'prod_env.g.dart';
-
-@Envied(path: '.env')
-abstract class ProdEnv {
-  @EnviedField(varName: 'API_URL')
-  static const String apiUrl = _ProdEnv.apiUrl;
-  @EnviedField(varName: 'X_API_KEY')
-  static const String xApiKey = _ProdEnv.xApiKey;
-  @EnviedField(varName: 'SG_KEY')
-  static const String sgKey = _ProdEnv.sgKey;
-  @EnviedField(varName: 'SG_KEY_VALUE')
-  static const String sgKeyValue = _ProdEnv.sgKeyValue;
+class ProdEnv {
+  static const String apiUrl = String.fromEnvironment('API_URL', defaultValue: 'https://example.com');
+  static const String xApiKey = String.fromEnvironment('X_API_KEY', defaultValue: 'placeholder_x_api_key');
+  static const String sgKey = String.fromEnvironment('SG_KEY', defaultValue: 'placeholder_sg_key');
+  static const String sgKeyValue = String.fromEnvironment('SG_KEY_VALUE', defaultValue: 'placeholder_sg_key_value');
 }

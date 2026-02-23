@@ -4,7 +4,7 @@ part 'invoice_response.freezed.dart';
 part 'invoice_response.g.dart';
 
 @Freezed(genericArgumentFactories: true)
-class InvoiceResponse with _$InvoiceResponse {
+sealed class InvoiceResponse with _$InvoiceResponse {
   const factory InvoiceResponse({
     @JsonKey(name: 'invoice_url') @Default('') String invoiceUrl,
     @Default('') String filename,

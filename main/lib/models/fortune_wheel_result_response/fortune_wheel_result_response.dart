@@ -1,4 +1,3 @@
-import 'package:core/models/game_settings_response/game_settings_response.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'fortune_wheel_result_response.freezed.dart';
@@ -18,7 +17,7 @@ abstract class FortuneWheelResultResponse with _$FortuneWheelResultResponse {
 }
 
 @freezed
-class SpinResultSegment with _$SpinResultSegment {
+sealed class SpinResultSegment with _$SpinResultSegment {
   const factory SpinResultSegment({
     required int id,
     required String title,

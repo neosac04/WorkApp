@@ -14,7 +14,7 @@ ESimOrderDetailResponse eSimOrderDetailResponseFromJson(String str) => ESimOrder
 String eSimOrderDetailResponseToJson(ESimOrderDetailResponse data) => json.encode(data.toJson());
 
 @freezed
-class ESimOrderDetailResponse with _$ESimOrderDetailResponse {
+sealed class ESimOrderDetailResponse with _$ESimOrderDetailResponse {
   const factory ESimOrderDetailResponse({
     @JsonKey(name: "id")
     int? id,

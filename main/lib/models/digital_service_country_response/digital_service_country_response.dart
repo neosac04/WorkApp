@@ -4,7 +4,7 @@ part 'digital_service_country_response.freezed.dart';
 part 'digital_service_country_response.g.dart';
 
 @freezed
-class DigitalServiceCountryResponse with _$DigitalServiceCountryResponse {
+sealed class DigitalServiceCountryResponse with _$DigitalServiceCountryResponse {
   const factory DigitalServiceCountryResponse({
     @JsonKey(name: 'country_name') String? countryName,
     @JsonKey(name: 'country_code') String? countryCode,

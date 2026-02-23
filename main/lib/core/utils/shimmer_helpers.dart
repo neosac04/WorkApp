@@ -393,7 +393,7 @@ class ShimmerHelpers {
       physics: const NeverScrollableScrollPhysics(),
       padding: padding,
       itemCount: itemCount,
-      separatorBuilder: (_, __) => SizedBox(height: itemSpacing),
+      separatorBuilder: (_, _) => SizedBox(height: itemSpacing),
       itemBuilder: (context, index) => itemBuilder(),
     );
   }
@@ -412,8 +412,7 @@ class ShimmerHelpers {
         children: [
           if (titleText != null)
             buildSectionTitleShimmer(width: titleText.length * 8.0),
-          if (titleShimmer != null)
-            titleShimmer,
+          ?titleShimmer,
           contentShimmer,
         ],
       ),
@@ -476,7 +475,7 @@ mixin ShimmerMixin<T extends StatefulWidget> on State<T> {
         physics: physics ?? const NeverScrollableScrollPhysics(),
         padding: padding,
         itemCount: dataToUse.length,
-        separatorBuilder: (_, __) => SizedBox(height: itemSpacing),
+        separatorBuilder: (_, _) => SizedBox(height: itemSpacing),
         itemBuilder: (context, index) => itemBuilder(context, index, dataToUse[index]),
       ),
     );
