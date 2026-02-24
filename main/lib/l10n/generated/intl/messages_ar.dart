@@ -20,14 +20,14 @@ class MessageLookup extends MessageLookupByLibrary {
   @override
   String get localeName => 'ar';
 
-  static String m0(seconds) => "إعادة إرسال الرسائل القصيرة في ${seconds} ثانية";
+  static m0(seconds) => "إعادة إرسال الرسائل القصيرة في ${seconds} ثانية";
 
-  static String m1(max, name) => "يمكنك اختيار بحد أقصى ${max} من ${name}";
+  static m1(max, name) => "يمكنك اختيار بحد أقصى ${max} من ${name}";
 
-  static String m2(min, name) => "يرجى اختيار ما لا يقل عن ${min} من ${name}";
+  static m2(min, name) => "يرجى اختيار ما لا يقل عن ${min} من ${name}";
 
-  static String m3(count) =>
-      Intl.plural(count, zero: 'السعر الإجمالي (لا توجد عناصر)', one: 'السعر الإجمالي (عنصر واحد)', two: 'السعر الإجمالي (عنصران)', few: 'السعر الإجمالي (${count} عناصر)', many: 'السعر الإجمالي (${count} عنصراً)', other: 'السعر الإجمالي (${count} عنصر)');
+  static m3(count) =>
+      "${Intl.plural(count, zero: 'السعر الإجمالي (لا توجد عناصر)', one: 'السعر الإجمالي (عنصر واحد)', two: 'السعر الإجمالي (عنصران)', few: 'السعر الإجمالي (${count} عناصر)', many: 'السعر الإجمالي (${count} عنصراً)', other: 'السعر الإجمالي (${count} عنصر)')}";
 
   @override
   final Map<String, dynamic> messages =
@@ -527,7 +527,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'choose_option': MessageLookupByLibrary.simpleMessage('اختر خياراً'),
         'choose_pdf': MessageLookupByLibrary.simpleMessage('اختر PDF'),
         'choose_prefer_airline': MessageLookupByLibrary.simpleMessage(
-            'اختر شركة الطيران المفضلة <font color="#CC4924">(اختياري)</font>'),
+            'اختر شركة الطيران المفضلة <font color=\"#CC4924\">(اختياري)</font>'),
         'choose_ride': MessageLookupByLibrary.simpleMessage('اختر رحلة'),
         'choose_your_ride': MessageLookupByLibrary.simpleMessage('اختر رحلتك'),
         'city': MessageLookupByLibrary.simpleMessage('المدينة'),
@@ -1140,7 +1140,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('كيفية الاستخدام في iOS'),
         'how_to_use_it': MessageLookupByLibrary.simpleMessage('كيف تستخدمه؟'),
         'i_accept_the_cancelation_policy': MessageLookupByLibrary.simpleMessage(
-            ' أوافق على <u><font color="#CC4924">سياسة الإلغاء</font></u>'),
+            ' أوافق على <u><font color=\"#CC4924\">سياسة الإلغاء</font></u>'),
         'i_dont_have_a_prescription':
             MessageLookupByLibrary.simpleMessage('ليس لدي وصفة طبية'),
         'i_have_a_prescription':
@@ -1695,7 +1695,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'permission_denied':
             MessageLookupByLibrary.simpleMessage('تم رفض الإذن'),
         'permission_denied_message': MessageLookupByLibrary.simpleMessage(
-            'لمواصلة مكالمة الفيديو، يرجى منح إذن %1\$s في إعدادات جهازك. انقر على \\"الإعدادات\\" لفتح الإعدادات.'),
+            'لمواصلة مكالمة الفيديو، يرجى منح إذن %1\$s في إعدادات جهازك. انقر على \\\"الإعدادات\\\" لفتح الإعدادات.'),
         'permission_needed':
             MessageLookupByLibrary.simpleMessage('يلزم الحصول على إذن'),
         'permission_needed_des': MessageLookupByLibrary.simpleMessage(
@@ -2179,11 +2179,11 @@ class MessageLookup extends MessageLookupByLibrary {
         'return_item': MessageLookupByLibrary.simpleMessage('البند العودة'),
         'return_notes': MessageLookupByLibrary.simpleMessage('ملاحظات الإرجاع'),
         'return_notes_delivery': MessageLookupByLibrary.simpleMessage(
-            '1. يجب عليك تسليم العناصر بنفسك في المتجر لهذا الطلب إذا اخترت "بنفسك".'),
+            '1. يجب عليك تسليم العناصر بنفسك في المتجر لهذا الطلب إذا اخترت \"بنفسك\".'),
         'return_notes_msg': MessageLookupByLibrary.simpleMessage(
             '2. يمكنك تقديم الطلب مرة واحدة فقط لهذا الطلب. يرجى التأكد من اختيار جميع العناصر التي ترغب في إرجاعها دفعة واحدة.'),
         'return_notes_other_first': MessageLookupByLibrary.simpleMessage(
-            '1. يجب عليك تسليم العناصر بنفسك في المتجر لهذا الطلب إذا اخترت "بنفسك".'),
+            '1. يجب عليك تسليم العناصر بنفسك في المتجر لهذا الطلب إذا اخترت \"بنفسك\".'),
         'return_notes_pickup': MessageLookupByLibrary.simpleMessage(
             '1. عليك أن تسلم العناصر بنفسك في المتجر لهذا الطلب.'),
         'return_notes_pickup_first': MessageLookupByLibrary.simpleMessage(
@@ -2733,7 +2733,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'uploadPrescription':
             MessageLookupByLibrary.simpleMessage('قم برفع وصفة طبيبك'),
         'upload_a_front_facing_photo': MessageLookupByLibrary.simpleMessage(
-            'قم بتحميل صورة أمامية تظهر الجزء العلوي من جسمك بالكامل لأفضل تجربة تجربة الملابس <b><font color="#CC4924">شاهد الدليل.</font></b>'),
+            'قم بتحميل صورة أمامية تظهر الجزء العلوي من جسمك بالكامل لأفضل تجربة تجربة الملابس <b><font color=\"#CC4924\">شاهد الدليل.</font></b>'),
         'upload_col': MessageLookupByLibrary.simpleMessage('التحميل: '),
         'upload_document':
             MessageLookupByLibrary.simpleMessage('تحميل المستند'),

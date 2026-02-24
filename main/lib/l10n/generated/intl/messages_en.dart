@@ -20,14 +20,14 @@ class MessageLookup extends MessageLookupByLibrary {
   @override
   String get localeName => 'en';
 
-  static String m0(seconds) => "Resend SMS in ${seconds}s";
+  static m0(seconds) => "Resend SMS in ${seconds}s";
 
-  static String m1(max, name) => "You can select maximum ${max} ${name}";
+  static m1(max, name) => "You can select maximum ${max} ${name}";
 
-  static String m2(min, name) => "Please select at least ${min} ${name}";
+  static m2(min, name) => "Please select at least ${min} ${name}";
 
-  static String m3(count) =>
-      Intl.plural(count, one: 'Total Price (${count} item) :', other: 'Total Price (${count} items) :');
+  static m3(count) =>
+      "${Intl.plural(count, one: 'Total Price (${count} item) :', other: 'Total Price (${count} items) :')}";
 
   @override
   final Map<String, dynamic> messages =
@@ -530,7 +530,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('Choose an option'),
         'choose_pdf': MessageLookupByLibrary.simpleMessage('Choose PDF'),
         'choose_prefer_airline': MessageLookupByLibrary.simpleMessage(
-            'Choose Prefer Airline <font color="#CC4924">(optional)</font>'),
+            'Choose Prefer Airline <font color=\"#CC4924\">(optional)</font>'),
         'choose_ride': MessageLookupByLibrary.simpleMessage('Choose ride'),
         'choose_your_ride':
             MessageLookupByLibrary.simpleMessage('Choose your ride'),
@@ -1145,7 +1145,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('How to use in iOS'),
         'how_to_use_it': MessageLookupByLibrary.simpleMessage('How to use it?'),
         'i_accept_the_cancelation_policy': MessageLookupByLibrary.simpleMessage(
-            'I accept the <u><font color="#CC4924">Cancellation policy</font></u>'),
+            'I accept the <u><font color=\"#CC4924\">Cancellation policy</font></u>'),
         'i_dont_have_a_prescription':
             MessageLookupByLibrary.simpleMessage('I don’t have a prescription'),
         'i_have_a_prescription':
@@ -1695,7 +1695,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'permission_denied':
             MessageLookupByLibrary.simpleMessage('Permission is denined'),
         'permission_denied_message': MessageLookupByLibrary.simpleMessage(
-            'To continue the video call, please grant the %1\$s permission in your device settings. Tap \\"Setting\\" to open settings.'),
+            'To continue the video call, please grant the %1\$s permission in your device settings. Tap \\\"Setting\\\" to open settings.'),
         'permission_needed':
             MessageLookupByLibrary.simpleMessage('Permission Needed'),
         'permission_needed_des': MessageLookupByLibrary.simpleMessage(
@@ -2750,7 +2750,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'uploadPrescription': MessageLookupByLibrary.simpleMessage(
             'Upload your doctor\'s prescription'),
         'upload_a_front_facing_photo': MessageLookupByLibrary.simpleMessage(
-            'Upload a front-facing photo with your full upper body visible for the best try-on experience <b><font color="#CC4924">View Tutorial.</font></b>'),
+            'Upload a front-facing photo with your full upper body visible for the best try-on experience <b><font color=\"#CC4924\">View Tutorial.</font></b>'),
         'upload_col': MessageLookupByLibrary.simpleMessage('Upload: '),
         'upload_document':
             MessageLookupByLibrary.simpleMessage('Upload Document'),
