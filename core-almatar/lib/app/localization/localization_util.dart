@@ -1,4 +1,3 @@
-import 'package:analytics/analytics.dart' show analyticsServiceProvider, EventNames;
 import 'package:core/core/di/app_providers.dart';
 import 'package:core/core/local/secure_storage_keys.dart' show SecureStorageKeys;
 import 'package:core/l10n/generated/l10n.dart' show Lt;
@@ -21,17 +20,8 @@ Locale getLocaleFromCode(String code) {
 
 /// Use this to get the current strings class (StringsEn/StringsAr) anywhere in the app.
 Future<void> languageUpdate(WidgetRef ref, String localeCode) async {
-  final previousLang = ref.read(localeProvider);
-  ref.read(localeProvider.notifier).state = localeCode;
+  ref.read(localeProvider.notifier).setLocale(localeCode);
   await Lokalise.instance.update();
   Lt.load(getLocaleFromCode(localeCode));
   await ref.read(localRepositoryProvider).saveData(SecureStorageKeys.kLang, localeCode);
-  // Track language change in analytics
-  try {
-    final analytics = ref.read(analyticsServiceProvider);
-    analytics.track(EventNames.changeLanguage, properties: {'language': localeCode, 'previous_language': previousLang});
-    analytics.updateCommonProperty('language', localeCode);
-  } catch (e) {
-    // Silently fail if analytics not available
-  }
 }

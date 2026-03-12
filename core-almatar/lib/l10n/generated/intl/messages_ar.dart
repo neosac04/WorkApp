@@ -209,7 +209,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('الرقم التسلسلي للسيارة'),
         'car_sequence_number':
             MessageLookupByLibrary.simpleMessage('الرقم التسلسلي للسيارة'),
-        'card': MessageLookupByLibrary.simpleMessage('Card'),
+        'card': MessageLookupByLibrary.simpleMessage('بطاقة'),
         'card_add_success':
             MessageLookupByLibrary.simpleMessage('تمت إضافة البطاقة بنجاح'),
         'card_holder_name':
@@ -887,7 +887,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'popular_categories':
             MessageLookupByLibrary.simpleMessage('الفئات الشائعة'),
         'popular_products':
-            MessageLookupByLibrary.simpleMessage('Popular Products'),
+            MessageLookupByLibrary.simpleMessage('المنتجات الشعبية'),
         'prescription': MessageLookupByLibrary.simpleMessage('الوصفة'),
         'prescriptionInfo': MessageLookupByLibrary.simpleMessage(
             'للمتابعة في طلب الأدوية، نحتاج لمعرفة ما إذا كان لديك وصفة طبية صالحة.'),

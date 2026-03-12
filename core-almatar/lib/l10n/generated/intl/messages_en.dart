@@ -210,7 +210,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage('Car Sequence No'),
         'car_sequence_number':
             MessageLookupByLibrary.simpleMessage('Car Sequence Number'),
-        'card': MessageLookupByLibrary.simpleMessage('بطاقة'),
+        'card': MessageLookupByLibrary.simpleMessage('Card'),
         'card_add_success':
             MessageLookupByLibrary.simpleMessage('Card added successfully'),
         'card_holder_name':
@@ -885,7 +885,7 @@ class MessageLookup extends MessageLookupByLibrary {
         'popular_categories':
             MessageLookupByLibrary.simpleMessage('Popular Categories'),
         'popular_products':
-            MessageLookupByLibrary.simpleMessage('المنتجات الشعبية'),
+            MessageLookupByLibrary.simpleMessage('Popular Products'),
         'prescription': MessageLookupByLibrary.simpleMessage('Prescription'),
         'prescriptionInfo': MessageLookupByLibrary.simpleMessage(
             'To proceed with ordering medicines, we need to know if you have a valid prescription.'),

@@ -8017,15 +8017,15 @@ class Lt {
     return Intl.message('Max', name: 'max', desc: '', args: []);
   }
 
-  /// `بطاقة`
+  /// `Card`
   String get card {
-    return Intl.message('بطاقة', name: 'card', desc: '', args: []);
+    return Intl.message('Card', name: 'card', desc: '', args: []);
   }
 
-  /// `المنتجات الشعبية`
+  /// `Popular Products`
   String get popular_products {
     return Intl.message(
-      'المنتجات الشعبية',
+      'Popular Products',
       name: 'popular_products',
       desc: '',
       args: [],
