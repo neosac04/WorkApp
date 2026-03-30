@@ -1,0 +1,29 @@
+══════════════════════════════════════════════════
+TRANSLATION CHECK REPORT
+══════════════════════════════════════════════════
+Branch: main
+Checked: 2026-03-30 13:46:34.524625
+
+METRICS
+──────────────────────────────────────────────────
+English Keys: 1859
+Arabic Keys:  1859
+Consistency Score: 100%
+Total Issues: 213
+
+DUPLICATES DETECTED (213)
+──────────────────────────────────────────────────
+add_new_address, addNewAddress: {value: إضافة عنوان جديد, affectedKeys: [add_new_address, addNewAddress], count: 2}
+address_type_home, home, bottom_nav_home: {value: Home, affectedKeys: [address_type_home, home, bottom_nav_home], count: 3}
+address_type_other, other, appointment_type_other: {value: Other, affectedKeys: [address_type_other, other, appointment_type_other], count: 3}
+aircraft_type_comma, aircraft_type_col: {value: نوع الطائرة:, affectedKeys: [aircraft_type_comma, aircraft_type_col], count: 2}
+alert_remove_product, are_you_sure_you_want_to_remove_this_product: {value: هل أنت متأكد أنك تريد إزالة هذا المنتج؟, affectedKeys: [alert_remove_product, are_you_sure_you_want_to_remove_this_product], count: 2}
+alert_return_order, return_order_message: {value: هل أنت متأكد أنك تريد إرجاع هذا الطلب؟, affectedKeys: [alert_return_order, return_order_message], count: 2}
+already_account, already_have_account: {value: Already have account?, affectedKeys: [already_account, already_have_account], count: 2}
+amount_has_been_added_in_wallet_successfully, wallet_amount_added_successfully: {value: تم إضافة المبلغ إلى المحفظة بنجاح, affectedKeys: [amount_has_been_added_in_wallet_successfully, wallet_amount_added_successfully], count: 2}
+book_now, bookNow: {value: احجز الآن, affectedKeys: [book_now, bookNow], count: 2}
+book_ride, ride: {value: Ride, affectedKeys: [book_ride, ride], count: 2}
+... and 203 more
+
+══════════════════════════════════════════════════
+

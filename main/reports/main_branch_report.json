@@ -1,0 +1,2592 @@
+{
+  "branch": "main",
+  "checkedAt": "2026-03-30T13:46:34.524625",
+  "metrics": {
+    "totalEnglishKeys": 1859,
+    "totalArabicKeys": 1859,
+    "missingInArabic": 0,
+    "extraInArabic": 0,
+    "duplicatesFound": 213,
+    "consistencyScore": 100,
+    "totalIssues": 213
+  },
+  "missing": [],
+  "extra": [],
+  "duplicates": [
+    {
+      "key": "add_new_address, addNewAddress",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "إضافة عنوان جديد",
+        "affectedKeys": [
+          "add_new_address",
+          "addNewAddress"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "address_type_home, home, bottom_nav_home",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Home",
+        "affectedKeys": [
+          "address_type_home",
+          "home",
+          "bottom_nav_home"
+        ],
+        "count": 3
+      }
+    },
+    {
+      "key": "address_type_other, other, appointment_type_other",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Other",
+        "affectedKeys": [
+          "address_type_other",
+          "other",
+          "appointment_type_other"
+        ],
+        "count": 3
+      }
+    },
+    {
+      "key": "aircraft_type_comma, aircraft_type_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "نوع الطائرة:",
+        "affectedKeys": [
+          "aircraft_type_comma",
+          "aircraft_type_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "alert_remove_product, are_you_sure_you_want_to_remove_this_product",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "هل أنت متأكد أنك تريد إزالة هذا المنتج؟",
+        "affectedKeys": [
+          "alert_remove_product",
+          "are_you_sure_you_want_to_remove_this_product"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "alert_return_order, return_order_message",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "هل أنت متأكد أنك تريد إرجاع هذا الطلب؟",
+        "affectedKeys": [
+          "alert_return_order",
+          "return_order_message"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "already_account, already_have_account",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Already have account?",
+        "affectedKeys": [
+          "already_account",
+          "already_have_account"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "amount_has_been_added_in_wallet_successfully, wallet_amount_added_successfully",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تم إضافة المبلغ إلى المحفظة بنجاح",
+        "affectedKeys": [
+          "amount_has_been_added_in_wallet_successfully",
+          "wallet_amount_added_successfully"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "book_now, bookNow",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "احجز الآن",
+        "affectedKeys": [
+          "book_now",
+          "bookNow"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "book_ride, ride",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Ride",
+        "affectedKeys": [
+          "book_ride",
+          "ride"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "booking_class_comma, booking_class_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "فئة الحجز:",
+        "affectedKeys": [
+          "booking_class_comma",
+          "booking_class_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "buy_now, buyNow",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Buy Now",
+        "affectedKeys": [
+          "buy_now",
+          "buyNow"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "cabin_class_comma, cabin_class_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "درجة المقصورة:",
+        "affectedKeys": [
+          "cabin_class_comma",
+          "cabin_class_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "cards_by_Brand, cards_by_brand",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "بطاقات حسب العلامة التجارية",
+        "affectedKeys": [
+          "cards_by_Brand",
+          "cards_by_brand"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "Category, category",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Category",
+        "affectedKeys": [
+          "Category",
+          "category"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "check_personal_details, double_check_info_title",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تحقق مرة أخرى من بياناتك الشخصية",
+        "affectedKeys": [
+          "check_personal_details",
+          "double_check_info_title"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "class_name, fs_class",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "الدرجة",
+        "affectedKeys": [
+          "class_name",
+          "fs_class"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "code_with_col, code",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "الرمز:",
+        "affectedKeys": [
+          "code_with_col",
+          "code"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "continue_action, continue_lb",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Continue",
+        "affectedKeys": [
+          "continue_action",
+          "continue_lb"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "elevate_shopping_info, welcome_to_shoppingate_message",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "ارتق بتجربتك التسويقية مع شوبينقيت واطلب الآن لتوصيل سريع ورائع!",
+        "affectedKeys": [
+          "elevate_shopping_info",
+          "welcome_to_shoppingate_message"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "explore, today_s_best_deals",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "استكشف",
+        "affectedKeys": [
+          "explore",
+          "today_s_best_deals"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "favourite_stores, favorite_stores",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "المتاجر المفضلة",
+        "affectedKeys": [
+          "favourite_stores",
+          "favorite_stores"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "flight_hash, flight_hash_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "رقم الرحلة:",
+        "affectedKeys": [
+          "flight_hash",
+          "flight_hash_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "food_service_not_available, our_food_service_will_be_available_here_shortly",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "خدمة الطعام لدينا ستكون متوفرة هنا قريبًا",
+        "affectedKeys": [
+          "food_service_not_available",
+          "our_food_service_will_be_available_here_shortly"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "games, bottom_nav_games",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "الألعاب",
+        "affectedKeys": [
+          "games",
+          "bottom_nav_games"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "grocery_delivery, grocery",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "البقالة",
+        "affectedKeys": [
+          "grocery_delivery",
+          "grocery"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "hotel_booking, hotel",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "فندق",
+        "affectedKeys": [
+          "hotel_booking",
+          "hotel"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "invite_earn, refer_a_friend",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "ادعُ واربح",
+        "affectedKeys": [
+          "invite_earn",
+          "refer_a_friend"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "iphone_win_title, chance_to_win",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "احظ بفرصة للفوز بـجوال iPhone",
+        "affectedKeys": [
+          "iphone_win_title",
+          "chance_to_win"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "location_permission_subtitle, permission_needed_des",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "يحتاج هذا التطبيق إلى إذن لإرسال الإشعارات لتنبيهك بالتحديثات المهمة.",
+        "affectedKeys": [
+          "location_permission_subtitle",
+          "permission_needed_des"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "manage_wallet_effortlessly, onboarding_title_second",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "قم بإدارة محفظتك بكل سهولة!",
+        "affectedKeys": [
+          "manage_wallet_effortlessly",
+          "onboarding_title_second"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "manage_wallet_effortlessly_detail, onboarding_description_second",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تابع أموالك وقم بعمليات الدفع بسرعة وسهولة باستخدام ميزة المحفظة لدينا.",
+        "affectedKeys": [
+          "manage_wallet_effortlessly_detail",
+          "onboarding_description_second"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "mega_wheel, mega_win",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "فوز ضخم",
+        "affectedKeys": [
+          "mega_wheel",
+          "mega_win"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "minutes_dot, minutes",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "دقائق",
+        "affectedKeys": [
+          "minutes_dot",
+          "minutes"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "my_cart, bottom_nav_cart",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "سلة التسوق الخاصة بي",
+        "affectedKeys": [
+          "my_cart",
+          "bottom_nav_cart"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "my_gift_cards, gift_cards",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "بطاقات الهدايا",
+        "affectedKeys": [
+          "my_gift_cards",
+          "gift_cards"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "my_gifts, my_games",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Rewards and Win",
+        "affectedKeys": [
+          "my_gifts",
+          "my_games"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "my_profile, bottom_nav_my_profile",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "ملفي الشخصي",
+        "affectedKeys": [
+          "my_profile",
+          "bottom_nav_my_profile"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "my_coupons, services, my_services, coupons",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Coupons",
+        "affectedKeys": [
+          "my_coupons",
+          "services",
+          "my_services",
+          "coupons"
+        ],
+        "count": 4
+      }
+    },
+    {
+      "key": "nearby_restaurants, near_by_restaurants",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "المطاعم القريبة",
+        "affectedKeys": [
+          "nearby_restaurants",
+          "near_by_restaurants"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "no_gifts_found, no_games_found",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "لم يتم العثور على ألعاب",
+        "affectedKeys": [
+          "no_gifts_found",
+          "no_games_found"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "notification_enable_msg, enable_notification_message",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "يرجى تفعيل الإشعارات لتلقي آخر التحديثات أو العروض من شوبينقيت.",
+        "affectedKeys": [
+          "notification_enable_msg",
+          "enable_notification_message"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "notifications, bottom_nav_notification",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "الإشعارات",
+        "affectedKeys": [
+          "notifications",
+          "bottom_nav_notification"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "open_settings, openSettings",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "فتح الإعدادات",
+        "affectedKeys": [
+          "open_settings",
+          "openSettings"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "order_placed, orderPlaced",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Order Placed",
+        "affectedKeys": [
+          "order_placed",
+          "orderPlaced"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "ordered_date, ordered_date_cal",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Ordered Date:",
+        "affectedKeys": [
+          "ordered_date",
+          "ordered_date_cal"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "passenger_details, passengers_details",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تفاصيل الراكب",
+        "affectedKeys": [
+          "passenger_details",
+          "passengers_details"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "passenger_document_info, double_check_info_message, details_information",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Please make sure your details match your passport or government issued identification. If the details are not correct, the passenger might be denied boarding.",
+        "affectedKeys": [
+          "passenger_document_info",
+          "double_check_info_message",
+          "details_information"
+        ],
+        "count": 3
+      }
+    },
+    {
+      "key": "pay_now, payNow",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "ادفع الآن",
+        "affectedKeys": [
+          "pay_now",
+          "payNow"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "payment_type, paymentType",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Payment Type",
+        "affectedKeys": [
+          "payment_type",
+          "paymentType"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "pharmacy_delivery, pharmacy",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Pharmacy",
+        "affectedKeys": [
+          "pharmacy_delivery",
+          "pharmacy"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "pickup_verify, pick_up_verify",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "التحقق من الاستلام",
+        "affectedKeys": [
+          "pickup_verify",
+          "pick_up_verify"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "please_enter_full_name, error_empty_full_name",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "يرجى إدخال الاسم بالكامل",
+        "affectedKeys": [
+          "please_enter_full_name",
+          "error_empty_full_name"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "please_select_products_for_return_products, select_product_error",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "يرجى اختيار المنتجات المراد إرجاعها",
+        "affectedKeys": [
+          "please_select_products_for_return_products",
+          "select_product_error"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "please_select_suitable_option, chat_bot_message",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Please select the most suitable options for better results.",
+        "affectedKeys": [
+          "please_select_suitable_option",
+          "chat_bot_message"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "proceed_to_pay, proceedToPay",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "المتابعة للدفع",
+        "affectedKeys": [
+          "proceed_to_pay",
+          "proceedToPay"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "quick_orders_deliveries, onboarding_title_third",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "طلبات سريعة، تسليم سريع!",
+        "affectedKeys": [
+          "quick_orders_deliveries",
+          "onboarding_title_third"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "quick_orders_deliveries_details, onboarding_description_third",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "استمتع بتجربة تسوق سلسة مع طلبات سريعة وتسليم سريع.",
+        "affectedKeys": [
+          "quick_orders_deliveries_details",
+          "onboarding_description_third"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "refer_earn_spin, refer_your_friend",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "قم بإحالة لصديقك واربح دورة مجانية",
+        "affectedKeys": [
+          "refer_earn_spin",
+          "refer_your_friend"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "repeat_last_customisation, repeat_last_used_customization",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "هل تود تكرار التخصيص المستخدم سابقاً؟",
+        "affectedKeys": [
+          "repeat_last_customisation",
+          "repeat_last_used_customization"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "resend_code, resend",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "إعادة إرسال الرمز",
+        "affectedKeys": [
+          "resend_code",
+          "resend"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "results_valid_for, flight_result_valid_message",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "النتائج صالحة لمدة",
+        "affectedKeys": [
+          "results_valid_for",
+          "flight_result_valid_message"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "return_charges, return_charge",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "رسوم الإرجاع",
+        "affectedKeys": [
+          "return_charges",
+          "return_charge"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "return_notes_other_first, return_notes_delivery",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "1. يجب عليك تسليم العناصر بنفسك في المتجر لهذا الطلب إذا اخترت \"بنفسك\".",
+        "affectedKeys": [
+          "return_notes_other_first",
+          "return_notes_delivery"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "return_notes_second_value, return_notes_msg",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "2. يمكنك تقديم الطلب مرة واحدة فقط لهذا الطلب. يرجى التأكد من اختيار جميع العناصر التي ترغب في إرجاعها دفعة واحدة.",
+        "affectedKeys": [
+          "return_notes_second_value",
+          "return_notes_msg"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "review_passenger_alert, verify_submit_details_message",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "يرجى مراجعة بيانات الراكب قبل الإرسال",
+        "affectedKeys": [
+          "review_passenger_alert",
+          "verify_submit_details_message"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "select_departure_alert, please_enter_from_location",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Please select departure location",
+        "affectedKeys": [
+          "select_departure_alert",
+          "please_enter_from_location"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "select_departure_date, please_select_departure_date",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "يرجى اختيار تاريخ المغادرة",
+        "affectedKeys": [
+          "select_departure_date",
+          "please_select_departure_date"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "select_destination_alert, please_enter_to_location",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Please select destination location",
+        "affectedKeys": [
+          "select_destination_alert",
+          "please_enter_to_location"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "select_product, product_select",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "اختر المنتج",
+        "affectedKeys": [
+          "select_product",
+          "product_select"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "select_return_date, please_select_return_date",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Please select return date",
+        "affectedKeys": [
+          "select_return_date",
+          "please_select_return_date"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "service_detail_close_message, store_close_msg",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "This store is currently closed. Your order will be processed after the store opens.",
+        "affectedKeys": [
+          "service_detail_close_message",
+          "store_close_msg"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "shop, visit_shop",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Shop",
+        "affectedKeys": [
+          "shop",
+          "visit_shop"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "spin_win_big_free_wheel, onboarding_title_first",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Spin to Win Big with Free Wheel!",
+        "affectedKeys": [
+          "spin_win_big_free_wheel",
+          "onboarding_title_first"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "spin_win_big_free_wheel_detail, onboarding_description_first",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Spin the Free Wheel for a chance to dive into the Price Pool and win exclusive rewards!",
+        "affectedKeys": [
+          "spin_win_big_free_wheel_detail",
+          "onboarding_description_first"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "terms_conditions, terms_and_condition",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "الشروط والأحكام",
+        "affectedKeys": [
+          "terms_conditions",
+          "terms_and_condition"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "ticket_issued_successfully, flight_book_successful",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تم إصدار تذكرتك بنجاح.",
+        "affectedKeys": [
+          "ticket_issued_successfully",
+          "flight_book_successful"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "track_Permission, location_permission_message",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "To provide you with the best experience and find nearby stores, we need access to your location. Please enable location services in your device settings to continue.",
+        "affectedKeys": [
+          "track_Permission",
+          "location_permission_message"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "track_your_return_order, track_your_order",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تتبع طلب الإرجاع الخاص بك",
+        "affectedKeys": [
+          "track_your_return_order",
+          "track_your_order"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "transaction_id_col, transaction_id",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Transaction ID:",
+        "affectedKeys": [
+          "transaction_id_col",
+          "transaction_id"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "visa_booking, visa, my_visa",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تأشيرة",
+        "affectedKeys": [
+          "visa_booking",
+          "visa",
+          "my_visa"
+        ],
+        "count": 3
+      }
+    },
+    {
+      "key": "save_address, saveAddress",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "حفظ العنوان",
+        "affectedKeys": [
+          "save_address",
+          "saveAddress"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "mobile_number, mobileNumber",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "رقم الجوال",
+        "affectedKeys": [
+          "mobile_number",
+          "mobileNumber"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "search_plan_message, search_plan",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Search a plan e.g. 365 or 28 days",
+        "affectedKeys": [
+          "search_plan_message",
+          "search_plan"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "search_country_message, search_country_name_code",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Search country with name and code",
+        "affectedKeys": [
+          "search_country_message",
+          "search_country_name_code"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "my_mobile_recharge, my_recharges",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Recharges",
+        "affectedKeys": [
+          "my_mobile_recharge",
+          "my_recharges"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "upload_document, choose_document",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Upload Document",
+        "affectedKeys": [
+          "upload_document",
+          "choose_document"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "upload_required_document, passenger_details_message",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "يرجى تحميل المستند المطلوب",
+        "affectedKeys": [
+          "upload_required_document",
+          "passenger_details_message"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "choose_image_format, chooseJpgJpeg",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Choose from any of jpg, jpeg formats",
+        "affectedKeys": [
+          "choose_image_format",
+          "chooseJpgJpeg"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "esim_plans, e_sim_plans",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "خطط eSim",
+        "affectedKeys": [
+          "esim_plans",
+          "e_sim_plans"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "shopping_entertainment, shopping_and_entertainment",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "التسوق والترفيه",
+        "affectedKeys": [
+          "shopping_entertainment",
+          "shopping_and_entertainment"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "travel_transportation, travel_and_transport",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Travel & Transportation",
+        "affectedKeys": [
+          "travel_transportation",
+          "travel_and_transport"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "used_goods, my_used_goods, my_used_good_orders",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Used Goods",
+        "affectedKeys": [
+          "used_goods",
+          "my_used_goods",
+          "my_used_good_orders"
+        ],
+        "count": 3
+      }
+    },
+    {
+      "key": "utilities, my_utility",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Utilities",
+        "affectedKeys": [
+          "utilities",
+          "my_utility"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "mobile_topup, mobile_recharge",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Mobile Topup",
+        "affectedKeys": [
+          "mobile_topup",
+          "mobile_recharge"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "search_for_services, search_services",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "ابحث عن الخدمات..",
+        "affectedKeys": [
+          "search_for_services",
+          "search_services"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "issue_date, issue_date_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تاريخ الإصدار:",
+        "affectedKeys": [
+          "issue_date",
+          "issue_date_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "amount_due, amount_due_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Amount Due:",
+        "affectedKeys": [
+          "amount_due",
+          "amount_due_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "due_date, due_cate_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تاريخ الاستحقاق:",
+        "affectedKeys": [
+          "due_date",
+          "due_cate_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "account_number, account_number_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Account Number:",
+        "affectedKeys": [
+          "account_number",
+          "account_number_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "bill_status, bill_status_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "حالة مشروع القانون:",
+        "affectedKeys": [
+          "bill_status",
+          "bill_status_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "platform_charge, platform_charge_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "رسوم المنصة:",
+        "affectedKeys": [
+          "platform_charge",
+          "platform_charge_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "eShop, e_shop",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "المتجر الإلكتروني",
+        "affectedKeys": [
+          "eShop",
+          "e_shop"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "date_and_time, date_time",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "التاريخ والوقت",
+        "affectedKeys": [
+          "date_and_time",
+          "date_time"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "my_rides, rides",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Rides",
+        "affectedKeys": [
+          "my_rides",
+          "rides"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "e_voucher, evoucher_recharge",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "eVoucher Recharge",
+        "affectedKeys": [
+          "e_voucher",
+          "evoucher_recharge"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "service_details, laboratory_details",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تفاصيل الخدمة",
+        "affectedKeys": [
+          "service_details",
+          "laboratory_details"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "confirm_schedule, confirm_appointment",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تأكيد الموعد",
+        "affectedKeys": [
+          "confirm_schedule",
+          "confirm_appointment"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "doctor, highlight_doctor",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Doctor",
+        "affectedKeys": [
+          "doctor",
+          "highlight_doctor"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "alert_cancel_appointment, cancel_appointment_confirm_alert",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "هل أنت متأكد من رغبتك في إلغاء هذا الموعد؟",
+        "affectedKeys": [
+          "alert_cancel_appointment",
+          "cancel_appointment_confirm_alert"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "enter_mobile_number, enterMobileNumber",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "أدخل رقم الجوال",
+        "affectedKeys": [
+          "enter_mobile_number",
+          "enterMobileNumber"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "health_beauty_wellness, category_health_beauty",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Health, Beauty & Wellness",
+        "affectedKeys": [
+          "health_beauty_wellness",
+          "category_health_beauty"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "baby_kids_toys, category_baby_kids",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Baby, Kids & Toys",
+        "affectedKeys": [
+          "baby_kids_toys",
+          "category_baby_kids"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "amount_str, amountLabel",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Amount",
+        "affectedKeys": [
+          "amount_str",
+          "amountLabel"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "know_more, knowMore",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Know More",
+        "affectedKeys": [
+          "know_more",
+          "knowMore"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "choose_from_top_brands, chooseFromTopBrands",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "اختر من أفضل العلامات التجارية",
+        "affectedKeys": [
+          "choose_from_top_brands",
+          "chooseFromTopBrands"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "send_instantly_via_email, sendInstantlyEmail",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "أرسل فورًا عبر البريد الإلكتروني",
+        "affectedKeys": [
+          "send_instantly_via_email",
+          "sendInstantlyEmail"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "browse_gift_cards, browseGiftCards",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تصفح بطاقات الهدايا",
+        "affectedKeys": [
+          "browse_gift_cards",
+          "browseGiftCards"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "pay_your_regular_bills, payBillsTitle",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "ادفع فواتيرك المعتادة في ثوانٍ",
+        "affectedKeys": [
+          "pay_your_regular_bills",
+          "payBillsTitle"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "pay_bills_abroad, payAbroadTitle",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "ادفع الفواتير في الخارج",
+        "affectedKeys": [
+          "pay_bills_abroad",
+          "payAbroadTitle"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "compatible_network, compatibleNetwork",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "متوافق مع 4G/5G",
+        "affectedKeys": [
+          "compatible_network",
+          "compatibleNetwork"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "easy_qr_activation, qrActivation",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Easy QR Activation",
+        "affectedKeys": [
+          "easy_qr_activation",
+          "qrActivation"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "one_gb_to_fifty_gb, gb_range, dataRange",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "1GB to 50GB",
+        "affectedKeys": [
+          "one_gb_to_fifty_gb",
+          "gb_range",
+          "dataRange"
+        ],
+        "count": 3
+      }
+    },
+    {
+      "key": "usa_uk_more, supportedCountries",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "USA, UK & more",
+        "affectedKeys": [
+          "usa_uk_more",
+          "supportedCountries"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "deliver_to, deliver_to_updated",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Deliver to",
+        "affectedKeys": [
+          "deliver_to",
+          "deliver_to_updated"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "restro_name, car_rental_title",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Umami Sushi Bar",
+        "affectedKeys": [
+          "restro_name",
+          "car_rental_title"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "talk_to_certified_doctors, talkToCertifiedDoctors",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Talk to certified Doctors",
+        "affectedKeys": [
+          "talk_to_certified_doctors",
+          "talkToCertifiedDoctors"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "highlight_certified_doctors, certifiedDoctors",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "أطباء معتمدين",
+        "affectedKeys": [
+          "highlight_certified_doctors",
+          "certifiedDoctors"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "consult_from_home, consultFromHome",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "استشر من راحة منزلك.",
+        "affectedKeys": [
+          "consult_from_home",
+          "consultFromHome"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "consult_now, consultNow",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "استشر الآن",
+        "affectedKeys": [
+          "consult_now",
+          "consultNow"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "flexible_appointments, flexibleAppointments",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "مواعيد مرنة",
+        "affectedKeys": [
+          "flexible_appointments",
+          "flexibleAppointments"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "highlight_flexible, flexible",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "مرنة",
+        "affectedKeys": [
+          "highlight_flexible",
+          "flexible"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "trusted_service, safeTrustedService",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Safe, trusted, and verified service.",
+        "affectedKeys": [
+          "trusted_service",
+          "safeTrustedService"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "track_order, trackOrder",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تتبع الطلب",
+        "affectedKeys": [
+          "track_order",
+          "trackOrder"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "voucherDetails, voucher_detail",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Voucher Details",
+        "affectedKeys": [
+          "voucherDetails",
+          "voucher_detail"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "priceTitle, price_title",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Price",
+        "affectedKeys": [
+          "priceTitle",
+          "price_title"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "downloadPdf, download_pdf",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Download PDF",
+        "affectedKeys": [
+          "downloadPdf",
+          "download_pdf"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "orderDateLabel, order_date",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "Order Date",
+        "affectedKeys": [
+          "orderDateLabel",
+          "order_date"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "of_text, from",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "من",
+        "affectedKeys": [
+          "of_text",
+          "from"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "show_more, view_more",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "عرض المزيد",
+        "affectedKeys": [
+          "show_more",
+          "view_more"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "govt_visa_fee, govt_visa_fees",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "رسوم التأشيرة الحكومية",
+        "affectedKeys": [
+          "govt_visa_fee",
+          "govt_visa_fees"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "documents_required, required_documents",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "المستندات المطلوبة",
+        "affectedKeys": [
+          "documents_required",
+          "required_documents"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "add_ons, addons_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "الإضافات:",
+        "affectedKeys": [
+          "add_ons",
+          "addons_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "address_management, manage_addresses",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "إدارة العناوين",
+        "affectedKeys": [
+          "address_management",
+          "manage_addresses"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "bottom_nav_home, home",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "الرئيسية",
+        "affectedKeys": [
+          "bottom_nav_home",
+          "home"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "alert_cancel_pnr, cancel_pnr_message",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "هل أنت متأكد أنك تريد إلغاء رقم حجز الرحلة؟",
+        "affectedKeys": [
+          "alert_cancel_pnr",
+          "cancel_pnr_message"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "alert_delete_address, delete_address_message",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "هل أنت متأكد أنك تريد حذف هذا العنوان؟",
+        "affectedKeys": [
+          "alert_delete_address",
+          "delete_address_message"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "book_ride, ride, ride_word",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "رحلة",
+        "affectedKeys": [
+          "book_ride",
+          "ride",
+          "ride_word"
+        ],
+        "count": 3
+      }
+    },
+    {
+      "key": "cancellation_penalties, refund_details",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "عقوبات الإلغاء",
+        "affectedKeys": [
+          "cancellation_penalties",
+          "refund_details"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "cash_back, cashbacks",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "استرداد النقود",
+        "affectedKeys": [
+          "cash_back",
+          "cashbacks"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "delivery_boy, delivery_person",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "مندوب التوصيل",
+        "affectedKeys": [
+          "delivery_boy",
+          "delivery_person"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "delivery_charge, delivery_charges",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "رسوم التوصيل",
+        "affectedKeys": [
+          "delivery_charge",
+          "delivery_charges"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "delivery_charges_break_down, delivery_charge_break_down",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تفاصيل رسوم التوصيل",
+        "affectedKeys": [
+          "delivery_charges_break_down",
+          "delivery_charge_break_down"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "delivery_type, delivery_type_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "نوع التوصيل:",
+        "affectedKeys": [
+          "delivery_type",
+          "delivery_type_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "details, detail",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "التفاصيل",
+        "affectedKeys": [
+          "details",
+          "detail"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "discount, Discount_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "خصم",
+        "affectedKeys": [
+          "discount",
+          "Discount_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "dob, dob_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تاريخ الميلاد:",
+        "affectedKeys": [
+          "dob",
+          "dob_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "document_expiry_date, document_expiry_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تاريخ صلاحية المستند",
+        "affectedKeys": [
+          "document_expiry_date",
+          "document_expiry_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "document_no, document_number_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "رقم المستند:",
+        "affectedKeys": [
+          "document_no",
+          "document_number_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "document_type, document_type_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "نوع المستند",
+        "affectedKeys": [
+          "document_type",
+          "document_type_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "email, email_address",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "البريد الإلكتروني",
+        "affectedKeys": [
+          "email",
+          "email_address"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "expiry_date, expiry_date_title",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تاريخ الانتهاء",
+        "affectedKeys": [
+          "expiry_date",
+          "expiry_date_title"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "flight_details, trip_details",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تفاصيل الرحلة",
+        "affectedKeys": [
+          "flight_details",
+          "trip_details"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "gender, gender_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "الجنس",
+        "affectedKeys": [
+          "gender",
+          "gender_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "house_flat_building_block, enter_your_house_flat_no",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "رقم المنزل/الشقة والمبنى/البلوك",
+        "affectedKeys": [
+          "house_flat_building_block",
+          "enter_your_house_flat_no"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "login, sign_in",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تسجيل الدخول",
+        "affectedKeys": [
+          "login",
+          "sign_in"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "message, message_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "رسالة:",
+        "affectedKeys": [
+          "message",
+          "message_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "my_account, my_accounts",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "حساباتي",
+        "affectedKeys": [
+          "my_account",
+          "my_accounts"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "nationality, nationality_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "الجنسية:",
+        "affectedKeys": [
+          "nationality",
+          "nationality_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "no_address, no_address_yet",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "لا يوجد عنوان حتى الآن!",
+        "affectedKeys": [
+          "no_address",
+          "no_address_yet"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "no_flights_available, no_any_flights_available",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "لا توجد رحلات متاحة",
+        "affectedKeys": [
+          "no_flights_available",
+          "no_any_flights_available"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "no_nearby_restauant_found, no_nearby_restaurants_found",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "لم يتم العثور على مطاعم قريبة",
+        "affectedKeys": [
+          "no_nearby_restauant_found",
+          "no_nearby_restaurants_found"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "no_notification, no_notifications_yet",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "لا توجد إشعارات حتى الآن!",
+        "affectedKeys": [
+          "no_notification",
+          "no_notifications_yet"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "no_recent_search_data, no_recent_search_available",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "لا توجد بيانات بحث حديثة متوفرة",
+        "affectedKeys": [
+          "no_recent_search_data",
+          "no_recent_search_available"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "ok, okay",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "حسناً",
+        "affectedKeys": [
+          "ok",
+          "okay"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "ordered_date, ordered_date_cal, orderDateLabel, order_date",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تاريخ الطلب",
+        "affectedKeys": [
+          "ordered_date",
+          "ordered_date_cal",
+          "orderDateLabel",
+          "order_date"
+        ],
+        "count": 4
+      }
+    },
+    {
+      "key": "passenger_document_info, double_check_info_message",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "يرجى التأكد من تطابق بياناتك مع جواز سفرك أو الهوية الصادرة عن الحكومة. إذا لم تكن البيانات صحيحة، فقد يُمنع الراكب من الصعود على متن الطائرة.",
+        "affectedKeys": [
+          "passenger_document_info",
+          "double_check_info_message"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "payment_type, payment_type_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "نوع الدفع:",
+        "affectedKeys": [
+          "payment_type",
+          "payment_type_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "pending, awaiting",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "قيد الانتظار",
+        "affectedKeys": [
+          "pending",
+          "awaiting"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "personal_detail, personal_details",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "التفاصيل الشخصية",
+        "affectedKeys": [
+          "personal_detail",
+          "personal_details"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "please_enter_valid_mobile_number, please_enter_valid_phone_number",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "يُرجى إدخال رقم هاتف صحيح",
+        "affectedKeys": [
+          "please_enter_valid_mobile_number",
+          "please_enter_valid_phone_number"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "product_detail, product_details",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تفاصيل المنتج",
+        "affectedKeys": [
+          "product_detail",
+          "product_details"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "rating_and_reviews, ratings_and_reviews",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "التقييمات والمراجعات",
+        "affectedKeys": [
+          "rating_and_reviews",
+          "ratings_and_reviews"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "reached, arrived",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تم الوصول",
+        "affectedKeys": [
+          "reached",
+          "arrived"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "return_notes_pickup_first, return_notes_pickup",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "1. عليك أن تسلم العناصر بنفسك في المتجر لهذا الطلب.",
+        "affectedKeys": [
+          "return_notes_pickup_first",
+          "return_notes_pickup"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "service_detail, voucherDetails, voucher_detail",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تفاصيل القسيمة",
+        "affectedKeys": [
+          "service_detail",
+          "voucherDetails",
+          "voucher_detail"
+        ],
+        "count": 3
+      }
+    },
+    {
+      "key": "spin_the_slot, spin_the_Slot, spin_the_wheel",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "قم بتدوير العجلة",
+        "affectedKeys": [
+          "spin_the_slot",
+          "spin_the_Slot",
+          "spin_the_wheel"
+        ],
+        "count": 3
+      }
+    },
+    {
+      "key": "submit, send",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "إرسال",
+        "affectedKeys": [
+          "submit",
+          "send"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "to, to_Flight",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "إلي",
+        "affectedKeys": [
+          "to",
+          "to_Flight"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "validation_house_flat_building_block, please_enter_flat_no",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "يرجى إدخال رقم المنزل/الشقة والمبنى/البلوك",
+        "affectedKeys": [
+          "validation_house_flat_building_block",
+          "please_enter_flat_no"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "verification_code, ordered_verification_code_cal_dynamic",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "رمز التحقق",
+        "affectedKeys": [
+          "verification_code",
+          "ordered_verification_code_cal_dynamic"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "yes_logout, logout_confirm",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "نعم، تسجيل الخروج",
+        "affectedKeys": [
+          "yes_logout",
+          "logout_confirm"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "payment_cancel, payment_cancelled",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تم إلغاء الدفع",
+        "affectedKeys": [
+          "payment_cancel",
+          "payment_cancelled"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "top_up_details, topup_detail",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تفاصيل التعبئة",
+        "affectedKeys": [
+          "top_up_details",
+          "topup_detail"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "my_mobile_recharge, recharge, top_up",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "إعادة الشحن",
+        "affectedKeys": [
+          "my_mobile_recharge",
+          "recharge",
+          "top_up"
+        ],
+        "count": 3
+      }
+    },
+    {
+      "key": "passport_no, passport_number",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "رقم جواز السفر",
+        "affectedKeys": [
+          "passport_no",
+          "passport_number"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "upload_pdf, downloadPdf",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تحميل ملف PDF",
+        "affectedKeys": [
+          "upload_pdf",
+          "downloadPdf"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "visa_detail, visa_details",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تفاصيل التأشيرة",
+        "affectedKeys": [
+          "visa_detail",
+          "visa_details"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "pin_code, postalCode, zip_code",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "الرمز البريدي",
+        "affectedKeys": [
+          "pin_code",
+          "postalCode",
+          "zip_code"
+        ],
+        "count": 3
+      }
+    },
+    {
+      "key": "plan_detail, plan_details",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تفاصيل الخطة",
+        "affectedKeys": [
+          "plan_detail",
+          "plan_details"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "you_will_lose_you_current_chat_context_are_you_sure_you_want_to_exit, exit_chat_title",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "ستفقد سياق الدردشة الحالي. هل أنت متأكد من رغبتك في الخروج؟",
+        "affectedKeys": [
+          "you_will_lose_you_current_chat_context_are_you_sure_you_want_to_exit",
+          "exit_chat_title"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "amount_due, amount_due_col, dueAmount, payable_amt",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "المبلغ المستحق",
+        "affectedKeys": [
+          "amount_due",
+          "amount_due_col",
+          "dueAmount",
+          "payable_amt"
+        ],
+        "count": 4
+      }
+    },
+    {
+      "key": "other, appointment_type_other",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "أخرى",
+        "affectedKeys": [
+          "other",
+          "appointment_type_other"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "after_due_amount, after_due_amount_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "بعد المبلغ المستحق:",
+        "affectedKeys": [
+          "after_due_amount",
+          "after_due_amount_col"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "account_number, account_no_col, account_number_col",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "رقم الحساب",
+        "affectedKeys": [
+          "account_number",
+          "account_no_col",
+          "account_number_col"
+        ],
+        "count": 3
+      }
+    },
+    {
+      "key": "e_voucher_details, EVoucher_detail",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تفاصيل القسيمة الإلكترونية",
+        "affectedKeys": [
+          "e_voucher_details",
+          "EVoucher_detail"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "upload_prescription, prescriptionUpload",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تحميل الوصفة الطبية",
+        "affectedKeys": [
+          "upload_prescription",
+          "prescriptionUpload"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "top_up_balance, mobileTopUp",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "إعادة شحن الرصيد",
+        "affectedKeys": [
+          "top_up_balance",
+          "mobileTopUp"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "know_more, knowMore, learn_more",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "اعرف المزيد",
+        "affectedKeys": [
+          "know_more",
+          "knowMore",
+          "learn_more"
+        ],
+        "count": 3
+      }
+    },
+    {
+      "key": "gb_range, dataRange",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "1 جيجابايت إلى 50 جيجابايت",
+        "affectedKeys": [
+          "gb_range",
+          "dataRange"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "highlight_doctor, doctor",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "طبيب",
+        "affectedKeys": [
+          "highlight_doctor",
+          "doctor"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "fly, travel",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "سافر ",
+        "affectedKeys": [
+          "fly",
+          "travel"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "key": "orderPlaced, order_placed",
+      "reason": "Same value in multiple keys",
+      "details": {
+        "value": "تم تقديم الطلب",
+        "affectedKeys": [
+          "orderPlaced",
+          "order_placed"
+        ],
+        "count": 2
+      }
+    }
+  ]
+}

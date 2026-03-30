@@ -20,9 +20,7 @@ class LocalizationDebugger {
       final locale = Localizations.localeOf(context);
       final lt = Lt.of(context);
       
-      debugPrint('' '$_tag ========= LOCALE STATE =========\n' '$_tag Language Code: ${locale.languageCode}\n' '$_tag Country Code: ${locale.countryCode}\n' +
-          '$_tag Supported Locales: ${Lt.supportedLocales}\n' +
-          '$_tag Current Locale: $locale\n' +
+      debugPrint('' '$_tag ========= LOCALE STATE =========\n' '$_tag Language Code: ${locale.languageCode}\n' '$_tag Country Code: ${locale.countryCode}\n' '$_tag Supported Locales: ${Lt.supportedLocales}\n' '$_tag Current Locale: $locale\n' +
           '$_tag ================================');
     } catch (e) {
       debugPrint('$_tag Error logging locale: $e');
