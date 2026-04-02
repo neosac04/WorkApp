@@ -267,7 +267,7 @@ class LocationHelper {
         timeLimit: timeLimit,
         forceAndroidLocationManager: forceAndroidLocationManager,
       );
-      print('positio $position');
+      print('position $position');
       _lastKnownPosition = position;
       return position;
     } catch (e) {

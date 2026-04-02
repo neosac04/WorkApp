@@ -209,10 +209,11 @@ String generateTextReport(TranslationCheckResult result) {
 void main() {
   final projectRoot = _projectRootFromScript();
   Directory.current = projectRoot.path;
+  final branchName = Platform.environment['CI_COMMIT_REF_NAME'] ?? 'main';
 
-  print('Running translation check on main branch...\n');
+  print('Running translation check on $branchName branch...\n');
 
-  final result = checkTranslations('main');
+  final result = checkTranslations(branchName);
 
   // Print text report
   final textReport = generateTextReport(result);

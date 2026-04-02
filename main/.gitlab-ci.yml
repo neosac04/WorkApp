@@ -1,17 +1,27 @@
 stages:
   - quality
 
+default:
+  image: dart:stable
+
+cache:
+  key: "${CI_PROJECT_ID}-dart"
+  paths:
+    - .dart_tool/
+    - .pub-cache/
+
 translation_check:
   stage: quality
-  image: dart:stable
   variables:
     TRANSLATION_REPORT_PATH: "reports/main_branch_report.json"
     TRANSLATION_MAX_MISSING: "0"
     TRANSLATION_MAX_EXTRA: "0"
-    TRANSLATION_MAX_DUPLICATES: "999999"
-    TRANSLATION_MAX_TOTAL_ISSUES: "999999"
-  script:
+    TRANSLATION_MAX_DUPLICATES: "0"
+    TRANSLATION_MAX_TOTAL_ISSUES: "0"
+  before_script:
     - dart --version
+    - dart pub get
+  script:
     - dart run tool/translation_check.dart
     - dart run tool/translation_gate.dart --report="$TRANSLATION_REPORT_PATH" --max-missing="$TRANSLATION_MAX_MISSING" --max-extra="$TRANSLATION_MAX_EXTRA" --max-duplicates="$TRANSLATION_MAX_DUPLICATES" --max-total-issues="$TRANSLATION_MAX_TOTAL_ISSUES"
   artifacts:
@@ -21,8 +31,8 @@ translation_check:
       - reports/main_branch_report.json
     expire_in: 90 days
   rules:
-    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+    - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH == "main"'
       when: on_success
-    - if: '$CI_PIPELINE_SOURCE == "web"'
-      when: manual
+    - if: '$CI_PIPELINE_SOURCE == "schedule" && $CI_COMMIT_BRANCH == "main"'
+      when: on_success
     - when: never
